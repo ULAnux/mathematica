@@ -1,3 +1,7 @@
+Mi contribucion a la aplicacion mathematica sera por medio de PR's, el tema de estas esta todavia por decidirse para poder escoger uno amplio, en el cual se pueda desarrollar y profundizar en las preguntas y respuestas y lograr transmitir al usuario de Mathematica los conocimientos, no solo basicos de dicho tema.
+
+
+
 # mathematica
 Un juego para aprender matemática y lógica 
 https://github.com

@@ -48,7 +48,7 @@ A continuacion se agrega algun comentario sobre los cambios realizados en los ar
 
 $ git commit -m "Comentario sobre la modificacion en el programa"
 
-Se envia al repositorio remoto vinculado al repositorio local, por medio del comando '$ git push origin master' en la rama 'master' del proyecto.
+Se envia al repositorio remoto vinculado al repositorio local, por medio del comando '$ git push origin master' en la rama 'master' del proyecto
 
 Con Mathematica 
 

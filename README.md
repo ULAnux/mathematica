@@ -18,6 +18,8 @@ Para clonar el projecto:
 
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
+
+
 Con Mathematica debe ser:
 
 git clone https://github.com/ULAnux/mathematica
@@ -32,11 +34,32 @@ https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-
 
 cd <dir-repositorio> 
 
-$ git add .
 
-$ git commit -m "Primer commit to github"
+Para agregar Y/O registrar cambios:
+	git add <filename>
+	git add .
 
-$ git push origin master
+Para hacer commit o etiquetar  cambios:
+	git commit -m "Commit message"
+
+Para enviar estos cambios al repositorio remoto:
+	git push origin master
+
+Para actualizar repositorio local al commit más nuevo:
+	git pull
+
+Para revisar lo añadido al repositorio podemos ejecutar el siguiente comando:
+	git status
+
+Desde la página: para hacer copia de un proyecto en nuestro perfil
+	Dar click en "fork" 
+
+Realizar un fork es simplemente clonar un repositorio ajeno.
+Y con 
+	"Pull Request"
+Se envian los cambios realizados al creador del proyecto
+
+
 
 
 Con Mathematica 
@@ -96,5 +119,4 @@ $ git reset HEAD leeme-mathematica.txt~
 $ git status
 
 $ git push origin master
-
 

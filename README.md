@@ -1,100 +1,164 @@
-# mathematica
-Un juego para aprender matemática y lógica 
-https://github.com
+// Realizado por Dimitrio Mandamadiotis
+// https://github.com/dimitrio-m
 
-http://git-scm.com/download/linux
+# Mathematica
+[Un juego para aprender matemática y lógica](https://github.com/ULAnux/mathematica)
 
-On your computer, open your command line application.
+## ¿Cómo instalar git en Linux?
 
-$ apt-get install git
+1. Abre en tu computadora una terminal y ejecuta el siguiente comando dependiendo de la distribucion de linux que uses:
 
-https://help.github.com/articles/set-up-git/#platform-all
+* Debian/Ubuntu
+`apt-get install git`
 
-$ git config --global user.name "YOUR NAME"
+* Fedora
+`yum install git` (up to Fedora 21)
+`dnf install git` (Fedora 22 and later)
 
-$ git config --global user.email "YOUR EMAIL ADDRESS"
+* Gentoo
+`emerge --ask --verbose dev-vcs/git`
 
-Para clonar el projecto: 
+* Arch Linux
+`pacman -S git`
 
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+* openSUSE
+`zypper install git`
+
+* FreeBSD
+`cd /usr/ports/devel/git`
+`make install`
+
+* Solaris 11 Express
+`pkg install developer/versioning/git`
+
+* OpenBSD
+`pkg_add git`
+
+2. Luego verifica que se instalo ejecutando:
+```
+git --version
+```
+
+## Configuración básica:
+
+1. Para agregar tu nombre a todas tus colaboraciones automaticamente debes definir la variable de nombre de la siguiente manera:
+
+`git config --global user.name "TU NOMBRE"`
+
+2. Para agregar también tu correo electronico a todas tus colaboraciones automaticamente debes definir la variable de correp de la siguiente manera:
+
+`git config --global user.email "TU CORREO ELECTRONICO"`
+
+## Uso:
+
+### Clonar un proyecto:
+
+1. Busca el proyecto que deseas clonar en la pagina de [github](https://github.com).
+
+2. Copia la URL del proyecto.
+
+3. En la terminal ejecuta:
+
+`git clone https://github.com/USUARIO/PROYECTO`
 
 Con Mathematica debe ser:
 
-git clone https://github.com/ULAnux/mathematica
-Cloning into 'mathematica'...
-remote: Counting objects: 3, done.
-remote: Compressing objects: 100% (2/2), done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (3/3), done.
-Checking connectivity... done.
+`git clone https://github.com/ULAnux/mathematica`
 
-https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/
+Esto creara una carpeta donde estará el proyecto.
 
-cd <dir-repositorio> 
+### Hacer un commit:
 
-$ git add .
+1. Se debe acceder a la carpeta del proyecto.
 
-$ git commit -m "Primer commit to github"
+`cd PROYECTO`
 
-$ git push origin master
+2. Luego se agregan todos los archivos a la fase de trabajo.
 
+`git add -A`
 
-Con Mathematica 
+3. Puedes verificar el estado de los archivos usando:
 
-cd mathematica
+`git status`
 
-$ git add .
+4. Ya terminada la edición de los archivos se procede a guardar los cambios de la siguiente manera:
 
-$ git commit -m "comentario del commit"
+`git commit -m "MENSAJE DESCRIPTIVO"`
 
- git commit -m "Primer commit"
-[master c47a0b3] Primer commit
- 38 files changed, 12094 insertions(+)
- create mode 100644 0000.pl
- create mode 100644 0001.pl
- create mode 100644 0002.pl
- create mode 100644 0003.pl
- create mode 100644 0004.pl
- create mode 100644 0005.pl
- create mode 100644 0006.pl
- create mode 100644 0007.pl
- create mode 100644 0008.pl
- create mode 100644 0009.pl
- create mode 100644 0010.pl
- create mode 100644 0011.pl
- create mode 100644 0012.pl
- create mode 100644 0013.pl
- create mode 100644 0014.pl
- create mode 100644 0015.pl
- create mode 100644 0016.pl
- create mode 100644 0017.pl
- create mode 100644 0018.pl
- create mode 100644 0019.pl
- create mode 100644 0020.pl
- create mode 100644 0021.pl
- create mode 100644 0022.pl
- create mode 100644 0023.pl
- create mode 100644 0024.pl
- create mode 100644 0026.pl
- create mode 100644 0027.pl
- create mode 100644 bootstrap.css
- create mode 100644 buscador.pl
- create mode 100644 conjuntos.pl
- create mode 100644 indice.pl
- create mode 100644 leeme-mathematica.txt
- create mode 100644 leeme-mathematica.txt~
- create mode 100644 lexer.pl
- create mode 100644 logica.pl
- create mode 100644 main.css
- create mode 100644 mathematica.pl
- create mode 100644 servicio.pl
+### Subir los cambios al repositorio en GitHub:
 
-$ git status
+1. Se verifica que el repositorio remoto esta configurado:
 
-$ git reset HEAD leeme-mathematica.txt~
+`git remote -v`
 
-$ git status
+Si el comando no muestra la URL del repositorio se debe agregar el mismo de la siguiente forma:
 
-$ git push origin master
+`git remote add origin https://github.com/USUARIO/PROYECTO`
 
+2. Luego de hacer los respectivos cambios y guardarlos en un commit se procede a actualizar el repositorio remoto mediante el comando:
 
+`git push origin NOMBRE_DE_RAMA` o en su defecto `git push origin master`
+
+### Ver los commits realizados:
+
+Dentro de la carpeta del proyecto ejecutamos:
+
+`git log`
+
+Nos mostrara el autor del commit, su correo, la fecha y un hash SHA que representa el identificador de ese commit.
+
+### Retroceder a otro commit:
+
+Si se desea regresar al estado del proyecto en un commit especifico se debe ejecutar:
+
+`git checkout HASH_DEL_COMMIT`
+
+Si se desea volver al ultimo commit ejecute:
+
+`git checkout master`
+
+### Crear una rama o branch:
+
+Una rama o branch es otro hilo de desarrollo del programa que no afecta al hilo principal o comunmente llamado master
+
+Para crear una nueva rama del proyecto se debe ejecutar:
+
+`git branch NOMBRE_DE_RAMA`
+
+Se puede verificar las ramas existentes ejecutando:
+
+`git branch`
+
+Dentro de cada rama se usan los commits y push de la misma manera.
+
+### Cambiar de ramas:
+
+Para cambiar entre ramas simplemente se utiliza el comando:
+
+`git checkout NOMBRE_DE_RAMA`
+
+### Eliminar un commit:
+
+Hay dos formas de eliminar un commit:
+
+1. SOFT RESET:
+
+Un SOFT RESET es cuando se eliminan los commits pero se conserva el espacio de trabajo actual. Para ello se debe ejecutar el comando:
+
+`git reset --soft HASH_DEL_COMMIT_QUE_QUEDARA_COMO_ULTIMO`
+
+2. HARD RESET:
+
+En un HARD RESET se eliminan los commits y se actualiza el espacio de trabajo al del commit final.
+
+`git reset --hard HASH_DEL_COMMIT_QUE_QUEDARA_COMO_ULTIMO`
+
+## Contribución
+
+La contribución sera realizada, por: **Lizandro Zerpa** y **Dimitrio Mandamadiotis**.
+
+La idea basica es traer la aplicacion "Mathematica" a un entorno contemporaneo usando herramientas poderosas, para obtener el mas alto desempanio de la app.
+
+En nuestro caso lo primero a realizarse es una pagina web donde correra la aplicacion, en un entorno de programacion desde el servidor, llamado **NodeJS**, el cual usa **Javascript**, como lenguaje de progrmacion. Ademas, usaremos **MongoDB**, como manejador de base de datos. Tambien se usaran APIs (Application programming interface), para: el sign in y sign up del usuario (passport), comunicar con el lenguaje **Prolog** (Pengines), encriptar contrasenias (bcrypt) y encriptar navegacion (TLS/SSL usando https).
+
+Se tendra un gestor de usuarios, que manipulara tanto el ingrese como el almacenaje de su progreso en el juego; la interfaz entre el lenguaje prolog y Node,  basado en preguntas y respuestas para el usuario.

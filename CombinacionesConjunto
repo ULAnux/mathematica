@@ -1,0 +1,10 @@
+%Diego Salinas
+%C.I 18798718
+%Ejemplo de Todas las combinaciones de un conjunto de 3 digitos
+%?combinaciones1([1,2,3],X).
+
+    combinaciones1([],[]).%se usan dos listas vacias
+
+    combinaciones1([A|B],[A|C]):- combinaciones1(B,C).%se recogen los datos y se iteran para obtener las posibles combinaciones
+
+    combinaciones1([_|B],C):- combinaciones1(B,C).

@@ -1,12 +1,21 @@
 # mathematica
-Un juego para aprender matemática y lógica 
+Un juego para aprender matemática y lógica
+Para ayuda con los comandos y uso del git se pueden revisar los siguientes enlaces o seguir las intrucciones posteriores
+
+https://www.youtube.com/watch?v=m12XPk6ktiM
+http://conociendogithub.readthedocs.org/en/latest/data/dinamica-de-uso/
+https://help.github.com/articles/set-up-git/#platform-all
+
 https://github.com
 
 http://git-scm.com/download/linux
 
-On your computer, open your command line application.
+// Desde el Terminal
+Primero hay que Verificar si git esta instalado en tu ordenador
+$ git -w
 
-$ apt-get install git
+de no estarlo para instalarlo para instalarlo utilizamos el siguiente comando
+$ sudo apt-get install git
 
 https://help.github.com/articles/set-up-git/#platform-all
 
@@ -14,7 +23,9 @@ $ git config --global user.name "YOUR NAME"
 
 $ git config --global user.email "YOUR EMAIL ADDRESS"
 
-Para clonar el projecto: 
+Para clonar el projecto : 
+
+Te ubicas en la carpeta o espacio de tu preferncia o bien creas una y una ves e ella usas el siguiente comando
 
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
@@ -31,12 +42,22 @@ Checking connectivity... done.
 https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/
 
 cd <dir-repositorio> 
+ 
+Para agregar Y/O registrar cambios:
+ git add <filename>
+ git add .
 
-$ git add .
+Para hacer commit o etiquetar cambios:
+ $ git commit -m "Commit message"
 
-$ git commit -m "Primer commit to github"
+Para enviar estos cambios al repositorio remoto:
+ $ git push origin master
 
-$ git push origin master
+Para actualizar repositorio local al commit más nuevo:
+ $ git pull
+
+Para revisar lo añadido al repositorio:
+	$ git status
 
 
 Con Mathematica 

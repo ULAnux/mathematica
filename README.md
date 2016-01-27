@@ -1,100 +1,86 @@
-# mathematica
-Un juego para aprender matemática y lógica 
-https://github.com
-
-http://git-scm.com/download/linux
-
-On your computer, open your command line application.
-
-$ apt-get install git
-
-https://help.github.com/articles/set-up-git/#platform-all
-
-$ git config --global user.name "YOUR NAME"
-
-$ git config --global user.email "YOUR EMAIL ADDRESS"
-
-Para clonar el projecto: 
-
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-
-Con Mathematica debe ser:
-
-git clone https://github.com/ULAnux/mathematica
-Cloning into 'mathematica'...
-remote: Counting objects: 3, done.
-remote: Compressing objects: 100% (2/2), done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (3/3), done.
-Checking connectivity... done.
-
-https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/
-
-cd <dir-repositorio> 
-
-$ git add .
-
-$ git commit -m "Primer commit to github"
-
-$ git push origin master
+//Informacion tomada de: 
+// https://git-scm.com/book/es/v1/Empezando-Instalando-Git
+// https://help.github.com/articles/fork-a-repo/
+// http://aprendegit.com/fork-de-repositorios-para-que-sirve/
 
 
-Con Mathematica 
 
-cd mathematica
+	* Las siguientes instrucciones se llevaran a cabo en la Terminal
 
-$ git add .
+PARA INSTALAR GIT EN LINUX
 
-$ git commit -m "comentario del commit"
+	1. Instala el gestor de paquetes YUM
+		
+				$ apt-get install yum
 
- git commit -m "Primer commit"
-[master c47a0b3] Primer commit
- 38 files changed, 12094 insertions(+)
- create mode 100644 0000.pl
- create mode 100644 0001.pl
- create mode 100644 0002.pl
- create mode 100644 0003.pl
- create mode 100644 0004.pl
- create mode 100644 0005.pl
- create mode 100644 0006.pl
- create mode 100644 0007.pl
- create mode 100644 0008.pl
- create mode 100644 0009.pl
- create mode 100644 0010.pl
- create mode 100644 0011.pl
- create mode 100644 0012.pl
- create mode 100644 0013.pl
- create mode 100644 0014.pl
- create mode 100644 0015.pl
- create mode 100644 0016.pl
- create mode 100644 0017.pl
- create mode 100644 0018.pl
- create mode 100644 0019.pl
- create mode 100644 0020.pl
- create mode 100644 0021.pl
- create mode 100644 0022.pl
- create mode 100644 0023.pl
- create mode 100644 0024.pl
- create mode 100644 0026.pl
- create mode 100644 0027.pl
- create mode 100644 bootstrap.css
- create mode 100644 buscador.pl
- create mode 100644 conjuntos.pl
- create mode 100644 indice.pl
- create mode 100644 leeme-mathematica.txt
- create mode 100644 leeme-mathematica.txt~
- create mode 100644 lexer.pl
- create mode 100644 logica.pl
- create mode 100644 main.css
- create mode 100644 mathematica.pl
- create mode 100644 servicio.pl
+	2. Instalar dependencias de GIT
+		
+				$ yum install curl-devel expat-devel gettext-devel \ openssl-devel zlib-devel
+				$ apt-get install libcurl4-gnutls-dev libexpat1-dev gettext \ libz-dev libssl-dev
 
-$ git status
+	3. Instalar ultima version de GIT
 
-$ git reset HEAD leeme-mathematica.txt~
+				$ apt-get install git
 
-$ git status
+	4. Para futuras actualizaciones
+			
+				$ git clone git://git.kernel.org/pub/scm/git/git.git 
 
-$ git push origin master
+PARA CONFIGURAR POR PRIMERA VEZ TUS DATOS PARA GIT
+
+				$ git config --global user.name "Tu Nombre"
+				$ git config --global user.email "direccion-de-correo@ejemplo.com"
+
+PARA AGREGAR UN ARCHIVO AL REPOSITORIO Mathematica
+		
+	1. Llevar mathematica a tu cuenta GitHub
+
+				Ver instrucciones: http://aprendegit.com/fork-de-repositorios-para-que-sirve/
+
+	2. Traer el repositorio mathematica de tu cuenta a un repositorio local
+
+				$git clone https://github.com/[Nombre-usuario]/mathematica.git
+
+	4. Agregar archivos y enviar al repositorio remoto propio
+
+				$git add -A
+				$git commit -m "Mensaje de tu primer commit"
+				// con el comando: $git log  ; podras ver los commits hechos
+				// Con el comando: $ git status  ;podras ver el estado de tus archivos a subir
+
+				$git reset HEAD archivo.txt~ //eliminara el archivo residual del archivo creado
+				$git push origin master
+
+	5. Informar al organizador de mathematica los cambios realizados
+
+			- En tu cuenta de github, ir a profiles y entrar en el repositorio "mathematica"
+			- Oprimir el boton "New pull request"
+			- Luego al boton "Create pull request"
+			- Describir lo que se realizo y darle un titulo
+			- Luego oprimir "Create pull request"
+			- Esperar respuesta
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////       CONTRIBUCION      ////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+La contribucion sera realizada, por: Lizandro Zerpa y Dimitrio Mandamadiotis
+
+		La idea basica es traer la aplicacion "mathematica" a un entorno contemporaneo usando herramientas poderosas,
+para obtener el mas alto desempanio de la app.
+
+		En nuestro caso lo primero a realizarse es una pagina web donde correra la aplicacion, en un entorno de programacion
+desde el servidor, llamado NodeJS, el cual usa Javascript, como lenguaje de progrmacion. Ademas, usaremos MongoDB, como
+manejador de base de datos. Tambien se usaran APIs (Application programming interface), para: el sign in y sign up del usuario
+(passport), comunicar con el lenguaje Prolog (Pengines), encriptar contrasenias (bcrypt) y encriptar navegacion (TLS/ssl usando https).
+
+		Se tendra un gestor de usuarios, que manipulara tanto el ingrese como el almacenaje de su progreso en el juego; la interfaz 
+entre el lenguaje prolog y Node,  basado en preguntas y respuestas para el usuario.
+
+ 
+
+
 
 

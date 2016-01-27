@@ -1,0 +1,26 @@
+%Comandos Basicos para clonar, subir, modificar en un repositorio
+
+
+%Comando basico para crear un repositorio nuevo en Github
+
+touch README.md
+git init
+git add README.md
+git commit -m "comentario"
+git remote add origin https://github.com/diegohxs/ejemplo.git
+git push -u origin master
+
+%Comando para subir un proyecto en Github
+
+git add archivo
+git commit -m "comentario"
+git push
+
+%Comando para clonar un proyecto
+
+git clone https://github.com/diegohxs/ejemplo.git
+
+%Comando para hacer push, subir cambios a un proyecto
+git remote add origin https://github.com/diegohxs/-https-github.com-ULAnux-mathematica.git
+git push -u origin master
+    

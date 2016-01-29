@@ -1,0 +1,340 @@
+%Unidad 1: Lógica
+
+pr(0022-1,['¿','Que', 'es', 'la', 'logica', 'proposicional' ,'?'], ['Es', 'un', 'sistema', 'formal', 'cuyos', 'elementos', 'mas', 'simples', 'representan',
+'proposiciones', 'y', 'cuyas', 'constantes', 'logicas','representan','operaciones','sobre','proposiciones','capaces','de','formar','otras','de' ,'mayor' ,
+'complejidad'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-2,['¿Que es una tabla de verdad?'],['es una tabla que muestra el valor de una proposición compuesta, para cada posible combinación de verdad que
+se pueda asignar'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-3,['¿Por quién fue desarrollada la tabla de la verdad?'],['Charles Sanders Peirce en los años 1880, pero el formato mas popular fue el de Ludwing
+Wiitgenstein en su Tractatus lógico-philosophicus, en 1921'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-4,['¿','Que', 'es', 'la', 'Semantica', 'logica','?'], ['Es', 'el', 'desarrollo', 'de', 'una', 'serie', 'de', 'problemas', 'logicos', 'de',
+'significacion','que', 'estudia','la','relacion','entre','el','signo','linguistico','y','la','realidad','y' ,'tambien' ,'las', 'condiciones', 'necesarias',
+ 'para', 'que', 'un', 'signo', 'pueda', 'aplicarse', 'a', 'un', 'objeto', 'y','las', 'reglas', 'que', 'aseguran', 'una', 'significacion', 'exacta'] ,20/20,
+['es.wikipedia.org']).
+
+pr(0022-5,['¿','Que', 'son', 'Equivalencias', 'Logicas','?'], ['En', 'logica', 'las declaraciones', 'p', 'y', 'q', 'son', 'logicamente', 'equivalentes',
+'si', 'tienen', 'el', 'mismo', 'contenido', 'logico','.','dos','afirmciones','son','equivalentes','si','tienen','el','mismo' ,'valor' ,'de', 'verdad',
+'en', 'todos', 'los', 'modelos'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-6,['Equivalencias', 'Lógicas' ], ['Leyes de Identidad: p?T=p y p?F=p , Leyes de Dominación: p?T=T y p?F=F , Leyes de Idempotencia: p?p=p y p?p=p,
+Leyes de Doble Negación:  ?(?p)=p , Leyes de Conmutación: p?q=q?p y p?q=q?p , Leyes de Asociación: (p?q)?r=p?(q?r) y (p?q)?r=p?(q?r), Leyes de
+Distribución: p?(q?r)=(p?q)?(p?r) y p?(q?r)=(p?q)?(p?r), Leyes de Morgan: ?(p?q)=?p??q y ?(p?q)=?p??q, Leyes de Adsorción: p?(p?q)=p y p?(p?q)=p,
+Leyes de Negación: p??p=T y p??p=F '] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-7,['¿Que es la Regla de Inferencia?'],[ 'es un esquema para construir inferencias válidas. Estos esquemas establecen relaciones sintácticas entre
+ un conjunto de fórmulas llamados premisas y una aserción llamada conclusión'] ,20/20,['es.wikipedia.org']).
+
+pr(0022-8,['En lógica Proposicional Las Reglas de Inferencia son válidas para:'],[ 'Modus Ponendo Ponens, Modus ponendo tollens, Modus tollendo ponens,
+ Silogismo hipotético, Silogismo disyuntivo'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-9,['¿Qué es Modus Ponendo Ponens?'], ['Es la forma en que se afirma afirmando, Se puede resumir como "P entonces Q; P se afirma siendo verdad,
+por lo que, por tanto, Q debe ser verdad'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-10,['¿Qué es Silogismo Hipotetico?'], [' es una forma de argumento válido que es un silogismo que tiene una sentencia condicional para una o ambas
+de suspremisas. Ejemplo: Si no me despierto, entonces no puedo ir a trabajar. Si no puedo ir a trabajar, entonces no me van a pagar. Por lo tanto, si no me
+ despierto, entonces no voy a recibir el pago'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-11,['¿Qué es Silogismo disyuntivo?'], [' Es la eliminación de la disyunción o eliminación del o. Si se nos dice que al menos una de las dos
+afirmaciones es verdadera; y también se nos dijo que no es la primera que es verdadera; se puede inferir que tiene que ser el último que es verdadera.
+Si P o Q es verdadero y P es falso, entonces Q es verdadero.'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-12,['¿Qué es Modus tollendo ponens?'], ['Es la forma en que al afirmar se niega, Ejemplo: Cora y Nick no pueden ganar ambos la carrera. Ana ganó la carrera.Por lo tanto, Bill no puede haber ganado la carrera'] ,20/20,[' es.wikipedia.org']).
+
+
+%Unidad 2: Conjuntos y estructuras algebraicas
+
+
+pr(0022-13,['¿ ', 'Qué', 'es', 'Conjunto', '? '],[ 'La', 'palabra', 'conjunto', 'generalmente', 'la', 'asociamos', 'con', 'la', 'idea', 'de',
+'agrupar', 'objetos', ',' , 'es', 'decir', 'la', 'palabra', 'conjunto', 'denota', 'una', 'colección', 'de', 'elementos', 'claramente', 'entre', 'sí',
+',', 'que', 'guardan', 'alguna', 'característica', 'en', 'común', '.' , 'Ya', 'sean', 'números', ',', 'personas',',', 'figuras',',', 'ideas', 'y',
+'conceptos'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-14,['¿En Matematicas: ¿Qué es Conjunto?'],[ 'es considerado primitivo y ni se da una definición de este, sino que se trabaja con la notación
+de colección y agrupamiento de objetos, lo mismo puede decirse que se consideren primitivas las ideas de elemento y pertenencia.'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-15,['Relaciones básicas entre conjuntos y sus elementos'],[' Pertenencia: La relación relativa a conjuntos más básica es la relación de pertenencia.
+ Dado un elemento x, éste puede o no pertenecer a un conjunto dado A. Esto se indica como x ? A. Igualdad: Dos conjuntos son iguales si y sólo si tienen los
+ mismos elementos. Este principio, denominado principio de extensionalidad establece el hecho de que un conjunto queda definido únicamente por sus elementos.
+ Inclusión: Dado un conjunto A, cualquier subcolección B de sus elementos es un subconjunto de A, y se indica como B ? A.'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-16,['¿Qué es el Conjunto Vacio?'],[ 'es el conjunto sin ningún elemento, y se denota por el cero con una recta inclinada que lo atraviesa o por
+{}'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-17,['¿Qué es el Conjunto Universal'],[ 'es el conjunto que contiene todos los elementos posibles, dentro del contexto considerado. Por ejemplo,
+si se estudian los números naturales, el conjunto universal es el conjunto de todos ellos, N. De manera general, el conjunto universal se denota por U.']
+ ,20/20,[' es.wikipedia.org']).
+
+pr(0022-18,[' ¿ Que es la Unión como  operación Basica del algebra de Conjuntos?'],[' La unión de dos conjuntos A y B es el conjunto A ? B que esta
+  formado por los elementos que pertenecen al menos a uno de ellos ó a los dos. Lo que se denota por: A U B = { x/x Î A ó x Î B }. Ejemplo: Sean los
+conjuntos A={ 1, 3, 5, 7, 9 } y B={ 10, 11, 12 }. A U B ={ 1, 3, 5, 7, 9, 10, 11, 12 }'] ,20/20,[' es.wikipedia.org ']).
+
+pr(0022-19,[' ¿ Que es la Intersección como  operación Básica del algebra de Conjuntos?'],[' La intersección de dos conjuntos A y B es el conjunto A n B
+que contiene todos los elementos comunes de A y B. Sean A={ 1, 2, 3, 4, 5, 6, 8, 9 } y B={ 2, 4, 8, 12 }. Los elementos comunes a los dos conjuntos son:
+{ 2, 4, 8 }. A este conjunto se le llama intersección de A y B; y se denota por A Ç B, algebraicamente se escribe así: A n B = { x/x Î A y x Î B }. Y se
+ lee el conjunto de elementos x que están en A y están en B. Ejemplo: Sean Q={ a, n, p, y, q, s, r, o, b, k } y P={ l, u, a, o, s, r, b, v, y, z } QunidoP=
+{ a, b, o, r, s, y }'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-20,[' ¿ Que es la Diferencia como  operación Básica del algebra de Conjuntos?'],['La diferencia entre dos conjuntos A y B es el conjunto A tal que B que
+contiene todos los elementos de A que no pertenecen a B. Sean A y B dos conjuntos. La diferencia de A y B se denota por A-B y es el conjunto de los elementos
+ de A que no están en B y se representa por comprehensión como: A - B={ x/x Î A ; X Ï B }. Ejemplo: Sea A= { a, b, c, d } y B= { a, b, c, g, h, i }. A - B=
+{ d }. En el ejemplo anterior se observa que solo interesan los elementos del conjunto A que no estén en B. Si la operación fuera B - A el resultado es:
+ B – A = { g, h, i }. E indica los elementos que están en B y no en A'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-21,[' ¿ Que es el Complemento como  operación Básica del algebra de Conjuntos?'],[' El complemento de un conjunto A es el conjunto A? que contiene
+ todos los elementos que no pertenecen a A. El complemento de un conjunto respecto al universo U es el conjunto de elementos de U que no pertenecen a A y
+se denota como A y que se representa por comprehensión como: A={ xinterseptadoU/x y x interseptado A). Ejemplo: Sea U = { 1, 2, 3, 4, 5, 6, 7, 8, 9 }. A= { 1, 3, 5, 7, 9 }
+donde A Ì U. El complemento de A estará dado por: A= { 2, 4, 6, 8 }'] ,20/20,['Isamar Benítez']).
+
+pr(0022-22,[' ¿ Para que sirven los Diagramas de Venn?'],['Sirven', 'para', 'encontrar', 'relaciones', 'entre', 'conjuntos', 'de', 'manera', 'grafica',
+'mediante', 'dibujos', 'o', 'diagramas','.', 'que', 'se', 'deben', 'al', 'filosofo', 'John', 'Venn'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-23,['¿ Que Propiedades poseen los conjuntos?'],[' Algunas de estas operaciones poseen propiedades similares a las operaciones con números naturales.
+ Por ejemplo, la unión y la intersección son conmutativas y asociativas. El conjunto vacío es el elemento neutro de la unión, y el elemento absorbente de
+la intersección. El conjunto universal es el elemento neutro de la intersección y el elemento absorbente de la unión. Además, las operaciones de unión,
+intersección, diferencia y complemento son muy similares a las operaciones en un álgebra de Boole, así como a los conectores lógicos de la lógica
+proposicional'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-24,['¿', 'Que', 'es', 'un', 'par', 'ordenado','?'],[ 'Un', 'par', 'ordenado', 'es', 'una', 'pareja', 'de', 'objetos', 'matemáticos', ', ',
+ 'en', 'la', 'que', 'se', 'distingue', 'un', 'primer', 'elemento', 'y', 'un', 'segundo', 'elemento', '. ', 'El', 'par', 'ordenado', 'cuyo', 'primer',
+ 'elemento', 'es', 'a', 'y', 'cuyo', 'segundo', 'elemento', 'es', 'b', 'se', 'denota', 'como', '(a, b)'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-25,['¿ Que es una relación de conjuntos?'],[' Una relación es un conjunto de parejas ordenadas. Si A y B son dos conjuntos cualesquiera, R es
+ una relación de A en B sí y sólo sí R es subconjunto de A x B. Si R Ì A x A se dice que R es una relación de A en A o simplemente una relación en A.
+ 0 y A x B son relaciones de A en B, puesto que 0 Ì A x B y A x B Ì A x B.  Si (x,y) Î R se escribe x R y y se lee:x está en relación con y'] ,20/20,
+['es.wikipedia.org']).
+
+pr(0022-26,['Ejemplo de Relacion'],[' Sean: A = {1, 3, 5}, B = {2, 4, 6, 8}. R1 = {(3, 2), (1, 8), (5, 4)} es una relación de A en B. R2 = {(3, 8)} es
+una relación de A en B. R3 = {(x, y) / x Î A Ù y Î B Ù x > y} = {(3, 2),(5, 2),(5, 4)}. R4 = {(x, y) / x Î A Ù y Î B Ù x + y £ 7} = {(1, 2), (1, 4),
+(1, 6), (3, 2), (3, 4), (5, 2)}. R5 = {(1, 5), (3, 3)} es una relación de A en A. R6 = {(2, 3), (6, 1)} es una relación de B en A. R7 = {(3, 6), (1, 4),
+(5 ,8), (2, 1)} no es una relación de A en B y tampoco de B en A. R8 = {(x, y) / x Î A , y Î B, x - y = 0} = 0'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-27,['¿ Cual es el Dominio de una relacion?'],[' Sea R una relación se llama Dominio de R y se denota por D(R) al conjunto formado por todas las
+primeras componentes de las parejas ordenadas que pertenecen a R'] ,20/20,['es.wikipedia.org ']).
+
+pr(0022-28,['¿ Cual es el Rango de una relacion?'],[' Sea R una relación. Se llama Rango de R y se denota por g(R) al conjunto formado por todas las
+segundas componentes de las parejas ordenadas que pertenecen a R '] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-29,['¿ Que es la relación inversa?'],[' Sea R una relación. Entonces la relación {(y, x) / (x, y) E R} se denomina relación inversa y se denota
+ R-1. En consecuencia, (y, x) e R-1 (x, y) e R. (y, x) no e R-1 (x, y) no e R. Si R es una relación de A en B, entonces R-1 es una relación de B en
+A'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-30,['¿ Que es la relación reflexiva en un conjunto?'],[' En matemáticas, una relación reflexiva o refleja es una relación binaria R sobre un
+conjunto A, de manera que todo elemento de A está relacionado consigo mismo.En tal caso, se dice que R cumple con la propiedad de reflexividad.Cuando
+una relación es lo opuesto a una reflexiva, es decir, cuando ningún elemento de A está relacionado consigo mismo mediante R, entonces decimos que es
+irreflexiva, antirreflexiva o antirrefleja'],20/20,[ 'es.wikipedia.org']).
+
+pr(0022-31,['¿ Que es la relación simetrica en un conjunto?'],[' Una relación binaria R sobre un conjunto A, es simétrica cuando se da que si un elemento
+está relacionado con otro mediante R, entonces ese otro también está relacionado con el primero.En tal caso, decimos que R cumple con la propiedad de
+simetría. La aplicación de cualquier relación R sobre un conjunto A, se representa con el par ordenado (A, R). Cuando una relación es lo opuesto a una
+simétrica, es decir, cuando se da que si un elemento está relacionado con otro mediante R, entonces ese otro no está relacionado con el primero, entonces
+ decimos que es asimétrica. En este caso, decimos que R cumple con la propiedad de asimetría.'],20/20,[' es.wikipedia.org']).
+
+pr(0022-32,['¿ Que es la relación antisimetrica en un conjunto?'],['Una relación binaria R sobre un conjunto A es antisimétrica cuando se da que si dos
+elementos de A se relacionan entre sí mediante R, entonces estos elementos son iguales.a = b Para todo a, b de A, si se cumple que a está relacionado con
+b y b está relacionado con a, entonces a es igual a b. En tal caso, decimos que R cumple con la propiedad de antisimetría. La aplicación de cualquier
+relación R sobre un conjunto A, se representa con el par ordenado (A, R).'],20/20,[ 'es.wikipedia.org']).
+
+pr(0022-33,['¿ Que es la relación transitiva?'],['Una relación binaria R sobre un conjunto A es transitiva cuando se cumple: siempre que un elemento se
+relaciona con otro y éste último con un tercero, entonces el primero se relaciona con el tercero. Dado el conjunto A y una relación R, esta relación es
+transitiva si: a R b y b R c se cumple a R c. La propiedad anterior se conoce como transitividad.'],20/20,[' es.wikipedia.org']).
+
+pr(0022-34,['¿ Que es la Clase de equivalencia?'],[ 'En lógica de clases y análisis matemático, la relación de equivalencia R define subconjuntos disjuntos
+en K llamados clases de equivalencia: Dado un elemento a e K, el conjunto dado por todos los elementos relacionados con a definen la clase: a={b e K | bRa}
+se le llama la clase de equivalencia asociada al elemento a. Al elemento a se le llama representante de la clase. Se llama orden al número de clases que
+genera una relación de equivalencia; si éste es finito, se dice que la relación es de orden finito. El concepto de clase de equivalencia tiene importancia
+en ciencia, dado un conjunto de objetos o entidades abstractas (potencialmente infinitas), pueden establecerse relaciones de equivalencia en base a algún
+criterio, las clases resultantes son los "tipos" en los que se puede clasificar toda la gama de objetos'],20/20,[ 'es.wikipedia.org']).
+
+pr(0022-35,['¿Cuál es la Historia de la funcion ?'],[' La función apareció hasta los inicios del cálculo en el siglo XVII. René Descartes, Isaac Newton y
+ Gottfried Leibniz establecieron la idea de función como dependencia entre dos cantidades variables. Leibniz en particular acuñó los términos «función»,
+«variable», «constante» y «parámetro». La notación f(x) fue utilizada por primera vez por A.C. Clairaut, y por Leonhard Euler en su obra Commentarii de San
+ petersburgo en 1736. Inicialmente, una función se identificaba a efectos prácticos con una expresión analítica que permitía calcular sus valores. Sin
+embargo, esta definición tenía algunas limitaciones: expresiones distintas pueden arrojar los mismos valores, y no todas las «dependencias» entre dos
+cantidades pueden expresarse de esta manera. En 1837 Dirichlet propuso la definición moderna de función numérica como una correspondencia cualquiera entre
+ dos conjuntos de números, que asocia a cada número en el primer conjunto un único número del segundo'],20/20,[ 'es.wikipedia.org']).
+
+pr(0022-36,['¿Qué es un grupo ?'],[' En álgebra abstracta, un grupo es una estructura algebraica que consta de un conjunto con una operación que combina
+cualquier pareja de sus elementos para formar un tercer elemento. Para que se pueda calificar como un grupo, el conjunto y la operación deben satisfacer
+ algunas condiciones llamadas axiomas de grupo, estas condiciones son: tener la propiedad asociativa, tener elemento identidad y elemento inverso. Mientras
+ que estas características son familiares a muchas estructuras matemáticas, como los diferentes sistemas de números (por ejemplo los enteros dotados de la
+operación de adición forman una estructura de grupo), la formulación de los axiomas se separa de la naturaleza concreta del grupo y su funcionamiento'],
+20/20,[ 'es.wikipedia.org']).
+
+pr(0022-37,['¿Qué elementos compone un grupo?'],[' Un grupo es un conjunto, G, conjuntamente con una operación binaria «•» que compone dos elementos
+cualesquiera a y b de G para formar otro elemento notado como a • b o ab. Para poder calificar como un grupo a (G, •), deben satisfacer cuatro axiomas'],
+20/20,[ 'es.wikipedia.org']).
+
+pr(0022-38,['¿Qué es un subgrupo ?'],[' En álgebra, dado un grupo G con una operación binaria, se dice que un subconjunto no vacío H de G es un subgrupo
+de G si H también forma un grupo bajo una operación. O de otro modo, H es un subgrupo de G si la restricción de H satisface los axiomas de grupo'],20/20,
+['es.wikipedia.org']).
+
+pr(0022-39,['¿Qué axiomas se deben cumplir en un grupo?'],[' Cerradura o Clausura: Para todo a, b de G, el resultado de la operación a • b también pertenece
+ a G. Asociatividad Para todos a, b y c de G, se cumple la ecuación (a • b) • c = a • (b • c). Elemento neutro: Existe un elemento e de G, tal que para
+todos los elementos a de G, se cumpla la ecuación e • a = a • e = a. El elemento de identidad de un grupo G se escribe a menudo como 1 o 1G,5 una notación
+heredada de la identidad multiplicativa. Elemento inverso: Para todo a de G, existe un elemento b de G tal que a • b = b • a = e'],20/20,[ 'es.wikipedia.org']).
+
+pr(0022-40,['¿Qué es el grupo abeliano?'],['Se denomina grupo conmutativo o abeliano a aquel grupo que verifica la Propiedad conmutativa, es decir a.b=b.a
+ para todo b que pertenece a G '],20/20,[ 'es.wikipedia.org']).
+
+pr(0022-41,['¿', 'Qué', 'es', 'el', 'grupo', 'finito?'],['Es', 'un', 'grupo', 'con', 'un', 'número', 'finito', 'de','elementos'],20/20,['es.wikipedia.org']).
+
+pr(0022-42,['¿', 'Qué', 'es', 'el', 'grupo', 'cíclico', '?'],[' Es un grupo conmutativo, finito o infinito, que puede ser generado por multiplicación
+reiterada de un sólo elemento.'],20/20,[ 'es.wikipedia.org']).
+
+pr(0022-43,['¿ Que es la compuerta OR?'],[ 'Al igual que la anterior posee dos entradas como mínimo y la operación lógica, será una suma entre ambas... 
+Bueno, todo va bien hasta que 1 + 1 = 1, el tema es que se trata de una compuerta O Inclusiva es como a y/o b, es decir, basta que una de ellas sea 1 para 
+que su salida sea también 1'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-44,['¿ Que es la inducción matematica?'],[' En matemáticas, la inducción es un razonamiento que permite demostrar proposiciones que dependen de una 
+variable n que toma una infinidad de valores enteros. En términos simples, la inducción matemática consiste en el siguiente razonamiento: El número entero 
+a tiene la propiedad P. El hecho de que cualquier número entero n también tenga la propiedad P implica que n+1 también la tiene. Entonces todos los números
+enteros a partir de a tienen la propiedad P'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-45,['Demostracion de inducción matematica'],[' Llamemos Pn a la proposición, donde n es el rango. Base- Se demuestra que Po es cierta, esto es el 
+primer valor que cumple la proposición (iniciación de la inducción). Paso inductivo- Se demuestra que si Pn es cierta, esto es, como hipótesis inductiva, 
+entonces Pn+1 lo es también, y esto sin condición sobre el entero natural n (relación de inducción. Indicado como n --> n+1). Luego, demostrado esto, 
+concluimos por inducción, que Pn es cierto para todo natural n. La inducción puede empezar por otro término que no sea Po, digamos por Pno. Entonces Pn será 
+válido a partir del número no, es decir, para todo natural n>= no'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-46,['¿ Que es un conjunto inductivo?'],[ 'Intuitivamente se obtienen los enteros positivos, tomando como punto de partida un primero designado por 
+"1" y formando 1 + 1 (llamado "2"), 2 + 1 (llamado "3"), y así sucesivamente. En virtud de que no se puede depender del significado un poco oscuro de "y así
+ sucesivamente" y de que se debe tener una base para proporcionar teoremas relativos a los enteros positivos, se da una definición del conjunto de los 
+enteros positivos, basada en el concepto de conjunto inductivo'] ,20/20,['es.wikipedia.org']).
+
+pr(0022-47,['Propiedad de Conjunto Inductivo'],[' Un conjunto S de números es un conjunto inductivo sí y sólo sí S tiene las siguientes propiedades: a) 1 e 
+S. b) a e S => (a+1) e S '] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-48,['Tipos de Conjuntos'],[' El conjunto de los enteros positivos y reales es un conjunto inductivo. El conjunto  S1 = {1, 3, 5, 7, ...} no es un 
+conjunto inductivo, porque no obstante que 1 e S1; (1+1)no e S1. El conjunto Z+ es el conjunto de números con la propiedad de que si k es cualquier conjunto
+ inductivo de números, entonces Z+ C k. Se dice a veces, que el conjunto de los enteros positivos, es el "más pequeño" conjunto inductivo de números'] ,
+20/20,['es.wikipedia.org']).
+
+pr(0022-49,['Teorema fundamental de Induccion Matematica'],[' Sea Sn una función proposicional cuyo conjunto de referencia es Z+. Si Sn satisface las 
+siguientes dos condiciones: a) S1 es cierta b) Sk => Sk+1 es cierta. Entonces Sn es cierta para todo n e Z+ '] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-50,['Principios de Induccion Matematica'],[' Sea   P   una propiedad definida en los números naturales (enteros positivos). Si 1 satisface esa 
+propiedad y además si a partir de cualquier natural n que satisface esa propiedad se llega a que n+1, también la satisface, entonces cada número natural 
+la satisface. Para probar que una propiedad P se cumple en los números naturales, usando el principio de inducción matemática, se siguen los siguientes 
+pasos: a) Se comprueba para n=1( Comprobación ). b)  Se asume que se cumple para n=k ( Hipótesis de inducción).c)Se predice que se cumple para n=k+1(Tesis).
+d) Se demuestra que si se cumple para n=k, entonces se cumple para n=k+1. Observación: En algunos casos la propiedad se cumple a partir de un cierto natural
+ m>1. Dada esa situación, en el primer paso se comprueba para n=m (Demostracion)'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-51,['Ejemplo de Induccion Matematica'],[' Demuestre por induccion matemática que: Si n es un entero positivo, entonces n(n+1)es divisible por 2. 
+a)Sea n=1, entonces: n(n+1)=2(Verdadero). b) Sea n=k, entonces: k(k+1) es divisible por 2( Hipótesis de inducción). c) Sea n=k+1, entonces:(k+1)(k+2) es
+ divisible por 2( Tesis). d) Demostración: (k+1)(k+2)=k(k+1)+2(k+1)k(k+1) es divisible por 2(Por hipótesis de inducción). 2(k+1) es divisible por 2(Entero
+ par). Por lo tanto   (k+1)(k+2)es divisible por 2'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-52,['Ejemplo de Induccion Matematica'],[' 2+6+10+.....+(4n–2)=2n2. a)sea n=1, entonces:4n–2=2, 2n2=2 (verdadero). b) sea n=k, entonces:
+2+6+10+.....+(4k–2)=2k2(hipótesis de inducción). c) sea n=k+1, entonces:2+6+10+.....+(4k–2)+(4(k+1)–2)=2(k+1)2 (tesis). d) demostración: 
+2+6+10+.....+(4k–2)=2k2( por hipótesis de inducción). 2+6+10+.....+(4k–2)+(4(k+1)–2)=2k2+(4(k+1)–2), 2+6+10+.....+(4k–2)+(4(k+1)–2)=2k2+4k+2. 
+Por lo tanto 2+6+10+.....+(4k–2)+(4(k+1)–2)=2(k+1)2'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-53,['Regla de la suma'],[' Si a los dos miembros de una ecuación, les sumamos o restamos el mismo número o la misma expresión algebraica, obtenemos
+ una ecuación equivalente. Ejemplo: x+5=14 Podemos sumar (-5) en los dos miembros obteniendo la ecuación equivalente que nos da la solución: x+5-5=14-5, x=9']
+ ,20/20,[' es.wikipedia.org']).
+
+pr(0022-54,['Regla del Producto'],[' Si multiplicamos o dividimos los dos miembros de la ecuación por el mismo número distinto de cero, obtenemos una 
+ecuación equivalente. En este caso la regla es igual, pero para multiplicar o dividir por un número que sea distinto de cero. Esta regla la utilizamos 
+para "deshacernos" de los números que multiplican a la incógnita y obtener la ecuación equivalente que nos da la solución. Por ejemplo, dada la ecuación:
+ 3x=21 Aplicando la regla del producto, dividimos por 3 los dos miembros de la igualdad:x=7'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-55,['¿ Que es el Principio Palomar'],[' El principio del palomar, también llamado principio de Dirichlet o principio de las cajas, establece que si 
+n palomas se distribuyen en m palomares, y si n > m, entonces al menos habrá un palomar con más de una paloma. Otra forma de decirlo es que m huecos pueden
+ albergar como mucho m objetos si cada uno de los objetos está en un hueco distinto, así que el hecho de añadir otro objeto fuerza a volver a utilizar 
+alguno de los huecos. A manera de ejemplo: si se toman trece personas, al menos dos habrán nacido el mismo mes.'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-56,['¿ Tiene Aplicaciones el Principio Palomar?'],[' Aunque el principio del palomar puede parecer una observación trivial, se puede utilizar para 
+demostrar resultados inesperados. Por ejemplo, hay por lo menos 2 personas en Guatemala con el mismo número de pelos en la cabeza. Demostración: la cabeza 
+de una persona tiene en torno a 150.000 cabellos y tener un millón de pelos requeriría de una cabeza gigante (nadie tiene un millón de pelos en la cabeza).
+ Asignamos un palomar por cada número de 0 a 1.000.000 y asignamos una paloma a cada persona que irá al palomar correspondiente al número de pelos que tiene
+ en la cabeza. Como en Guatemala hay más de un millón de personas, habrá al menos dos personas con el mismo número de pelos en la cabeza. De hecho se puede 
+asegurar con seguridad que en cualquier ciudad de más de un millón de personas hay más de 5 personas con el mismo número de pelos en la cabeza (por el 
+principio de Dirichlet generalizado)'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-57,['¿ Que es el triangulo de pascal?'],[' es una representación de los coeficientes binomiales ordenados en forma triangular. Es llamado así en 
+honor al matemático francés Blaise Pascal, quien introdujo esta notación en 1654, en su Traité du triangle arithmétique.1 Si bien las propiedades y 
+aplicaciones del triángulo fueron conocidas con anterioridad al tratado de Pascal por matemáticos indios, chinos o persas, fue Pascal quien desarrolló 
+muchas de sus aplicaciones y el primero en organizar la información de manera conjunta'] ,20/20,[' es.wikipedia.org']).
+
+pr(0022-58,['¿ Que es la sucesión de fibonacci?'],[' la sucesión de Fibonacci (a veces mal llamada serie de Fibonacci) es la siguiente sucesión infinita
+ de números naturales: 1,1,2,3,5,8,13,21,34,55,89,144,233,377… La sucesión comienza con los números 1 y 1, y a partir de estos, «cada término es la suma
+ de los dos anteriores», es la relación de recurrencia que la define. A los elementos de esta sucesión se les llama números de Fibonacci. Esta sucesión 
+fue descrita en Europa por Leonardo de Pisa, matemático italiano del siglo XIII también conocido como Fibonacci. Tiene numerosas aplicaciones en ciencias
+ de la computación, matemáticas y teoría de juegos. También aparece en configuraciones biológicas, como por ejemplo en las ramas de los árboles, en la 
+disposición de las hojas en el tallo, en la flora de la alcachofa, las inflorescencias del brécol romanescu y en el arreglo de un cono'],20/20,[' es.wikipedia.org']).
+
+pr(0022-59,['¿ Que es una combinatoria sin repeticion?'],[' Una combinación, es un arreglo de elementos en donde no nos interesa el lugar o posición que 
+ocupan los mismos dentro del arreglo. En una combinación nos interesa formar grupos y el contenido de los mismos. La Ec. para determinar el número de 
+combinaciones es: nCr=n!/(n-r)!. r! nCr= Combinaciones de r objetos tomados de entre n objetos. Donde se observa que: La expresión nos explica como las
+ combinaciones de (r) objetos tomados de entre (n) objetos pueden ser obtenidas a partir de las permutaciones de (r) objetos tomados de entre (n) objetos,
+ esto se debe a que como en las combinaciones no nos importa el orden de los objetos, entonces si tenemos las permutaciones de esos objetos al dividirlas 
+entre r!, les estamos quitando el orden y por tanto transformándolas en combinaciones, de otra forma, también si deseamos calcular permutaciones y tenemos
+ las combinaciones, simplemente con multiplicar estas por el r! obtendremos las permutaciones requeridas nPr=nCr r!. Y si deseamos r=n entonces; nCn=n!/(n–n)!n!=n!/0!n!=1 ¿Qué nos indica lo anterior? Que cuando se desea formar grupos con la misma cantidad de elementos con que se cuenta solo es posible formar un grupo'],20/20,[' es.wikipedia.org ']).
+
+pr(0022-60,['¿ Que es una combinatoria con repeticion?'],[' Las combinaciones con repetición de m elementos tomados de n en n (m = n), son los distintos 
+grupos formados por n elementos de manera que: No entran todos los elementos. No importa el orden. Sí se repiten los elementos. Por lo tanto: 
+mCn= (m + n-1)!/n!(m-1)! '],20/20,[' es.wikipedia.org ']).
+
+pr(0022-61,['¿ Que es una Permutacion con repeticion?'],[' Permutaciones con repetición de m elementos donde el primer elemento se repite “a” veces ,
+ el segundo “b” veces , el tercero “c” veces, ...(m = a + b + c + ... = n) son los distintos grupos que pueden formarse con esos m elementos de forma 
+que : Sí entran todos los elementos. Sí importa el orden. Sí se repiten los elementos. Por lo tanto: a,b,cPn= Pn/(a! b! c!....)'] ,20/20,[' es.wikipedia.org ']).
+
+pr(0022-62,['¿Qué es una Permutacion con repeticion?'],['Recurrencia, recursión o recursividad es la forma en la cual se especifica un proceso basado en
+ su propia definición. Siendo un poco más precisos, y para evitar el aparente círculo sin fin en esta definición: Un problema que pueda ser definido en 
+función de su tamaño, sea este N, pueda ser dividido en instancias más pequeñas (< N) del mismo problema y se conozca la solución explícita a las instancias
+ más simples, lo que se conoce como casos base, se puede aplicar inducción sobre las llamadas más pequeñas y suponer que estas quedan resueltas'] ,
+20/20,[ 'es.wikipedia.org']).
+
+pr(0022-63,['Ejemplo de Recursividad'],['Factorial: Se desea calcular n! (el factorial de n, que se define como el producto de todos los enteros positivos
+ de 1 a n). Se puede definir el problema de forma recurrente como n(n-1)!; como (n-1)! es menor que n! podemos aplicar inducción por lo que disponemos del
+resultado. El caso base es 0! que es 1. Algoritmo de ordenación por fusión: Sea v un vector de n elementos, podemos separar el vector en dos mitades. Estas
+ dos mitades tienen tamaño n/2 por lo que por inducción podemos aplicar la ordenación en estos dos subproblemas. Una vez tenemos ambas mitades ordenadas 
+simplemente debemos fusionarlas. El caso base es ordenar un vector de cero o un elemento, que está trivialmente ordenado y no hay que hacer nada. En estos
+ ejemplos podemos observar como un problema se divide en varias (una o más) instancias del mismo problema, pero de tamaño menor gracias a lo cual se puede
+ aplicar inducción, llegando a un punto donde se conoce el resultado (el caso base)'] ,20/20,['es.wikipedia.org']).
+
+pr(0022-64,['¿ Que es la relación de recursividad?'],[' Una ecuación recurrente es un tipo específico de relación de recurrencia. Una relación de
+ recurrencia para la sucesión a0, a1, a2,… es una ecuación que relaciona an con alguno de sus predecesores a0, a1,…, an-1. Las condiciones iniciales 
+para la sucesión a0, a1,… son valores dados en forma explícita para un número finito de términos de la sucesión. Resolver una relación de recurrencia 
+consiste en determinar una fórmula explícita (cerrada) para el término general an, es decir una función no recursiva de n. Hay dos métodos para resolver
+ relaciones recurrentes: iteración y un método especial que se aplica a las relaciones de recurrencia lineales homogéneas con coeficientes constantes. 
+Un ejemplo de una relación de recurrencia es el siguiente: xn+1=rxn(1-xn)'],20/20,[' es.wikipedia.org']).
+
+pr(0022-65,['¿ Que es la iteracion?'],['Para resolver una relación de recurrencia asociada a la sucesión: a0,a1.a2; por iteración, utilizamos la relación 
+de recurrencia para escribir el n-ésimo término an en términos de algunos de sus predecesores. Luego utilizamos de manera sucesiva la relación de 
+recurrencia para reemplazar cada uno de los términos por algunos de sus predecesores. Continuamos hasta llegar a alguno de los casos base'] ,20/20,
+[' es.wikipedia.org ']).
+
+pr(0022-66,['¿ Que son recurrencias lineales?'],[' Una relación de recurrencia es lineal de grado k si tiene la siguiente estructura: 
+C0(n)An+C1(n)An-1+…+ C(k-1)(n)A(n-k+1)+ Ck(n)An-k=0 siendo Ci(n) funciones reales de n, y F(n) una función de n. El adjetivo lineal indica que cada término 
+de la secuencia está definido como una función lineal de sus términos anteriores. El orden de una relación de recurrencia lineal es el número de términos 
+anteriores exigidos por la definición. En la relación An=An-2 el orden es dos, porque debe haber al menos dos términos anteriores (ya sean usados o no).
+ Ejemplos : 3A(n)-n-1A(n-1)+ 2A(n-2)=0'] ,20/20,[' es.wikipedia.org ']).
+
+pr(0022-67,['¿ Que son recurrencias no lineales?'],['Para resolver recurrencias no lineales tenemos muchas opciones de las cuales: Buscar transformaciones 
+o cambios de variables que hagan la recurrencia lineal. Para el caso t(n)=a.t(n/b)+ f(n) , hay un teorema muy útil que es el Teorema Maestro'] ,20/20,
+['es.wikipedia.org ']).
+
+pr(0022-68,['Aplicaciones de la Recursividad'],[' Entre otras: a) En la óptica. b) En la teoría de la probabilidad. C) En el estudio de los árboles binarios,
+ pilas y algoritmos de ordenación'] ,20/20,[ 'es.wikipedia.org']).
+
+pr(0022-69,['¿ Que es la combinatoria?'],[' es una rama de la matemática perteneciente al área de matemáticas discretas que estudia la enumeración,
+ construcción y existencia de propiedades de configuraciones que satisfacen ciertas condiciones establecidas.'] ,20/20,[' es.wikipedia.org ']).
+
+pr(0022-70,['¿ Que es el Álgebra de Boole ?'],['también llamada álgebra booleana en informática y matemática, es una estructura algebraica que esquematiza
+ las operaciones lógicas Y, O, NO y SI (AND, OR, NOT, IF), así como el conjunto de operaciones unión, intersección y complemento.'] ,20/20,[' es.wikipedia.org ']).
+
+pr(0022-71,['¿ Que son las compuestas logicas?'],[' Las compuertas lógicas son dispositivos que operan con aquellos estados lógicos mencionados en lo 
+anterior y funcionan igual que una calculadora, de un lado ingresas los datos, ésta realiza una operación, y finalmente, te muestra el resultado. Cada una
+de las compuertas lógicas se las representa mediante un Símbolo, y la operación que realiza (Operación lógica) se corresponde con una tabla, llamada Tabla 
+de Verdad'] ,20/20,[' es.wikipedia.org ']).
+
+pr(0022-72,['¿ Que es la compuerta NOT?'],['Se trata de un inversor, es decir, invierte el dato de entrada, por ejemplo; si pones su entrada a 1 
+(nivel alto) obtendrás en su salida un 0 (o nivel bajo), y viceversa. Esta compuerta dispone de una sola entrada. Su operación lógica es s igual a a 
+invertida'] ,20/20,[' es.wikipedia.org ']).
+
+pr(0022-73,['¿ Que es la compuerta AND?'],[ 'Una compuerta AND tiene dos entradas como mínimo y su operación lógica es un producto entre ambas, no es un 
+producto aritmético, aunque en este caso cohincidan. Su salida será alta si sus dos entradas están a nivel alto'] ,20/20,['es.wikipedia.org']).

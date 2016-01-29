@@ -1,6 +1,6 @@
 // app/routes.js
 
-module.exports = function(app, passport){
+module.exports = function(app, passport, pengines){
 
   // index
   app.get('/', function(req, res) {
@@ -36,7 +36,20 @@ module.exports = function(app, passport){
   // profile
   app.get('/profile', isLoggedIn, function(req, res) {
     res.render('profile', {
-      user : req.user // obtiene el usuario de la sesión y lo pasa al template
+      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+      answer: req.pengines
+    });
+  });
+
+  app.post('/profile', function(req,res){
+    res.render('profile-answer'); 
+  });
+
+  //profile-answer
+  app.get('/profile-answer', isLoggedIn, function(req, res) {
+    res.render('profile', {
+      user : req.user,  // obtiene el usuario de la sesión y lo pasa al template
+      answer: req.pengines
     });
   });
 

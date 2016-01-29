@@ -1,0 +1,105 @@
+/*aplica a todas las imagenes*/
+img {
+	max-width: 100%;
+}
+
+.background{
+  	background: url(/img/background-ppal.jpg) center center no-repeat fixed;
+  	background-size: cover;
+}
+
+.background-container{
+	background: url(/img/pergamino.png) center center no-repeat fixed;
+  	background-size: cover;
+}
+
+.quitar-float{
+	float: none;
+}
+
+.espacio-arriba{
+
+	margin-top: 40px;
+}
+
+.margen-izq{
+	margin-left: 1em;
+}
+
+@font-face{
+	font-family: "SkyrimFont";
+    src: url("../fonts/Skyrim-Font.ttf");
+}
+ .SkyrimFont{
+ 	font-family: "SkyrimFont";
+ 	color: #0D0D0D;
+ }
+
+ @font-face {
+ 	font-family:"Van Helsing";
+ 	src:url("../fonts/Van_Helsing/van_helsing.eot?") format("eot"),url("../fonts/Van_Helsing/van_helsing.woff") format("woff"),url("../fonts/Van_Helsing/van_helsing.ttf") format("truetype"),url("../fonts/Van_Helsing/van_helsing.svg#") format("svg");
+ 	font-weight:normal;
+ 	font-style:normal;
+ }
+
+.VanHelsingFont {
+	font-family: "Van Helsing";
+}
+ .pequennia{
+ 	font-size: 2em;
+ }
+ .grande {
+ 	font-size: 4em;
+ }
+ .rojo-daedrico {
+ 	color: #870000;
+ }
+.blanco{
+	color:#F4F4F4;
+}
+.retraso-1{
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay:1s;
+	animation-delay:1s;
+}
+
+.retraso-2{
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay:2s;
+	animation-delay:2s;
+}
+.retraso-3{
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay:3s;
+	animation-delay:3s;
+}
+.gris{
+	color:#3B3C3D ;
+}
+ .no-lista {
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ .no-lista li{
+ 	list-style-type: none;
+ }
+
+.se-gris {
+	background-color: #3B3C3D;
+}
+/*permite que los elementos 
+se arreglen adecuadamente*/
+.inline-block {
+	float: none;
+	display: inline-block;
+/*es para arreglarlo en donde es*/
+	margin-right: -4px;
+}
+
+.padding-largo {
+	padding: 5px 10px;
+}
+
+.alinear-vertical {
+	vertical-align: sub;
+}

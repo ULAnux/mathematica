@@ -20,16 +20,33 @@
     <div class="row">
 
         <!-- INFORMACION LOCAL -->
-        <div class="col-sm-6">
-            <div class="well">
-                <h3><span class="fa fa-user"></span> Local</h3>
+        <div class="col-sm-4">
+            <div class="well wel-lg"><h2><span class="fa fa-user"></span> Local</h2></div>
 
-                    <p>
-                        <strong>id</strong>: <%= user._id %><br>
-                        <strong>email</strong>: <%= user.local.email %><br>
-                        <strong>contraseña</strong>: <%= user.local.password %>
-                    </p>
+            <div class="well"><h4><strong>id</strong>: <%= user._id %><br></h4></div>
 
+            <div class="well"><h4><strong>Email</strong>: <%= user.local.email %><br></h4></div>
+            
+            <div class="well"><h4><strong>Contraseña</strong>: <%= user.local.password %></h4></div>   
+                
+        </div>
+
+        <div class="col-sm-4">
+            <form action="/profile-answer" method="post">
+                <div class="form-group">
+                    <h1><strong>Escribe tu Pregunta</strong></h1>
+                    <input class="form-control input-lg" id="input-to-prolog" type="text" placeholder="Preguntale algo!">
+                    <button type="button" class="btn btn-primary btn-sm">Preguntar</button>
+
+                </div>    
+            </form>
+            
+        </div>
+
+        <div class="col-sm-4">
+             <div class="panel panel-info">
+                <div class="panel-heading"><h6><strong>Objeto que Retorna Pengines</strong></h6></div>
+                    <div class="panel-body"><%= answer%></div>
             </div>
         </div>
 

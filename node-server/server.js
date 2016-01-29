@@ -27,6 +27,7 @@ app.use(morgan('dev')); // loggear todo
 app.use(cookieParser()); // cookie para la session
 app.use(bodyParser()); // informacion de las formas
 app.use(express.static("node_modules/bootstrap/dist/"));
+app.use(express.static("public"));
 
 app.set('view engine', 'ejs');
 
@@ -36,8 +37,14 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash()); // para el manejo de mensajes de error
 
+//Pengines
+var pengines = require('./app/pengines/pengines.js')(fs);
+
+
+console.log(pengines._events.success.Function);
+
 // rutas
-require('./app/routes.js')(app, passport);
+require('./app/routes.js')(app, passport, pengines._events.success);
 
 // ejecución
 https.createServer({

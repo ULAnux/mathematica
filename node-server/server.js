@@ -9,6 +9,7 @@ var passport = require('passport');
 var flash    = require('connect-flash');
 var fs       = require('fs');
 var https    = require('https');
+var pengin = require("pengines");
 
 var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -37,14 +38,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash()); // para el manejo de mensajes de error
 
-//Pengines
-var pengines = require('./app/pengines/pengines.js')(fs);
-
-
-console.log(pengines._events.success.Function);
-
 // rutas
-require('./app/routes.js')(app, passport, pengines._events.success);
+require('./app/routes.js')(app, passport, pengin,fs);
 
 // ejecución
 https.createServer({

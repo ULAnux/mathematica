@@ -1,6 +1,6 @@
 // app/routes.js
 
-module.exports = function(app, passport, pengines){
+module.exports = function(app, passport, pengin, fs){
 
   // index
   app.get('/', function(req, res) {
@@ -37,20 +37,48 @@ module.exports = function(app, passport, pengines){
   app.get('/profile', isLoggedIn, function(req, res) {
     res.render('profile', {
       user : req.user, // obtiene el usuario de la sesión y lo pasa al template
-      answer: req.pengines
+      answer: 'undefined'
     });
   });
 
-  app.post('/profile', function(req,res){
-    res.render('profile-answer'); 
-  });
+  app.post('/profile', isLoggedIn, function(req,res){
 
-  //profile-answer
-  app.get('/profile-answer', isLoggedIn, function(req, res) {
-    res.render('profile', {
-      user : req.user,  // obtiene el usuario de la sesión y lo pasa al template
-      answer: req.pengines
+    if(req.body.inputToProlog != 'undefined'){
+      var readStream = fs.readFileSync("./prolog/0000.pl", 'utf8');
+      console.log('inputToProlog');
+      var m = new pengin({
+            server: "http://localhost:3030/pengine",
+            sourceText: readStream,
+            format: "json",
+            chunk: 50,
+            //ask: "pr(0000-1, [color, caballo, blanco, 'Simón'], X, 20/20, [anonimo]).",
+            ask: req.body.inputToProlog,
+            destroy: false,
+        }).on('success', function(result){
+                      console.log(result.data);
+
+                      res.render('profile', {
+                        user : req.user,  // obtiene el usuario de la sesión y lo pasa al template
+                        answer: result.data
+                      });
+
+                    }).on("error", function(error){
+
+                      console.log(error.data);
+                        res.render('profile', {
+                          user : req.user,  // obtiene el usuario de la sesión y lo pasa al template
+                          answer: error.data
+                        });
+
+                    });
+
+    }else{
+      res.redirect('profile', {
+      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+      answer: 'undefined'
     });
+    }
+
   });
 
   // logout

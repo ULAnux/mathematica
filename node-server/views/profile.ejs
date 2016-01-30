@@ -32,11 +32,11 @@
         </div>
 
         <div class="col-sm-4">
-            <form action="/profile-answer" method="post">
+            <form action="/profile" method="post">
                 <div class="form-group">
                     <h1><strong>Escribe tu Pregunta</strong></h1>
-                    <input class="form-control input-lg" id="input-to-prolog" type="text" placeholder="Preguntale algo!">
-                    <button type="button" class="btn btn-primary btn-sm">Preguntar</button>
+                    <input class="form-control input-lg" name="inputToProlog" type="text" placeholder="Preguntale algo!">
+                    <button type="submit" class="btn btn-primary btn-sm">Preguntar</button>
 
                 </div>    
             </form>
@@ -46,7 +46,11 @@
         <div class="col-sm-4">
              <div class="panel panel-info">
                 <div class="panel-heading"><h6><strong>Objeto que Retorna Pengines</strong></h6></div>
-                    <div class="panel-body"><%= answer%></div>
+                    <%if(answer != 'undefined'){%>
+                        <div class="panel-body"><%= answer%></div>
+                    <%}else{%>
+                        <div class="panel-body">Objeto Pengine</div>
+                    <%}%>
             </div>
         </div>
 

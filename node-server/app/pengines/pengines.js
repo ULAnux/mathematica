@@ -56,7 +56,8 @@ module.exports = function(fs){
 	*/
 
 
-	////////////////////////////////////////////DIMITRIO///////////////////
+	
+
 
 	var m = new pengin({
 	        server: "http://localhost:3030/pengine",
@@ -68,7 +69,7 @@ module.exports = function(fs){
 	    }).on('success', function(result){
 
 										//result.data[0].X.forEach(printItems);
-
+										console.log(result.data);
 										return result.data;
 									}).on("error", function(error){console.log(error.data);});
 

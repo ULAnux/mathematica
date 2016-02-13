@@ -37,15 +37,22 @@ module.exports = function(app, passport, pengin, fs){
   app.get('/profile', isLoggedIn, function(req, res) {
     res.render('profile', {
       user : req.user, // obtiene el usuario de la sesión y lo pasa al template
-      answer: 'undefined'
+      question: 'Nothing',
+      answer: 'undefined',
+      answerObject: 'undefined'
     });
   });
 
+  //post al realizar una pregunta
   app.post('/profile', isLoggedIn, function(req,res){
 
-    if(req.body.inputToProlog != 'undefined'){
+    //si existe una pregunta
+    if(req.body.inputToProlog.length > 0 &&  (req.body.inputToProlog.search('X') != (-1))){
+      //
       var readStream = fs.readFileSync("./prolog/0000.pl", 'utf8');
+      
       console.log('inputToProlog');
+      //creando objeto pengine
       var m = new pengin({
             server: "http://localhost:3030/pengine",
             sourceText: readStream,
@@ -53,29 +60,72 @@ module.exports = function(app, passport, pengin, fs){
             chunk: 50,
             //ask: "pr(0000-1, [color, caballo, blanco, 'Simón'], X, 20/20, [anonimo]).",
             ask: req.body.inputToProlog,
-            destroy: false,
+            destroy: true,
         }).on('success', function(result){
-                      console.log(result.data);
-
-                      res.render('profile', {
+                      
+                    
+            var responseAlgebra = result.data[0].X.forEach(function(item) {
+            
+            if(typeof item == "string") {
+              res.render('profile', {
+                user : req.user,  // obtiene el usuario de la sesión y lo pasa al template
+                question: req.body.inputToProlog,
+                answer: "X = " + item,
+                answerObject: JSON.stringify(result.data)
+              });
+          }
+          else {
+            var resu = printResult(item);
+            res.render('profile', {
                         user : req.user,  // obtiene el usuario de la sesión y lo pasa al template
-                        answer: result.data
+                        question: req.body.inputToProlog,
+                        answer: "X = [" + resu.substring(1, resu.length-1) + "]",
+                        answerObject: JSON.stringify(result.data)
                       });
-
-                    }).on("error", function(error){
+          }
+        });
+                      
+                                          }).on("error", function(error){
 
                       console.log(error.data);
                         res.render('profile', {
                           user : req.user,  // obtiene el usuario de la sesión y lo pasa al template
+                          question: req.body.inputToProlog,
                           answer: error.data
                         });
 
                     });
 
+        //interpretation a string del JSON que viene de prolog
+  
+        var printItems = function(item) {
+          if(typeof item == "string") return ("X = " + item);
+          else {
+            var res = printResult(item);
+            return ("X = [" + res.substring(1, res.length-1) + "]");
+          }
+        }
+
+        var printResult = function(item) {
+          var ret = new String();
+          if(typeof item.args[0] != "string" ) ret += "(" + printResult(item.args[0]);
+          else ret += "(" + item.args[0];
+
+          if(typeof item.args[1] != "string") ret += item.functor + printResult(item.args[1]) + ")";
+          else ret += item.functor + item.args[1] + ")";
+
+          return ret;
+        }
+
+        //m.destroy();
+
+    //si no hay pregunta
     }else{
-      res.redirect('profile', {
+      res.render('profile', {
       user : req.user, // obtiene el usuario de la sesión y lo pasa al template
-      answer: 'undefined'
+      question: req.body.inputToProlog,
+      answer: 'escriba algo!, quizas no hallas colocado la X, LOL...!! :V',
+      answerObject: 'undefined'
     });
     }
 

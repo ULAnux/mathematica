@@ -35,21 +35,30 @@
             <form action="/profile" method="post">
                 <div class="form-group">
                     <h1><strong>Escribe tu Pregunta</strong></h1>
-                    <input class="form-control input-lg" name="inputToProlog" type="text" placeholder="Preguntale algo!">
+                    <input class="form-control input-lg" name="inputToProlog" type="text" placeholder="Pregunte algo! en forma de pr(). por favor">
                     <button type="submit" class="btn btn-primary btn-sm">Preguntar</button>
 
-                </div>    
+                </div> 
+                <div><h6>NOTA IMPORTANTE: Realizar la pregunta con variable "X"</h6></div>   
             </form>
             
         </div>
 
         <div class="col-sm-4">
              <div class="panel panel-info">
-                <div class="panel-heading"><h6><strong>Objeto que Retorna Pengines</strong></h6></div>
-                    <%if(answer != 'undefined'){%>
+                <div class="panel-heading"><h6><strong>Objeto parseado de Pengines</strong></h6></div>
+                    <%if(answerObject != 'undefined'){%>
                         <div class="panel-body"><%= answer%></div>
                     <%}else{%>
-                        <div class="panel-body">Objeto Pengine</div>
+                        <div class="panel-body"><%= answer%></div>
+                    <%}%>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading"><h6><strong>Objeto que Retorna Pengines</strong></h6></div>
+                    <%if(answerObject != 'undefined'){%>
+                        <div class="panel-body"><%= answerObject%></div>
+                    <%}else{%>
+                        <div class="panel-body"><%= answerObject%></div>
                     <%}%>
             </div>
         </div>

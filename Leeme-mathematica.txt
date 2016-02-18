@@ -1,0 +1,24 @@
+Jesus Eduardo Nuñez Garcia
+V-21182155
+
+git --help
+Consulta las opciones para git.
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+Entra a tu cuenta de github por tu nombre de usuario o correo.
+
+git clone https://github.com/TU-USUARIO/TU-REPOSITORIO
+Puedo clonar un proyecto de un usuario. Es decir, creo una carpeta
+con el nombre del repositorio y de ahi estara los archivos que
+estan en el repositorio.
+
+$ git status
+Ver tus recientes actividades.
+Ejemplo:
+En la rama master
+Su rama está actualizada con «origin/master».
+nothing to commit, working directory clean
+
+
+

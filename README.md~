@@ -58,7 +58,7 @@ PARA AGREGAR UN ARCHIVO AL REPOSITORIO Mathematica
 
 	5. Informar al organizador de mathematica los cambios realizados
 
-			- En tu cuenta de github, ir a profiles y entrar en el repositorio "mathematica" perteneciente al organizador (no confundir con el repositorio creado en nuestra cuenta github)
+			- En tu cuenta de github, ir a profiles y entrar en el repositorio "mathematica"
 			- Oprimir el boton "New pull request"
 			- Luego al boton "Create pull request"
 			- Describir lo que se realizo y darle un titulo
@@ -74,7 +74,7 @@ PARA AGREGAR UN ARCHIVO AL REPOSITORIO Mathematica
 La contribucion sera realizada, por: Lizandro Zerpa y Dimitrio Mandamadiotis
 
 		La idea basica es traer la aplicacion "mathematica" a un entorno contemporaneo usando herramientas poderosas,
-para obtener el mas alto desempenio de la app.
+para obtener el mas alto desempanio de la app.
 
 		En nuestro caso lo primero a realizarse es una pagina web donde correra la aplicacion, en un entorno de programacion
 desde el servidor, llamado NodeJS, el cual usa Javascript, como lenguaje de progrmacion. Ademas, usaremos MongoDB, como

@@ -1,0 +1,82 @@
+//Realizado por:
+//--AUTORES: Lizandro Zerpa y Dimitris Mandamadiotis
+//--Universidad de los Andes, Merida, Venezuela
+//--Este programa es software libre
+
+//----- GESTOR DE USUARIOS PARA EL JUEGO MATHEMATICA  -----//
+
+//Para mayor informacion acerca de la instalacion, visitar:
+/*
+http://www.desarrolloweb.com/articulos/instalar-node-js.html
+http://www.mongodbspain.com/es/2014/08/30/install-mongodb-on-ubuntu-14-04/
+http://pengines.swi-prolog.org/docs/getting_started.html
+*/
+
+//Para documentacion acerca del uso de Node JS
+//--https://new.nodejs.org/
+
+/////////////////////////////////////-- Instalacion de las Dependencias del Gestor en LINUX --//////////////////////////////////////////
+
+//---- Instalar Node JS ----//
+/*
+	// En la terminal:
+
+  sudo apt-get install curl
+  curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+  sudo apt-get install -y nodejs
+
+*/
+
+//---- Instalar MongoDB ----//
+/*
+
+	//En la Terminal:
+
+	sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+	echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+	sudo apt-get update
+	sudo apt-get install mongodb-org
+  sudo mkdir -p /data/db
+  sudo chown -R YOURUSERNAME /data
+  
+	//comprobando la version instalada
+
+	mongo --version
+*/
+
+//---- Instalar Modulos para Node JS ----//
+/*
+	//Se debe tener instalado Node JS, abrir terminal y moverse a esta carpeta: cd ... /node-server
+
+	npm install
+*/
+
+//---- Instalar Pengines ----//
+/*
+	//Se debe tener instalado GIT
+	//SUGERENCIA: En una carpeta donde se almacenan repositorios de GIT, en la terminal moverse a esta carpeta y ejecutar:
+
+	git clone https://github.com/SWI-Prolog/pengines.git
+*/
+
+////////////////////////////////////////////-- Para ejecutar la aplicacion --///////////////////////////////////////////////////////////
+
+//-- Iniciar Pengines --//
+/*
+	//Se debe tener instalado la version de SWI-PROLOG => 7.1.5
+	// En la carpeta donde fue instalado Pengines, abrir terminal: cd pengines
+
+	swipl run.pl
+*/
+
+//-- Iniciar Mongodb --//
+/*
+	//abrir terminal:
+	mongod
+*/
+
+//-- Correr el Servidor Node --//
+/*
+	//En la carpeta del juego "mathematica", abrir terminal: cd node-server
+	node server.js
+*/

@@ -1,0 +1,70 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Demo Autenticación de Usuario</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body        { padding-top:80px; word-wrap:break-word; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-book"></span> Página de Perfil</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Salir</a>
+    </div>
+
+    <div class="row">
+
+        <!-- INFORMACION LOCAL -->
+        <div class="col-sm-4">
+            <div class="well wel-lg"><h2><span class="fa fa-user"></span> Local</h2></div>
+
+            <div class="well"><h4><strong>id</strong>: <%= user._id %><br></h4></div>
+
+            <div class="well"><h4><strong>Email</strong>: <%= user.local.email %><br></h4></div>
+            
+            <div class="well"><h4><strong>Contraseña</strong>: <%= user.local.password %></h4></div>   
+                
+        </div>
+
+        <div class="col-sm-4">
+            <form action="/profile" method="post">
+                <div class="form-group">
+                    <h1><strong>Escribe tu Pregunta</strong></h1>
+                    <input class="form-control input-lg" name="inputToProlog" type="text" placeholder="Pregunte algo! en forma de pr(). por favor">
+                    <button type="submit" class="btn btn-primary btn-sm">Preguntar</button>
+
+                </div> 
+                <div><h6>NOTA IMPORTANTE: Realizar la pregunta con variable "X"</h6></div>   
+            </form>
+            
+        </div>
+
+        <div class="col-sm-4">
+             <div class="panel panel-info">
+                <div class="panel-heading"><h6><strong>Objeto parseado de Pengines</strong></h6></div>
+                    <%if(answerObject != 'undefined'){%>
+                        <div class="panel-body"><%= answer%></div>
+                    <%}else{%>
+                        <div class="panel-body"><%= answer%></div>
+                    <%}%>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading"><h6><strong>Objeto que Retorna Pengines</strong></h6></div>
+                    <%if(answerObject != 'undefined'){%>
+                        <div class="panel-body"><%= answerObject%></div>
+                    <%}else{%>
+                        <div class="panel-body"><%= answerObject%></div>
+                    <%}%>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

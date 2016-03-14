@@ -1,4 +1,4 @@
-/* Programa basado en el ejemplo de las fronteras de los estados alemanes de Bernardo Pires mostrado en bit.ly/1GtrJxB */
+/* Programa realizado por mi basado en el ejemplo de las fronteras de los estados alemanes de Bernardo Pires mostrado en bit.ly/1GtrJxB aplicado en estados de Venezuela*/
 /* Imagenes de antes y despues se pueden ver en bit.ly/1TGNeUV */
 
 color(rojo).

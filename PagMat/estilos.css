@@ -1,0 +1,64 @@
+  s1{ color: white; font-family: Verdana; }
+  s2{ color: black; font-family: Purisa; }
+  s3{ color: #D04E80; font-family: Purisa; }
+  s4{ color: white; font-family: Purisa; }
+
+	a { margin:  0; display: block;}
+ 	a:visited	{ margin:  0; display: block;}
+	.simple {text-decoration: none;}
+
+
+{
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:50%;
+				font-family:Purisa;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:50%; 
+				margin:0 auto; 
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:black;
+				color:#15E6E9;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:black;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}

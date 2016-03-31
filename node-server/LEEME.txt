@@ -50,11 +50,13 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 
 //---- Instalar Modulos para Node JS ----//
 /*
-	//Se debe tener instalado Node JS, abrir terminal y moverse a esta carpeta: cd ... /node-server Donde?
-	por qué no instalar con apt-get?
+	// *Se debe tener instalado Node JS.
+	// En la carpeta del juego "mathematica", abrir una terminal y ejecutar:
 	
-
+	cd node-server
 	npm install
+
+	// Luego se debe esperar a que el gestor de packetes de node descargue todos los modulos y los instale.
 */
 
 //---- Instalar Pengines ----//
@@ -70,8 +72,9 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 //-- Iniciar Pengines --//
 /*
 	//Se debe tener instalado la version de SWI-PROLOG => 7.1.5
-	// En la carpeta donde fue instalado Pengines, abrir terminal: cd pengines
+	// En la carpeta donde fue instalado Pengines, abrir terminal: 
 
+	cd pengines
 	swipl run.pl
 */
 
@@ -84,6 +87,8 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 //-- Correr el Servidor Node --//
 /*
 	//En la carpeta del juego "mathematica", abrir terminal: 
+	
 	cd node-server
 	node server.js
+	
 */

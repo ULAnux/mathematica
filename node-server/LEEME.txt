@@ -24,6 +24,8 @@ http://pengines.swi-prolog.org/docs/getting_started.html
   sudo apt-get install curl
   curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
   sudo apt-get install -y nodejs
+  
+  No es nodejs-legacy?
 
 */
 
@@ -39,6 +41,8 @@ http://pengines.swi-prolog.org/docs/getting_started.html
   sudo mkdir -p /data/db
   sudo chown -R YOURUSERNAME /data
   
+  Esto supone que YOURUSERNAME será quien lance la appl web, verdad?
+  
 	//comprobando la version instalada
 
 	mongo --version
@@ -46,7 +50,9 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 
 //---- Instalar Modulos para Node JS ----//
 /*
-	//Se debe tener instalado Node JS, abrir terminal y moverse a esta carpeta: cd ... /node-server
+	//Se debe tener instalado Node JS, abrir terminal y moverse a esta carpeta: cd ... /node-server Donde?
+	por qué no instalar con apt-get?
+	
 
 	npm install
 */

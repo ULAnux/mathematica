@@ -83,6 +83,7 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 
 //-- Correr el Servidor Node --//
 /*
-	//En la carpeta del juego "mathematica", abrir terminal: cd node-server
+	//En la carpeta del juego "mathematica", abrir terminal: 
+	cd node-server
 	node server.js
 */

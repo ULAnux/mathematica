@@ -4,7 +4,7 @@
 var LocalStrategy = require('passport-local').Strategy;
 
 // cargando el modelo de usuario
-var User = require('../app/models/user');     
+var User = require('../app/models/user');
 
 // exportando la función
 module.exports = function(passport) {
@@ -39,7 +39,7 @@ module.exports = function(passport) {
 
       // si no se encontro un usuario con el email retorna un mensaje
       if (!user)
-      return done(null, false, req.flash('loginMessage', 'Usuario no encontrado.')); 
+      return done(null, false, req.flash('loginMessage', 'Usuario no encontrado.'));
 
       // si se encontro se evalua la contraseña, si es falsa retorna un mensaje
       if (!user.validPassword(password))
@@ -68,14 +68,14 @@ module.exports = function(passport) {
 
       // si no se encontro un usuario con el email retorna un mensaje
       if (!user)
-      return done(null, false, req.flash('forgotMessage', 'Usuario no encontrado.')); 
+      return done(null, false, req.flash('forgotMessage', 'Usuario no encontrado.'));
 
       // si todo esta bien retorne el usuario
       return done(null, user);
     });
 
   }));
-  
+
   // estrategia de registro local
   passport.use('local-signup', new LocalStrategy({
 
@@ -122,5 +122,4 @@ module.exports = function(passport) {
     });
 
   }));
-
 };

@@ -77,7 +77,7 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
           console.log("intentando conectar......");
           //hay que usar tecnologia de desarrollo OAuth 2.0, solicitar credenciales,
           //para usar el correo Gmail en el envio de correos
-          //http://stackoverflow.com/questions/19877246/nodemailer-with-gmail-and-nodejs 
+          //http://stackoverflow.com/questions/19877246/nodemailer-with-gmail-and-nodejs
         var smtpTransport = nodemailer.createTransport(
           /*////////////////////configuracion Mail Ula ///////////////////
           smtpConfig = {
@@ -104,14 +104,14 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
           directConfig = {
               name: 'localhost:8080' // must be the same that can be reverse resolved by DNS for your IP
           }*/
-        
+
           smtpConfig = 'smtps://lizandroal.zerpa%40gmail.com:lizandro17011996@smtp.gmail.com',
           poolConfig = 'smtps://lizandroal.zerpa%40gmail.com:lizandro17011996@smtp.gmail.com/?pool=true',
           directConfig = 'direct:?name=localhost:8080'
 
         );
           console.log("intentando verificar......");
-        
+
         smtpTransport.verify(function(error, success) {
            if (error) {
                 console.log(error);
@@ -119,7 +119,7 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
                 console.log('Server is ready to take our messages');
            }
         });
-        
+
         var mailOptions = {
           to: user.local.email,
           from: 'lizandroal.zerpa@gmail.com',
@@ -144,107 +144,44 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
   ////info extraida de :
   ///http://sahatyalkabov.com/how-to-implement-password-reset-in-nodejs/
   app.get('/reset/:token', function(req, res) {
-    /*User.findOne({ "local.resetPasswordToken": req.params.token, "local.resetPasswordExpires": { $gt: Date.now() } }, function(err, user) {
+    User.findOne({ "local.resetPasswordToken": req.params.token, "local.resetPasswordExpires": { $gt: Date.now() } }, function(err, user) {
       if (!user) {
         req.flash('error', 'Password reset token is invalid or has expired.');
         return res.redirect('/forgot');
       }
       res.render('reset', {
-        user: req.user
+        user: user
       });
-    });*/
-    res.render('reset');
+    });
   });
 
   app.post('/reset/:token', function(req, res) {
     if (req.body.password != req.body.confirm){
-      req.flash('error','Contrasenias no coinciden');
-      return res.render('reset');
-    }
-    async.waterfall([
-      function(done) {
-        User.findOne({ "local.resetPasswordToken": req.params.token, "local.resetPasswordExpires": { $gt: Date.now() } }, function(err, user) {
-          if (!user) {
-            req.flash('error', 'Password reset token is invalid or has expired.');
-            return res.redirect('back');
-          }
-
-          user.local.password = req.body.password;
-          user.local.resetPasswordToken = undefined;
-          user.local.resetPasswordExpires = undefined;
-
-          user.save(function(err) {
-            req.logIn(user, function(err) {
-              done(err, user);
-            });
-          });
-        });
-      },
-
-      function(token, user, done) {
-        console.log("intentando conectar......");
-        //hay que usar tecnologia de desarrollo OAuth 2.0, solicitar credenciales,
-        //para usar el correo Gmail en el envio de correos
-        //http://stackoverflow.com/questions/19877246/nodemailer-with-gmail-and-nodejs 
-        var smtpTransport = nodemailer.createTransport(
-          /*////////////////////configuracion Mail Ula ///////////////////
-          smtpConfig = {
-              host: 'smtp-mail.ula.com',
-              port: 465,
-              secure: true, // use SSL
-              auth: {
-                  user: 'user@ula.com',
-                  pass: 'pass'
-              }
-          },
-
-          poolConfig = {
-              pool: true,
-              host: 'smtp-mail.gmail.com',
-              port: 465,
-              secure: true, // use SSL
-              auth: {
-                  user: 'user@ula.com',
-                  pass: 'pass'
-              }
-          },
-
-          directConfig = {
-              name: 'localhost:8080' // must be the same that can be reverse resolved by DNS for your IP
-          }*/
-        
-          smtpConfig = 'smtps://lizandroal.zerpa%40gmail.com:lizandro17011996@smtp.gmail.com',
-          poolConfig = 'smtps://lizandroal.zerpa%40gmail.com:lizandro17011996@smtp.gmail.com/?pool=true',
-          directConfig = 'direct:?name=localhost:8080'
-
-        );
-          console.log("intentando verificar......");
-        
-        smtpTransport.verify(function(error, success) {
-           if (error) {
-                console.log(error);
-           } else {
-                console.log('Server is ready to take our messages');
-           }
-        });
-      
-      var mailOptions = {
-        to: user.local.email,
-        from: 'lizandroal.zerpa@gmail.com',
-        subject: 'Your password has been changed',
-        text: 'Hello,\n\n' +
-          'This is a confirmation that the password for your account ' + user.local.email + ' has just been changed.\n'
-      };
-      smtpTransport.sendMail(mailOptions, function(err) {
-        req.flash('success', 'Success! Your password has been changed.');
-        done(err);
-      });
-    }
-    ], function(err) {
+      req.flash('error','Contraseñas no coinciden');
       res.redirect('/');
+    }
+    User.findOne({ "local.resetPasswordToken": req.params.token, "local.resetPasswordExpires": { $gt: Date.now() } }, function(err, user) {
+      if (!user) {
+        req.flash('error', 'Password reset token is invalid or has expired.');
+        return res.redirect('/');
+      }
+
+      user.local.password = user.generateHash(req.body.password);
+      user.local.resetPasswordToken = undefined;
+      user.local.resetPasswordExpires = undefined;
+
+      user.save(function(err) {
+        if(err) console.error(err);
+        res.redirect("/login");
+
+        /*req.logIn(user, function(err) {
+        done(err, user);
+      });*/
     });
   });
-  
+
+  });
+
   // profile
   app.get('/profile', isLoggedIn, function(req, res) {
     res.render('profile', {
@@ -262,7 +199,7 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
     if(req.body.inputToProlog.length > 0 &&  (req.body.inputToProlog.search('X') != (-1))){
       //
       var readStream = fs.readFileSync("./prolog/0000.pl", 'utf8');
-      
+
       console.log('inputToProlog');
       //creando objeto pengine
       var m = new pengin({
@@ -274,10 +211,10 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
             ask: req.body.inputToProlog,
             destroy: true,
         }).on('success', function(result){
-                      
-                    
+
+
             var responseAlgebra = result.data[0].X.forEach(function(item) {
-            
+
             if(typeof item == "string") {
               res.render('profile', {
                 user : req.user,  // obtiene el usuario de la sesión y lo pasa al template
@@ -296,7 +233,7 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
                       });
           }
         });
-                      
+
                                           }).on("error", function(error){
 
                       console.log(error.data);
@@ -309,17 +246,17 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
                     });
 
         //interpretation a string del JSON que viene de prolog
-  
+
         var printItems = function(item) {
           if(typeof item == "string") return ("X = " + item);
           else {
             var res = printResult(item);
             return ("X = [" + res.substring(1, res.length-1) + "]");
           }
-        }
+        };
 
         var printResult = function(item) {
-          var ret = new String();
+          var ret = "";
           if(typeof item.args[0] != "string" ) ret += "(" + printResult(item.args[0]);
           else ret += "(" + item.args[0];
 
@@ -327,7 +264,7 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
           else ret += item.functor + item.args[1] + ")";
 
           return ret;
-        }
+        };
 
         //m.destroy();
 

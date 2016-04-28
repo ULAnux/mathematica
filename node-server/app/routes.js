@@ -105,8 +105,8 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
               name: 'localhost:8080' // must be the same that can be reverse resolved by DNS for your IP
           }*/
 
-          smtpConfig = 'smtps://lizandroal.zerpa%40gmail.com:lizandro17011996@smtp.gmail.com',
-          poolConfig = 'smtps://lizandroal.zerpa%40gmail.com:lizandro17011996@smtp.gmail.com/?pool=true',
+          smtpConfig = 'smtps://user%40gmail.com:pass@smtp.gmail.com',
+          poolConfig = 'smtps://user%40gmail.com:pass@smtp.gmail.com/?pool=true',
           directConfig = 'direct:?name=localhost:8080'
 
         );

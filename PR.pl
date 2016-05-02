@@ -1,4 +1,7 @@
-﻿pr(0029-1, ['¿Cual es la fórmula de Euler?'], [La formula de Euler, establece el teorema en el que: e^(ix)=cos(x)+isin(x)], 20/20, [Alvaro Rivas, basado en el articulo de https://es.wikipedia.org/wiki/Formula_de_Euler])
+﻿%Alvaro Rivas R. C.I: 23.722.213
+
+
+pr(0029-1, ['¿Cual es la fórmula de Euler?'], [La formula de Euler, establece el teorema en el que: e^(ix)=cos(x)+isin(x)], 20/20, [Alvaro Rivas, basado en el articulo de https://es.wikipedia.org/wiki/Formula_de_Euler])
 pr(0029-2, ['¿Cual es la fórmula de Moivre'], [La fórmula de Moivre afirma que para cualquier número complejo x y para cualquier entero n se verifica que: (cos(x)+isin(x))^n], 20/20, [Alvaro Rivas, basado en el articulo https://es.wikipedia.org/wiki/Formula_de_De_Moivre])
 pr(0029-3, ['¿Que es la función gamma?'], [La función gamma, denotada por Γ(z) es una aplicación que extiende el concepto de factorial a los números complejos, si la parte real del número complejo z es positiva entonces: Γ(z)= (o->∞)∫t^(z-1)*e^(-t)dt ], 20/20, [Alvaro Rivas, basado en el articulo de https://es.wikipedia.org/wiki/Funci%C3%B3n_gamma])
 pr(0029-4, ['¿Cual es el resultado de Γ(1)?'], [Γ(1)= (o->∞)∫*e^(-t)dt = 1], 20/20, [Alvaro Rivas, basado en el articulo de https://es.wikipedia.org/wiki/Funci%C3%B3n_gamma])

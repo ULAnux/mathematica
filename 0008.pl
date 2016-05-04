@@ -160,7 +160,7 @@ ejercicios(permutaciones_y_combinaciones) :-
 
 	pr(0008-2, ['Se dispone de 4 colores diferentes. ¿Cuántos colores pueden obtenerse mezclando los 4 colores en la misma proporción?'],['C(4,4)', '=', '1', 'color.'],['Tomado de E. Navarro. Matemática de 5to grado']),
 
-	pr(0008-3, ['¿Cuántas selecciones de 5 libros pueden hacerse con 12 libros diferentes?'],['C(12,5)', '=', '792', 'selecciones.'],['Tomado de E. Navarro. Matemática de 5to grado']),
+	pr(0008-3, ['¿Cuántas selecciones de 5 libros pueden hacerse con 12 libros diferentes?'],['    C(12,5)', '=', '792', 'selecciones.'],['Tomado de E. Navarro. Matemática de 5to grado']),
 
 	pr(0008-4, ['Con 5 potes de pintura de diferentes colores ¿cuántos colores pueden obtenerse utllizando en la formación de cada color tres colores en la misma cantidad?'],['C(5,3)', '=', '10', 'colores.'],['Tomado de E. Navarro. Matemática de 5to grado']),
 

@@ -152,7 +152,7 @@ pr(0001-113,['Sean + y * operaciones definida sobre un conjunto T. ¿Qué condic
 pr(0001-114,['Sea (ℤ,#,*) un dominio de integridad y sea 1 la unidad de ℤ ¿Cuánto vale 2*1? a. 1; b. 2; c.3; d. No puede determinarse'],['Opción b'],_,['María Daniela Baptista Theuerkauf']),
 pr(0001-115,['Sea (ℤ,#,*) un dominio de integridad y sea 1 la unidad de ℤ ¿Cuánto vale 2#1? a. 3; b. 1; c.2; d. No puede determinarse'],['Opción d'],_,['María Daniela Baptista Theuerkauf']),
 pr(0001-116,['Sea (ℤ,#,*) un dominio de integridad. Si 2#3 = 8 ¿Cuánto vale 3#2? a. 5; b. 6; c.8; d. No puede determinarse'],['Opción c'],_,['María Daniela Baptista Theuerkauf']),
-pr(0001-117,['Sea (ℤ,%,*) un dominio de integridad. Si 2%8 = 100 ¿Cuánto vale 8%2? a. 10; b. 16; c.100; d. No puede determinarse'],['Opción c'],_,['María Daniela Baptista Theuerkauf']),
+pr(0001-117,['Sea (ℤ,%,*) un dominio de integridad. Si 2%8 = 100 ¿Cuánto vale 8%2? a. 10; b. 16;       c.100; d. No puede determinarse'],['Opción c'],_,['María Daniela Baptista Theuerkauf']),
 pr(0001-118,['¿(ℤ,+,*) es un Dominio de integridad?'],['Si'],_,['María Daniela Baptista Theuerkauf']),
 pr(0001-119,['En ℤ, 2X = 0 implica que .. '],['X = 0'],_,['María Daniela Baptista Theuerkauf']),
 pr(0001-120,['Sea (R,+,*) un anillo, a perteneciente a R con a distinto de cero, ax = 0 implica que ..'],['No se puede determinar'],_,['María Daniela Baptista Theuerkauf']).

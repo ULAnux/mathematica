@@ -1,0 +1,38 @@
+.titulo{
+	text-align: center;	
+	font-style: oblique ;
+	display: block;
+    font-size: 4em;
+    font-weight: bold;
+	font-family: fantasy;
+}	
+
+.letra{
+	font-style: oblique ;
+	display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.texto{
+	font-style: oblique ;
+	display: block;
+    font-size: 1.2em;
+}
+
+.borde_bajo1{
+	border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 40px;
+}
+
+.inputs{
+ 	height:40px;
+    font-size: 1em;
+	width:100%;
+	font-style: oblique;
+	color: black;
+}
+

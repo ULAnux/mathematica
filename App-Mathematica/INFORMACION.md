@@ -35,8 +35,13 @@ http://www.recopilation.com/es/mostrar_archivo_header.php?archivo_id=37
 Algunos sitios web que sirvieron muchísimo de guía y ayuda para la correcta ejecución de las funciones de la aplicación se listan a continuación:
 
 http://kio4.com/appinventor/index.htm
+
 http://codeweek.eu/resources/spain/guia-iniciacion-app-inventor.pdf
+
 http://puravidaapps.com/tutorials.php
+
 http://appinventor.pevest.com/?p=107
+
 http://www.appinventor.org/bookChapters/chapter19.pdf
+
 http://www.imagnity.com/category/tutorials/app-inventor/

@@ -4,19 +4,25 @@
 	 
 	 con el contenido que se encuentra en http://nux.ula.ve/mathematica/guias/
 	 
-	 un documento .pptx en el cual se rediseñan las guias con una forma de conocer 
+	 documento en el cual se rediseñan las guias, con una forma de conocer 
 	 las respuestas a las preguntas que en ellas se plantean de forma facil. sin cambiar su contenido
 	 
 	 1) se debe usar como una ayuda,  el alumno debera primero intentar resolver por si solo a las preguntas con lo explicado en
 	 clase por el profesor.
 	 
-	 2) el formato abierto  .odp 
+	 2) el formato abierto  .odp  ademas del .pptx 
 	 
 	 3) el profesor podra ademas responder a las preguntas en clase y plasmarlo directamente en esta guia, y asi 
 	 que quede como material de estudio para las evaluaciones.
 	 
 	 4)Se concede permiso de copiar, distribuir o modificar este documento bajo los términos establecidos
 	 por la licencia de documentación de GNU, GFDL, Version 1.1 
+	 
+	 *********************************************************************************************
+	 
+	 5/5/16 -> coregidas animaciones para el formato odp de libre office
+	 
+	 
 	 
 	 
  

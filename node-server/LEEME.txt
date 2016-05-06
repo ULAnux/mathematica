@@ -83,6 +83,22 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 	//abrir terminal:
 	mongod
 */
+//-- ADMINISTRADOR: Configurar Correo para envio de Notificaciones a Usuarios--//
+/*
+RECOMENDACION: Crear un correo "Gmail" exclusivo para esta labor
+
+Luego de poseer una cuenta "Gmail" configurar los siguientes parametros de seguridad:
+en "Mi cuenta"-->"Inicio de sesion y seguridad"-->"Aplicaciones y sitios conectados a tu cuenta"
+
+Activar "Permitir el acceso de aplicaciones menos seguras:" (Mientras no se posean derechos TSL 
+autorizadas se debe mantener activa esta opcion)
+
+---Para la Configuracion del correo en el servidor---
+Modificar el archivo ......JSON en esta carpeta
+Nombre de Usuario:
+Contrasenia: 
+
+*/
 
 //-- Correr el Servidor Node --//
 /*

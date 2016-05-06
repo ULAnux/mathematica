@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logica</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+<div class="container">
+	
+	<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+	
+		<p align="center" style="background-color:#D6EAF8"><img src="logica.png" width="30%" height="2%"></p>
+	
+	<p align="center"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" >1.- Considere el siguiente diálogo: <br></p>
+	<p class="texto" style="background-color:#FFDDFF">- ¿Para qué sirve la lógica?.<br>
+	- Para explicar para qué sirve la lógica.<br>
+	¿Tiene sentido? ¿Tiene lógica? 
+	<input class="inputs"></p>
+	
+	<p align="center"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">2.- Los lógicos suelen afirmar que existen ciertas palabras cuyo significado trasciende todo tema 
+	particular y, por tanto, se les puede considerar "palabras lógicas". La palabra "y" y la palabra "o",
+	son dos ejemplos.<br></p>
+	<p class="texto" style="background-color:#DDCEFF">¿Se te ocurren otros ejemplos?
+	<input class="inputs">
+	¿Cuál es el significado de estas palabras?
+	<input class="inputs"></p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra">3.- Si "o" significa lo que dice esta tabla:</p>
+	<p class="texto" align="center" style="background-color:#DDFFFF" ><u>Semantica de la O</u>
+
+	<table  border="1" align ="center" width="50%" >
+		<tbody align ="center" >
+			<tr>
+				<td><b>p</b></td>
+				<td><b>q</b></td>
+				<td><b>p o q</b></td>
+			</tr>
+		</tbody>	
+		<tbody align ="center" >
+			<tr>
+				<td>verdad</td>
+				<td>verdad</td>
+				<td>verdad</td>
+			</tr>
+			<tr>
+				<td>verdad</td>
+				<td>falso</td>
+				<td>verdad</td>
+			</tr>
+			<tr>
+				<td>falso</td>
+				<td>verdad</td>
+				<td>verdad</td>
+			</tr>
+			<tr>
+				<td>falso</td>
+				<td>falso</td>
+				<td>falso</td>
+			</tr>
+		</tbody>
+	</table></p><br>
+	<p class="letra">e "y" significa lo que dice esta otra tabla:</p>
+	<p class="texto" align="center" style="background-color:#DDFFFF"><u>Semantica de la Y</u></p>
+	<table  border="1" align ="center" width="50%">
+		<tbody align ="center" >
+			<tr>
+				<td><b>p</b></td>
+				<td><b>q</b></td>
+				<td><b>p y q</b></td>
+
+			</tr>
+		</tbody>
+		<tbody align ="center">
+			<tr>
+				<td>verdad</td>
+				<td>verdad</td>
+				<td>verdad</td>
+			</tr>
+			<tr>
+				<td>verdad</td>
+				<td>falso</td>
+				<td>falso</td>
+			</tr>
+			<tr>	
+				<td>falso</td>
+				<td>verdad</td>
+				<td>falso</td>
+			</tr>
+			<tr>
+				<td>falso</td>
+				<td>falso</td>
+				<td>falso</td>
+			</tr>
+		</tbody>
+	</table><br>
+	<p class="texto" style="background-color:#DDFFFF">¿Cuál es el significado de "y/o"?
+	<input class="inputs">
+	</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra">4.- Una proposición es una oración que se puede asociar con un valor de verdad. Es decir, puede ser verdadera o falsa. El lenguaje de la lógica proposicional, o lógica de enunciados, se construye sobre proposiciones.</p>
+	<p class="texto" style="background-color:#FFDFF8"> Algunas veces las proposiciones son representadas por letras como p, q, r, s, w. 
+	Para decir que p es <input type="text" class="borde_bajo">decimos que p = V. Dualmente, p es falsa si p =
+	<input type="text" class="borde_bajo"></p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">5.- Ocúpese de asignar valores a las proposiciones siguientes (a este, los lógicos lo llaman un
+	ejercicio de interpretación en lógica proposicional): <br></p>
+	<p class="texto" style="background-color:#E0EAF8">
+	p = 3 es menor que 5, p = <input type="text" class="borde_bajo"> <br>
+	q = un triángulo tiene 4 lados, q = <input type="text" class="borde_bajo"> <br>
+	r = Ecuador está en America, r = <input type="text" class="borde_bajo"> <br>
+	s = Existe un círculo perfecto, s = <input type="text" class="borde_bajo"> <br>
+	w = El rey de Venezuela es ateo, w = <input type="text" class="borde_bajo"> <br>
+	t = Los rectángulos son obligatorios, t = <input type="text" class="borde_bajo"> <br>
+	u = la oración u es una mentira, u = <input type="text" class="borde_bajo"> <br>
+	z = la oración z es improbable, z = <input type="text" class="borde_bajo"> <br><br>
+	NOTA: "u" y "z" son casos (muy) difíciles.
+	Ahora discuta los casos difíciles y sugiera como podrían evitarse esas dificultades. </p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">6.- Las proposiciones anteriores son llamadas proposiciones simples. Las proposiciones simples se suelen mostrar como una oración con sujeto y predicado, pero no tienen que ser así necesariamente 
+	(piense en un ejemplo). Decidir sobre la verdad o falsedad de una proposición puede conducir a
+	problemas científicos o filosóficos no resueltos.
+	En lo que sigue trataremos un problema más simple:<br></p>
+	<p class="texto" style="background-color:#FFDFDF"> a) Supondremos que siempre se puede asignar 
+	a una proposición bien el valor v (verdadera) o bien el valor f (falso). De esta forma, se comporta
+	como una variable que puede adoptar uno de dos valores. <br> b) Consideraremos proposiciones
+	compuestas formadas por dos o más proposiciones simples y discutiremos que valor de verdad
+	debemos asignarles cuando se conocen los valores de verdad de las simples.
+	</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">
+	7.- Vamos a considerar el caso simple de una proposición compuesta formada por dos
+	proposiciones simples unidas por un "y". Juzgue el valor que daría a cada una y al conjunto en los
+	siguientes ejemplos, suponiendo las definiciones en los problemas previos.</p>
+	<p class="texto" style="background-color:#D7D1F8">
+	w = Ecuador es un país y Ecuador está en América, es decir: p y q.
+	u = El caracol es un animal y es un vertebrado = s y t.
+	Un banco le dará crédito al Sr. Fulano si es verdadero que:<br>
+	r = el Sr. Fulano es solvente y el Sr Fulano tiene los documentos en regla = a y b.<br>
+	¿En qué casos le daría crédito? (para valores de a y de b).<br>
+	<input class="inputs"></p><br>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">	8.- Considere las tablas en el problema 3. 
+	La tabla inferior puede considerarse como la definición de la operación "y" 
+	(algunas veces se escribe /\, el techito, ó y ó ^ ) a partir de los valores de p y q (de
+	la misma manera que la tabla pitagórica define la multiplicación). </ps>
+	<p class="texto" style="background-color:#F0C4F0">Note que nuestra variables p y q sólo pueden tomar los valores
+	<input type="text" class="borde_bajo"> o <input type="text" class="borde_bajo">, mientras que una<br>
+	variable numérica puede adoptar infinidad de valores.<br>
+	</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">9.- ¿Coincide estrictamente la definición de ese "y" con el "y" en Español?<br>
+	<input class="inputs"></p>
+	</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">10.- Considere ahora proposiciones compuestas formadas por dos simples y la palabra "o".</p>
+	<p class="texto" style="background-color:#D5F5E3">w = Suiza está en Europa o Suiza está en Asia = <input type="text" class="borde_bajo"><br>
+	s = El gato es un reptil o el gato es un pez = <input type="text" class="borde_bajo"><br>
+	t = El maíz es un vegetal o el maíz es comestible = <input type="text" class="borde_bajo"><br>
+	Un banco dará crédito al Sr. Sutano cuando sea verdadero que:<br>
+	r = El Sr Sutano es solvente o el Sr. Sutano es amigo del gerente = <input type="text" class="borde_bajo"><br>
+	¿Cuándo se da crédito al Sr. Sutano?<br>
+	A partir de esos ejemplos, dadas dos proposiciones p y q cualesquiera ¿cuando se diría que p ó q es<br>
+	verdadera?<br>
+	<input type="text" style="width: 100%;">
+	</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">11.- La tabla inicial en el problema 3 define la operación "o" (algunas veces se representa con \/, la canalita )</p>
+	<br>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" >12.- ¿Coincide la definición de "o", con el "o" en Español?. 
+	<input class="inputs7">
+	</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">13.- El "ó" de un lenguaje natural, como el Español, se llama en lógica "o exclusivo", mientras que el "o" simple en lógica suele ser el "o" inclusivo. Construya la tabla de verdad para el o exclusivo (o excluyente):</p>
+	<p class="texto" align="center" style="background-color:#FDEBD0"><u>Semántica de ó (o exclusivo)</u></p>
+	<table  border="1" align ="center" width="50%">
+		<tbody align="center">
+			<td><b>p</b></td>
+			<td><b>q</b></td>
+			<td><b>p o q</b></td>
+		</tbody>
+		<tbody align="center">
+			<tr>
+				<td>verdad</td>
+				<td>verdad</td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+			<tr>
+				<td>verdad</td>
+				<td>falso</td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+			<tr>
+				<td>falso</td>
+				<td>verdad</td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+			<tr>
+				<td>falso</td>
+				<td>falso</td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+		</tbody>
+	</table><br>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+
+	<p class="letra" align="justify">14.- Las proposiciones compuestas que expresan una condición son muy importantes en Matemáticas y en Computación. Es muy útil definir rigurosamente su semántica.
+	Considere las proposiciones simples:</p>
+	<p class="texto" style="background-color:#EDDFFB">
+	p = La temperatura llega a 80 grados. q = La cera se funde. <br>
+	w = si p entonces q = si la temperatura llega a 80 grados, la cera se funde.<br>
+	Suponga que se dan los ___ casos posibles de variantes de valores para p y q. ¿En cuáles casos w se<br>
+	podría considerar verdadera y en cuáles falsa? <br>
+	<input type="text" style="width: 100%;"></p>
+	<p align="center" style="background-color:#EDDFFB">Semantica de si.. entonces..</p>
+	<table  border="1" align ="center" width="50%">
+		<tbody align="center">
+			<td><b>p</b></td>
+			<td><b>q</b></td>
+			<td><b>si p entonces q</b></td>
+		</tbody>
+		<tbody align="center">
+			<tr>
+				<td>verdad</td>
+				<td>verdad</td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+			<tr>
+				<td>verdad</td>
+				<td>falso</td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+			<tr>
+				<td>falso</td>
+				<td>verdad</td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+			<tr>
+				<td>falso</td>
+				<td>falso</td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+		</tbody>
+	</table>
+	<p class="texto" style="background-color:#EDDFFB">La decisión de como conviene asignar valores a w = si p 
+	entonces q (o p -> q, como otras veces se<br>
+	escribe) ha sido muy discutida en la historia de la lógica. Se ha convenido que w es falsa SOLO SI<br>
+	p es verdadera y q es falsa.<br>
+	A esta operación se le llama implicación (material).
+	</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" >15.- ¿En cuáles casos coincide la tabla con el sentido usual de las oraciones si ... entonces ... en Español? </p>
+	<p class="texto"><input class="inputs">
+	</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra">16.- Suponga que si p entonces q es verdadera,</p>
+	<p class="texto" style="background-color:#CAFFD8">a) ¿Es necesario que p sea cierta para que q sea cierta? <input type="text" class="borde_bajo"><br>
+	b) ¿Es suficiente que p sea cierta para que q sea cierta? <input type="text" class="borde_bajo"></p>
+	<br>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra">17.- Considere ahora el caso con si p entonces q y si q entonces p. Complete la tabla siguiente:</p>
+	<p class="texto" align="center" style="background-color:#CACAFF" > de q equivalente a p</p>
+	<table  border="1" align ="center" width="80%">
+		<tbody align="center">
+			<td><b>p</b></td>
+			<td><b>q</b></td>
+			<td><b>si p entonces q</b></td>
+			<td><b>si q entonces p</b></td>
+			<td><b>(si p entonces q) y (si q entonces p)</b></td>
+		</tbody>
+		<tbody align="center">
+			<tr>
+				<td>verdad</td>
+				<td>verdad</td>					
+				<td><div contenteditable>?</div></td>
+				<td><div contenteditable>?</div></td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+			<tr>
+				<td>verdad</td>
+				<td>falso</td>
+				<td><div contenteditable>?</div></td>
+				<td><div contenteditable>?</div></td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+			<tr>
+				<td>falso</td>
+				<td>verdad</td>
+				<td><div contenteditable>?</div></td>
+				<td><div contenteditable>?</div></td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+			<tr>
+				<td>falso</td>
+				<td>falso</td>
+				<td><div contenteditable>?</div></td>
+				<td><div contenteditable>?</div></td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+		</tbody>
+	</table><br>
+	<p class="texto" style="background-color:#CACAFF">a) ¿Es necesario que p sea cierta para que q sea cierta? <input type="text" class="borde_bajo"><br>
+	b) ¿Es suficiente que p sea cierta para que q sea cierta? <input type="text" class="borde_bajo"> </p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra">18.- La proposición compuesta (si p entonces q) y (si q entonces p) se denomina equivalencia y se suele escribir p <-> q.</p>
+	<p class="texto" style="background-color:#E9F1EA">¿Cómo se justifica el llamarlas equivalentes?<br>
+	Nótese que si p <-> q entonces que p sea cierto es condición necesaria y <input type="text" class="borde_bajo"> para que q también lo sea.<br><br>
+	<input class="inputs">
+	 </p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">19.- En Matemáticas es muy usual tener que demostrar que dos afirmaciones p y q son equivalentes. Se suele decir que p es condición necesaria y suficiente para q. Para demostrarlo es preciso probar que p -> q y que q -> p.
+	Para probar p -> q, se suele asumir que p es cierto y proceder con la prueba de q.</p>
+	<p class="texto" align="justify" style="background-color:#FFECFF">Ejemplo: Demostrar que para que un número sea divisible por 6 es necesario y suficiente que lo sea por 2 y por 3 (Recuerde el teorema de divisibilidad que dice: si a*b es divisible por k entonces a es divisible por k o b es divisible por k).</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" >20.- La negación de una proposición es también una proposición. ¿Cómo es su tabla de verdad?
+	<input class="inputs">
+	</p><br>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" >21.- Una prueba en lógica es una secuencia de fórmulas que se "conectan" unas con otras. Así, si nos dicen que las siguientes proposiciones son ciertas:</p>
+	<p class="texto" style="background-color:#F9F3EC" >si p entonces q.<br>
+	si q entonces r.<br>
+	p = v.<br>
+	uno puede concluir que r = v, con el siguiente argumento:<br>
+	p = v.<br>
+	si p entonces q.<br>
+	q = v.<br>
+	si q entonces r.<br>
+	<input type="text" class="borde_bajo"><br>
+	r = v.<br>
+	Una prueba es un argumento válido.<br></p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+		<p class="letra" >22.- En lógica existen ciertas reglas de inferencia, que parece ser formas genéricas para los argumentos. La más conocida se llaman modus ponens: </p>
+	<p class="texto" style="background-color:#FFF9CE">> A = v<br>
+	si A entonces B <input type="text" class="borde_bajo"><br>
+	B = v<br>
+	Noten que esta A y esta B son variables que representan a cualquier proposición.<br>
+	Otra regla de inferencia menos popular, pero sumamente poderosa en computación es la modus tollens:<br>
+	si A entonces B<br>
+	no B (ó B = f) <input type="text" class="borde_bajo"><br>
+	no A (ó A = f).</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">23.- Otra regla de inferencia, conocida como Resolución, ha sido convertida en un sistema para pruebas automático y ha sido implementada en la plataforma y lenguaje de programación para Inteligencia Artificial PROLOG.</p>
+	<p class="texto" style="background-color:#F8F1F1">>A partir de este texto:<br>
+	 b :- a.<br>
+	 a.<br>
+	Un programa Prolog (de los muchos que hay), respondería a la consulta <br>? b. (que significa que asumo que b es falso)<br>
+	con un true<br>
+	queriendo decir que el sistema REFUTA (niega) que b sea falso (el true es por Sí! pude probar que<br>
+	no es falso). Es decir, b es cierto.</p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">24.- Para apreciar la utilidad de estas herramientas lógicas, muchas personas parecen preferir el uso de proposiciones más significativas (es decir, más fácilmente leíbles). Considere el siguiente Programa Lógico:</p>
+	<p class="texto" style="background-color:#E0FFFF">fiebre :- infeccion.<br>
+	infeccion :- colonia_bacterial.<br>
+	infeccion :- virus.<br>
+	mas_leucocitos :- fiebre, \+(caso_raro).<br>
+	Ese texto es la codificación para un sistema Prolog de una base de conocimiento en la que <br>1) una infección implica fiebre, 2) una colonia bacterial implica una infección, 3) un virus implica una infección y 4) hay más leucitos en el cuerpo si hay fiebre y no es un caso raro.<br>
+	Un "paciente" que se presente con:<br>
+	virus.<br>
+	podría conducir a la prueba de que<br>
+	? fiebre.<br>
+	true.</p>
+
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">25.- La lógica descrita en los items anteriores es la lógica de proposiciones. Esta forma de lógicatiene una expresividad limitada. Esto significa que es más difícil o incluso imposible plasmar ciertas verdadades en ese lenguaje.</P>
+	<p class="texto" align="justify" style="background-color:#FAF0E6"> Por ejemplo, escriba que todos los números naturales son enteros.<br>
+	Existen otras formas de lógica mucho más expresivas que la lógica proposicional. El mismo<br>
+	Aristóteles, padre de la lógica, hace más de 25 siglos, propuso la primera: La lógica de los<br>
+	silogismos. Los silogismos son una forma particular de argumentos que emplean la siguiente<br>
+	representación de proposiciones:<br>
+	Todo P es M<br>
+	ó Algún P es M<br>
+	ó Ningún P es M<br>
+	en la que P y M son términos variables. Es decir, P y M puede ser reemplazados por términos que<br>
+	describen objetos particulares. Por ejemplo.<br>
+	Toda ballena es mamífero.></p>
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">26.- La forma más popular de lógica con variables, sin embargo, es ahora la lógica de predicados, 
+	propuesta hace 2 siglos por Frege. Es muy popular en Computación, al punto es existen sistemas capaces de ejecutarla.
+	Por ejemplo, con esta forma:</p>
+	<p class="texto" align="justify" style="background-color:#FFEBCD"> hij_(jesus, jose)<br>
+	podríamos representar en Prolog que Jesús es hijo (o hija) de José. Una de las virtudes más<br>
+	interesantes de la lógica de predicados es la posibilidad de emplear cuantificadores sobre términos<br>
+	variables.<br>
+	Por ejemplo, para decir que si un individuo es hijo de otro entonces el segundo es padre del primero<br>
+	y esto vale para todo padre y todo hijo, diríamos en Prolog:<br>
+	 padre(X, Y) :- hij_(Y,X).<br>
+	En este ejemplo, la forma precisa de traducirlo a lógica de predicados es:<br>
+	 Para todo X y todo Y, si Y es hijo de X entonces X es <input type="text" class="borde_bajo"> de Y.</p>
+	
+
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify">27.- La expresividad de la lógica de predicados, inclusive de subconjuntos suyos como la llamada lógica de primer orden, es notable cuando se trata de representar relaciones que se definen en términos de sí mismas. Las llamadas definiciones recursivas o recurrentes son sumamente útiles
+	en matemáticas. Por ejemplo, para definir a los números, uno podría decir (siguiendo a Peano) que: el cero es un numero.
+	 si n es un número, el sucesor de n también lo es.</p>
+	<p class="texto" align="justify" style="background-color:#ECD6CD">¿Donde está la definición recursiva en este ejemplo?. ¿Podemos escribir definiciones recursivas en<br>
+	lógica de proposiciones?</p>
+	
+	<p align="center" style="background-color:white"><img src="abajo.jpg" width="10%" height="3%"></p>
+	<p class="letra" align="justify"  >28.- Las definiciones recursivas pueden ser muy útiles para representar relaciones sobre conjuntos cuyo tamaño no está definido a priori. </p>
+	<p class="texto" align="justify" style="background-color:#D4EFDF ">Por ejemplo, este:<br>
+	ancestro(X,Y) :- hijo(Y,X).<br>
+	ancestro(X,Y) :- ancestro(X,Z), ancestro(Z,Y). <br>
+	Es un programa lógico que nos permitiría computar la línea de ascendencia filial a partir de un<br>
+	registro de padres e hijos en una familia dada. Pruébelo con la suya. ¿Qué otras reglas se le ocurre<br>
+	incluir?</p>
+
+
+		<hr>
+		<p align="justify">Copyright 2007 Carlos Domingo, Jacinto Dávila Universidad de Los Andes. Venezuela.
+		Se concede permiso de copiar, distribuir o modificar este documento bajo los términos establecidos
+		por la licencia de documentación de GNU, GFDL, Version 1.1 publicada por la Free Software
+		Foundation en los Estados Unidos, siempre que en la nuevas contribuciones se mantengan las
+		secciones actuales sin cambios de fondo y los cambios de fondo se coloquen en nuevas secciones o
+		con nuevos textos de portada o nuevos textos de cubierta final. También se requiere mantener
+		invariantes los espacios vacios de este documento, claves para el ejercicio de aprendizaje y
+		descubrimiento. Una copia de esta licencia se incluye en algún lugar del documento como ``GNU
+		Free Documentation License´´. Nos apegaremos a esta licencia siempre que no contradiga los
+		términos establecidos en la legislación correspondiente de la República Bolivariana de Venezuela.
+		Según establece GFDL, se permite a cualquier modificar y redistribuir este material y los autores
+		originales confiamos que otros crean apropiado y provechoso hacerlo. Esto incluye traducciones,
+		bien a otros lenguajes naturales o a otros medios electrónicos o no.
+		En nuestro entender de GFDL, cualquiera puede extraer fragmentos de este texto y usarlos en un
+		nuevo documento, siempre que el nuevo documento se acoja también a GFDL y sólo si se
+		mantienen los créditos correspondientes a los autores originales (tal como establece la licencia).
+		fin del documento de Lógica. Mayo 2007. </p>	
+		<hr>
+
+	<div style="font-weight: bold"><big>
+		Referencias: <a href="http://rogerdudler.github.io/git-guide/index.es.html" target= "_blank">Git La Guia Sencilla</a><br>
+		Imprimir: <a href="http://webdelprofesor.ula.ve/ingenieria/jacinto/matematicas/logica.pdf" target= "_blank">Formato pdf</a>
+	</big></div>
+
+	</div>
+	</div>
+	</div>
+	<br><br>
+</body>
+</html>

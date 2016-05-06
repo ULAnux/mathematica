@@ -24,7 +24,7 @@ http://pengines.swi-prolog.org/docs/getting_started.html
   sudo apt-get install curl
   curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
   sudo apt-get install -y nodejs
-  
+
   No es nodejs-legacy?
 
 */
@@ -40,9 +40,9 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 	sudo apt-get install mongodb-org
   sudo mkdir -p /data/db
   sudo chown -R YOURUSERNAME /data
-  
+
   Esto supone que YOURUSERNAME será quien lance la appl web, verdad?
-  
+
 	//comprobando la version instalada
 
 	mongo --version
@@ -52,7 +52,7 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 /*
 	// *Se debe tener instalado Node JS.
 	// En la carpeta del juego "mathematica", abrir una terminal y ejecutar:
-	
+
 	cd node-server
 	npm install
 
@@ -72,7 +72,7 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 //-- Iniciar Pengines --//
 /*
 	//Se debe tener instalado la version de SWI-PROLOG => 7.1.5
-	// En la carpeta donde fue instalado Pengines, abrir terminal: 
+	// En la carpeta donde fue instalado Pengines, abrir terminal:
 
 	cd pengines
 	swipl run.pl
@@ -84,11 +84,31 @@ http://pengines.swi-prolog.org/docs/getting_started.html
 	mongod
 */
 
+//-- ADMINISTRADOR: Configurar Correo para envio de Notificaciones a Usuarios--//
+/*
+RECOMENDACION: Crear un correo "Gmail" exclusivo para esta labor
+
+Luego de poseer una cuenta "Gmail" configurar los siguientes parametros de seguridad:
+en "Mi cuenta"-->"Inicio de sesion y seguridad"-->"Aplicaciones y sitios conectados a tu cuenta"
+
+Activar "Permitir el acceso de aplicaciones menos seguras:" (Mientras no se posean derechos TSL
+autorizadas se debe mantener activa esta opcion)
+
+---Para la Configuracion del correo en el servidor---
+Dentro de la carpeta de Mathematica modificar el archivo
+node-server/config/passwordRecoveryAccount.js y llenar los datos respectivos
+
+email: "CORREO@GMAIL.COM"
+pass: "CONTRASEÑA"
+
+
+*/
+
 //-- Correr el Servidor Node --//
 /*
-	//En la carpeta del juego "mathematica", abrir terminal: 
-	
+	//En la carpeta del juego "mathematica", abrir terminal:
+
 	cd node-server
 	node server.js
-	
+
 */

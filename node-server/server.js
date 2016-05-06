@@ -7,9 +7,13 @@ var port     = process.env.PORT || 8080;
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
+var expressflash = require('express-flash');
+var nodemailer = require('nodemailer');
 var fs       = require('fs');
 var https    = require('https');
 var pengin = require("pengines");
+var async = require("async");
+var crypto = require("crypto");
 
 var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -27,6 +31,7 @@ mongoose.connect(configDb.url);
 app.use(morgan('dev')); // loggear todo
 app.use(cookieParser()); // cookie para la session
 app.use(bodyParser()); // informacion de las formas
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("node_modules/bootstrap/dist/"));
 app.use(express.static("public"));
 
@@ -37,9 +42,9 @@ app.use(session({ secret: 'tellmeyoursecrets' })); // secreto de sesión
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash()); // para el manejo de mensajes de error
-
+app.use(expressflash());
 // rutas
-require('./app/routes.js')(app, passport, pengin,fs);
+require('./app/routes.js')(app, passport, pengin,fs, nodemailer, async, crypto);
 
 // ejecución
 https.createServer({
@@ -47,4 +52,6 @@ https.createServer({
   cert: fs.readFileSync('./config/cert.pem')
 }, app).listen(port);
 
-console.log('Escuchando en el puerto ' + port);
+//app.listen(port);
+
+console.log('Escuchando en https://localhost:' + port);

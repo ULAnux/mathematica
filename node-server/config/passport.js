@@ -39,11 +39,36 @@ module.exports = function(passport) {
 
       // si no se encontro un usuario con el email retorna un mensaje
       if (!user)
-      return done(null, false, req.flash('loginMessage', 'Usuario no encontrado.')); 
+      return done(null, false, req.flash('loginMessage', 'Usuario no encontrado.'));
 
       // si se encontro se evalua la contraseña, si es falsa retorna un mensaje
       if (!user.validPassword(password))
       return done(null, false, req.flash('loginMessage', 'Oops! Contraseña incorrecta.'));
+
+      // si todo esta bien retorne el usuario
+      return done(null, user);
+    });
+
+  }));
+
+// estrategia de busqueda para recuperacion de contrasenia
+  passport.use('local-forgot', new LocalStrategy({
+    // por defecto vienen los campos username pero para trabajar con email hay que cambiarlo
+    usernameField : 'email',
+    passReqToCallback : true // pasar la peticion al callback
+  },
+  function(req, email, done) { // callback con email y usuario
+
+    // busca un usuario que tenga el email de la forma
+    // y se revisa si existe
+    User.findOne({ 'local.email' :  email }, function(err, user) {
+      // si hay un error retornelo
+      if (err)
+      return done(err);
+
+      // si no se encontro un usuario con el email retorna un mensaje
+      if (!user)
+      return done(null, false, req.flash('forgotMessage', 'Usuario no encontrado.'));
 
       // si todo esta bien retorne el usuario
       return done(null, user);
@@ -97,5 +122,4 @@ module.exports = function(passport) {
     });
 
   }));
-
 };

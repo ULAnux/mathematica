@@ -353,5 +353,230 @@ P(26,3), esto es 26.25.24 = 15600maneras.'],20/20,['Anonimo']).
 pr(0050-70,['Ejemplo', combinatoria, 'Hay 10 dígitos decimales. ¿Cuántos conjuntos se pueden formar que contengan exactamente 3 de esos dígitos?'],['C10,3=120'],20/20,['Anonimo']).
 
 
+/******** Nuevas PRs ********/
+/****************************
+Se agregar unas nuevas PRs sobre el lenguaje de programación PROLOG, ya que considero que es uno de los aprendizajes que deja la materia, revisando las contribuciones de semestres anteriores no vi que alguien desarrollara PRs sobre esto y creo que seria bueno que el juego contenga informacion sobre PROLOG por si alguien tiene alguna consulta cuando esta comenzando a usar prolog o se le olvido algo, ya que seria bueno que el juego le permita aprender esto. Trate de agregar la mayor cantidad de información que consegui, espero sea una buena contribución. La informacion fue extraida del manual de PROLOG del profesor  Ivan Bratko, que se encuentra en español en la web del profesor Jacinto Davila y de la página programacion.net donde se encuentran dos manuales sobre el uso del lenguaje de programación Prolog.
+****************************/
 
+pr(0050-71,['Qué', es, la, 'programación', 'Lógica'],['La Programación Lógica es un paradigma de computación que consiste de un enfoque declarativo para escribir programas para el computador. Los programas lógicos pueden ser entendidos y estudiados a partir de dos conceptos: verdad y deducción lógica. En programación lógica, uno puede preguntarse si un axioma de un programa es verdad bajo alguna interpretación de los símbolos del programa y si ciertas declaraciones lógicas son consecuencia del programa. Esas preguntas pueden ser respondidas independientemente de cualquier mecanismo de ejecución concreto.'],20/20,['Ivan Bratko']).
+
+pr(0050-72,['Sobre', que, paradigma, esta, basado, el, lenguaje, 'PROLOG'],['Sobre el paradigma de Programación Lógica'],20/20,['Ivan Bratko']).
+
+pr(0050-73,['Qué', significa, la, palabra, 'PROLOG'],['for Programation et Logique or Programming in Logic.'],20/20,['Ivan Bratko']).
+
+pr(0050-74,['Qué', es, 'PROLOG'],['es un lenguaje de programación con un significado operacional preciso que toma prestado sus conceptos básicos de la programación lógica. Los programas PROLOG son instrucciones para ejecutar sobre el computador. Esas instrucciones casi siempre son leídas como instrucciones lógicas y, lo más importante, el resultado de una computación de un programa PROLOG es una consecuencia lógica de los axiomas en éste.'],20/20,['Ivan Bratko']).
+
+pr(0050-75,['A', quienes, se, atribuye, el, comienzo, de, la, 'programación', 'lógica'],['Puede ser atribuido a los profesores Kowalski y Colmerauer.'],20/20,['Ivan Bratko']).
+
+pr(0050-76,['Cómo', esta, definido, un, programa, en, 'PROLOG'],['Un programa PROLOG esta definido como un conjunto de procedimientos (el orden es indiferente). Cada procedimiento consiste de una o más cláusulas (ahora, el orden de las cláusulas si es importante). Hay dos tipos de cláusulas: hechos y reglas. El programa es almacenado en una base de conocimiento PROLOG.'],20/20,['Ivan Bratko']).
+
+pr(0050-77,['Cómo', cargas, un, programa, dentro, de, la, base, de, datos, 'PROLOG'],['Usando el comando consult, en la siguiente forma:
+? consult(‘Nombre_Del_archivo_Con_El_Programa’).'],20/20,['Ivan Bratko']).
+
+pr(0050-78,['Comando', consult, 'PROLOG'],['El comando consult agrega las cláusulas y hechos desde el archivo texto especificado a las cláusulas y hechos ya almacenados en la base de datos. Así puedes cargar más programas dentro de la base de datos a la vez, pero debes ser cuidadoso si los programas no usan los procedimientos con el mismo nombre. De otra manera, debido a la acumulación de cláusulas, esos procedimientos podrían comportarse incorrectamente.'],20/20,['Ivan Bratko']).
+
+pr(0050-79,['Comando', reconsult, 'PROLOG'],['Este comando se comporta igual al comando consult (agrega procedimientos dentro de la base de datos) pero si hay un procedimiento en la base de datos con el mismo nombre de algún procedimiento en el archivo reconsultado, entonces el primer procedimiento es reemplazado por la nueva definición. Puedes usar el comando reconsult para cambiar un programa en la base de datos durante la depuración. Se usa de la siguiente forma: ? reconsult(‘Nombre_Del_archivo_Con_El_Programa’).'],20/20,['Ivan Bratko']).
+
+pr(0050-80,['Cómo', se, ejecuta, un, programa,en, 'PROLOG'],['El programa PROLOG es ejecutado invocando algún procedimiento del programa de la siguiente forma:
+? nombre_Del_Procedimiento(parámetros).
+"Llamar un procedimiento" es equivalente a "preguntando una pregunta" en PROLOG.'],20/20,['Ivan Bratko']).
+
+pr(0050-81,['Cuál', es, la, utilidad, de, 'PROLOG'],['Generación de CGI’s, Acceso a bases de datos desde páginas Web, Paralelización automática de programas, Programación distribuida y multiagente, Sistemas expertos e inteligencia artificial, Validación automática de programas, Procesamiento de lenguaje natural, Prototipado rápido de aplicaciones, Bases de datos deductivas, Interfacing con otros lenguajes como Java y Tcl/Tk,... (la lista es interminable) ...'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-82,['Cómo', hacer, un, comentario, en, 'PROLOG'],['Los comentarios en Prolog se escriben comenzando la línea con un símbolo de porcentaje. Ejemplo:
+ % Hola, esto es un comentario. 
+ % Y esto también.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-83,['Cómo', declarar, variables, 'lógicas', en, 'PROLOG'],['Las váriables en Prolog no son variables en el sentido habitual, por eso las llamamos variables lógicas. Se escriben como una secuencia de caracteres alfabéticos comenzando siempre por mayúscula o subrayado. Ejemplos de variables:
+  Variable 
+  _Hola    
+  _ 
+El hecho de que los nombres de variables comienzen por mayúscula (o subrayado) evita la necesidad de declarar previamente y de manera explícita las variables, tal y como ocurre en otros lenguajes.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-84,['Qué', es, una, variable, 'anónima', en, 'PROLOG'],['Existen variables sin nombre, y todas ellas se representan mediante el símbolo de subrayado _. Pero cuidado, aunque todas las variables anónimas se escriben igual, son todas distintas. Es decir, mientras que dos apariciones de la secuencia de caracteres Hola se refieren a la misma variable, dos apariciones de la secuencia _ se refieren a variables distintas.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-85,['Qué', son, 'Términos', en, 'PROLOG'],['Los términos son el único elemento del lenguaje, es decir, los datos son términos, el código son términos, incluso el propio programa es un término. No obstante, es habitual, llamar término solamente a los datos que maneja un programa. Un término se compone de un functor seguido de cero a N argumentos entre paréntesis y separados por comas. Los números enteros o decimales sin restricciones de tamaño también son términos.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-86,['Qué', es, un, 'Functor', en, 'PROLOG'],['Un functor (también denominado átomo) puede ser: una sucesión de caracteres alfanuméricos comenzando por una letra minúscula, un símbolo de puntuación o secuencia de estos. Las secuencias permitidas varian de un entorno de desarrollo a otro o una sucesión cualquiera de caracteres encerrada entre comillas simples.
+Algunos ejemplos de functores:
+     functor 
+     f384p12 
+     ‘esto es un unico functor, eh!!’ 
+     ‘_functor’'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-87,['Cómo', pueden, ser, los, argumentos, de, un, 'término', en, 'PROLOG'],['Los argumentos de un término pueden ser: otro término o una váriable lógica. La mejor forma de aprender a escribir términos es mirando algunos ejemplos:
+   termino_cero_ario 
+   1237878837385345.187823787872344434 
+   ‘mi functor’(17,hola,‘otro termino’) 
+   f(Variable) 
+   muchos_argumentos(_,_,_,Variable,232,f,g,a) 
+   terminos_anidados(f(g), h(i,j(7)), p(a(b)), j(1,3,2,_))'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-88,['Functor', definido, como, operador, 'término', en, 'PROLOG'],['Algunos functores pueden estar declarados como operadores, bien de manera predefinida, o bien por el programador. Los operadores simplemente sirven para escribir términos unarios o binarios de una manera más cómoda. Por ejemplo, un functor definido como operador infijo es la suma (+). Así, la expresión a+b es perfectamente válida, aunque en realidad no es más que el término +(a,b).
+Los operadores binarios infijos nos permiten escribir el functor entre los dos argumentos y eliminar los paréntesis.
+Los operadores tienen asociada una prioridad. Por ejemplo, la expresión a+b*c es en realidad el término +(a,*(b,c)). Esto es así porque el operador producto (*) tiene más prioridad que el operador suma (+). Si no fuese así, se trataría del término *(+(a,b),c).
+Los operadores también pueden ser unarios y prefijos, lo que nos evita escribir los paréntesis del argumento. Por ejemplo, la expresión -5 es en realidad el término -(5).'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-89,['Qué', es, un, 'término', cerrado, o, ground, en, 'PROLOG'],['Un término que no contiene variables libres se dice que es cerrado o ground'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-90,['Qué', es, un, 'término', 'N-ario', o, con, 'aridad N', en, 'PROLOG'],['Un término con N argumentos'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-91,['Tienen', los, números, límite, de, precisión, o, rango, en, 'PROLOG'],['Los números en Prolog no tienen límite de precisión o rango. Estan límitados únicamente por la memoria disponible.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-92,['Cómo', se, dan, valores, a, las, variables, en, 'PROLOG'],['La unificación es el mecanismo mediante el cuál las variables lógicas toman valor en Prolog. El valor que puede tomar una variable consiste en cualquier término, por ejemplo, j(3), 23.2, ‘hola que tal’, etc. Por eso decimos que los datos que maneja Prolog son términos. Cuando una variable no tiene valor se dice que está libre. Pero una vez que se le asigna valor, éste ya no cambia, por eso se dice que la variable está ligada.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-93,['Qué', significa, que, dos, términos, unifican, en, 'PROLOG'],['Se dice que dos términos unifican cuando existe una posible ligadura (asignación de valor) de las variables tal que ambos términos son idénticos sustituyendo las variables por dichos valores. Por ejemplo: a(X,3) y a(4,Z) unifican dando valores a las variables: X vale 4, Z vale 3. Obsérvese que las variables de ambos términos entran en juego. Por otra parte, no todas las variables estan obligadas a quedar ligadas. Por ejemplo: h(X) y h(Y) unifican aunque las variables X e Y no quedan ligadas. No obstante , ambas variables permanecen unificadas entre sí. Si posteriormente ligamos X al valor j(3) (por ejemplo), entonces automáticamente la variable Y tomará ese mismo valor. Lo que esta ocurriendo es que, al unificar los términos dados, se impone la restricción de que X e Y deben tomar el mismo valor aunque en ese preciso instante no se conozca dicho valor.
+La unificación no debe confundirse con la asignación de los lenguajes imperativos puesto que representa la igualdad lógica. Muchas veces unificamos variables con términos directamente y de manera explícita (ya veremos como se hace esto), por ejemplo,X y 355. Esto provoca la sensación de que estamos asignando valores a las variables al estilo imperativo.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-94,['Cómo', saber, si, dos, términos, unifican, en, 'PROLOG'],['Para saber si dos términos unifican podemos aplicar las siguientes normas:
+Una variable siempre unifica con un término, quedando ésta ligada a dicho término.
+Dos variables siempre unifican entre sí, además, cuando una de ellas se liga a un término, todas las que unifican se ligan a dicho término.
+Para que dos términos unifiquen, deben tener el mismo functor y la misma aridad. Después se comprueba que los argumentos unifican uno a uno manteniendo las ligaduras que se produzcan en cada uno.
+Si dos términos no unifican, ninguna variable queda ligada.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-95,['Se', puede, unificar, una, variable, consigo, misma, en, 'PROLOG'],['Una variable siempre unifica consigo misma: Z y Z.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-96,['Predicados', 'y', 'Objetivos', en, 'PROLOG'],['Los predicados son los elementos ejecutables en Prolog. En muchos sentidos se asemejan a los procedimientos o funciones típicos de los lenguajes imperativos.
+Una llamada concreta a un predicado, con unos argumentos concretos, se denomina objetivo (en inglés, goal). Todos los objetivos tiene un resultado de éxito o fallo tras su ejecución indicando si el predicado es cierto para los argumentos dados, o por el contrario, es falso.
+Cuando un objetivo tiene éxito las variables libres que aparecen en los argumentos pueden quedar ligadas. Estos son los valores que hacen cierto el predicado. Si el predicado falla, no ocurren ligaduras en las variables libres.
+Ejemplo:
+El caso más básico es aquél que no contiene variables: son_hermanos(‘Juan’,‘Maria’). Este objetivo sólamente puede tener una solución (verdadero o falso).
+Si utilizamos una variable libre: son_hermanos(‘Juan’,X), es posible que existan varios valores para dicha variable que hacen cierto el objetivo. Por ejemplo para X = ‘Maria’, y para X = ‘Luis’.
+También es posible tener varias variables libres: son_hermanos(Y,Z). En este caso obtenemos todas las combinaciones de ligaduras para las variables que hacen cierto el objetivo. Por ejemplo, X = ‘Juan’ y Z = ‘Maria’ es una solución. X = ‘Juan’ y Z = ‘Luis’ es otra solución.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-97,['Secuencias', de, objetivos, en, 'PROLOG'],['En Prolog los objetivos se pueden combinar mediante conectivas propias de la lógica de primer orden: la conjunción, la disyunción y la negación.
+La conjunción es la manera habitual de ejecutar secuencias de objetivos.
+El operador de conjunción es la coma, por ejemplo: edad(luis,Y),edad(juan,Z),X>Z. Parece sencillo, pero hay que tener en cuenta qué ocurre con las ligaduras de las variables:
+En primer lugar, hay que ser consciente de que los objetivos se ejecutan secuencialmente por orden de escritura (es decir, de izquierda a derecha).
+Si un objetivo falla, los siguientes objetivos ya no se ejecutan. Además la conjunción, en total, falla.
+Si un objetivo tiene éxito, algunas o todas sus variables quedan ligadas, y por tanto, dejan de ser variables libres para el resto de objetivos en la secuencia.
+Si todos los objetivos tienen éxito, la conjunción tiene éxito y mantiene las ligaduras de los objetivos que la componen.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-98,['Qué', ocurre, si, 'uno', o, varios, objetivos, tienen, varias, soluciones, en, 'PROLOG'],['Cuando esto ocurre entra en juego el backtracking. Esto consiste en recordar los momentos de la ejecución donde un objetivo tenía varias soluciones para posteriormente dar marcha atrás y seguir la ejecución utilizando otra solución como alternativa.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-99,['Cómo', funciona, el, backtracking, en, 'PROLOG'],['El backtracking funciona de la siguiente manera:
+Cuando se va ejecutar un objetivo, Prolog sabe de antemano cuantas soluciones alternativas puede tener. Cada una de las alternativas se denomina punto de elección. Dichos puntos de elección se anotan internamente y de forma ordenada. Para ser exactos, se introducen en una pila. Se escoge el primer punto de elección y se ejecuta el objetivo eliminando el punto de elección en el proceso. Si el objetivo tiene éxito se continúa con el siguiente objetivo aplicandole estas mismas normas. Si el objetivo falla, Prolog dá marcha atrás recorriendo los objetivos que anteriormente sí tuvieron éxito (en orden inverso) y deshaciendo las ligaduras de sus variables. Es decir, comienza el backtracking.
+Cuando uno de esos objetivos tiene un punto de elección anotado, se detiene el backtracking y se ejecuta de nuevo dicho objetivo usando la solución alternativa. Las variables se ligan a la nueva solución y la ejecución continúa de nuevo hacia adelante. El punto de elección se elimina en el proceso.
+El proceso se repite mientras haya objetivos y puntos de elección anotados. De hecho, se puede decir que un programa Prolog ha terminado su ejecución cuando no le quedan puntos de elección anotados ni objetivos por ejecutar en la secuencia.
+Además, los puntos de elección se mantienen aunque al final la conjunción tenga éxito. Esto permite posteriormente conocer todas las soluciones posibles.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-100,['Predicados', predefinidos, en, 'PROLOG'],['Existen algunos predicados predefinidos en el sistema y que están disponibles en todo momento. El más importante es la igualdad: =. Este predicado tiene éxito si sus dos argumentos unifican entre sí, falla en caso contrario. Por ejemplo, el objetivo X = 3 provoca la ligadura de X al valor 3 puesto que unifican. Otro ejemplo es f(3) = f(X), que también liga X al valor 3.
+Es muy importante no confundir la igualdad lógica con la igualdad aritmética. Por ejemplo, X = 3 + 2 tiene éxito pero no resulta en X ligado a 5. De hecho, la variable X queda ligada al término +(3,2).
+Otros predicados predefinidos muy útiles son los de comparación aritmética. Naturalmente, estos no funcionan con cualquier término como argumento. Solamente sirven para números (enteros y decimales). Algunos de estos predicados son:
+< menor que, > mayor que, =< menor o igual que, >= mayor o igual que, =:= igualdad aritmetica.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-101,['Cláusulas', en, 'PROLOG'],['Las cláusulas son términos (como todo en Prolog) con el siguiente formato:
+  cabeza :-  
+    objetivon. 
+ Todo gira en torno al operador ":-". Lo que aparece a la izquierda se denomina cabeza y la secuencia de objetivos que aparece a la derecha se denomina cuerpo. La cabeza es un término simple, por ejemplo, p(X,12) podría ser la cabeza de una cláusula del predicado p. Es decir, todas las cláusulas de un mismo predicado tienen en la cabeza un término con el mismo functor y aridad, aunque los argumentos pueden ser distintos. El cuerpo no es más que el conjunto de condiciones que deben cumplirse (tener éxito) para que el predicado tenga éxito si lo invocamos con un objetivo que unifique con la cabeza.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-102,['Cláusulas', 'sin', cuerpo, en, 'PROLOG'],['Si no existen condiciones para que una cláusula sea cierta podemos omitir el cuerpo. En tal caso solamente escribimos la cabeza terminada en punto. Por ejemplo:
+  edad(juan,32). 
+  edad(luis,20).
+ Son dos cláusulas del predicado edad. Las cláusulas sin cuerpo se suelen denominar hechos, e.g. es un hecho que la edad de Luis es 20 años.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-103,['Podemos', escribir, las, 'cláusulas', en, una, sola, 'línea', en, 'PROLOG'],['Si, seria: a :- b,c,d.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-104,['Si', una, misma, variable, aparece, en, dos, 'cláusulas', diferentes, son, la, misma, variable, en, 'PROLOG'],['Si una misma variable aparece en dos cláusulas diferentes, entonces son variables diferentes pero con el mismo nombre. Recuerde que el ámbito de visibilidad de las variables es una única cláusula.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-105,['Cómo', ejecutar, un, objetivo, en, 'PROLOG'],['Es bastante sencillo solo debemos escribir el nombre de la cláusula, los parametros, poner un punto y presionar enter. Ejemplo: ?- 
+t(X,3) = t(4,Z). 
+Prolog nos devolvera
+  X = 4,   
+  Z = 3 ? 
+Observese que los objetivos acaban en un punto (.), si pulsamos intro antes de escribir el punto ocurre un salto de línea, pero nada más. Cuando escribimos el punto y pulsamos INTRO es cuando se ejecuta el objetivo.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-106,['Cómo', terminar, la, 'aplicación', 'y', salir, de, 'PROLOG'],['podemos terminar la aplicación ejecutando el predicado halt/0, o bien pulsando CTRL-D:
+Ejemplo:
+  ?- halt. 
+  Process Ciao/Prolog<1> finished '],20/20,['Angel Fernández Pineda']).
+
+pr(0050-107,['Cómo', guardar, un, archivo, en, formato, 'PROLOG'],['Los programas se escriben en ficheros de texto, con extension .pl y pueden contener comentarios y código. Para ello puede utilizar cualquier editor de texto. '],20/20,['Angel Fernández Pineda']).
+
+pr(0050-108,['Cómo', evaluar, expresiones, 'aritméticas', en, 'PROLOG'],['En Prolog es fácil construir expresiones aritméticas. Se hace en Prolog mediante el predicado is, cuyo modo de uso es is(Var,Expr). Además, el argumento Expr debe ser un término cerrado (es decir, que no contenga variables libres). Por ejemplo, vamos a sumar dos y dos:
+?-  X is 2 + 2. 
+X = 4 
+yes'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-109,['Tipos', de, datos, en, 'PROLOG'],['Todos sabemos que los datos que maneja Prolog son los términos. Sin embargo, podemos construir otros tipos de datos a partir de estos. De hecho, algunos están predefinidos para mayor gloria del programador, son el caso de las listas y las cadenas de caracteres. En cualquier caso, se debe asumir que Prolog no es un lenguaje tipado, puesto que no existen declaraciones explícitas de tipo tal y como ocurre en los lenguajes imperativos. El hecho de que no existan dichas declaraciones se debe sencillamente a que no hacen falta.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-110,['Qué', son, 'Registros', en, 'PROLOG'],['Los registros son agrupaciones ordenadas de datos que en Prolog podemos escribir como términos que almacenan cada dato en un argumento. Por ejemplo, supongamos que queremos un registro para representar los datos personales de la gente:
+ persona(‘Eva’,‘Fina’,‘Y Segura’,15)
+ persona(‘Fulanito’,‘De Tal’,‘Y Tal’,32)
+Mediante el término persona representamos a un individuo. El primer argumento es el nombre, el segundo y tercero son los apellidos y el cuarto es la edad.
+Puesto que los términos son anidables podemos crear registros complejos:
+ persona(‘Menganito’,edad(32),direccion(‘Leganitos’,13,‘Madrid’)) '],20/20,['Angel Fernández Pineda']).
+
+pr(0050-111,['Árboles', en, 'PROLOG'],['Puesto que los términos pueden ser recursivos es fácil crear estructuras de datos recurrentes. Como ejemplo, veamos como definir árboles binarios. Para ello representamos el árbol vacío mediante una constante, por ejemplo, empty, y un nodo cualquiera puede ser representado mediante el término tree. El primer argumento representa un dato cualquiera asociado al nodo. El segundo argumento representa la rama izquierda, y el tercer argumento la correspondiente rama derecha. Son ejemplos de árboles:
+ empty
+ tree(dato1,empty,empty)
+ tree(dato1,tree(dato2,empty,empty),tree(dato3,empty,empty))
+ tree(dato4,empty,tree(dato5,tree(dato6,empty,empty),empty)) '],20/20,['Angel Fernández Pineda']).
+
+pr(0050-112,['Listas', en, 'PROLOG'],['Las listas en Prolog podrían definirse del mismo modo que los árboles puesto que los términos se pueden anidar todas las veces que sea necesario. Por ejemplo, la lista de números del uno al cinco se puede representar así:
+ lista(1,lista(2,lista(3,lista(4,lista(5,vacio)))))
+Afortunadamente, las listas están predefinidas en el lenguaje para una mayor comodidad. De modo que la lista anterior la podemos escribir así:
+ [1, 2, 3, 4, 5] 
+Esta es la forma de escribir las listas definiendo todos los elementos, pero podemos manipular las listas distinguiendo cabeza y resto: [C|R]. Donde la variable C representa la cabeza, y R el resto. Por ejemplo:
+ L = [1, 2, 3, 4, 5], M = [0|L].
+La lista M sería equivalente a [0,1,2,3,4,5].'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-113,['Cadenas', de, caracteres, en, 'PROLOG'],['Las cadenas de caracteres son en Prolog listas de códigos ASCII. Se pueden escribir de una manera cómoda poniendo los caracteres entre comillas dobles. Por ejemplo, la expresión "ABC" es en realidad la lista [65,66,67]. Así, podemos tratar las cadenas de caracteres como cadenas o como listas según nos interese. Naturalmente, todo el código que nos sirve para listas nos sirve para cadenas. Por ejemplo, el predicado que concatena dos listas también sirve para concatenar dos cadenas de texto.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-114,['Constantes', en, 'PROLOG'],['Las constantes en Prolog son términos cero-arios (átomos). A pesar de su simpleza, pueden ser muy útiles para representar información ya que pueden contener cualquier caracter. Se utilizan, por ejemplo, para representar nombres de ficheros. Recuerde que las constantes numéricas también son términos cero-arios (pero no son átomos). '],20/20,['Angel Fernández Pineda']).
+
+pr(0050-115,['Cómo', estamos, seguros, de, que, un, argumento, es, de, un, tipo, determinado, en, 'PROLOG'],['Se realiza un tests de tipo. Éstos son predicados que (habitualmente) reciben un dato como argumento y fallan si el argumento no es del tipo esperado.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-116,['Algunos', tests, de, tipo, predefinidos, en, 'PROLOG'],['Existen predicados predefinidos para comprobar algunos tipos básicos. Los más importantes son (Predicado / Test): integer / Comprueba si su argumento es un número entero, float / Comprueba si el argumento es un número decimal, number / Comprueba si el argumento es un número (entero o decimal), var / Comprueba si el argumento es una variable libre'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-117,['Cuál', es, la, desventaja, de, los, tests, de, tipo, en, 'PROLOG'],['La desventaja de los tests de tipo es que resulta necesario ejecutarlos. Esto añade un tiempo extra de ejecución a nuestra aplicación que no sirve para nada útil.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-118,['Qué', es, el, corte, en, 'PROLOG'],['El corte es un predicado predefinido que no recibe argumentos. Se representa mediante un signo de admiración (!).El corte tiene la propiedad de eliminar los puntos de elección del predicado que lo contiene.
+Es decir, cuando se ejecuta el corte, el resultado del objetivo (no sólo la cláusula en cuestión) queda comprometido al éxito o fallo de los objetivos que aparecen a continuación. Es como si a Prolog "se le olvidase" que dicho objetivo puede tener varias soluciones. Otra forma de ver el efecto del corte es pensar que solamente tiene la propiedad de detener el backtracking cuando éste se produce. Es decir, en la ejecución normal el corte no hace nada. Pero cuando el programa entra en backtracking y los objetivos se recorren marcha atrás, al llegar al corte el backtracking se detiene repentinamente forzando el fallo del objetivo.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-119,['Para', que, se, usa, el, corte, en, 'PROLOG'],['El corte se utiliza muy frecuentemente. Los motivos por los que se usa el corte son, por orden de importancia, los siguientes:
+1. Para optimizar la ejecución. El corte sirve para evitar que por culpa del backtracking se exploren puntos de elección que, con toda seguridad, no llevan a otra solución (fallan).
+2. Para facilitar la legibilidad y comprensión del algoritmo que está siendo programado. A veces se sitúan cortes en puntos donde, con toda seguridad, no van a existir puntos de elección para eliminar, pero ayuda a entender que la ejecución sólo depende de la cláusula en cuestión.
+3. Para implementar algoritmos diferentes según la combinación de argumentos de entrada. Algo similar al comportamiento de las sentencias case en los lenguajes imperativos.
+4. Para conseguir que un predicado solamente tenga una solución. Esto nos puede interesar en algún momento. Una vez que el programa encuentra una solución ejecutamos un corte. Así evitamos que Prolog busque otras soluciones aunque sabemos que éstas existen.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-120,['Corte', 'y', fallo, en, 'PROLOG'],['Es muy habitual encontrar la secuencia de objetivos corte-fallo: !,fail. El predicado fail es un predicado predefinido que siempre falla. Se utiliza para detectar prematuramente combinaciones de los argumentos que no llevan a solución, evitando la ejecución de un montón de código que al final va a fallar de todas formas.'],20/20,['Anonimo']).
+
+pr(0050-121,['Algoritmos', 'y', 'técnicas', de, 'programación', en, 'PROLOG'],['Los algoritmos utilizados en Prolog están íntimamente ligados a los términos y su estructura anidada/recursiva. Por eso, la técnica de programación por excelencia es la recursividad. Sin embargo existen técnicas propias del lenguaje como son los bucles de fallo.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-122,['Recursividad', en, 'PROLOG'],['La recursividad es la técnica por antonomasia para programar en Prolog. En Prolog no existen bucles for, while, do-while, ni sentencias case, ni otras construcciones absurdas. En Prolog no hacen falta. Todos los términos en Prolog pueden ser recursivos, y gracias a la unificación, podemos recorrer sus argumentos a voluntad. La estructura de datos más significativa con respecto a la recursividad son las listas.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-123,['Parámetros', de, 'acumulación', en, 'PROLOG'],['La técnica de parámetros de acumulación se suele utilizar en combinación con la recursividad. Consiste en un argumento auxiliar (o varios de ellos) que almacena la solución parcial en cada paso recursivo. Cuando llegamos al caso base, la solución parcial es la solución total.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-124,['La', 'negación', por, fallo, en, 'PROLOG'],['La negación en Prolog consiste en un predicado predefinido. La negación recibe como argumento un objetivo. Si dicho objetivo tiene éxito la negación falla y viceversa. La negación no es la negación lógica sino la negación por fallo. Esto significa que Prolog asume que aquellos objetivos que no tienen solución (fallan) son falsos. Esto se denomina asunción de mundo cerrado porque damos por supuesto que todo aquello que no se puede deducir (porque no ha sido escrito en el programa) es falso. La negación por fallo solamente coincide con la negación lógica cuando el objetivo negado es un término cerrado (no contiene variables libres).'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-125,['Parámetros', de, 'acumulación', en, 'PROLOG'],['La técnica de parámetros de acumulación se suele utilizar en combinación con la recursividad. Consiste en un argumento auxiliar (o varios de ellos) que almacena la solución parcial en cada paso recursivo. Cuando llegamos al caso base, la solución parcial es la solución total.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-126,['Qué', es, orden, superior, en, 'Programación'],['Se podría definir el concepto de orden superior como la capacidad de un lenguaje para manejar su propio código como una estructura de datos más. El orden superior existe en muchos lenguajes pero, debido a que se implementa de formas distintas, no se suele usar esta denominación. Algunos ejemplos:
+	En el lenguaje C: los punteros a funciones. Estos permiten pasar funciones como argumentos.
+	En Java y otros lenguajes OO: las referencias a instancias. Permiten ejecutar código distinto dependiendo de la referencia utilizada.
+Un aspecto particular del orden superior es la capacidad de pasar un procedimiento o función como argumento a otro procedimiento o función. Esta es la característica más utilizada.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-127,['Qué', es, 'Metaprogramación'],['La metaprogramación es una implementación posible del orden superior tremendamente versátil. Consiste en la posibilidad de que el código se modifique a sí mismo. Para entender la diferencia entre metaprogramación y orden superior pondremos un ejemplo:
+	2) Escribimos una función, y la pasamos como argumento a otra función. Ésta última la ejecuta sin saber exactamente qué está ejecutando. Esto es una característica de orden superior.
+	1) Tomamos una cadena de texto donde almacenamos el nombre de una función, por ejemplo, tabla_logaritmo. Por otra parte construimos una lista con dos elementos, los  números 3 y 5, por ejemplo. Ahora juntamos la lista con la cadena de texto y generamos
+una llamada válida a la función tabla_logaritmo(3,5). La llamada se ejecuta. Esto es metaprogramación.
+Prolog cuenta con esta característica.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-128,['Manipulación', de, 'términos', en, 'PROLOG'],['El predicado functor es uno de los más útiles entre la biblioteca standard Prolog. Este predicado permite extraer el functor y la aridad de un término cualquiera. Pero, al ser reversible, también permite construir nuevos términos a partir del functor y la aridad deseada. Los modos de uso son:
+	functor(Termino,Functor,Aridad).
+El siguiente ejemplo muestra como se extrae functor y aridad:
+?- functor(termino(arg(1)),Functor,Aridad).
+Functor = termino
+Aridad = 1
+yes '],20/20,['Angel Fernández Pineda']).
+
+pr(0050-129,['Manipulación', de, argumentos, con, "arg", en, 'PROLOG'],['Cuando ya sabemos que podemos construir términos, sería deseable poder asignarles argumentos. Uno de los predicados que permiten esto es arg. Para ello se indica el número de índice del argumento deseado, empezando a numerar por el 1 de izquierda a derecha. El modo de uso es:
+	arg(Indice,Termino,Argumento).
+El predicado arg solamente es útil cuando se conoce a priori el número de argumentos del
+término manipulado, pero en combinación con functor resulta muy eficaz.'],20/20,['Angel Fernández Pineda']).
+
+pr(0050-130,['Manipulación', de, argumentos, con, "univ", en, 'PROLOG'],['En ocasiones resulta mucho más útil convertir los argumentos de un término en una lista y viceversa. Esta es la función de "univ", nombre que recibe el operador infijo =... Su modo de uso son:
+	Termino =.. Lista
+La lista contiene siempre el functor del término en la primera posición, y los argumentos en el resto de la lista.'],20/20,['Angel Fernández Pineda']).
 

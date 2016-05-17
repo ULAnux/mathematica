@@ -281,6 +281,41 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
 
   });
 
+  // lecciones
+  app.get('/lecciones', isLoggedIn, function(req, res) {
+    res.render('lecciones', {
+      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+    });
+  });
+
+  // ejercicios induccion
+  app.get('/ejercicios/induccion', isLoggedIn, function(req, res) {
+    res.render('ejeInduc', {
+      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+    });
+  });
+
+  // ejercicios combinatoria
+  app.get('/ejercicios/combinatoria', isLoggedIn, function(req, res) {
+    res.render('ejeComb', {
+      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+    });
+  });
+
+  // lecciones induccion
+  app.get('/lecciones/induccion', isLoggedIn, function(req, res) {
+    res.render('induccion', {
+      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+    });
+  });
+
+  // lecciones combinatoria
+  app.get('/lecciones/combinatoria', isLoggedIn, function(req, res) {
+    res.render('combinatoria', {
+      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+    });
+  });
+
   // logout
   app.get('/logout', function(req, res) {
     req.logout();

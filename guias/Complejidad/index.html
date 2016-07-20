@@ -1,0 +1,407 @@
+<html>
+<head>
+	<title>Complejidad Cmputacional</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+<div class="container">
+	
+	<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+	
+
+
+		<p align="center" ><img src="complejidad.png" width="100%" height="15%"></p>
+		<hr>Copyright 2010, Jacinto Dávila Universidad de Los Andes, Venezuela. <br>
+		Se concede permiso de copiar, distribuir o modificar este documento bajo los términos establecidos 
+		por la licencia de documentación de GNU, GFDL, Version 1.1 <hr>
+
+
+		<p ><img src="nocion.png" width="100%" height="7%"></p>
+		<hr>Notas originales de Victor Bravo<hr>
+
+	
+	<p align="center"><img src="abajo.jpg" width="10%" height="13%"></p>
+	<p class="letra" align="justify" >1.- En general, existen varios algoritmos para resolver un mismo problema. Entonces ¿Cómo debemos escoger un algoritmo?. <br></p>
+	<p class="texto" align="justify">Para poder analizar el desempeño de un algoritmo, debemos predecir los recursos que éste requiere, entre los que se encuentran:</p> 
+	<p class="texto1" >-Cantidad de almacenamiento principal requerido por sus variables <br>
+	-Cantidad de tráfico que genera un red de computadores <br>
+	-Cantidad de Información que debe moverse desde y hacia las unidades de almacenamiento secundario <br>
+	-Simplicidad del algoritmo <br>
+	-Tiempo de cómputo </p>
+	<p class="texto" align="justify">La complejidad espacial y la complejidad temporal son dos criterios para medir el uso del tiempo y el espacio para el cálculo en un computador, respectivamente. <br><br>
+	Algunas personas piensan que las computadoras son tan rápidas que no hay problema con el tiempo, pero si recordamos el problema de las torres de Hanoi1, existen tareas que pueden requerir siglos y todavía no existen computadoras que pueden resolverlos. El tiempo es un factor primordial en aplicaciones como: predicción del clima, problemas de búsqueda, y en general los llamados problemas de tiempo real. <br><br>
+	Existe una premisa en la complejidad computacional: El tiempo tomado por un algoritmo depende de su entrada, por ejemplo: ordernar tres (3) números tomará distinto tiempo que ordernar mil (1000), y diferente que ordernar cien mil (100.000). Esto indica, que en general, el tiempo tomado en ejecutarse un algoritmo tiene una función de dependencia con el número o tamaño de la entrada. <br>
+
+	Existe una premisa en la complejidad computacional: El tiempo tomado por un algoritmo depende de su entrada, por ejemplo: ordernar tres (3) números tomará distinto tiempo que ordernar mil (1000), y diferente que ordernar cien mil (100.000). Esto indica, que en general, el tiempo tomado en ejecutarse un algoritmo tiene una función de dependencia con el número o tamaño de la entrada. 
+	En consecuencia de lo descrito anteriormente, se define el tiempo de corrida, como el tiempo requerido (unidades como milisegundos, segundos, minutos, 	horas y así) por un algoritmo para procesar una entrada de tamaño n. 
+	Generalmente, para relacionar el tiempo de corrida con el tamaño de la entrada se utiliza una función T(n) que representa su complejidad computacional.</p>
+	<p class="texto1">Sea T(n) el tiempo de corrida de algún programa, se asume lo siguiente: </p>
+	<p class="texto">
+	1. . El argumento n es un entero no negativo, y <br>
+	2. . T(n) es no negativo para todos los argumentos de n. </p>
+
+	<p align="center"><img src="abajo.jpg" width="10%" height="13%"></p>
+	<p class="letra" align="justify">2.- Complejidad constante: cuando la complejidad del algoritmo puede expresarse como una función constante T(n)=a, se dice que es constante, no depende de n. </p>
+	<p class="texto"> <u>Ejemplo 1.</u> El procedimiento, eleva al cuadrado, recibe n y regresa el cuadrado de n. </p>	<br>
+	<table  border="1" align ="center" width="70%"  class="texto" >
+		<tbody align ="center" width="130%">
+			<tr>
+				<td><b>int cuadrado(int n)</b></td>
+				<td><b>Costo</b></td>
+				<td><b>veces</b></td>
+			</tr>
+		</tbody>	
+			<tbody align ="center" >
+			<tr>
+				<td>return n*n; </td>
+				<td>c1</td>
+				<td>1</td>
+			</tr>
+		</tbody>
+		</table>
+	</p><br>
+
+	<p align="center"><img src="abajo.jpg" width="10%" height="13%"></p>
+	<p class="letra" align="justify">3.- Complejidad lineal: Cuando la complejidad de un algoritmo puede expresarse como una función lineal T(n)=an+b, donde a y b son constantes se dice que es lineal en n. </p>
+	<p class="texto"><u>Ejemplo 2.</u> El siguiente programa inicializa un arreglo de n elementos.</p><br>
+	<table  border="1" align ="center" width="50%" class="texto">
+		<tbody align ="center"  >
+			<tr>
+				<td><b>void inicializa(int *A,int n) </b></td>
+				<td><b>Costo</b></td>
+				<td><b>veces</b></td>
+			</tr>
+		</tbody>	
+		<tbody align ="center" >
+			<tr>
+				<td>i=1; </td>
+				<td>c1</td>
+				<td>1</td>
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td>while(i<=n)  </td>
+				<td>c2</td>
+				<td>n+1</td>
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td>A[i]=1;  </td>
+				<td>c3</td>
+				<td>n</td>
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td>i++ </td>
+				<td>c4</td>
+				<td>n</td>
+			</tr>
+		</tbody>
+		</table>
+
+	<br><br>
+	<table  border="1" align ="center" width="50%" class="texto">
+		<tbody align ="center" >
+			<tr>
+				<td><b>T(n)=  </b></td>
+				<td>c1+(n+1)c2 +nc3+nc4</td>
+
+			</tr>
+		</tbody>	
+		<tbody align ="center" >
+			<tr>
+				<td><b>T(n)=  </b></td>
+				<td>nc2+nc3+nc4+c1+c2 </td>
+
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td><b>T(n)=  </b></td>
+				<td>(c2+c3+c4)n + (c1+c2)</td>
+				
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td><b>T(n)=  </b></td>
+				<td>an + b </td>
+				
+			</tr>
+		</tbody>
+
+		</table>
+		<br><br>
+	<p class="texto1">Si se asigna el valor de una unidad de tiempo para cada instrucción, la complejidad del programa es           
+	T(n)=3n+2, lo que significa que es lineal.
+	 </p>
+
+	<p align="center"><img src="abajo.jpg" width="10%" height="13%"></p>
+	<p class="letra" align="justify">4.- Complejidad cuadrática: cuando la complejidad de un algoritmo puede expresarse como una función cuadrática del tipo T(n)=an^2+bn+c, donde a,b y c son constantes, se dice que el algoritmo es cuadrático en n. </p>
+	<p class="texto"><u>Ejemplo 3.</u> Se analiza el siguiente código: </p><br>
+		<p class="texto1" align="center">for(i=1;i< n-1; i++) <br>
+    		 for(j = 1;j < n-1 ; j++) <br>
+          		A[i,j]=1; </p><br>
+
+	<p class="texto" align="justify"> Si se analiza el primer repita para <b>(for)</b> interno, es decir las líneas 2 y 3 (se simplica asumiendo que valor de todos los costos constantes es igual a 1). <br>
+	En la línea dos se realiza la asignación <b>j=1</b> una vez, esto es <b>c1</b>; la condición se verifica n veces, esto es <b>c2n</b>, el incremento de j se realiza n-1 veces, esto es <b>c3(n-1)</b>. La instrucción de la línea 3 se ejecuta (n-1) veces por lo que su complejidad es <b>c4(n-1)</b>. Finalmente la complejidad de las líneas 2 y 3 es: </P>
+	<p class="texto1" align="center">c1+c2n+c3(n-1)+c4(n-1)=1+n+2(n1)=3n-1 </p>
+	<p class="texto" align="justify">En la línea 1 la asignación, la comparación y el incremento son similares a las de las línea dos por lo que la complejidad es : <b>c1+c2(n)+c3(n-1)</b>. Además hay que añadir el costo de las líneas 2 y 3, 3n-1, que se ejecutarán (n-1) veces, lo que resulta en: </p>
+	<p class="texto1" align="center">c1+c2(n)+c3(n-1)+(3n-1)(n-1)=1+2n-1+3n^2-3n-n+1=3n^2-2n+1 </p>
+	<p class="texto" align="justify">El tiempo total del algoritmo se puede describir como T(n)=an^2+bn+c, por lo que se dice que es un algoritmo cuadrático en el plano del tiempo. 
+	Muy frecuentemente, el tiempo de corrida de un programa depende de una entrada en particular y no sólo del tamaño de la entrada. Entonces las complejidades se denotan como: </p>
+	<p class= "texto1"  align="justify">-<u>En el mejor de los casos:</u> se define T(n) como el tiempo mínimo de corrida para todas las entradas de tamaño n. <br>
+	-<u>En el peor de los casos:</u> se define T(n) como el tiempo máximo de corrida para todas las entradas de tamaño n. <br>
+	-<u>En promedio:</u> otra medida común de desempeño Tavg(n), el tiempo promedio de corrida del programa sobre todas las entradas de tamaño n. Aún cuando el tiempo promedio es una medida más realista, en la práctica es más dificil de calcular que el peor de los casos. </p>
+
+	<p align="center"><img src="abajo.jpg" width="10%" height="13%"></p>
+	<p class="letra" >5.- Límite asintóticos </p>
+	<p class="texto" align="justify">El tiempo de corrida depende de la computadora en que se corra y del compilador utilizado para el programa, por ello usualmente el tiempo de corrida de corrida se expresa utilizando el orden de crecimiento o la tasa del crecimiento de este. Cuando se observa entradas de tamaño lo suficientemente grandes para que sólo el orden de crecimiento de la complejidad sea relevante, estamos estudiando la eficiencia asintótica de los algoritmos. Existen tres tipos de notación para denotar los límites asintóticos:<br>
+	 <b><math>$\Theta$</math> , math>$ \Omega$</math> y <math>$O$</math>.</b>
+
+	<p class="texto1" align="justify"><b>Notación <math>$O$</math> </b><br>
+	Sea f(n) una función definida para los enteros no negativos n. Decimos que T(n) es O(f(n)). que se lee como T(n) es de orden f(n) si T(n) es a lo más una constante de veces de f(n), excepto posiblemente para algunos valores de n. <br>
+	Formalmente decimos que T(n) es O(f(n)) si existe un entero n0 y una constante c > 0 tal que para todos los enteros n > n0 tenemos que 0<= T(n) <= cf(n) <br>
+	<u>Ejemplo:</u> Sea T(n)=3n+2 la complejidad de un algoritmo. si escogemos f(n)=n, n0=1 y c=5, la condición 0<=T(n)<=5n se cumple para todos los n>=1, por lo que podemos decir que T(n) es O(n) <br>
+	<p align="center" class="texto"> <b>Tabla de funciones de notación O </b></p>
+	<table  border="1" align ="center" width="50%" class="texto" >
+		<tbody align ="center" >
+			<tr>
+				<td><b>Notación O  </b></td>
+				<td><b>Función </b></td>
+
+			</tr>
+		</tbody>	
+		<tbody align ="center" >
+			<tr>
+				<td>O(1) </td>
+				<td>Constante </td>
+
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td>O(log n) </td>
+				<td>Logarítmica </td>
+				
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td>O(n) </td>
+				<td>Lineal  </td>
+				
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td>O(n log n)  </td>
+				<td>n log n  </td>
+
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td>O(n^2)  </td>
+				<td>Cuadrático </td>
+				
+			</tr>
+		</tbody>
+		<tbody align ="center" >
+			<tr>
+				<td>O(n^3)  </td>
+				<td>Cúbico  </td>
+				
+			</tr>
+		</tbody>
+				<tbody align ="center" >
+			<tr>
+				<td>O(2^n) </td>
+				<td>Exponencial </td>
+				
+			</tr>
+		</tbody>
+		</table>
+	<br>
+	<p class="texto1" align="justify"><b>Notación <math>$\Omega$</math> </b><br>
+	La notación <math>$\Omega$(f(n))</math> se utiliza para especificar la cota inferior de la razón de crecimiento de T(n). Formalmente decimos que T(n) es <math>$\Omega$(f(n))</math> si existe un entero n0 y una constante c>0 tal que para todos los enteros n>=n0, tenemos que 0<=cf(n)<=T(n) <br>
+
+	<u>Ejemplo:</u> Sea T(n) 3(n log(n) ), entonces T(n) es <math>$\Omega$(log(n))</math> ya que podemos escoger n0=1, f(n)=log(n), y c=1. De esta forma, para todos los n>=1, log n <= 3(n log(n) ) <br>
+	Para especificar la cota inferior de la razón de crecimiento de T(n) se usa la anotación <math>$\Omega$(f(n))</math> <br><br>
+
+	<b>Notación <math>$\Theta$</math> </b><br>
+	Formalmente decimos que T(n) es <math>$\Theta$(f(n))</math> si existe un entero n0 y las constantes c1 y c2>0 tal que para todos los enteros n>=n0, tenemos que 0 <= c1f(n) <= T(n) <= c2f(n). <br>
+	<u>Ejemplo:</u> Sea T(n)=2n^2, entonces T(n) es <math>$\Theta$(f(n))</math> ya que existen n0=1, c1=1, c2=3 de manera que todos los n>=1, 0 <= n^2 <= 2n^2 <= 3n^2 
+ 	 </p>
+	<p align="center"><img src="abajo.jpg" width="10%" height="13%"></p>
+	<p class="letra">6.- La regla de la suma modificada </p>
+	<p class="texto" align="justify">Suponga que un programa consiste en dos partes, una de las cuáles es de complejidad O(n^2) y la otra de O(n^3). En muchos casos como este, es posible sumar estas dos complejidades usando la regla de la suma: <br>
+	Suponga que T1(n) es de O(f1(n)), mientras que T2(n) es de O(f2(n)), además suponga que f2 no crece más rápido como f1; esto es f2 es de O(f1). Entonces podemos concluir que T1(n) + T2(n) es O(f2(n)). <br>
+	<hr></p>
+	<p align="right">Fin de las notas de V. Bravo</p>	
+	<hr>
+
+	<p align="center"><img src="abajo.jpg" width="10%" height="13%"></p>
+	<p class="letra">7.- Cálculo de complejidad en funciones recursivas </p>
+	<p class="texto" align="justify"> <b>(tomado de Matemática Discreta y Lógica, de W. F. Grassmann y J.P. Tremblay)</b>. <br>
+	Considere el siguiente programa trivial para calcular el enésimo número de Fibonacci:</p>
+
+	<p class="texto1">function fib(n:integer): integer;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if n<2 then fib:= n { fib(0) = 0, fib(1) = 1) }<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fib := fib(n-1) + fib(n-2)<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</p>
+
+	<p class="texto" align="justify">Calculemos el número de llamadas que se hace con la cláusula else, considerando las operaciones activas (operaciones que se realizan tantas veces como cualquier otra operación). En este caso esas operaciones podrían ser las que se realizan en la sección del else: <br>
+	<input class="inputs">
+
+	Uno podría, por ejemplo, contar el número de operaciones de punto flotantes por segundo (FLOPS1) que producen las instrucciones del programa. Pero eso no es necesario cuando las operacionesn activas son muy similares en sus medidas FLOPS. <br><br>
+	Veamos el ejemplo siguiendo el texto citado: <b>“El número de operaciones activas necesario para calcular Fn = fib(n) se denota con mediante T(n). Claramente T(0) = T(1) = 0.  Además, para obtener fib(n), n >= 2, se ejecutan inmediatamente dos llamadas, una a fib(n-1) y otra a fib(n-2). Por la definición de T(n), estas dos llamadas requieren T(n-1) y <input class="borde_bajo"></input>>operaciones activas, respectivamente.<br> Para calcular Fn, consiguimientemente, se necesitan 2 + T(n-1) + T(n-2) llamadas, esto es:<br></b>
+
+	<p class="texto1" align="center">
+	<b>Ecuación recurrente de Fibonacci</b><br>
+	T(n) = 2 + T(n-1) + T(n-2)<br>
+	<b>Se puede calcular T(n) en la forma siguiente:</b><br>
+	T(2) = 2 + T(1) + T(0) = 2<br>
+	T(3) = 2 + T(2) + T(1) = 2 + 2 = 4<br>
+	T(4) = 2 + T(3) + T(2) = 2 + 4 + 2 = 8<br>
+	...<br>
+	</p>
+	
+	<p class="texto" align="justify"><b>Resulta que para n=100 hay aproximadamente 10^21 llamadas recursivas a una función. Con una velocidad aproximada 10^15 de un millón de funciones por segundo, esto es aproximadamente segundos, o unos 10 millones de años!!!. <br>
+
+	En otras palabras, el cálculo de Fn mediante el algoritmo que acabamos de dar es impracticable para valores elevados de n.” </b><br><br>
+
+	De hecho,T(n) = 2 + T(n-1) + T(n-2)	es lo que se conoce como una relación de <b>recurrencia no homogénea</b>, cuya expresión genera es : <input class="inputs1"><br> </p>
+
+
+	<p class="texto"> Para resolver ese tipo de ecuación se comienza, cuando se puede, resolviendo la ecuación homogénea correspondiente. Para Fibonacci es:</p>
+	<p class="texto1" >recurrencia homogénea de Fibonacci:<br> <p align="center"><img src="f0.png" width="15%" height="3%"></p>
+
+	<p class="texto">Transformándola primero en:<p align="center"><img src="fun.png" width="20%" height="3%"> </p></p>
+
+	<p class="texto">y luego, diviendo por 	<p align="center"><img src="fun1.png" width="10%" height="3%"></p> 
+	<p class="texto">en <p align="center"><img src="fun2.png" width="15%" height="3%"></p>
+
+	<p class="texto">Esta es una expresión cuadrática cuyas soluciones son:</p> <p align="center"><img src="fun3.png" width="15%" height="7%"></p> <p align="center"><img src="fun4.png" width="15%" height="7%"></p> 
+
+	<p class="texto" align="justify">Como dicen los autores, esto significa que tenemos dos soluciones a la ecuación, a saber:<br><br> <img src="fun5.png" width="15%" height="5%">  &nbsp;&nbsp;&nbsp;   o  &nbsp;&nbsp;&nbsp;<img src="fun6.png" width="15%" height="5%"></p> 
+	<br>
+	<p class="texto" align="justify">En general, si <img src="fun7.png" width="3%" height="3%"> y  <img src="fun8.png" width="3%" height="3%">
+	son dos soluciones diferentes a una relación recurrente homogénea, también lo será</p>
+	<p align="center"><img src="fun9.png" width="9%" height="5%"></p> 
+	<p class="texto">En este caso:</p>
+	<p align="center"><img src="fun12.png" width="20%" height="5%"></p> 
+	<p class="texto">lo cual conduce, con estas transformaciones:<input class="inputs"></p>
+	<p class="texto">a</p>
+	<p align="center"><img src="fun10.png" width="40%" height="10%"></p> 
+	<p class="texto">Volviendo con el código anterior, uno podría reexpresar a T(n) así:</p><br>
+	<p align="center"><img src="fun11.png" width="20%" height="5%"></p> 
+	<p class="texto">puesto que  la solución de la recurrencia no homogénea se obtiene de la homogénea así: <input class="inputs"> </p><br>
+	<p class="texto">Es decir, </p>
+	<p align="center"><img src="fun13.png" width="50%" height="10%"></p> 
+	<p class="texto">lo que simplemente significa que T(n) crece exponencialmente de la misma forma que Fn. </p>
+
+
+
+	2 <a href="http://en.wikipedia.org/wiki/FLOPS" target= "_blank">http://en.wikipedia.org/wiki/FLOPS</a><br>
+	<hr>
+
+	<p align="center"><img src="abajo.jpg" width="10%" height="13%"></p>
+	<p class="letra">8.-  Algoritmos más eficientes para Fibonacci</p>
+	<p class="texto">¿Será posible calcular el enésimo fibonacci con un algoritmos menos complejo?. La respuesta es sí. Acá van varios ejemplos (incluyendo una versión del anterior) tomados de <b><a href="http://www.ics.uci.edu/~eppstein/161/960109.html" target= "_blank">http://www.ics.uci.edu/~eppstein/161/960109.html</a></b><br><br>
+	El algoritmo 1 es como el que acabamos de analizar. Sumamente ineficiente, para n=45, da un millardo de pasos: 	</p>
+	<p class="texto1">    int fib(int n)<br>
+    {<br>
+    &nbsp;&nbsp;&nbsp;if (n <= 2) return 1<br>
+    &nbsp;&nbsp;&nbsp;else return fib(n-1) + fib(n-2)<br>
+    }<br></p>
+
+
+    <p class="texto">El algoritmo 2 no usa recursión sino arreglos de memoria y es mucho más eficiente. Para n=45, da 90 pasos (cuantas veces menos que el anterior?).  Su complejidad es <input class="inputs1"></p><br>
+
+    <p class="texto1"> int fib(int n)<br>
+    &nbsp;&nbsp;&nbsp;{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int f[n+1];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f[1] = f[2] = 1;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 3; i <= n; i++)<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;f[i] = f[i-1] + f[i-2];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return f[n];<br>
+    &nbsp;&nbsp;&nbsp;}</p>
+    <p class="texto">El algoritmo 3 es un poco más lento (cuanto?) que algoritmo 2, pero usa mucho menos espacio de almacenamiento!. </p>
+    <p class="texto1">int fib(int n)<br>
+    &nbsp;&nbsp;&nbsp;{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int a = 1, b = 1;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 3; i <= n; i++) {<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int c = a + b;<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = b;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = c;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return b;<br>
+    &nbsp;&nbsp;&nbsp;}<br>
+	</p>
+	<p class="texto">El algoritmo 4, también es muy eficiente. La complejidad en tiempo es O(n) y en espacio es O(1). </p>
+	<p class="texto1"> int fib(int n)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int M[2][2] = {{1,0},{0,1}}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 1; i < n; i++)<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M = M * {{1,1},{1,0}}<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return M[0][0];<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	</p>
+
+	<p class="texto" align="justify">Para entenderlo, considere que M es una matríz y que  {{1,0},{0,1}}   es una forma de escribirle <img src="fun14.png" width="5%" height="5%"> al computador para inicializar a M (una matríz de dos por dos, obviamente). Ahora pruebe que en sucesivas multiplicaciones de la matriz <img src="fun15.png" width="10%" height="5%"> por M, el elemento 1, 1 (en la esquina superior izquierda de M) siempre almacena el último número de la secuencia fibonacci. </p>
+
+	<p class="texto1">(%i2) matrix([1,1],[1,0]);<br>
+	(%o2) matrix([1,1],[1,0])<br>
+	(%i3) matrix([1,1],[1,0])*%o2;<br>
+	(%o3) matrix([1,1],[1,0])<br>
+	(%i4) matrix([1,1],[1,0]).%o2;<br>
+	(%o4) matrix([2,1],[1,1])<br>
+	(%i5) matrix([1,1],[1,0]).%o4;<br>
+	(%o5) matrix([3,2],[2,1])<br>
+	(%i6) matrix([1,1],[1,0]).%o5;<br>
+	(%o6) matrix([5,3],[3,2])<br>
+	(%i7) matrix([1,1],[1,0]).%o6;<br>
+	(%o7) matrix([8,5],[5,3])</p>
+
+	
+	<p align="center"><img src="abajo.jpg" width="10%" height="13%"></p>
+	<p class="letra">9.- Los límites de la computabilidad</p>
+	<p class="texto">Discutiremos esta tabla en clase (basada en la de  Matemática Discreta y Lógica, de W. F. Grassmann y J.P. Tremblay, pag 310)</p>
+	<br>
+	<p align="center"><img src="tabla.png" width="80%" height="60%"></p> 
+	<p class="texto" align="justify">Decimos que la segunda fila nos da la velocidad (por ejemplo en FLOP) que pudiera alcanzar un computador o sistema de cómputo. Las siguientes filas detallan el tamaño del problema que pudiera resolverse, en tiempos razonables, dada la complejidad de ese problema (según la primer columna) y la velocidad particular del computador (en la fila 2, columna correspondiente). </p>
+
+		<p class="texto">Para implementaciones de algoritmos para cálculo de fibonacci, ver <b><a href="http://www.scriptol.com/programming/fibonacci.php" target= "_blank">http://www.scriptol.com/programming/fibonacci.php</a></b></p>
+		<hr>
+		<p align="justify">Fin del la guía introductoria a la Complejidad Computacional. <br><br>
+
+	Se concede permiso de copiar, distribuir o modificar este documento bajo los términos establecidos por la licencia de documentación de GNU, GFDL, Version 1.1 publicada por la Free Software Foundation en los Estados Unidos, siempre que en la nuevas contribuciones se mantengan las secciones actuales sin cambios de fondo y los cambios de fondo se coloquen en nuevas secciones o con nuevos textos de portada o nuevos textos de cubierta final. También se requiere mantener invariantes los espacios vacios de este documento, claves para el ejercicio de aprendizaje y descubrimiento. Una copia de esta licencia se incluye en algún lugar del documento como ``GNU Free Documentation License´´. Nos apegaremos a esta licencia siempre que no contradiga los términos establecidos en la legislación correspondiente de la República Bolivariana de Venezuela. 
+	Según establece GFDL, se permite a cualquier modificar y redistribuir este material y los autores originales confiamos que otros crean apropiado y provechoso hacerlo. Esto incluye traducciones, bien a otros lenguajes naturales o a otros medios electrónicos o no. 
+	En nuestro entender de GFDL, cualquiera puede extraer fragmentos de este texto y usarlos en un nuevo documento, siempre que el nuevo documento se acoja también a GFDL y sólo si se mantienen los créditos correspondientes a los autores originales (tal como establece la licencia). <br><br>
+
+	Fin del documento de complejidad computacional. Mayo 2010.  </p>	
+		<hr>
+
+	<div style="font-weight: bold"><big>
+		Referencias: <a href="http://rogerdudler.github.io/git-guide/index.es.html" target= "_blank">Git La Guia Sencilla</a><br>
+
+	</big></div>
+
+	</div>
+	</div>
+	</div>
+	<br><br>
+</body>
+</html>
+

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>	
+	<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<title> Guia de Logica </title>
+</head>
+<body>
+	<div class="center-block  quitar-float inline-block ">
+	<h1 class="tipografia size blanco se-azul padding-largo text-center"> Mathematicas </h1>
+	<nav class="quitar-float  no-lista col-md-18 margin espacio-line ">
+		<h2 class="tipografia text-center size-sub">Logica</h2>
+		<p class=" inline-block ">Copyright 2007 Carlos Domingo, Jacinto Dávila Universidad de Los Andes, Venezuela.</p>
+        <p class=" inline-block">Se concede permiso de copiar, distribuir o modificar este documento bajo los términos establecidos por la licencia de documentación de GNU, GFDL, Version 1.1 </p>
+        <p class="espacio-arriba">  1.- Considere el siguiente diálogo:</p>
+ 	 	<p class="letra">- ¿Para qué sirve la lógica?.</p>
+  		<p class="letra">- Para explicar para qué sirve la lógica.</p> 
+		<p class="letra">¿Tiene sentido? ¿Tiene lógica? </p>
+		<img src="images/rectangulo.png" class="center-block">
+
+		<p class="espacio-arriba">2.- Los lógicos suelen afirmar que existen ciertas palabras cuyo significado trasciende todo tema
+		particular y, por tanto, se les puede considerar "palabras lógicas". La palabra "y" y la palabra "o", son dos ejemplos. </p>
+		<p>¿Se te ocurren otros ejemplos?</p>
+		<img src="images/cuadrop.png" class="center-block">
+		<p>¿Cuál es el significado de estas palabras?</p>
+		<img src="images/cuadrop.png" class="center-block">
+		<p class="espacio-arriba">3.- Si "o" significa lo que dice esta tabla:</p>
+		<p class="text-center">Semántica de la o</p>
+		<img src="images/or.png" class="center-block">
+		<p>e "y" significa lo que dice esta otra tabla:</p>
+		<p class="text-center">Semántica de la y</p>
+		<img src="images/and.png" class="center-block">
+		<p>¿Cuál es el significado de "y/o"?.</p>
+		<img src="images/rectangulo.png" class="center-block">
+		<p class="espacio-arriba"> 4.- Una proposición es una oración que se puede asociar con un valor de verdad. Es decir, puede ser verdadera o falsa. El lenguaje de la lógica proposicional, o lógica de enunciados, se construye sobre proposiciones. Algunas veces las proposiciones son representadas por letras como p, q, r, s, w.</p>  
+		<p>Para decir que p es ________ decimos que p = V. Dualmente, p es falsa si p = _______</p>
+
+		<p>5.- Ocúpese de asignar valores a las proposiciones siguientes (a este, los lógicos lo llaman un ejercicio de interpretación en lógica proposicional):</p>
+		<p>p = 3 es menor que 5, p = ______</p>
+		<p>q = un triángulo tiene 4 lados, q = _______</p>
+		<p>r = Ecuador está en America, r = _______</p>
+		<p>s = Existe un círculo perfecto, s = _______</p>
+		<p>w = El rey de Venezuela es ateo, w = _______</p>
+		<p>t = Los rectángulos son obligatorios, t = _______</p>
+		<p>u = la oración u es una mentira, u = _______</p>
+		<p>z = la oración z es improbable, z = _______</p>
+		<p>(NOTA: "u" y "z" son casos (muy) difíciles).</p>
+		<p>Ahora discuta los casos difíciles y sugiera como podrían evitarse esas dificultades.</p>
+
+		<p class="espacio-arriba">6.- Las proposiciones anteriores son llamadas proposiciones simples. Las proposiciones simples se suelen mostrar como una oración con sujeto y predicado, pero no tienen que ser así necesariamente(piense en un ejemplo). Decidir sobre la verdad o falsedad de una proposición puede conducir a problemas científicos o filosóficos no resueltos.</p>
+		<p>En lo que sigue trataremos un problema más simple: a) Supondremos que siempre se puede asignar a una proposición bien el valor v (verdadera) o bien el valor f (falso). De esta forma, se comporta como una variable que puede adoptar uno de dos valores; y b) Consideraremos proposiciones compuestas formadas por dos o más proposiciones simples y discutiremos que valor de verdad debemos asignarles cuando se conocen los valores de verdad de las simples.</p>
+		
+		<p class="espacio-arriba">7.- Vamos a considerar el caso simple de una proposición compuesta formada por dos proposiciones simples unidas por un "y". Juzgue el valor que daría a cada una y al conjunto en los	siguientes ejemplos, suponiendo las definiciones en los problemas previos.</p>
+		<p>w = Ecuador es un país y Ecuador está en América, es decir: p y q.</p>
+		<p>u = El caracol es un animal y es un vertebrado = s y t.</p>
+		<p>Un banco le dará crédito al Sr. Fulano si es verdadero que:</p>
+		<p>r = el Sr. Fulano es solvente y el Sr Fulano tiene los documentos en regla = a y b.</p>
+		<p>¿En qué casos le daría crédito? (para valores de a y de b).</p>
+		<img src="images/rectangulo.png" class="center-block">
+		
+		<p class="espacio-arriba">8.- Considere las tablas en el problema 3. La tabla inferior puede considerarse como la definición de la operación "y" (algunas veces se escribe /\, el techito, ó & ó ^ ) a partir de los valores de p y q (de la misma manera que la tabla pitagórica define la multiplicación).</p>
+		<p>Note que nuestra variables p y q sólo pueden tomar los valores ___ o ____, mientras que una
+		variable numérica puede adoptar infinidad de valores.</p>
+		
+		<p class="espacio-arriba">9.- ¿Coincide estrictamente la definición de ese "y" con el "y" en Español?</p>
+		
+		<p class="espacio-arriba">10.- Considere ahora proposiciones compuestas formadas por dos simples y la palabra "o".</p>
+		<p>w = Suiza está en Europa o Suiza está en Asia = ____</p>
+		<p>s = El gato es un reptil o el gato es un pez = ____</p>
+		<p>t = El maíz es un vegetal o el maíz es comestible = ____</p>
+		<p>Un banco dará crédito al Sr. Sutano cuando sea verdadero que:</p>
+		<p>r = El Sr Sutano es solvente o el Sr. Sutano es amigo del gerente = ___</p>
+		<p>¿Cuándo se da crédito al Sr. Sutano?</p>
+		<p>A partir de esos ejemplos, dadas dos proposiciones p y q cualesquiera ¿cuando se diría que p ó q es verdadera?</p>
+		<img src="images/rectangulo.png" class="center-block">
+		<p class="espacio-arriba">11.- La tabla inicial en el problema 3 define la operación "o" (algunas veces se representa con \/, la canalita )</p>
+		<p class="espacio-arriba">12.- ¿Coincide la definición de "o", con el "o" en Español?.</p>
+		<img src="images/rectangulo.png" class="center-block">
+		<p class="espacio-arriba">13.- El "ó" de un lenguaje natural, como el Español, se llama en lógica "o exclusivo", mientras que el "o" simple en lógica suele ser el "o" inclusivo. Construya la tabla de verdad para el o exclusivo (o excluyente):</p>
+		<p class="text-center">Semántica de ó (o exclusivo)</p>
+		<img src="images/ord2.png" class="center-block">
+		<p class="espacio-arriba">14.- Las proposiciones compuestas que expresan una condición son muy importantes en Matemáticas y en Computación. Es muy útil definir rigurosamente su semántica.</p>
+		<p>Considere las proposiciones simples:</p>
+		<p>p = La temperatura llega a 80 grados. q = La cera se funde.</p>
+		<p>w = si p entonces q = si la temperatura llega a 80 grados, la cera se funde.</p>
+		<p>Suponga que se dan los ___ casos posibles de variantes de valores para p y q. ¿En cuáles casos w se podría considerar verdadera y en cuáles falsa?</p>
+		<img src="images/rectangulo.png" class="center-block">
+		<p class="text-center">Semántica de si .. entonces ..</p>
+		<img src="images/and2.png" class="center-block">
+		<p>La decisión de como conviene asignar valores a w = si p entonces q (o p -> q, como otras veces se escribe) ha sido muy discutida en la historia de la lógica. Se ha convenido que w es falsa SOLO SI
+		p es verdadera y q es falsa.</p>
+		<p>A esta operación se le llama implicación (material).</p>
+		<p class="espacio-arriba">15.- ¿En cuáles casos coincide la tabla con el sentido usual de las oraciones si ... entonces .. en Español?.</p>
+		<img src="images/rectangulo.png" class="center-block">
+		<p class="espacio-arriba">16.- Suponga que si p entonces q es verdadera,</p>
+		<p>a) ¿Es necesario que p sea cierta para que q sea cierta? _____________</p>
+		<p>b) ¿Es suficiente que p sea cierta para que q sea cierta? _____________</p>
+		<p class="espacio-arriba">17.- Considere ahora el caso con si p entonces q y si q entonces p. Complete la tabla siguiente:</p>
+		<p class="text-center">Semántica de q equivalente a p</p>
+		<img src="images/cuadro.png" class="center-block">
+		<p>a) ¿Es necesario que p sea cierta para que q sea cierta? _____________</p>
+		<p>b) ¿Es suficiente que p sea cierta para que q sea cierta? _____________</p>
+
+		<p class="espacio-arriba">18.- La proposición compuesta (si p entonces q) y (si q entonces p) se denomina equivalencia y se
+		suele escribir p <-> q.</p>
+		<p>¿Cómo se justifica el llamarlas equivalentes?</p>
+		<p>.Nótese que si p <-> q entonces que p sea cierto es condición necesaria y _________________ para que q también lo sea.</p>
+		<img src="images/rectangulo.png" class="center-block">
+		<p class="espacio-arriba">19.- En Matemáticas es muy usual tener que demostrar que dos afirmaciones p y q son equivalentes. Se suele decir que p es condición necesaria y suficiente para q. Para demostrarlo es preciso probar que p -> q y que q -> p.</p>
+		<p>Para probar p -> q, se suele asumir que p es cierto y proceder con la prueba de q.</p>
+		<p>Ejemplo: Demostrar que para que un número sea divisible por 6 es necesario y suficiente que lo sea por 2 y por 3 (Recuerde el teorema de divisibilidad que dice: si a*b es divisible por k entonces a es divisible por k o b es divisible por k).</p>
+		<p class="espacio-arriba">20.- La negación de una proposición es también una proposición. ¿Cómo es su tabla de verdad?</p>
+		<img src="images/rectangulo.png" class="center-block">
+		<p class="espacio-arriba">21.- Una prueba en lógica es una secuencia de fórmulas que se "conectan" unas con otras. Así, si nos dicen que las siguientes proposiciones son ciertas:</p>
+<p>si p entonces q.</p>
+<p>si q entonces r.</p>
+<p>p = v.</p>
+<p>uno puede concluir que r = v, con el siguiente argumento:</p>
+<p>p = v.</p>
+<p>si p entonces q.</p>
+<p>q = v.</p>
+<p>si q entonces r.</p>
+<p>________________</p>
+<p>r = v.</p>
+<p>Una prueba es un argumento válido.</p>
+		<p class="espacio-arriba">22.- En lógica existen ciertas reglas de inferencia, que parece ser formas genéricas para los argumentos. La más conocida se llaman modus ponens:</p>
+<p>A = v</p>
+<p>si A entonces B</p>
+<p>________________</p>
+<p>B = v</p>
+<p>Noten que esta A y esta B son variables que representan a cualquier proposición.</p>
+<p>Otra regla de inferencia menos popular, pero sumamente poderosa en computación es la modus
+tollens:</p>
+<p>si A entonces B</p>
+<p>no B (ó B = f)</p>
+<p>_______________</p>
+<p>no A (ó A = f).</p>
+		<p class="quitar-espacio">23.- Otra regla de inferencia, conocida como Resolución, ha sido convertida en un sistema para
+pruebas automático y ha sido implementada en la plataforma y lenguaje de programación para Inteligencia Artificial PROLOG.</p>
+<p>A partir de este texto:</p>
+<p class="letra">b :- a.</p>
+<p class="letra">a.</p>
+<p>Un programa Prolog (de los muchos que hay), respondería a la consulta?</p>
+<p class="letra">b. (que significa que asumo que b es falso)</p>
+<p>con un</p>
+<p class="letra">true</p>
+<p>queriendo decir que el sistema REFUTA (niega) que b sea falso (el true es por Sí! pude probar queno es falso). Es decir, b es cierto.</p>
+		<p class="espacio-arriba">24.- Para apreciar la utilidad de estas herramientas lógicas, muchas personas parecen preferir el uso de proposiciones más significativas (es decir, más fácilmente leíbles). Considere el siguiente Programa Lógico:</p>
+		<p class="letra">fiebre :- infeccion.</p>
+<p class="letra">infeccion :- colonia_bacterial.</p>
+<p class="letra">infeccion :- virus.</p>
+<p class="letra">mas_leucocitos :- fiebre, \+(caso_raro).</p>
+
+<p class="quitar-espacio">Ese texto es la codificación para un sistema Prolog de una base de conocimiento en la que 1) una infección implica fiebre, 2) una colonia bacterial implica una infección, 3) un virus implica una infección y 4) hay más leucitos en el cuerpo si hay fiebre y no es un caso raro.</p>
+<p>Un "paciente" que se presente con:</p>
+<p class="letra">virus.</p>
+<p>podría conducir a la prueba de que</p>
+<p class="letra">? fiebre.</p>
+<p class="letra">true.</p>
+
+<p class="espacio-arriba">25.- La lógica descrita en los items anteriores es la lógica de proposiciones. Esta forma de lógica tiene una expresividad limitada. Esto significa que es más difícil o incluso imposible plasmar ciertas verdadades en ese lenguaje. Por ejemplo, escriba que todos los números naturales son enteros.</p>
+<p> Existen otras formas de lógica mucho más expresivas que la lógica proposicional. El mismo Aristóteles, padre de la lógica, hace más de 25 siglos, propuso la primera: La lógica de los silogismos. Los silogismos son una forma particular de argumentos que emplean la siguiente representación de proposiciones:</p>
+<p>Todo P es M</p>
+<p>ó Algún P es M</p>
+<p>ó Ningún P es M</p>
+<p>en la que P y M son términos variables. Es decir, P y M puede ser reemplazados por términos que describen objetos particulares. Por ejemplo.</p>
+<p class="letra">Toda ballena es mamífero.</p>
+<p class="quitar-arriba">26.- La forma más popular de lógica con variables, sin embargo, es ahora la lógica de predicados, propuesta hace 2 siglos por Frege. Es muy popular en Computación, al punto es existen sistemas capaces de ejecutarla. Por ejemplo, con esta forma:</p>
+<p class="letra">hij_(jesus, jose)</p>
+<p>podríamos representar en Prolog que Jesús es hijo (o hija) de José. Una de las virtudes más interesantes de la lógica de predicados es la posibilidad de emplear cuantificadores sobre términos variables.</p>
+<p>Por ejemplo, para decir que si un individuo es hijo de otro entonces el segundo es padre del primero y esto vale para todo padre y todo hijo, diríamos en Prolog:</p>
+<p class="letra">padre(X, Y) :- hij_(Y,X).</p>
+<p>En este ejemplo, la forma precisa de traducirlo a lógica de predicados es:</p>
+<p class="letra">Para todo X y todo Y, si Y es hijo de X entonces X es ________ de Y.</p>
+
+<p class="quitar-arriba">27.- La expresividad de la lógica de predicados, inclusive de subconjuntos suyos como la llamada lógica de primer orden, es notable cuando se trata de representar relaciones que se definen en términos de sí mismas. Las llamadas definiciones recursivas o recurrentes son sumamente útiles en matemáticas. Por ejemplo, para definir a los números, uno podría decir (siguiendo a Peano) que:
+<p class="letra">el cero es un numero.</p>
+<p class="letra">si n es un número, el sucesor de n también lo es.</p>
+<p>¿Donde está la definición recursiva en este ejemplo?. ¿Podemos escribir definiciones recursivas en lógica de proposiciones?</p>
+<p class="quitar-arriba">28.- Las definiciones recursivas pueden ser muy útiles para representar relaciones sobre conjuntos cuyo tamaño no está definido a priori. Por ejemplo, este:</p>
+<p class="letra">ancestro(X,Y) :- hijo(Y,X).
+<p class="letra">ancestro(X,Y) :- ancestro(X,Z), ancestro(Z,Y).</p>
+<p>Es un programa lógico que nos permitiría computar la línea de ascendencia filial a partir de un registro de padres e hijos en una familia dada. Pruébelo con la suya. ¿Qué otras reglas se le ocurre incluir?</p>
+
+
+<p class="espacio-medio">Copyright 2007 Carlos Domingo, Jacinto Dávila Universidad de Los Andes. Venezuela.</p>
+<p>Se concede permiso de copiar, distribuir o modificar este documento bajo los términos establecidos por la licencia de documentación de GNU, GFDL, Version 1.1 publicada por la Free Software Foundation en los Estados Unidos, siempre que en la nuevas contribuciones se mantengan las secciones actuales sin cambios de fondo y los cambios de fondo se coloquen en nuevas secciones o con nuevos textos de portada o nuevos textos de cubierta final. También se requiere mantener invariantes los espacios vacios de este documento, claves para el ejercicio de aprendizaje y descubrimiento. Una copia de esta licencia se incluye en algún lugar del documento como ``GNU Free Documentation License´´. Nos apegaremos a esta licencia siempre que no contradiga los términos establecidos en la legislación correspondiente de la República Bolivariana de Venezuela.</p> 
+
+<p>Según establece GFDL, se permite a cualquier modificar y redistribuir este material y los autores originales confiamos que otros crean apropiado y provechoso hacerlo. Esto incluye traducciones, bien a otros lenguajes naturales o a otros medios electrónicos o no.</p>
+<p>En nuestro entender de GFDL, cualquiera puede extraer fragmentos de este texto y usarlos en un nuevo documento, siempre que el nuevo documento se acoja también a GFDL y sólo si se mantienen los créditos correspondientes a los autores originales (tal como establece la licencia).<p>
+<p>Fin del documento de Lógica. Mayo 2016.</p>
+
+
+
+
+</nav >
+
+		<nav class="blanco se-azul padding-largo quitar-float espacio-medio col-md-18 no-lista center-block">
+			<ul>
+				<p class=" inline-block ">Catedra de Matematicas Discretas de la Universidad de Los Andes, Merida, Venezuea.</p>
+				<li class=" inline-block ">Instructor: <a href=" http://webdelprofesor.ula.ve/ingenieria/jacinto/index.html" class="blanco menu2 ">Jacinto Davila</a> </li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>

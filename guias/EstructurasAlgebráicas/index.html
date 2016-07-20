@@ -1,0 +1,332 @@
+<html>
+<head>
+	<title>Estructuras Algebráicas</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+<div class="container">
+	
+	<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<h1 id="titulo" class="titulo" style="color:#06406C">Estructuras Algebráicas</h1>
+		<hr>
+		<p> Copyright 2011 Carlos Domingo. Universidad de Los Andes, Venezuela.</p>
+		<hr>
+
+	<p class="letra" style="background-color:#348FD4; color: #06406C">
+	1- Hemos visto las ideas básicas relacionadas con el concepto de conjunto. Un conjunto abstracto	
+	particularmente útil es el de los números. En gran parte su utilidad reside en que con ellos podemos
+	“calcular”. Es decir definir “operaciones” (+, x, / ó -) que producen números. Por ejemplo la suma
+	de dos números naturales (1, 2, 3, 4, ... ) es un número natural.
+	Si consideramos esta operación como una función de dos variables y N es el conjunto de los
+	números naturales<br>
+	¿Cuál es el dominio de la función? 
+	<input class="inputs"><br>
+	¿Cuál es el rango o recorrido? 
+	<input class="inputs"><br>
+	¿Son los mismos si consideramos la multiplicación?
+	<input class="inputs"><br>
+	¿Qué pasa si consideramos las operaciones inversas de las anteriores? (resta y división):
+	<input class="inputs">
+	</p>
+	
+	<p class="letra" style="background-color:#cc4037; color:white">
+	2- Los números y la suma no son los únicos conjuntos y operaciones que tienen la propiedad de que
+	a un par de elementos del conjunto le corresponde 1 elemento del mismo conjunto.<br>
+	Considere estos ejemplos y diga cuáles tienen la propiedad<br><br>
+	a) T={desplazamientos rectilíneos de un punto en un plano} Operación de dos traslaciones t1, t2:
+	realizar t1 y luego t2 <br><br>
+	b) operación definida por la tabla (+), conjunto: {a,b,c} (si es b <input class="borde_bajo1">< b = c) <br><br>
+		<table border="2" bordercolor="black" align ="center" width="50%" class="texto">
+			<p align="center" style="color: white">(+)</p>
+	  			<tbody align ="center" style="color: white" >
+				<tr>
+					<td><b>(+)</b></td>
+					<td><b>a</b></td>
+					<td><b>b</b></td>
+					<td><b>c</b></td>
+				</tr>
+				</tbody>	
+				<tbody align ="center" style="color: white">
+					<tr>
+					<td>a</td>
+					<td>a</td>
+					<td>b</td>
+					<td>c</td>
+					</tr>
+					<tr> 
+					<td>b</td>
+					<td>b</td>
+					<td>c</td>
+					<td>a</td>
+					</tr>
+					<tr> 
+					<td>c</td>
+					<td>c</td>
+					<td>a</td>
+					<td>b</td>
+					</tr>
+				</tbody>
+		</table><br>
+	c) operación definida por la tabla (*), conjunto: {a,b,c} <br>
+		<table border="2" bordercolor="black" align ="center" width="50%" class="texto">
+		<p align="center" style="color: white">(*)</p>
+	  		<tbody align ="center" style="color: white">
+			<tr>
+				<td><b>(*)</b></td>
+				<td><b>a</b></td>
+				<td><b>b</b></td>
+				<td><b>c</b></td>
+			</tr>
+			</tbody>	
+			<tbody align ="center" style="color: white">
+				<tr>
+				<td>a</td>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				</tr>
+				<tr>  
+				<td>b</td>
+				<td>d</td>
+				<td>e</td>
+				<td>c</td>
+				</tr>
+				<tr>  
+				<td>c</td>
+				<td>s</td>
+				<td>b</td>
+				<td>p</td>
+				</tr>
+			</tbody>
+		</table><br>
+	d) H={a,b,c} (.) dada por: <br>
+		<table border="2" bordercolor="black" align ="center" width="50%" class="texto">
+		<p align="center" style="color: white">(.)</p>
+	  		<tbody align ="center" style="color: white" >
+			<tr>
+				<td><b>(.)</b></td>
+				<td><b>a</b></td>
+				<td><b>b</b></td>
+				<td><b>c</b></td>
+			</tr>
+			</tbody>	
+			<tbody align ="center" style="color: white">
+				<tr>
+				<td>a</td>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				</tr>
+				<tr>  
+				<td>b</td>
+				<td>c</td>
+				<td>a</td>
+				<td>b</td>
+				</tr>
+				<tr>  
+				<td>c</td>
+				<td>c</td>
+				<td>b</td>
+				<td>a</td>
+				</tr>
+			</tbody>
+		</table><br>
+	e) C={hileras de letras}, operación: poner una hilera a continuación de la otra.<br>
+	<input class="inputs"><br>
+	f) P={proposiciones lógicas}, operación: ^ (el "y" lógico).<br>
+	<input class="inputs"><br>
+	g) dar otros ejemplos <br>
+	<input class="inputs">
+	</p>
+	
+	<p class="letra" style="background-color:#06406C; color:white">
+	3- Cuando ocurre que la operación entre dos elementos del conjunto nos vuelve a dar un elemento
+	del conjunto se dice que el conjunto es cerrado respecto de la operación.<br>
+	¿Qué importancia puede tener esta propiedad de cierre? 
+	<input class="inputs">
+	</p>
+	
+	<p class="letra" style="background-color:#348FD4; color: #06406C" align="justify">
+	4- Esta multiplicidad de ejemplos de conjuntos C en las que puede definirse una función f(CxC)->
+	C ha llevado a estudiar este tipo de funciones (operaciones) en más detalle. En principio los
+	conjuntos y funciones pueden definirse arbitrariamente como se ve en los ejemplos anteriores. Pero
+	para que la operación tenga algún interés debe tener ciertas propiedades que se correspondan a
+	relaciones importantes que se hallen en la realidad, es decir las operaciones deben ser “modelos
+	matemáticos” de operaciones significativas con objetos reales. Veamos los tipos más usuales de
+	estas funciones o estructuras. 
+	</p>
+	
+	<p class="letra" style="background-color:#cc4037; color:#4C0D09">
+	5- Grupo – Es un conjunto cerrado respecto de una operación asociativa con cero e inverso. Es
+	decir:<br><br>
+	a) si a G ^ b G -> a (+) b G ∈ ∈ ∈<br>
+	b) (a (+) b) (+) c = a (+) (b (+) c)<br>
+	c) Existe un e G tal que para todo a G es a (+) e = e (+) a = a ∈ ∈<br>
+	d) Dado a G existe un a' G tal que a (+) a' = e ∈ ∈<br><br>
+	Ver en los ejemplos 2 a) b) c) d) e) f) cuales forman grupo. Indicar el elemento neutro. Si no forman
+	decir porqué.
+	</p>
+	
+	<p class="letra" style="background-color:#06406C; color:white">
+	6- Decir cuales conjuntos forman un grupo con las operaciones indicadas. Indicar cuál es el
+	elemento neutro.<br>
+	a) Números naturales. Operación + <br>
+	<input class="inputs"><br><br>
+	b) Números enteros. Operación +
+	<input class="inputs"><br><br>
+	c) Números enteros. Operación x
+	<input class="inputs"><br><br>
+	d) Números fraccionarios. Operación x 
+	<input class="inputs"><br><br>
+	e) Rotaciones de una figura en el plano. Operación a (+) b: hacer primero rotación de ángulo a y
+	luego la de ángulo b.
+	<input class="inputs"><br><br>
+	f) Números con 1 decimal. Operación: multiplicación seguida de redondeo a un decimal. (considere
+	0.2x0.8x10.5)
+	<input class="inputs"><br><br>
+	g) Rotaciones de una figura en el espacio de 3 dimensiones 
+	<input class="inputs"><br><br>
+	h) Matrices de 2x2. Operación: producto de matrices:<br><br>
+		<table class="texto" border="2" bordercolor="black" align ="center" width="50%" >
+		<p align="center">A</p>
+	  		<tbody align ="center"  style="color: white">
+			<tr>
+				<td><b>a</b></td>
+				<td><b>b</b></td>
+			</tr>
+			</tbody>	
+			<tbody align="center" style="color: white">
+				<tr>
+				<td>c</td>
+				<td>d</td>
+				</tr>
+			</tbody>
+		</table><br>
+	por<br>
+		<table border="2" bordercolor="black" align ="center" width="50%" class="texto">
+		<p align="center">B</p>
+	  		<tbody align ="center" style="color: white" >
+			<tr>
+				<td><b>e</b></td>
+				<td><b>f</b></td>
+			</tr>
+			</tbody>	
+			<tbody align="center" style="color: white">
+			<tr>
+				<td>g</td>
+				<td>h</td>
+			</tr>
+			</tbody>
+		</table><br>
+	igual<br>
+		<table border="2" bordercolor="black" align ="center" width="50%" class="texto">
+		<p align="center">AXB</p>
+	  		<tbody align ="center"  style="color: white">
+			<tr>
+				<td><b>ae + bg</b></td>
+				<td><b><div contenteditable>?</div></b></td>
+			</tr>
+			</tbody>	
+		<tbody align="center" style="color: white">
+			<tr>
+				<td><div contenteditable>?</div></td>
+				<td><div contenteditable>?</div></td>
+			</tr>
+		</tbody>
+		</table><br>
+	<input class="inputs"><br><br>
+	¿Qué pasa si consideramos sólo las matrices no singulares? (con inversa). <br>
+	<input class="inputs"><br><br>
+	h) Los conjuntos con la operación intersección ( ) (y con la operación Unión?).
+	<input class="inputs"><br><br>
+	i) Los polinomios de grado <= n con la operación “suma de polinomios”.
+	<input class="inputs"><br><br>
+	j) Las proposiciones lógicas con la operación ^. 
+	<input class="inputs"><br>
+	</p>
+	
+	<p class="letra" style="background-color:#348FD4; color: #06406C">
+	7- Un grupo se llama conmutativo o abeliano si, además de las operaciones indicadas en 5, la
+	operación (+) es conmutativa.<br> Es decir: a (+) b = b (+) a<br>
+	Decir cuáles de los grupos vistos en 2 y 6 son abelianos.<br>
+	<input class="inputs">
+	</p>
+	
+	<p class="letra" style="background-color:#cc4037; color:#4C0D09">
+	8- Entre muchos entes matemáticos de un conjunto existen dos operaciones que pueden relacionarse
+	entre ellas. Indique las que conozca en los ejemplos 2 y 6. (formen o no un grupo) 
+	<input class="inputs">
+	</p>
+	
+	<p class="letra" style="background-color:#06406C; color:white">
+	9- Anillo – Es un grupo cerrado respecto de 2 operaciones (+) y (x) que es un grupo abeliano
+	respecto de (+) y tal que la (x) es asociativa y distributiva respecto de (+). Es decir, si a, b, c
+	pertenecen a A <br><br>
+	a) a (+) b A; (a (+) b) (+) c = a (+) (b (+) c); ∈ <br><br>
+	existe e | a (+) e = e (+) a = a; existe a´| a (+) a´= e; a (+) b = b (+) a; <br><br>
+	b) a (*) b A; (a (*) b) (*) c = a (*) (b (*) c); ∈ <br><br>
+	c) (a (+) b) (*) c = (a (*) c) (+) (b (*) c); a (*) (b (+) c) = (a (*) b) (+) (a (*) c); <br>
+	El anillo se llama con unidad si existe un elemento u tal que: a (x) u = u (x) a = a para todo a A ∈<br><br>
+	El anillo es conmutativo si a (x) b = b (x) a.<br><br>
+	Discutir en los ejemplos de 2 y 6 cuáles forman anillo, ver si hay unidad y cuáles anillos son
+	conmutativos. 
+	<input class="inputs"><br>
+	</p>
+	
+	<p class="letra" style="background-color:#348FD4; color: #06406C" >
+	10- Demostrar que si el anillo es conmutativo la distributividad a derecha se deduce de la
+	distributividad a izquierda. <br>
+	<input class="inputs"></input>
+	</p>
+	<p class="letra" style="background-color:#cc4037; color:#4C0D09">
+	11- Dominio de integridad, D, Es un anillo de conmutación con unidad en el cual si a,b,c pertenecen
+	a D entonces c (x) a = c (x) b -> a = b (multiplicación). Esta propiedad equivale a decir: que r (x) s
+	= 0 -> r = 0 para todo s (demostrar) <br>
+	<input class="inputs">
+	</p>
+	
+	<p class="letra" style="background-color:#06406C; color:white">
+	12 – Decir qué ejemplos de 2 y 6 son dominios de integridad. <br>
+	<input class="inputs">
+	</p>
+	
+	<p class="letra" style="background-color:#348FD4; color: #06406C" >
+	13- Cuerpo<br>
+	Es un dominio de integridad tal que todo elemento menos el neutro tiene un inverso multiplicativo.
+	Es decir para todo a k y a diferente de e existe a' tal que a a' = u ∈<br>
+	¿Cuáles de los ejemplos en 12 son Cuerpos? <br>
+	<input class="inputs">
+	</p>
+	
+	<p class="letra" style="background-color:#cc4037; color:#4C0D09">
+	18- Algebra de Boole Es un conjunto con dos operaciones idempotentes, conmutativas, asociativas
+	respectivamente distributivas, entre cuyos términos tienen una relación de inclusión reflexiva,
+	antisimétrica y transitiva (=) consistente con las operaciones, con dos cotas universales y una
+	operación de complementación involutiva que sigue la ley dual (De Morgan)<br>
+	Es decir:<br>
+	<input class="inputs">
+	</p>
+	
+	<p class="letra" style="background-color:#06406C; color:white">
+	19.- ¿Qué es un conjunto parcialmente ordenado? ¿Verdad que esta pregunta debería estar al
+	principio?<br>
+	<input class="inputs">
+	</p>
+
+	<hr>
+	Fin del documento de Estructuras Algebráicas. Licencia pendiente. 
+	<hr>
+	<div style="font-weight: bold"><big>
+	Referencias: <a href="http://rogerdudler.github.io/git-guide/index.es.html" target= "_blank">Git La Guia Sencilla</a><br>
+	Imprimir: <a href="http://webdelprofesor.ula.ve/ingenieria/jacinto/matematicas/estructuras-algebraicas.pdf" target= "_blank">Formato pdf</a>
+	</big></div>
+	</div>
+	</div>
+	</div>
+	<br><br>
+</body>
+</html>

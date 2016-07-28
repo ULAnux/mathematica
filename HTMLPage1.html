@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<HTML>
+<HEAD>
+<TITLE> Prolog Searching </TITLE>
+</HEAD>
+<BODY>
+<h2>Search</h2>
+
+<input type='file' accept='text/plain' onchange='openFile(event)'><br>
+<img id='output'>
+<script src="search.js"></script>
+<br>
+<script language="Javascript"> 
+
+    var n = window.prompt("Please, enter question");
+
+</script><br>
+
+<script> 
+    var openFile = function (event) {
+        var a;
+        var input = event.target;
+        var reader = new FileReader();
+        reader.onload = function (a) {
+
+            var text = reader.result;
+            a = reader.result;
+            var counter = readprolog(a, n);
+            document.write(counter);
+            console.log(reader.result);
+        };
+
+        reader.readAsText(input.files[0]);
+
+        return 0;
+    };
+   
+</script><br>
+
+</BODY>
+</HTML>

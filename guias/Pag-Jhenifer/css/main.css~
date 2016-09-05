@@ -1,0 +1,66 @@
+.indie{
+	font-family: 'Indie Flower', cursive;
+}
+
+.bree{
+	font-family: 'Bree Serif', serif;
+}
+
+.blanco{
+	color: #F3FFD8;
+}
+
+.verde{
+	color: #33AA8F;
+}
+.gris{
+	color: #587D60;
+}
+
+.no_lista{
+	margin: 0px;
+	padding: opx;
+}
+
+.margin{
+	margin-right: -20px;
+}
+.margen-imag{
+	margin-left: 10px;
+	margin-right: 15px;
+}
+
+
+.no_lista li{
+	list-style-type: none;
+}
+.grande{
+	font-size: 3em;
+}
+.peque{
+	font-size: 1.5em;
+}
+.color-barra{
+	background-color: #33AA8F;
+}
+
+.padding-largo{
+	padding: 5px 10px;
+}
+
+.incline-block{
+	float: none;
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.quitar-float{
+	float: none;
+}
+
+.texto{
+	margin-left: 100px;
+	margin-right: 100px;
+	font-family: 'Bree Serif', serif;
+	color: #587D60;	
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>InducciónMatemática</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+<div class="container">
+	
+	<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<h1 id="titulo" class="titulo" style="background-color:#ECD9D9;color:purple">Inducción Matemática</h1>
+		<hr><p class="texto"> (Por Carlos Domingo. Editado por Carmen Rodríguez y Jacinto Dávila)</p>	<hr>
+
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" align="justify">
+	1. La estructura de un dominio de integridad la poseen los números enteros que fueron los entes
+	matemáticos que primero reconoció la humanidad al formarse la actividad de “contar”.
+	</p>
+	<p class="texto" style="background-color:#DBEBFF">
+	Definamos pues un conjunto Z (... -4, -3, -2, -1, 0, 1, 2, 3, ... ) con una operación + y otra • (o
+	simplemente indicada con blanco) con las siguientes propiedades [escribirlas para elementos a, b, c, d, ... cualesquiera de Z]<br>
+	<b><font color="#08304A">1)</font></b> Asociativa + (a + b) + c = <input class="borde_bajo"> <input class="borde_bajo1"><br>
+	<b><font color="#08304A">2)</font></b> Existe el elemento neutro, 0, de + <input class="borde_bajo"><br>
+	<b><font color="#08304A">3)</font></b>Existe inverso o elemento simétrico de + <input class="borde_bajo"><br>
+	<b><font color="#08304A">4)</font></b> Conmutativa sobre + <input class="borde_bajo"><br>
+	<b><font color="#08304A">5)</font></b> Asociativa sobre • <input class="borde_bajo"><br>
+	<b><font color="#08304A">6)</font></b> Existe el elemento unitario de • <input class="borde_bajo"><br>
+	<b><font color="#08304A">7)</font></b> Conmutativa sobre • <input class="borde_bajo"><br>
+	<b><font color="#08304A">8)</font></b> Distributiva a la izquierda <input class="borde_bajo"><br>
+	<b><font color="#08304A">9)</font></b> Simplificación a la izquierda <input class="borde_bajo"><br>
+	<b><font color="#08304A">10)</font></b> Cierre de + y • (son funciones de ZxZ Z)<input class="borde_bajo">  <br><br>
+	Estas propiedades, que fueron extraídas por la experiencia humana en la práctica de las operaciones
+	+ y •, pueden considerarse definiciones de esas operaciones y junto con otras tres que veremos
+	pueden tomarse como la definición de números enteros.<br>
+	<b><font color="#08304A">11)</font></b> Entre los elementos de Z existe una relación de igualdad que es<br>
+	• reflexiva: Para todo a en Z, a = <input class="borde_bajo1"<br>
+	• recíproca (o simétrica): Para todo a y b en Z, a = b <input class="borde_bajo1" <br>
+	• transitiva: Para todo a, b y c en Z, <input class="borde_bajo1"<br>
+	Los elementos que la cumplen se dicen iguales.
+	</p>
+
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" align="justify">
+	2. Con estos axiomas basta para demostrar una serie de propiedades que en álgebra elemental se dan
+	como nuevas. Además las propiedades demostradas valen para cualquier dominio de integridad.</p>
+	<p class="texto" style="background-color:#ECD9D9"><b>
+	<font color="purple">a)</font></b> Distributividad a la derecha: (a + b) c =<input class="borde_bajo1">(aplicar 7, 8, 7 a cada
+	término)<br><br>
+	<b><font color="purple">b)</font></b> Unicidad del cero. Si para todo a es: a + Z = a entonces Z = 0<br>
+	En particular para a = 0 es:<br>
+	0 + Z =<input class="borde_bajo1"> hipótesis<br>
+	0 = <input class="borde_bajo1">simétrica<br>
+	0 + Z =<input class="borde_bajo1">  por 2<br>
+	<input class="borde_bajo1"> = <input class="borde_bajo1">transitiva <br><br>
+	<b><font color="purple">c)</font></b> Para todo a, b, c en Z, a + b = a + c b = c <br>
+	Demostración:<br>
+	a' + a = 0<br>
+	a + a' = 0, etc 3 y 4<br>
+	a' + (a + b) = a' + (a + c), con 10 y la hipótesis asociativa.<br>
+	En el teorema anterior se basa la simplificación de términos en diferentes miembros.<br><br>
+	<b><font color="purple">d)</font></b> Para todo a hay un solo x tal que: a + x = 0.<br>
+	Demostración: (las demostraciones de unicidad suelen hacerse por el absurdo). Suponemos que x, y<br>
+	son dos números diferentes y decimos.<br>
+	a + x = a + y
+	<input class="borde_bajo1">= <input class="borde_bajo1">, por c)
+	para concluir que<input class="borde_bajo"> QEPD.<br><br>
+	<b><font color="purple">e)</font></b> Para todo a,b en Z, hay un solo x tal que: a + x = b.<br>
+	Demostración:<br>
+	Para ver que lo hay, hay que poner:<br>
+	x = -a + b<br>
+	Para ver que es único hagamos:<br>
+	a + x = <input class="borde_bajo1"> por c)</font></b>, una vez más.<br><br>
+	<b><font color="purple">f)</font></b> Para todo a en Z, se tiene que a • 0 = 0 • a = 0
+	Demostración:
+	a • a = a •(a + 0), por 2 y 10<br>
+	<input class="borde_bajo1"> = a • a + <input class="borde_bajo1">, por 8<br>
+	a•0 =<input class="borde_bajo1">,por b) 7<br><br>
+	<b><font color="purple">g)</font></b> Si a • u = a para todo a, entonces u = 1 (compárese con b).<br>
+	Demostración:<br>
+	En particular poniendo a = 1:<br>
+	1 • u = <input class="borde_bajo1">
+	u • 1 = <input class="borde_bajo1">, 8
+	1 • u = u • 1 = 1 = 1 • 1, transitiva y 6<br>
+	1 • u = 1 • 1, transitiva<br>
+	<input class="borde_bajo1"> = <input class="borde_bajo1">, simplificación<br><br>
+	<b><font color="purple">h)</font></b> Si a b = 0 o bien a = 0 o bien b = 0.<br>
+	Demostración: <br>
+	Sea a b = 0 y b ≠ 0<br><input class="borde_bajo1">
+	a b = 0, por hipótesis<br>
+	a b = 0 b, f) y transititiva<br>
+	<input class="borde_bajo1"> = <input class="borde_bajo1">, simplificación<br><br>
+	<b><font color="purple">i)</font></b> El inverso del inverso de a es a.<br>
+	− ( − a) = a<br>
+	− a + a = 0, por 2<br>
+	− a + (− (−a)) = <input class="borde_bajo1">, 2 aplicada a ó −a<br>
+	−a + a = −a +(−(−a)), transitiva<br>
+	<input class="borde_bajo1"> = <input class="borde_bajo1">, simplificación<br><br>
+	<b><font color="purple">j)</font></b> (−a) b = −a b<br><input class="borde_bajo1"><input class="borde_bajo1">
+	(a + (−a)) b = <input class="borde_bajo1">, por 3 y distributiva<br>
+	<input class="borde_bajo1"> = <input class="borde_bajo1">, por f)<br>
+	a b + (−a b) = <input class="borde_bajo1">, por 2<br>
+	a b + (−a) b = <input class="borde_bajo1">, transitiva<br>
+	<input class="borde_bajo1"> = <input class="borde_bajo1">, simplificación<br><br>
+	<b><font color="purple">k)</font></b> (−a) (−b) = a b<br>
+	(−a) (−b) = − ( (−b)), por j)<br>
+	<input class="borde_bajo1"> = − ( − <input class="borde_bajo1">), por j)<br>
+	<input class="borde_bajo1"> = <input class="borde_bajo1">, por i)<br><br>
+	<b><font color="purple">l)</font></b> desarrollar (a +b) (c + d)<br><br>
+	<b><font color="purple">m)</font></b> desarrollar (a − b) (c − d), note que (a − b) es a + ( − b)) <br>
+	</p>
+
+
+
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" align="justify" >
+	3. Relaciones de orden Un dominio de integridad es ordenado si se pueden distinguir en él ciertos elementos llamados positivos Z+ = {..,a,b,c,...} tales que: </p>
+	<p class="texto" style="background-color:#E6FCFF"><b><font color="purple">a)</font></b> a Z+ tal que b Z+ a + b Z+ ∈ ∈ ⇒ ∈<br>
+	a Z+ tal que b Z+ a • b Z+ ∈ ∈ ⇒ ∈<br>
+	<b><font color="purple">b)</font></b> Tricotomía: a es positivo, a es cero o bien -a es positivo.<br>
+	<b><font color="#08304A">12)</font></b> El conjunto Z es ordenado. ¿lo será el de los elementos (a + b), con a, b enteros?<br>
+	<b><font color="#08304A">13)</font></b> Se define a < b si y sólo si b - a es positivo. También se indica b > a. Por comodidad se define a<br>
+	≤ b si a < b ó a = b. Se indica también b ≥ a.<br>
+	<b><font color="purple">a)</font></b> b Z+ ↔ b > 0 ∈<br>
+	<b><font color="purple">b)</font></b> a < b ^ b < c a < c, ley transitiva ⇒<br>
+	<b><font color="purple">c)</font></b> a < b a + c < b + c ⇒<br>
+	<b><font color="purple">d)</font></b> a < b a c < b c, c positivo ⇒<br>
+	<b><font color="purple">e)</font></b> a > 0 -a < 0 ⇒</p><br>
+
+
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra"	>
+	4. Principio del buen ordenamiento (del buen orden)<br>
+	(Ver también en <a href="http://es.wikipedia.org/wiki/Conjunto_bien_ordenado" target= "_blank"><font color="#1248FF">http://es.wikipedia.org/wiki/Conjunto_bien_ordenado</font></a>)<br>
+	Un conjunto se dice ordenado si entre dos cualesquiera de sus elementos se da la relación a < b ó
+	bien a = b ó bien b < a.El conjunto de los enteros es ordenado.
+	Un conjunto se dice bien ordenado si todo subconjunto no vacío del mismo tiene un elemento
+	menor que todos los demás (primer elemento).</p>
+	<p class="texto" style="background-color:#F8DAE2">Agregamos el axioma:<br>
+	<b><font color="#08304A">14)</font></b> El conjunto de los enteros es bien ordenado.<br>
+	En un conjunto "parcialmente ordenado" (COPO en Español, POSET en Inglés) para algunos<br>
+	elementos a, b no se cumple ni a < b, ni a = b, ni b < a.<br>
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" align="justify" >5. Dar ejemplos de conjuntos ordenados pero no bien ordenados. Dar ejemplos de conjuntos
+	parcialmente ordenados. </p>
+	<p class="texto" style="background-color:#B0F0FF"><input class="inputs"></p>
+	
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" align="justify" >
+	6. No hay ningún entero entre 0 y 1.</p>
+	<p class="texto" style="background-color:#E6FCFF">Demostración:<br>
+	Sea 0 < c < 1<br>
+	Sea C = {todos los c tales que 0 < c < 1}<br>
+	Sea m el menor de los c (axioma 14)<br>
+	Se tiene que 0 < m < 1 y por tanto:<br>
+	m 0 < m . m < <input class="borde_bajo1"><input class="borde_bajo1"> . Sin embargo, m^2 es un entero mayor que cero pero menor que 
+	<input class="borde_bajo1"><input class="borde_bajo1">.<br>
+	Luego es menor que 1. Luego m no es el menor de los c.<br>
+	Este teorema permite ver el siguiente que es la base del principio de inducción.</p>
+
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" align="justify" >
+	7. Si un conjunto C de enteros positivos contiene al 1 y siempre que contenga al n contiene también
+	al n + 1, entonces contiene a los enteros positivos.<br>
+	Dar un argumento intuitivo y decir por que no es una demostración:</p>
+	<p class="texto" style="background-color:#ECD9D9">Demostración:<br>
+	Supongamos un C tal que 1 C y Si n C n+1 C. ∈ ∈ ∈ <br>
+	Sea C' el conjunto de los enteros que no pertenecen a C.<br>
+	Supongamos tal C' no vacío. Por 14) tiene un primer elemento.<br>
+	Sea ese elemento m. ¿Puede ser m = 1? <input class="borde_bajo1"> .
+	 Es decir, entonces es m es | > 1 | = 1 | < 1 |<br>
+	(tache los que no correspondan, cuando entienda las razones).<br>
+	Además m - 1 C ¿por qué? ∈<br>
+	Pero entonces m - 1 + 1 <input class="borde_bajo1"> por <input class="borde_bajo1"> ∈<br>
+	Entonces <input class="borde_bajo1"> C contra la hipótesis. ∈<br>
+	Luego C' debe ser <input class="borde_bajo1"> </p>
+
+
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" align="justify">
+	8. Principio (teorema) de inducción completa.<br>
+	Sea p una proposición significativa para los enteros.<br>
+	Supongamos que:</p>
+	<p class="texto" style="background-color:#E9F1EA">• p es verdadera para 1<br>
+	• Si p es verdadera para k lo es para k + 1<br>
+	Entonces p es verdadera para todo número.<br>
+	Demostración: basta repetir el teorema anterior considerando el conjunto C para el cual p es<br>
+	verdadera.</p>
+
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" align="justify">
+	9. Con el principio de inducción completa se pueden demostrar (o definir) en un número finito de<br>
+	pasos propiedades (o definiciones) que requerirían un número infinito de pasos.</p>
+	<p class="texto" style="background-color:#E9D0B6">Ejemplo:<br>
+	<b><font color="purple">a)</font></b> Demostrar que la distributividad a izquierda (axioma 1-8) vale para cualquier n. Es decir:<br>
+	a (b1 + b2 + b3 + ... + bn) = a b1 + a b2 + ... + a bn<br>
+	Supongamos que vale para k:<br>
+	Se demuestra que vale para k+1, pues suman a ambos miembros a b_(k+1)<br>
+	Además vale para k = 1 pues<br>
+	Luego:<br>
+	<b><font color="purple">b)</font></b> Contraejemplo:<br>
+	“Todo número es igual al siguiente”. Supongamos que k = k + 1 (vale para k).<br>
+	Sumando 1 a ambos lados de esa expresión tenemos<br>
+	k + 1 = (k + 1) + 1, es decir, resulta válida para k + 1.<br>
+	Luego vale para todo número.<br>
+	¿Qué piensa de esta demostración? </p>
+
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" align="justify" >
+	10. Otro enunciado del principio de inducción</p>
+	<p class="texto" style="background-color:#DBEADC">Sea p una proposición referente a los enteros positivos.<br>
+	Si de la suposición que es p verdadera para todo k < m resulta que es válida para m entonces es p<br>
+	válida para todo entero positivo.<br>
+	Demostración:<br>
+	Sea S el conjunto de los enteros positivos para los cuales p es falsa.</p>
+
+	<p align="center"><img src="abajo.jpg" width="20%" height="10%"></p>
+	<p class="letra" >11- Definamos la potenciación así</p>
+	<p class="texto" style="background-color:#F0DDD5">a^1 = a<br>
+	a^(m+1) = a^(m)a<br>
+	Demostrar que a^(m) a^(n) = a^(m + n)</p>
+
+	<hr> <p class="texto">Fin del documento sobre inducción matemática. Licencia Pendiente. </p><hr>
+		<div style="font-weight: bold"><big>
+		Referencias: <a href="http://rogerdudler.github.io/git-guide/index.es.html" target= "_blank">Git La Guia Sencilla</a><br>
+		Imprimir: <a href="http://webdelprofesor.ula.ve/ingenieria/jacinto/matematicas/induccion-matematica.pdf" target= "_blank">Formato pdf</a>
+		</big></div>
+	</div>
+	</div>
+	</div>
+	<br><br>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+	font-family: 'BenchNine', sans-serif;
+	background-color: #eee;
+	font-size: 220%;
+}
+img{
+	max-width: 1136px;
+}
+
+.quitar-float{
+	float: none;
+
+}
+
+.espacio-arriba{
+	margin-top: 30px;
+}
+
+.espacio-line{
+	margin-top: 8px;
+}
+
+.espacio-medio{
+	margin-top: 100px;
+}
+
+.margin{
+	margin-left: 60px;
+	margin-right: 40px;
+}
+
+.letra{
+font-family: 'Josefin Sans', sans-serif;
+}
+
+.se-blue{
+
+	background-color: #141AA8;
+}
+
+.menu{
+	font-size: 20px;
+	text-shadow:-1px -2px 1px #000000;
+	text-transform: uppercase;
+}
+
+.size-lista{
+	font-size: 3em;
+}
+
+.menu:hover{
+	font-size: 23px;
+	text-shadow:-2px -2px 1px #000000;
+	text-transform: uppercase;
+	color: white
+}
+
+.menu2{
+	font-size: 16px;
+	text-shadow:-1px -2px 1px #000000;
+	text-transform: uppercase;
+}
+
+.menu2:hover{
+	font-size: 15px;
+	text-shadow:-2px -2px 1px #000000;
+	text-transform: uppercase;
+	color: white
+}
+
+a:link{
+	text-decoration: none;
+}
+
+.espacio-imagen{
+	margin-top: 40px;	
+}
+
+.tipografia{
+font-family: 'Oswald', sans-serif;
+}
+
+.pacifico{
+	font-family: 'Pacifico', cursive;
+}
+
+.size{
+	font-size: 3em;
+}
+
+.size-sub{
+font-size: 2.5em;
+}
+
+.blanco{
+	color: white
+}
+
+.espacio{
+	margin-right: 2em;
+}
+
+.no-lista li{
+	list-style-type: none;
+}
+
+.se-azul{
+	background-color: #13245C;
+}
+
+.padding-largo{
+	padding: 35px 10px;
+}
+
+.se-gris{
+	background-color: #eee;
+}

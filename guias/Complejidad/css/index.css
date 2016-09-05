@@ -1,0 +1,64 @@
+.titulo{
+	text-align: center;	
+	font-style: oblique ;
+	display: block;
+    font-size: 6em;
+    font-weight: bold;
+	font-family: fantasy;
+	color: #1673FF;
+}	
+
+.letra{
+	font-style: oblique ;
+	display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: fantasy bold;
+	color: #4C0B5F;
+	background-color: #F8EFFB;
+
+}
+
+.texto{
+	font-style: oblique ;
+	display: block;
+    font-size: 1.5em;
+    font-family: fantasy;
+    color: #086A87;
+
+}
+
+.texto1{
+	font-style: oblique ;
+	display: block;
+    font-size: 1.5em;
+    font-family: fantasy;
+    color: #4C0B5F;
+
+}
+
+
+
+.borde_bajo{
+	border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 70px;
+}
+
+.inputs{
+	height:40px;
+    font-size: 1em;
+	width:100%;
+	font-style: oblique;
+	color: black;
+}
+
+.inputs1{
+	border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 600px;
+}

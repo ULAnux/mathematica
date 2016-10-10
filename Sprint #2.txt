@@ -1,0 +1,5 @@
+Ricardo Bermudez C.I: 25.171.618
+
+Para el proyecto la idea actual es trabajar junto con Miguel Baptista para crear una aplicacion para android 
+o una pagina web con un sistema de preguntas de completacion similares a la mecanica de duolingo 
+con preguntas de las varias guias de la materia y posiblemente otros temas de esta. 

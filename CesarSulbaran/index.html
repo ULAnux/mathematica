@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buscador Mathematica</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/app.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  </head>
+
+  <body>
+    <header class="top-nav">
+
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper indigo darken-4">
+          <a href="#!" class="brand-logo">
+            <img src="img/ULA.png" alt="" height="62px" width="70px"/>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Imagenes</a></li>
+            <li><a href="#">Adicionales</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    </header>
+
+    <div class="container">
+      <h3>
+        Buscador Mathematica
+      </h3>
+
+      <div class="row">
+        <form class="col s12">
+           <div class="row">
+             <div class="input-field col s10 ">
+               <i class="material-icons prefix">label_outline</i>
+               <input id="search" type="text" class="validate" required>
+               <label for="search">Pregunta!</label>
+
+             </div>
+             <div class="input-field col s2 ">
+             <button type="button" name="searchAction" id="searchAction" class="btn waves-effect waves-light indigo darken-4"> Buscar  <i class="material-icons right">search</i></button>
+           </div>
+           </div>
+         </form>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m7">
+          <h5 class="header" id="headerFound">Preguntas encontradas:</h5>
+            <div class="dataResults">
+
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/pr.js"></script>
+  </body>
+</html>

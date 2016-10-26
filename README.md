@@ -5,6 +5,17 @@
 # Mathematica
 [Un juego para aprender matemática y lógica](https://github.com/ULAnux/mathematica)
 
+# Nueva estructura de directorios
+
+    android-apps: Para las aplicaciones para Android
+    guias: Para todas las guias de estudio
+    node-server: Para el juego completo
+    pdfs-sin-ubicar: Para cualquier pdfs que aun no forme parte del juego
+    prolog-server: Para el gestor de las prs en Prolog
+    README.md: Este archivo
+    src-sin-ubicar: Para cualquier otro fuente sin ubicar
+
+
 ## ¿Cómo instalar git en Linux?
 
 1. Abre en tu computadora una terminal y ejecuta el siguiente comando dependiendo de la distribucion de linux que uses:

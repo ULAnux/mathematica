@@ -49,15 +49,15 @@ lexem(':') --> ":".
 
 lexem(N) --> hex_start, !, xinteger(N). % this handles hex numbers
 lexem(N) --> number(N). % this handles integers/floats
-lexem(Q) --> quote_start(End), string(S), End, !, {string_to_atom(S, Q)}.
+lexem(Q) --> quote_start(End), string(S), End, !, {term_string(Q, S)}.
 lexem(A) --> identifier_c(L), {string_to_atom(L, A)}.
 
 quote_start("\"") --> "\"".
 
 identifier_c([H | T]) --> alpha(H), !, many_alnum(T).
 
-alpha(H) --> [H], {code_type(H, alpha);code_type(H, csym);code_type(H,quote)}.
-alnum(H) --> [H], {code_type(H, alnum);code_type(H, csym);code_type(H,quote)}.
+alpha(H) --> [H], {code_type(H, alpha);code_type(H, csym)}.
+alnum(H) --> [H], {code_type(H, alnum);code_type(H, csym)}.
 
 many_alnum([H | T]) --> alnum(H), !, many_alnum(T).
 many_alnum([]) --> [].

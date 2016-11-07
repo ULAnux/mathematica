@@ -1,49 +1,60 @@
-% buscador.pl  version alfa 0.1 2015-06-16 
+% buscador.pl  version alfa 0.2 2016-10-15
 % This program is free software as the rest of ULAnix Mathematica
-% 
+% Especificación:
+% Sea B = {(Preg, Resp)| pr(_,Preg, Resp, _,_)}, donde pr/5 es un predicado en la base
+% de conocimiento de Mathematica. Preg, a su vez, es un conjunto de palabras, cada una
+% de las cuales pertenece al conjunto L. El usuario de Mathematica hace una consulta, C,
+% que tambien es un conjunto de palabras en L. Defina,  a partir de B y L y cualquier
+% funcion o relacion que considere apropiada, el conjunto, S, que se le presentara
+% al usuario como solucion a su C. Incluya una definicion para esa funcion o relacion
+% usada en la definicion anterior. Explique con un ejemplo sencillo.
+% Solución:
+% S = {Resp|(Preg, Resp) pertenece a B y Preg es similar a C}
+% X es similar a Y si (X contiene a Y o Y contiene a X) y sus tamaños son casi los mismos
 
-:- [lexer]. 
+:- [lexer].
 
-buscar_resp(Pregunta, Respuesta) :-
-  atom_codes(Pregunta, Pregunta_C), 
-  tokenizar_pregunta(Pregunta_C, Pr),
-  recuperar(Pr, Respuesta).
+buscar_resp(Consulta, Respuestas) :-
+  atom_codes(Consulta, ConsultaP),
+  tokenizar_pregunta(ConsultaP, C),
+  recuperar(C, Respuestas).
 
-recuperar(P,Respuestas) :-
-  filtrar(P, Pf),
-  findall(R, contiene(Pf, R), Respuestas).
+recuperar(C,Respuestas) :-
+  filtrar(C, Descriptores),
+  findall(R, similar(Descriptores, R), Respuestas).
 
-contiene(Preg, Respuesta) :-
-  clause(pr(_, Pregunta, Respuesta, _, _), _Body), 
-  contenida_en(Preg, Pregunta). 
+similar(Consulta, Respuesta) :-
+  clause(pr(_, Pregunta, Respuesta, _, _), _Body),
+  ( contenida_en(Consulta, Pregunta) ;
+    contenida_en(Pregunta, Consulta) ).
 
-contenida_en([], _) :- false. 
-contenida_en([Palabra], Pregunta) :- en(Palabra, Pregunta).
-contenida_en([P|R], Pregunta) :- en(P, Pregunta), contenida_en(R, Pregunta). 
+falta_algun(Lista1, Lista2) :-
+  en(X, Lista1),
+  not(en(X, Lista2)).
 
-en(P, Preg) :- member(P, Preg).
-en(P, Preg) :- subcadena(P, Preg).
+contenida_en(Lista1, Lista2) :-
+  not(falta_algun(Lista1, Lista2)).
 
-subcadena(_P, []) :- false. 
-subcadena(P, [C|_Rest] ) :- atom(C), sub_atom(C, _, _, _, P).
-subcadena(P, [_|Rest] ) :- subcadena(P, Rest). 
+en(E, C) :- member(E, C).
+en(E, C) :- subcadena(E, C).
+
+subcadena(_P, []) :- false.
+subcadena(P, [C|_Rest] ) :-  atom(C), atom(P),
+  sub_atom(C, _, _, _, P).
+subcadena(P, [_|Rest] ) :- subcadena(P, Rest).
 
 % test
 
-prueba_filtro :- filtrar([a, que, b], [a, b]). 
+prueba_filtro :- filtrar([a, que, b], [a, b]).
 
 filtrar([], []).
-filtrar([P|R], RR) :- 
-  lista_negra(ListaNegra), member(P, ListaNegra), filtrar(R, RR). 
+filtrar([P|R], RR) :-
+  lista_negra(ListaNegra), member(P, ListaNegra), filtrar(R, RR).
 filtrar([P|R], [P|RR]) :-  filtrar(R, RR).
 
-lista_negra([que]). 
+lista_negra([que, de, qué, cuáles, cuál, cómo, es, el, la, los, las]).
 
-tokenizar_pregunta(P, Pr) :- lex(Pr, P, []). 
+tokenizar_pregunta(P, Pr) :- lex(Pr, P, []).
 
-% ?prueba_buscar(['Union de dos Conjuntos A , B'], ['La union de dos conjuntos A , B se representa como todos los elementos pertenecientes tanto al conjunto A como al conjunto B}.']). 
-
-%pr(00010-23, ['Union de dos Conjuntos A , B'], ['La union de dos conjuntos A , B se representa como todos los elementos pertenecientes tanto al conjunto A como al conjunto B}.'], 20/20,'Alex Romero').
-
-
-
+% tests
+test1 :- buscar_resp('de que color es el caballo de Simón', [[blanco]]) .

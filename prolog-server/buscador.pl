@@ -21,10 +21,11 @@ buscar_resp(Consulta, Respuestas) :-
 
 recuperar(C,Respuestas) :-
   filtrar(C, Descriptores),
-  findall(R, similar(Descriptores, R), Respuestas).
+  findall(A, (similar(Descriptores, R), term_to_atom(R,A)), Respuestas).
 
 similar(Consulta, Respuesta) :-
-  clause(pr(_, Pregunta, Respuesta, _, _), _Body),
+  % clause(pr(_, Pregunta, Respuesta, _, _), _Body),
+  call_with_depth_limit(pr(_, Pregunta, Respuesta, _, _), 100, _Result), 
   ( contenida_en(Consulta, Pregunta) ;
     contenida_en(Pregunta, Consulta) ).
 
@@ -49,7 +50,7 @@ prueba_filtro :- filtrar([a, que, b], [a, b]).
 
 filtrar([], []).
 filtrar([P|R], RR) :-
-  lista_negra(ListaNegra), member(P, ListaNegra), filtrar(R, RR).
+  lista_negra(ListaNegra), member(P, ListaNegra), filtrar(R, RR), !.
 filtrar([P|R], [P|RR]) :-  filtrar(R, RR).
 
 lista_negra([que, de, qué, cuáles, cuál, cómo, es, el, la, los, las]).

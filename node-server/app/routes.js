@@ -194,6 +194,10 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
   });
 
   //post al realizar una pregunta
+  app.post('/auxiliar', isLoggedIn, function(req,res){
+
+  });
+
   app.post('/profile', isLoggedIn, function(req,res){
 
     //si existe una pregunta
@@ -213,9 +217,7 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
             destroy: true,
         }).on('success', function(result){
 
-
             var responseAlgebra = result.data[0].X.forEach(function(item) {
-
             if(typeof item == "string") {
               res.render('profile', {
                 user : req.user,  // obtiene el usuario de la sesión y lo pasa al template
@@ -246,26 +248,6 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
 
                     });
 
-        //interpretation a string del JSON que viene de prolog
-
-        var printItems = function(item) {
-          if(typeof item == "string") return ("X = " + item);
-          else {
-            var res = printResult(item);
-            return ("X = [" + res.substring(1, res.length-1) + "]");
-          }
-        };
-
-        var printResult = function(item) {
-          var ret = "";
-          if(typeof item.args[0] != "string" ) ret += "(" + printResult(item.args[0]);
-          else ret += "(" + item.args[0];
-
-          if(typeof item.args[1] != "string") ret += item.functor + printResult(item.args[1]) + ")";
-          else ret += item.functor + item.args[1] + ")";
-
-          return ret;
-        };
 
         //m.destroy();
 
@@ -288,6 +270,74 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
     });
   });
 
+  app.get('/auxiliar', isLoggedIn, function(req, res) {
+    
+ function aleatorio(inferior,superior){ 
+    var numPosibilidades = superior - inferior 
+    var aleat = Math.random() * numPosibilidades 
+    aleat = Math.round(aleat) 
+    if(superior == parseInt(inferior) + aleat)
+    {
+      return superior-1;
+    }
+    return parseInt(inferior) + aleat 
+}
+  
+
+      var readStream = fs.readFileSync("./prolog/0000.pl", 'utf8');
+      //creando objeto pengine
+      var str = (JSON.stringify(readStream));
+      var i = str.search("000") - 3;
+      var sub = str.substring(i);
+      var split = sub.split(".");
+      var random = aleatorio(0,split.length-1);
+
+        console.log(random);
+        if(random!=0){
+          split[random] = split[random].substring(3);
+        }
+        console.log(split[random] + ".");
+        var i2= split[random].search("p");
+        var f = split[random].search("], ");
+        var sub2 = split[random].substring(i2,f);
+        console.log("prueba");
+        var sub3 = sub2+"], X, Y, Z).";
+        console.log(sub3);
+
+      var m = new pengin({
+            server: "http://localhost:3030/pengine",
+            sourceText: readStream,
+            format: "json",
+            chunk: 50,
+           // ask: "pr(0000-1, [color, caballo, blanco, 'Simón'], X, Y, [anonimo]).",
+            //ask: "pr(0008-1,['¿','Qué', 'es', 'un', 'conjunto','?'], ['Es', 'un', 'grupo', 'de', 'objetos', 'finitos', 'o', 'infinitos', 'que', 'se', 'relacionan', 'entre', 'si'], ['Javier Solsona', 'Tomado de guía de conjuntos del profesor Carlos Domingo']),",
+            //ask: "pr(0000-1, ['color','caballo','blanco','Simón'],X,20/20,[anonimo]).",
+            ask: sub3 ,
+            destroy: true,
+        }).on('success', function(result){
+      
+            var auxStr = '';
+            var responseAlgebra = result.data[0].X.forEach(function(item) {
+            if(typeof item == "string") {
+              auxStr += ' ' + item;
+          }
+          else {
+            auxStr = printResult(item);
+            
+          }
+                        
+        }); 
+          console.log(auxStr);
+          });
+
+
+    res.render('auxiliar', {
+      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+      question : m
+    });
+
+
+  });
   // ejercicios induccion
   app.get('/ejercicios/induccion', isLoggedIn, function(req, res) {
     res.render('ejeInduc', {
@@ -331,4 +381,33 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
     // si no redireccione a la pagina principal
     res.redirect('/');
   }
+
+
+     //interpretation a string del JSON que viene de prolog
+
+  var printItems = function(item) {
+    if(typeof item == "string") return ("X = " + item);
+     else {
+       var res = printResult(item);
+       return ("X = [" + res.substring(1, res.length-1) + "]");
+     }
+   };
+
+   var printResult = function(item) {
+     var ret = "";
+     if(typeof item.args[0] != "string" ) ret += "(" + printResult(item.args[0]);
+     else ret += "(" + item.args[0];
+
+     if(typeof item.args[1] != "string") ret += item.functor + printResult(item.args[1]) + ")";
+     else ret += item.functor + item.args[1] + ")";
+
+    return ret;
+   };
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////////7
+  //Ayuda a pitagoras
+  ////////////////////////////////////////////////////////////////////////////////////////////7
+
+  var perro = 1500;
 };

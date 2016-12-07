@@ -1,7 +1,7 @@
 // app/routes.js
 var User = require('../app/models/user');
 var recovery = require("../config/passwordRecoveryAccount");
-
+var g_opc;
 module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
 
   // index
@@ -14,6 +14,8 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
     // renderea la pagina y le pasa un mensaje de error si lo hay
     res.render('login', { message: req.flash('loginMessage') });
   });
+
+
 
   // procesamiento del login o ingreso
   app.post('/login', passport.authenticate('local-login', {
@@ -193,10 +195,21 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
     });
   });
 
-  //post al realizar una pregunta
-  app.post('/auxiliar', isLoggedIn, function(req,res){
+  //Modulo Ayuda a Pitagoras
+  /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+  app.post('/ayudaPitagoras', isLoggedIn, function(req,res){
+  
   });
+ 
+   app.post('/IntAyudaPitagoras', isLoggedIn, function(req,res){
+  });
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////// 
+  // Aporte de Ender Puentes
+
+  //post al realizar una pregunta
 
   app.post('/profile', isLoggedIn, function(req,res){
 
@@ -270,74 +283,165 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
     });
   });
 
-  app.get('/auxiliar', isLoggedIn, function(req, res) {
-    
- function aleatorio(inferior,superior){ 
-    var numPosibilidades = superior - inferior 
-    var aleat = Math.random() * numPosibilidades 
-    aleat = Math.round(aleat) 
-    if(superior == parseInt(inferior) + aleat)
-    {
-      return superior-1;
-    }
-    return parseInt(inferior) + aleat 
-}
-  
+   app.get('/IntAyudaPitagoras', isLoggedIn, function(req, res) {
+    res.render('IntAyudaPitagoras', {
+      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+    });
+  });
 
-      var readStream = fs.readFileSync("./prolog/0000.pl", 'utf8');
-      //creando objeto pengine
+  //
+
+  
+  //Modulo Ayuda a Pitagoras
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  /*
+  Ayuda a Pitagoras Versión beta
+  Diseñado y Desarrollado por Ender Puentes C.I.V-25153102
+  Aporte Diciembre-2016
+  */
+  
+  app.get('/ayudaPitagoras/nivel:idNivel/pregunta:idPreg/pts:idPuntos', isLoggedIn, function(req, res) {
+    
+      var idNivel= req.params.idNivel;
+      var idPuntos= req.params.idPuntos;     
+
+      // Variable que determina el fin del juego
+
+      var final = false;
+
+      // Define segun el nivel el archivo a leer
+
+      if (idNivel == 1)
+      {
+        var readStream = fs.readFileSync("./prolog/level1.pl", 'utf8');
+      }
+      if (idNivel == 2)
+      {
+        var readStream = fs.readFileSync("./prolog/level2.pl", 'utf8');
+      }
+       if (idNivel == 3)
+      {
+        var readStream = fs.readFileSync("./prolog/level3.pl", 'utf8');
+      }
+       if (idNivel == 4)
+      {
+        var readStream = fs.readFileSync("./prolog/level4.pl", 'utf8');
+      }
+       if (idNivel == 5)
+      {
+        var readStream = fs.readFileSync("./prolog/level5.pl", 'utf8');
+      }
+
+      //Parseo del pr de prolog a pasar a la API pengines
+       
       var str = (JSON.stringify(readStream));
       var i = str.search("000") - 3;
       var sub = str.substring(i);
       var split = sub.split(".");
-      var random = aleatorio(0,split.length-1);
+      var idPreg = req.params.idPreg;
+      var i2= split[idPreg].search("p");
+      var j = split[idPreg].search("], ");
+      var sub2 = split[idPreg].substring(i2,j);
+      var pr = sub2+"], X, Y, Z).";
 
-        console.log(random);
-        if(random!=0){
-          split[random] = split[random].substring(3);
-        }
-        console.log(split[random] + ".");
-        var i2= split[random].search("p");
-        var f = split[random].search("], ");
-        var sub2 = split[random].substring(i2,f);
-        console.log("prueba");
-        var sub3 = sub2+"], X, Y, Z).";
-        console.log(sub3);
+       //Parseo de la pregunta a mostrar en el formulario
+        
+      var question0 = pr.split("[");
+      var question1 = question0[1].split("]");
+      var question2 = question1[0].split(",,");
+      var question3 = question2[0].replace(/', '/g," ");
+      var questionFinal = question3.replace(/'/g,"");
+
+      //creacion del objeto pengines
 
       var m = new pengin({
-            server: "http://localhost:3030/pengine",
-            sourceText: readStream,
-            format: "json",
-            chunk: 50,
-           // ask: "pr(0000-1, [color, caballo, blanco, 'Simón'], X, Y, [anonimo]).",
-            //ask: "pr(0008-1,['¿','Qué', 'es', 'un', 'conjunto','?'], ['Es', 'un', 'grupo', 'de', 'objetos', 'finitos', 'o', 'infinitos', 'que', 'se', 'relacionan', 'entre', 'si'], ['Javier Solsona', 'Tomado de guía de conjuntos del profesor Carlos Domingo']),",
-            //ask: "pr(0000-1, ['color','caballo','blanco','Simón'],X,20/20,[anonimo]).",
-            ask: sub3 ,
-            destroy: true,
-        }).on('success', function(result){
+        server: "http://localhost:3030/pengine",
+        sourceText: readStream,
+        format: "json",
+        chunk: 50,
+        ask: pr ,
+        destroy: true,
+        }).on('success', function(result) {
+
+          //llamar a la respuesta del pr parseado desde prolog
       
-            var auxStr = '';
-            var responseAlgebra = result.data[0].X.forEach(function(item) {
+          var auxStr = '';
+          var responseAlgebra = result.data[0].X.forEach(function(item) {
+            
             if(typeof item == "string") {
               auxStr += ' ' + item;
-          }
-          else {
-            auxStr = printResult(item);
-            
-          }
-                        
-        }); 
-          console.log(auxStr);
+            }
+            else {
+              auxStr = printResult(item);
+            }
+
           });
 
+          var Opts = auxStr.split("  ");
 
-    res.render('auxiliar', {
-      user : req.user, // obtiene el usuario de la sesión y lo pasa al template
-      question : m
+          //llamar a la puntuacion correspodiente a la respuesta correcta del pr parseado desde prolog
+
+          var auxPts ='';
+          var pts = result.data[0].Y.forEach(function(item) {
+            
+            if(typeof item == "string") {
+              auxPts += ' ' + item;
+            }
+            else {
+              auxPts = printResult(item);
+            }
+
+          });
+
+          var ptsAux = auxPts.split("  ");
+          
+          //Acumulador de puntos del juego
+
+          idPuntos = parseInt(idPuntos) + parseInt(ptsAux[0]);
+        
+          //Asignacion de posicion de las posibles respuestas de forma aleatoria en la renderización 
+          
+          var OptsItem = new Array();
+          var num = [0,1,2,3];
+          for (var i = 0; i < 4; i++) {
+            var indice = Math.floor(Math.random()*num.length);
+            OptsItem[i] = num[indice];
+            num.splice( indice , 1);
+          }
+          
+          res.render('ayudaPitagoras', {
+            user : req.user, // obtiene el usuario de la sesión y lo pasa al template
+            Opt1 : Opts[OptsItem[0]],
+            Opt2 : Opts[OptsItem[1]],
+            Opt3 : Opts[OptsItem[2]],
+            Opt4 : Opts[OptsItem[3]],
+            correcta : Opts[0],
+            question : questionFinal,
+            idPregAux: idPreg,
+            idNivelAux: idNivel,
+            idPuntosAux: idPuntos,
+            finalAux: final
+          });
+
+        });
+
+        // Incremento de pregunta o nivel          
+        
+        idPreg++;
+        
+        if(idPreg == split.length-1) {
+          idPreg = 0;
+          idNivel++;
+        }   
+        
+        if (idNivel == 1 && idPreg == split.length-2) {
+          final = true;
+        }
     });
 
-
-  });
+  ///////////////////////////////////////////////////////////////////////////////////////////////////// 
+  // Aporte de Ender Puentes
+  
   // ejercicios induccion
   app.get('/ejercicios/induccion', isLoggedIn, function(req, res) {
     res.render('ejeInduc', {
@@ -403,11 +507,4 @@ module.exports = function(app, passport, pengin, fs, nodemailer, async, crypto){
 
     return ret;
    };
-
-
-  ////////////////////////////////////////////////////////////////////////////////////////////7
-  //Ayuda a pitagoras
-  ////////////////////////////////////////////////////////////////////////////////////////////7
-
-  var perro = 1500;
 };

@@ -1,0 +1,35 @@
+Ayuda a Pitagoras Versión beta
+Diseñado y Desarrollado por Ender Puentes C.I.V-25153102
+Aporte Diciembre-2016
+
+El Juego Ayuda a Pitagoras consta de 5 Niveles:
+1. Lógica.
+2. Conjuntos.
+3. Estructuras Algebraicas.
+4. Inducciòn Matemática.
+5. Combinatoria.
+
+Previamente seleccionados del cronograma de la  catedra de matemáticas discretas. Si Usted desea, modificar o agregar nuevas preguntas al juego, vaya a la carpeta prolog y seleccione el archivo a modificar:
+
+1. level1.pl.
+2. level2.pl.
+3. level3.pl.
+4. level4.pl.
+5. level5.pl.
+
+A continuación anexe los nuevos pr siguiendo el siguiente formato (sea cuidadoso con las comas, y los espacios):
+
+pr(0000-1, ['Escriba', 'la', 'pregunta'], ['Opción1 ', 'Opción2 ', 'Opción3 ', 'Opción4 '], ['Puntuacio1 ', 'Puntuacion2 ', 'Puntuacion3 ', 'Puntuacion4 '], ['Fuente']).
+
+En caso de que las opciones o la fuente tengan mas de una palabra:
+
+pr(0000-1, ['Escriba', 'la', 'pregunta'], ['Esta', 'es', 'la', Opción1 ', 'Esta', 'es', 'la', Opción2 ', 'Esta', 'es', 'la', Opción3 ', 'Esta', 'es', 'la', Opción4 '], ['Puntuacio1 ', 'Puntuacion2 ', 'Puntuacion3 ', 'Puntuacion4 '], ['Esta', 'es', 'la', 'Fuente']).
+
+Note que para la ultima palabra de cada opcion se debe dejas un espacio.
+
+Esta version beta solo permite hacer sumar los puntos correspondientes a la respuesta correcta, no se ha validado la pena o castigo si se selecciona mal la respuesta.
+
+Diseño:
+
+A su vez el Juego ayuda a pitagoras, promueve un nuevo diseño visual para el sitio web de mathematicas en general.
+

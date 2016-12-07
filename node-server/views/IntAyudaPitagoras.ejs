@@ -1,0 +1,180 @@
+<!-- 
+Ayuda a Pitagoras Versión beta
+Diseñado y Desarrollado por Ender Puentes C.I.V-25153102
+Aporte Diciembre-2016
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">   
+ 
+  
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/css/plugins/morris.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body >
+
+  <div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:black">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"> Mathematica</a>
+      </div>
+
+      <ul class="nav navbar-right top-nav"">
+      <ul class="dropdown-menu message-dropdown"></ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= user.local.email %> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/logout"><i class="fa fa-fw fa-power-off"></i> Salir</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+          <li class="active">
+            <a href="/IntAyudaPitagoras"><i class="fa fa-fw fa-dashboard"></i> Ayuda a Pitagoras </a>
+          </li>
+          <li>
+            <a href="/profile"><i class="fa fa-fw fa-home"></i> Inicio </a>
+          </li>
+          <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-book"></i> Lecciones <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="demo" class="collapse">
+              <li>
+                <a href="#">Logica</a>
+              </li>
+              <li>
+                <a href="#">Conjutos</a>
+              </li>
+              <li>
+                <a href="#">Funciones</a>
+              </li>
+              <li>
+                <a href="#">Estructuras Algebraicas</a>
+              </li>
+              <li>
+                <a href="/lecciones/induccion">Induccion Matemática</a>
+              </li>
+              <li>
+                <a href="/lecciones/combinatoria">Combinatoria</a>
+              </li>
+              <li>
+                <a href="#">Función Generatriz</a>
+              </li>
+              <li>
+                <a href="#">Recurrencia</a>
+              </li>
+            </ul>
+          </li>
+            <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-superscript"></i> Ejercicios <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="demo" class="collapse">
+              <li>
+                <a href="#">Logica</a>
+              </li>
+              <li>
+                <a href="#">Conjutos</a>
+              </li>
+              <li>
+                <a href="#">Funciones</a>
+              </li>
+              <li>
+                <a href="#">Estrucuturas Algebraicas</a>
+              </li>
+              <li>
+                <a href="/ejercicios/induccion">Induccion Matemática</a>
+              </li>
+              <li>
+                <a href="/ejercicios/combinatoria">Combinatoria</a>
+              </li>
+              <li>
+                 <a href="#">Función Generatriz</a>
+              </li>
+              <li>
+                <a href="#">Recurrencia</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://jacinto-davila.blogspot.com/2014/09/bitacora-01-md-u2014-matematicas.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a>
+          </li>
+          <li>
+            <a href="https://github.com/ulanux/mathematica/"><i class="fa fa-fw fa-table"></i> Colabora con nosotros</a>
+          </li>
+      </div>
+  </nav>
+
+        <div id="page-wrapper" style="background-image:url(/images/fondo.jpg);">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Mathematica <small>¡Ayuda a Pitagoras!</small>
+                        </h1>
+                    </div>
+                </div>
+              
+                <div class="row">
+                   <ol class="breadcrumb" style="height: 45px">
+                            <li>
+                                <i class="fa fa-dashboard"></i> Sipnosis
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-bar-chart-o"></i> Introduccion                           
+                            </li>
+                        </ol>           
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" style="background-color: #3f888f">
+                                <div class="row" style="text-align:justify">
+                                    <div style="padding:25px">
+                                        <h3><strong>¡El padre de la Matemática se ha golpeado fuertemente la cabeza y ha perdido la razon!</strong><strong>¡Ayudalo a mantener su titulo!</strong><br> Los alumnos han comenzado ha notar la ausencia de su mentor en las instalaciones de la escuela, y han decidido enviarle una serie de preguntas en  pergaminos clasificados por temas en especifico, con el fin de comprobar que su mentor este en condicion de seguir representando la facultad, pues la avaricia de sus estudiantes por tomar su titulo es absoluta. Para ello deberas hacerte pasar por él, y ser capaz de responder cuidadosamente a cada pergamino enviado, por cada pergamino que respondas satisfactoriamente se te sera otorgado un instrumento matemàtico que servira para ayudar a que pitagoras a recobre sus conocimientos.
+                                        ¡Suerte en el Intento!
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="float: right; margin-bottom: -10px;">
+                  <div class="col-lg-12 col-md-12" >
+                    <div class="panel panel-primary">
+                        <ul class="nav nav-pills">
+                          <li><a href="/ayudaPitagoras/nivel1/pregunta0/pts0" data-dismiss="modal" class="btn btn-danger" method="post">¡Comenzar!</a></li>
+                        </ul>
+                    </div>
+                  </div> 
+                </div> 
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

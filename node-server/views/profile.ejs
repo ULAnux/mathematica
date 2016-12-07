@@ -46,7 +46,11 @@
                     <button type="submit" class="btn btn-default btn-sm" style="margin-top: 1em;">Preguntar</button>
 
                 </div>
-                <div><h6>NOTA IMPORTANTE: Realizar la pregunta con variable "X"</h6></div>
+                <%if(question != 'Nothing'){%>
+                  <div class="panel-body"><b>Pregunta 1:</b> <%= question%> <b>Respuesta 1:</b> <%= answer%></div>
+                  <div class="panel-body"><b>Pregunta 2:</b> <%= question1%> <b>Respuesta 2:</b> <%= answer1%></div>
+                  <div class="panel-body"><b>Pregunta 3:</b> <%= question2%> <b>Respuesta 3:</b> <%= answer2%></div>
+                <%}%>
             </form>
 
         </div>

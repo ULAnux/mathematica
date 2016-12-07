@@ -21,9 +21,9 @@ mujer(maria).
 mujer(nelida).
 
 ocupacion(diseñadora).
-ocupacion (florista).
-ocupacion (jardinera).
-ocupacion (directora_de_orquesta).
+ocupacion(florista).
+ocupacion(jardinera).
+ocupacion(directoraDeOrquesta).
 
 /*	La pista (a) sugiere que Clara no puede tener un trabajo relacionado con plantas ya que es
 alérgica a ellas, por lo tanto se pueden inferir los siguientes hechos:
@@ -40,8 +40,8 @@ no_es(luisa,florista).
 
 /* y de la pista (c) tenemos*/
 
-no_es(luisa,directora_de_orquesta).
-no_es(maria, directora_de_orquesta).
+no_es(luisa,directoraDeOrquesta).
+no_es(maria, directoraDeOrquesta).
 
 /*	es decir, ni Luisa ni María pueden ser directoras de orquesta ya que a ellas únicamente les
 gusta la música de rock.
@@ -68,9 +68,9 @@ relacionado(florista, plantas).
 /*y además una mujer no puede tener una ocupación que esté relacionada con algo a lo que
 es alérgica*/
 
-no_es(Mujer, Ocupacion) :-
-alergica(Mujer, X),
-relacionado(Ocupacion, X).
+no_puede(X, Y) :-
+alergica(X, Y),
+relacionado(Y, X).
 
 /*	En el mismo sentido la pista (c) da cuenta que Luisa y María sólo escuchan música de
 rock, es decir*/
@@ -80,14 +80,14 @@ solo_escucha(maria, rock).
 
 /* dicho estilo musical es incompatible con la profesión de directora de orquesta*/
 
-incompatibles(directora_de_orquesta, rock).
+incompatibles(directoraDeOrquesta, rock).
 
 /*	y, por otro lado, una mujer que sólo escucha determinada música no puede tener una
 ocupación que sea incompatible con dicha música*/
 
-no_es(Mujer, Ocupacion) :-
-solo_escucha(Mujer,X),
-incompatibles(Ocupacion,X).
+no_puedeser(X,Y) :-
+solo_escucha(X,Y),
+incompatibles(Y,X).
 
 /* Una pista más sutil dentro del enunciado del problema indicaba que cada mujer tiene un
 solo trabajo, y cada trabajo es ocupado por una sola mujer por lo que las cuatro mujeres

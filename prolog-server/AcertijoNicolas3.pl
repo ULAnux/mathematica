@@ -59,6 +59,8 @@ trasvase(A3, D3, 4, A4, D4).
 
 /*		El predicado TRASVASE relaciona cinco sujetos
 
+		trasvase(AE, PE, CD, AD, PD).
+
 donde
 
 	AE: Nivel anterior al trasvase en el jarro del cual se extrae agua.
@@ -66,11 +68,8 @@ donde
 	CD: Capacidad del jarro destino.
 	AD: Nivel anterior al trasvase en el jarro destino.
 	PD: Nivel posterior al trasvase en el jarro destino.
-*/
 
-trasvase(AE, PE, CD, AD, PD).
-
-/*La relación TRASVASE, describe en que casos es posible trasvasar, como se produce el
+La relación TRASVASE, describe en que casos es posible trasvasar, como se produce el
 trasvase, y como se modifican los valores en juego debido a la operación*/
 
 trasvase(AE, PE, CD, AD, PD) :-

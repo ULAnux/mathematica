@@ -10,12 +10,12 @@
 	puede vaciar los mismos. El problema consiste en encontrar cuál es la secuencia de
 	movimientos de llenado, vaciado y trasvase que permitan obtener exactamente dos
 	litros de agua en el jarro de 4 litros.
-*/
+
 
 movida(A3, D3, A4, D4, Movimiento).
 
 
-/*	
+	
 		En la cuál los sujetos son:
 
 	A3: Nivel del jarro de 3 litros antes del movimiento.
@@ -41,10 +41,10 @@ A4 < 4.
 mientras que después de la operación su contenido es cero */
 
 movida(A3, 0, X, X, [vaciar_el_jarro_de_tres_litros]) :-
-A3 /= 0.
+A3 \= 0.
 
 movida(X, X, A4, 0, [vaciar_el_jarro_de_cuatro_litros]) :-
-A4 /= 0.
+A4 \= 0.
 
 /*	Para el pasaje de agua de un jarro al otro, las reglas son un poco mas complejas. La
 relación movida es verdadera si existe un predicado que describa la acción de trasvasar, ya que
@@ -74,12 +74,12 @@ trasvase(AE, PE, CD, AD, PD).
 trasvase, y como se modifican los valores en juego debido a la operación*/
 
 trasvase(AE, PE, CD, AD, PD) :-
-AE /= 0,
-CD /= AD,
-L is CD - AD,
+AE \= 0,
+CD \= AD,
+L is (CD - AD),
 minimo(L, AE, M),
-PE is AE - M,
-PD is AD + M.
+PE is (AE - M),
+PD is (AD + M).
 
 /*El predicado minimo relaciona dos números con el menor de ellos, existiendo tres
 situaciones posibles: igualdad, el primero menor y el segundo menor*/
@@ -94,11 +94,11 @@ Y < X.
 
 /*	Una vez definidas estas reglas referidas a las condiciones que debe cumplir el algoritmo
 solución, se puede plantear una regla que es verdadera cuando existe solución para un número
-dado de operaciones. Se propone una regla de la forma*/
+dado de operaciones. Se propone una regla de la forma
 
-prueba(CA3, CA4, N, MAX, [X|Y]).
-
-/*		Donde los predicados son
+	prueba(CA3, CA4, N, MAX, [X|Y]).
+	
+		Donde los predicados son
 	
 	CA3: Cantidad de agua contenida en el jarro de tres litros.
 	CA4: Cantidad de agua contenida en el jarro de cuatro litros.
@@ -107,7 +107,7 @@ prueba(CA3, CA4, N, MAX, [X|Y]).
 	[y|z]: [X|Y]: Lista de soluciones
 */
 
-prueba(X, 2, Y, Y, []) :- !.
+prueba(Y, 2, Y, Y, []) :- !.
 
 /*	Juntando todas las condiciones anteriores en una regla, queda definido el caso general
 de prueba*/
@@ -121,6 +121,6 @@ Prueba(D3, D4, N2, MAX, Y).
 /*Esta base puede consultarse con prueba, teniendo en cuenta que al comienzo los dos
 jarros están vacíos, onsultar en prolog ell siguiente predicado.
 
-?-prueba(0, 0, 0, 6, X).
+?-prueba(A, B, C, 6, X).
 */
 

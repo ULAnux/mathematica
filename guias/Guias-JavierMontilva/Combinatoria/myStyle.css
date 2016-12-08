@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Sawasdee";
+  src: url(Fuentes/Sawasdee.ttf);
+}
+
+
+@font-face {
+  font-family: "Angostur";
+  src: url(Fuentes/Angostur.ttf);
+}
+
+@font-face {
+  font-family: "Oranienbaum";
+  src: url(Fuentes/Oranienbaum.ttf);
+}
+
+titleStyle
+{
+	color: #00b300;
+	font-family: Sawasdee;
+}
+
+os
+{
+	color: #1aff1a;
+	font-family: Angostur;
+}
+
+.imageAlign
+{
+	display: block;
+	margin: 0 auto;
+}
+
+font1
+{	
+	font-family: Oranienbaum;
+}

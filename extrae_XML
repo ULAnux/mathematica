@@ -1,0 +1,48 @@
+//Extrae de un archivo XML el titulo y la informacion
+
+#include <fstream>
+#include <iostream>
+using namespace std;
+
+int main() {
+	ifstream archivo_XML;
+        ofstream archivo_Contenido_Final;
+	string cadena;
+	string Info ="informacion";
+	string Titulo ="titulo";
+	int tam;
+
+	archivo_XML.open("archivo_XML.txt");
+	if(archivo_XML.fail())
+        {
+        	cout << "Error al abrir archivo\n";
+        }
+
+	archivo_Contenido_Final.open("archivo_Contenido_Final.txt");
+        if(archivo_Contenido_Final.fail())
+            {
+                cout << "Error al crear archivo\n";
+            }
+
+            while(!archivo_XML.eof())
+            {
+                getline(archivo_XML,cadena);
+                tam = cadena.length();//Guardo el tamaño de la cadena de texto
+               
+                if ((cadena.c_str()[0] == '<') and (cadena.c_str()[tam-1] == '>'))
+                {
+                  cadena = cadena.substr(2,tam-3);
+                  if (cadena == Titulo)
+                    archivo_Contenido_Final << "\n";
+                  else if (cadena == Info)
+                    archivo_Contenido_Final << "\n" << "\n";
+                }
+                else
+                  archivo_Contenido_Final << cadena;
+            }
+
+archivo_XML.close();
+archivo_Contenido_Final.close();
+
+}
+

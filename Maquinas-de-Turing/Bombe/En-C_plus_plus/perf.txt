@@ -1,0 +1,29 @@
+Mk1 
+ - 27223641 chars in 135 seconds
+
+Test Output Stecker on crib 
+ - 3508996 chars in 33 seconds
+
+First test with new algorithm
+ - 238728018 chars in 1441 seconds (= 24 mins)
+
+New algorithm corrected for multi source wires
+repeats of same letter eliminated
+retry only after completion of traversal.
+ - 34847760 chars in 603 seconds
+
+Separation of scrambler from Enigma class
+
+release build with shortcut
+28276088 chars in 160 seconds (from FZL)
+
+release build without shortcut
+31727431 chars in 145 seconds (from FZL)	- WHY??
+39159527 chars in 178 seconds (from AAA)
+
+Cut down to start at XXX
+2787512 chars in 47 seconds
+release build
+2787512 chars in 16 seconds
+
+TODO: investigate Turing's shortcut

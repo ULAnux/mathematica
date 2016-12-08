@@ -1,0 +1,97 @@
+MENU: SEWVM RCWVN GFWVQ CEWVR FYWVS FEWVU ERWWJ YSWWM CGWWQ ETWWS
+MA:QE
+******** TRYING WVM ********
+NO:E' (Q)
+WI:E' (Q)->0
+SC:0 E QW S
+MA:WS
+WI:0->S' (W)
+NO:S' (W)
+WI:S' (W)->26
+SC:26 S WJ Y
+MA:JY
+WI:26->Y' (J)
+NO:Y' (J)
+WI:Y' (J)->6
+SC:6 Y JU F
+MA:UF
+WI:6->F' (U)
+NO:F' (U)
+WI:F' (U)->4
+SC:4 F UK G
+MA:KG
+WI:4->G' (K)
+NO:G' (K)
+WI:G' (K)->30
+SC:30 G KL C
+MA:LC
+WI:30->C' (L)
+NO:C' (L)
+WI:C' (L)->1
+SC:1 C LV R
+MA:VR
+WI:1->R' (V)
+NO:R' (V)
+WI:R' (V)->23
+SC:23 R VQ E
+WI:23->E' (Q)
+NO:E' (Q)
+WI:E' (Q)->5
+SC:5 E QL C
+WI:5->C' (L)
+NO:C' (L)
+WI:E' (Q)->8
+SC:8 E QU F
+WI:8->F' (U)
+NO:F' (U)
+WI:E' (Q)->32
+SC:32 E QM T
+MA:MT
+WI:32->T' (M)
+NO:T' (M)
+******** RETRYING WVM ********
+NO:E' (Q)
+WI:E' (Q)->0
+SC:0 E QW S
+WI:0->S' (W)
+NO:S' (W)
+WI:S' (W)->26
+SC:26 S WJ Y
+WI:26->Y' (J)
+NO:Y' (J)
+WI:Y' (J)->6
+SC:6 Y JU F
+WI:6->F' (U)
+NO:F' (U)
+WI:F' (U)->4
+SC:4 F UK G
+WI:4->G' (K)
+NO:G' (K)
+WI:G' (K)->30
+SC:30 G KL C
+WI:30->C' (L)
+NO:C' (L)
+WI:C' (L)->1
+SC:1 C LV R
+WI:1->R' (V)
+NO:R' (V)
+WI:R' (V)->23
+SC:23 R VQ E
+WI:23->E' (Q)
+NO:E' (Q)
+WI:E' (Q)->5
+SC:5 E QL C
+WI:5->C' (L)
+NO:C' (L)
+WI:E' (Q)->8
+SC:8 E QU F
+WI:8->F' (U)
+NO:F' (U)
+WI:E' (Q)->32
+SC:32 E QM T
+WI:32->T' (M)
+NO:T' (M)
+STOP: 153 WVM EQ  (Q,1)
+STOP: 153 WVM CL EQ FU GK JY MT RV SW
+STOP: 153 WVM CL EQ FU GK JY MT RV SW
+

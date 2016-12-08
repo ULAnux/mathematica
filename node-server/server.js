@@ -1,6 +1,7 @@
 // server.js
 
 // obtener los modulos
+var Pr  = require('./app/models/pr');
 var express  = require('express');
 var app      = express();
 var port     = process.env.PORT || 8080;
@@ -55,3 +56,74 @@ https.createServer({
 //app.listen(port);
 
 console.log('Escuchando en https://localhost:' + port);
+
+
+/****************************************
+Funcion para extraer de la carpeta Prolog
+todas las pl que inician con cero e 
+insertarlas en mongo con modelo pr.js
+@utor: Yenifer Ramírez
+*****************************************/
+fs.readdir('./prolog', (err,files) => {
+	files.forEach( file => {
+		if (file[0]=='0') {
+			let fileContent = fs.readFileSync(`./prolog/${file}`, 'utf-8').split('\n');
+			fileContent.forEach( line => {
+				//Filtrado de un Pr o Rp completa
+				if ((line[0]=='p' && line[1]=='r' && line[2]=='(') || (line[0]=='r' && line[1]=='p' && line[2]=='(')){
+					//Filtrado de pregunta
+					let pregunta = '';
+					let corchete = false;
+					var count_abierto = 0;
+					var count_cerrado = 0;
+
+					line.split('').forEach(char => {
+					  if(char == '[') 
+					  	count_abierto += 1;
+						if(char === ']') 
+					  	count_cerrado += 1;
+
+						if(corchete){
+							if(char === ']') {
+									if (count_abierto == count_cerrado) {
+										pregunta += 'ç';
+										corchete = false;
+										return;
+									}
+									else {
+										pregunta += char;
+									}
+							}
+							else {
+								pregunta += char;
+							}
+						}
+						else {
+							if(char === '['){
+								corchete = true;
+							}
+						}
+					});
+					var parte= pregunta.split("ç");
+
+					//Insertar en Base de datos con modelo pr.js 
+					Pr.find({pr_rp: line}, (err, docs) => {
+						if(err) throw err;
+						if(docs.length === 0 && line.length <= 1400){
+							let prNueva = new Pr();
+							prNueva.file = file;
+							prNueva.pr_rp = line;
+							prNueva.pregunta = parte[0];
+							prNueva.respuesta = parte[1];
+							prNueva.autor = parte[2];
+							prNueva.save(err => {
+								if(err) throw err;
+								
+							})
+						}
+					})					
+				}
+			});
+		}
+	});
+})

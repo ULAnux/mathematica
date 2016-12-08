@@ -7,6 +7,4 @@
 % ?- pr(_, [A*(B+C),=], [a*b+a*c], _, _).
 % ?- pr(_, [A*(B+C),=], Respuesta, _, _).
 
-pr(0000-1, [color, caballo, blanco, 'Simón'], [blanco], 20/20, [anonimo]). 
-pr(0000-2, [a*(b+c), =], [a*b+a*c], 100/100, [algebras]). 
-pr(0000-3, [A*(B+C), =], [A*B+A*C], 100/100, [algebras]). 
+pr(0000-1, [color, caballo, blanco, 'Simón'], ['Blanco ', 'Amarillo ', 'Verde ', 'Negro '], ['20/20', '0/20', '0/20', '0/20'], [anonimo]). 

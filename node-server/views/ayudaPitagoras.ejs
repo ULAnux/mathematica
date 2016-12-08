@@ -1,0 +1,440 @@
+<!-- 
+Ayuda a Pitagoras Versión beta
+Diseñado y Desarrollado por Ender Puentes C.I.V-25153102
+Aporte Diciembre-2016
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">   
+ 
+  
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/css/plugins/morris.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body >
+
+  <div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:black">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"> Mathematica</a>
+      </div>
+
+      <ul class="nav navbar-right top-nav"">
+      <ul class="dropdown-menu message-dropdown"></ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= user.local.email %> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/logout"><i class="fa fa-fw fa-power-off"></i> Salir</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+          <li class="active">
+            <a href="/IntAyudaPitagoras"><i class="fa fa-fw fa-dashboard"></i> Ayuda a Pitagoras </a>
+          </li>
+          <li>
+            <a href="/profile"><i class="fa fa-fw fa-home"></i> Inicio </a>
+          </li>
+          <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-book"></i> Lecciones <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="demo" class="collapse">
+              <li>
+                <a href="#">Logica</a>
+              </li>
+              <li>
+                <a href="#">Conjutos</a>
+              </li>
+              <li>
+                <a href="#">Funciones</a>
+              </li>
+              <li>
+                <a href="#">Estructuras Algebraicas</a>
+              </li>
+              <li>
+                <a href="/lecciones/induccion">Induccion Matemática</a>
+              </li>
+              <li>
+                <a href="/lecciones/combinatoria">Combinatoria</a>
+              </li>
+              <li>
+                <a href="#">Función Generatriz</a>
+              </li>
+              <li>
+                <a href="#">Recurrencia</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-superscript"></i> Ejercicios <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="demo" class="collapse">
+              <li>
+                <a href="#">Logica</a>
+              </li>
+              <li>
+                <a href="#">Conjutos</a>
+              </li>
+              <li>
+                <a href="#">Funciones</a>
+              </li>
+              <li>
+                <a href="#">Estrucuturas Algebraicas</a>
+              </li>
+              <li>
+                <a href="/ejercicios/induccion">Induccion Matemática</a>
+              </li>
+              <li>
+                <a href="/ejercicios/combinatoria">Combinatoria</a>
+              </li>
+              <li>
+                 <a href="#">Función Generatriz</a>
+              </li>
+              <li>
+                <a href="#">Recurrencia</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://jacinto-davila.blogspot.com/2014/09/bitacora-01-md-u2014-matematicas.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a>
+          </li>
+          <li>
+            <a href="https://github.com/ulanux/mathematica/"><i class="fa fa-fw fa-table"></i> Colabora con nosotros</a>
+          </li>
+      </div>
+  </nav>
+        <div id="page-wrapper" style="background-image:url(/images/fondo.jpg)" >
+            <div class="container-fluid">
+               <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Mathematica <small>¡Ayuda a Pitagoras!</small>
+                        </h1>               
+                    </div>  
+                </div>
+
+                <div class="row" style="float: right; margin-bottom: -10px;">
+                  <div class="col-lg-12 col-md-12" >
+                    <div class="panel panel-primary">
+                        <ul class="nav nav-pills">
+                          <li><a  class="btn btn-primary" class="active" href="/IntAyudaPitagoras" method="post">¡Comenzar de Nuevo!</a></li>
+                          <li><a class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg1">Creditos</a></li>
+                        </ul>
+                    </div>
+                  </div> 
+                </div> 
+                <div class="row">
+                  <ol class="breadcrumb" style="height: 45px; margin-bottom: -40px;">
+                            <li>
+                                <i class="fa fa-dashboard"></i> Pergamino <%= idNivelAux %>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-bar-chart-o"></i>
+                                <%if(idNivelAux == 1){%>
+                                "Logica"
+                                <%}%> 
+                                 <%if(idNivelAux == 2){%>
+                                "Conjuntos"
+                                <%}%> 
+                                 <%if(idNivelAux == 3){%>
+                                "Estructuras Algebraicaa"
+                                <%}%> 
+                                 <%if(idNivelAux == 4){%>
+                                "Induccion"
+                                <%}%> 
+                                 <%if(idNivelAux == 5){%>
+                                "Combinatoria"
+                                <%}%>                   
+                                
+                            </li>
+                  </ol>           
+                </div>
+                
+                <%if(finalAux == false){%>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" style="background-color: #3f888f">
+                                
+                                <div class="row"  style="height:50px; padding-left: 30px;"> 
+                                    <h3><%= question %></h3>
+                                </div>
+                                <br><br>
+
+                                <form action="/ayudaPitagoras" method="post">
+                                  <div class="row  radio" style="height:50px; padding-left: 30px;">
+                                    <input type="radio" id="Options1" value="<%= Opt1 %>" name="optradio"><%= Opt1 %>
+                                  </div>
+                                  <div class="row  radio" style="height:50px; padding-left: 30px;">
+                                    <input type="radio" id="Options" value="<%= Opt2 %>" name="optradio"><%= Opt2 %>
+                                  </div>
+                                  <div class="row  radio" style="height:50px; padding-left: 30px;">
+                                  <input type="radio" id="Options" value="<%= Opt3 %>" name="optradio"><%= Opt3 %>
+                                  </div>
+                                  <div class="row  radio" style="height:50px; padding-left: 30px;">
+                                    <input type="radio" id="Options" value="<%= Opt4 %>" name="optradio"><%= Opt4 %>
+                                  </div>
+                                </form>
+                            </div>                                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                   <ol class="breadcrumb" style="height: 45px;">
+                            <li>
+                                <i class="fa fa-dashboard"></i> Puntuacion: <%= idPuntosAux-20%>        
+                            </li>
+                    </ol>           
+                </div>
+          
+                <div class="row" style="float: right; margin-top: -65px;">
+                  <div class="col-lg-12 col-md-12" >
+                    <div class="panel panel-primary">
+                        <ul class="nav nav-pills">
+                          <li><a href='/ayudaPitagoras/nivel<%= idNivelAux %>/pregunta<%= idPregAux %>/pts<%= idPuntosAux %>' data-correc="<%= correcta %>"  data-dismiss="modal" class="btn btn-danger" id="pr"> Siguiente</a></li>
+                        </ul>
+                    </div>
+
+                <%}else {%> 
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" style="background-color:#3f888f">
+                                <div class="row" style="padding:25px">
+                                  <form action="/ayudaPitagoras>" method="post">
+                                <ul class="nav nav-pills">
+                                  <h1>¡Pitagoras a recobrado la memoria!</h1>
+                                  <h3>¡La ayuda ha terminado!</h3>
+                                  <h3>Ahora el padre de la Matemàtica podra tomar de nuevo las riendas de la escuela</h3>
+                                  <h3>Puntuacion Final:</h3><h1><strong><%= idPuntosAux %></strong></h1>
+                                  <h3>¡Felicidades!</h3>                          
+                               </ul>
+                                </form>
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="row">
+                  <ol class="breadcrumb" style="height: 45px;">
+                            <li>
+                                <i class="fa fa-dashboard"></i> Puntuacion: <%= idPuntosAux-20%>        
+                            </li>
+                  </ol>           
+                </div>
+                           
+                 <div class="row" style="float: right; margin-top: -65px;">
+                  <div class="col-lg-12 col-md-12" >
+                    <div class="panel panel-primary">
+                        <ul class="nav nav-pills">
+                          <li><a href='/profile' data-correc="<%= correcta %>"  data-dismiss="modal" class="btn btn-danger" id="pr"> ¡Salir!</a></li>
+                        </ul>
+                    </div>
+                  </div> 
+                </div> 
+
+                <%}%>
+          </div>
+      </div>
+  </div>
+     
+<!-- Script -->
+
+<script type="text/javascript">
+     
+      var src = $("#pr").attr("href");
+      $("#pr").attr("href","#");
+      $("#pr").click(function(){
+       
+        var correcta = $("#pr").attr("data-correc");
+        var op = $('input[name="optradio"]:checked').val();
+        if(op != correcta){
+            
+            location.reload();
+        }
+        else{
+      
+            window.location.href = (src);
+        }
+      });
+
+</script> 
+
+<script type="text/javascript">
+var URLactual = window.location.pathname;
+var split = URLactual.split("/pts");
+
+if(split[0] == "/ayudaPitagoras/nivel1/pregunta0") {
+  $(document).ready(function(){
+    $("#mostrarmodal").modal("show");
+  });
+}
+if(split[0] == "/ayudaPitagoras/nivel2/pregunta0") {
+  $(document).ready(function(){
+    $("#mostrarmodal").modal("show");
+  });
+}
+if(split[0] == "/ayudaPitagoras/nivel3/pregunta0") {
+  $(document).ready(function(){
+    $("#mostrarmodal").modal("show");
+  });
+}
+if(split[0] == "/ayudaPitagoras/nivel4/pregunta0") {
+  $(document).ready(function(){
+    $("#mostrarmodal").modal("show");
+  });
+}
+if(split[0] == "/ayudaPitagoras/nivel5/pregunta0") {
+  $(document).ready(function(){
+    $("#mostrarmodal").modal("show");
+  });
+}
+
+</script>
+
+<!-- Modals -->
+
+ <div class="modal fade bs-example-modal-lg" id="mostrarmodal"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content" style="background-color: #e7ebef">
+            <div class="container-fluid  panel-primary">
+                <%if(idNivelAux == 1){%>
+                <div class="row text-center">
+                      <h1>Nivel 1 "Logica"</h1>               
+                <%}%>
+                <%if(idNivelAux == 2){%>
+                <div class="row text-center">
+                      <h1>Nivel 2 "Conjuntos"</h1>
+                <%}%>
+                <%if(idNivelAux == 3){%>
+                <div class="row text-center">
+                      <h1>Nivel 3 "Estructuras Algebraicas"</h1>
+                <%}%>
+                <%if(idNivelAux == 4){%>
+                <div class="row text-center">
+                      <h1>Nivel 4 "Induccion"</h1>
+                <%}%>
+                <%if(idNivelAux == 5){%>
+                <div class="row text-center">
+                      <h1>NIvel 5 "Combinatoria"</h1>
+                      
+                <%}%>
+                </div>
+               <div class="row" style="padding:25px">
+                  <h3>¿Sabias que?</h3>
+                  <%if(idNivelAux == 1){%>
+                    <div style="text-align:justify;">
+                  
+                    - El padre de la lógica es el filosofo griego Aristóteles, siendo el primer pensador en formalizar el sistema lógico de tan acertada manera que sus propuestas han trascendido hasta nuestros días. <br><br>
+
+                    - Aristóteles planteó sus ideas en varias obras, para difundir su conocimiento sobre las leyes del razonamiento, argumentando que estas eran vitales para adentrarse en el mundo de la filosofía. <br><br>
+
+                    - La lógica aristotélica supone que la mente reproduce sólo la realidad, la existencia de las cosas tal y como son, por ello es una ciencia objetiva que se dedica a estudiar conceptos, desglosándolos en predicables y predicamentos.
+                    </div>
+                    <!--Extraido de https://es.answers.yahoo.com/question/index?qid=20090326091338AAzwqmV -->                 
+                  <%}%>
+                  <%if(idNivelAux == 2){%>
+                    <div style="text-align:justify;">
+                  
+                    - El concepto de conjunto como objeto abstracto no comenzó a emplearse en matemáticas hasta el siglo XIX, a medida que se despejaban las dudas sobre la noción de infinito. Los trabajos de Bernard Bolzano y Bernhard Riemann ya contenían ideas relacionadas con una visión conjuntista de la matemática. Las contribuciones de Richard Dedekind al álgebra estaban formuladas en términos claramente conjuntistas, que aún prevalecen en la matemática moderna: relaciones de equivalencia, particiones, homomorfismos, etc., y él mismo explicitó las hipótesis y operaciones relativas a conjuntos que necesitó en su trabajo.<br><br>
+
+                    - La teoría de conjuntos como disciplina independiente se atribuye usualmente a Georg Cantor. Comenzando con sus investigaciones sobre conjuntos numéricos, desarrolló un estudio sobre los conjuntos infinitos y sus propiedades. La influencia de Dedekind y Cantor empezó a ser determinante a finales del siglo XIX, en el proceso de «axiomatización» de la matemática, en el que todos los objetos matemáticos, como los números, las funciones y las diversas estructuras, fueron construidos con base en los conjuntos.. 
+
+                    </div>
+                    <!--Extraido de https://es.wikipedia.org/wiki/Conjunto#Historia -->                 
+                  <%}%>
+                  <%if(idNivelAux == 3){%>
+                    <div style="text-align:justify;">
+                  
+                    - Birkhoff y McLane nos dicen: "Se puede definir el álgebra abstracta como el estudio de las propiedades de los sistemas algebraicos que se conservan en los isomorfismos." <strong>Vid pág. 37 de su Álgebra Moderna (1960), Barcelona</strong> <br><br>
+                    
+                    - Históricamente, algunos temas surgieron en alguna disciplina diferente al álgebra (caso de espacios lineales y álgebra de Boole). <br><br>
+
+                    - Posteriormente, han sido axiomatizadas y luego estudiadas de propio derecho en dicho marco. Por eso, esta materia tiene numerosas y fructíferas conexiones con todas las demás ramas de la matemática y fuera de ella.
+                    </div>
+                    <!--Extraido de https://es.wikipedia.org/wiki/%C3%81lgebra_abstracta#Historia_y_ejemplos -->                 
+                  <%}%>
+                  <%if(idNivelAux == 4){%>
+                    <div style="text-align:justify;">
+                  
+                    - En el Parmenides, diálogo de Platón del 370 a.C, quizá se puede identificar un temprano ejemplo de una explicación implícita de prueba inductiva. La más antigua huella de la inducción matemática se puede encontrar en la demostración de Bhaskara I que usando el «método cíclico» prueba la infinidad de los números primos. <br><br>
+
+                    - Una implícita demostración de la inducción matemática para secuencias aritméticas fue introducida por Al-Karaji en la obra Al-Fakhri escrita alrededor del 1000 d. C., usado para probar el teorema binomial y propiedades del triángulo de Pascal. <br><br>
+
+                    - La primera formulación explícita sobre el principio de inducción fue establecida por el físico y matemático Blaise Pascal en su obra Traité du triangle arithmétique (1665).
+                    </div>
+                    <!--Extraido de https://es.wikipedia.org/wiki/Inducci%C3%B3n_matem%C3%A1tica -->                 
+                  <%}%>
+                  <%if(idNivelAux == 5){%>
+                    <div style="text-align:justify;">
+
+                    - El concepto de permutación es muy antiguo, un resultado de Xenócrates de Calcedonia (396-314 a.C.) parece atisbar “el primer intento por registrar la solución de un problema difícil de permutaciones y combinaciones”[1], y, como curiosidad, aparece en la obra hebrea Sefer Yetzirah(El libro de la creación)[1], escrito entre el año 200 y el 600. <br><br>
+                  
+                    - Aunque Pascal publica su conocimiento en combinatoria, el primer tratado formal de probabilidad lo publica Christiaan Huygens, De ratiociniis in ludo aleae, en 1657, dos años después de descubrir la primera luna de Saturno. Hay que decir, que Huygens se carteaba con Pascal y Fermat. Una vez más el círculo de Marin Mersenne daba sus frutos(¿se ha carteado alguien en la historia con tantos ilustres sabios?: René Descartes, Pascal, Philippe de la Hire-seguro que Desargues también, pues, junto con Pascal, los tres colocaron los principios de la geometría proyectiva-, Gilles de Robeval, Pierre de Fermat, Galileo Galilei, Huygens, entre los más conocidos).
+
+
+                    </div>
+                    <!--http://pimedios.es/2012/10/24/combinatoria-un-poco-de-historia/ -->                 
+                  <%}%>
+
+               </div>
+                <div class="row modal-footer">
+                  <a href="#" data-dismiss="modal" class="btn btn-danger">Continuar</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade bs-example-modal-lg1"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" >
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content" style="background-color: #e7ebef">
+            <div class="container-fluid  panel-primary">
+                <div class="row text-center">
+                    <h1>Creditos</h1>
+                </div>
+                <div class="row" style="text-align:justify; padding:25px;">
+                        <strong>Diseñado y desarrollado por:</strong><br>
+                        Ender Jose Puentes Vargas, programador y estudiante de Ingenieria de Sistemas en la Univesidad de Los Andes.<br>
+                        <strong>Colaboracion:</strong><br>
+                        La base de conocimiento extraida para el manejo de este modulo en el juego de mathematicas, fue extraida del repositorio ubicado en:<br> <strong>https://github.com/ulanux/mathematica</strong>, creado y supervisado por el profesor Jacinto Davila, y reforzado por parte de los estudiantes de la Escuela de Ingenieria de Sistemas, en la catedra de Matematicas Discretas.
+                        <strong>Reservados Todos Los Derechos</strong>
+                  
+                </div>
+                <div class="row">
+                  <div class="modal-footer">
+                      <a href="#" data-dismiss="modal" class="btn btn-danger">Continuar</a>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

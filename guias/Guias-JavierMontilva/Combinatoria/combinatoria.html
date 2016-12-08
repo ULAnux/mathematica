@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combinatoria</title>
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<link rel="icon" href="Imagenes/cubo_rubik.ico" type="image/x-icon">
+
+</head>
+<body>
+		<table style="margin: 0 auto;">
+			<td>
+				<p align="center"><titleStyle><font size="7"><b> Combinatoria </b></font></titleStyle></p>
+				<br>
+				<os><font size="5"> Original de Carlos Domingo. Editado por Carmen Rodríguez y Jacinto Dávila. Universidad de Los Andes, Venezuela.</font></os>
+			</td>
+		</table>
+
+		<br>
+
+		<hr style="background-color: #69cc00;" size="10" noshade="noshade" >
+
+		<br>
+
+
+		<table style="margin: 0 auto;" width="80%" bgcolor="bfff80" cellspacing="20">
+			<td>
+				 <font1>
+				 <font size="4">
+				<b>1.</b> Considere un objeto elemento △ que puede tomarse en 3 formas: △ ▷ ▽ y un elemento □ que
+				puede tomarse en cuatro formas: <br>
+				<p align="center">
+				<input type="text" name="r1"><br>
+				<input type="text" name="r1"><br>
+				<input type="text" name="r1"><br>
+				<input type="text" name="r1"><br>
+				</p>
+
+				¿En cuántas formas diferentes puede tomarse uno cualquiera de estos elementos es decir un
+				elemento del conjunto: { △ , □ } ?	
+
+				<input type="text" name="r1"><br>
+
+				<br> 
+
+				<b>2.</b> Esta solución es un caso particular de la <b>regla de la suma</b>:<br> 
+				<p align="center"> “Si un objeto A puede tomarse en m formas y el objeto B en n formas entonces uno entre A ó B puede tomarse de <input type="text" name="r2" size="7"> formas”. </p>
+
+				<br>
+
+				<b>3.</b> Considere el mismo ejemplo 1 pero ahora hay que tomar 2 objetos, el △ y el □.
+				¿En cuántas formas puedo tomarlos? (no interesa el orden, es decir △ □ es igual a □ △ ).
+				Sugerencia: observar el "árbol": 
+				<br><br>
+				<img src="Imagenes/arbol.png" class="imageAlign"><br>
+				El número de formas es: <input type="text" name="r3" size="10">
+
+				<br><br>
+
+				<b>4.</b> Esta solución es un caso particular de la <b>regla del producto</b>:<br>
+				<p align="center">“Si un elemento A puede tomarse de m formas y el B de n formas entonces el par A y B puede tomarse en <input type="text" name="r4" size="7"> formas”.</p>
+
+				<br>
+
+				<b>5.</b> Sean los conjuntos C1={A, B, C, D} C2={X, Y, Z}<br>
+				¿Cuántas y cuáles son las duplas o pares que pueden construirse teniendo cada dupla un primer elemento de C1 y un segundo elemento de C2? <br>
+				Considerar que el primer elemento puede tomarse en <input type="text" name="r5" size="4"> formas y el segundo en <input type="text" name="r5" size="4"> formas.
+				
+				<br><br>
+
+				<b>6.</b> Construir el árbol:
+				<br><br>
+				<img src="Imagenes/arbol2.png" class="imageAlign"><br>
+				Duplas: AX,<input type="text" name="r4" size="100"><br>
+				Cantidad: <input type="text" name="r4" size="50">
+
+				<br><br>
+
+				<b>7.</b> Sean r conjuntos con n1, n2, ..., nr objetos respectivamente. El número de conjuntos diferentes con r elementos cada uno, conteniendo un elemento de cada conjunto será: <br>
+				M = n1* <input type="text" name="r7" size="50"><br>
+				Demostrarlo por inducción:<br>
+				<p align="center">
+				<input type="text" size="100"><br>
+				<input type="text" size="100"><br>
+				<input type="text" size="100"><br>
+				<input type="text" size="100"><br>
+				</p>
+
+				<br>
+
+				<b>8.</b> Si tenemos k conjuntos iguales de n elementos cada uno el número de k-tuplas distintas que
+				pueden formarse extrayendo un elemento de cada uno es:	<input type="text" name="r8" size="10">
+
+				<br><br>
+
+				<b>9.</b> Demostrar, usando esta fórmula que hay 1000 números de tres cifras o menos.
+
+				<br><br>
+
+				<b>10.</b> a) Calcular, basándose en la fórmula dada en 8, ¿cuántos subconjuntos diferentes pueden
+				formarse en un conjunto C de n elementos?.<br>
+				<b>Nota:</b> Los subconjuntos podrían formarse considerando el C={a1, a2, ... , an} y luego los
+				subconjuntos {a1} ... {a1, a2}, {a2, a3}, ... , {an-1, an}, .. {a1,..,an}<br>
+				<br>
+				b) Demostrar la misma fórmula por inducción.<br>
+				<p align="center">
+				<input type="text" size="100"><br>
+				<input type="text" size="100"><br>
+				<input type="text" size="100"><br>
+				<input type="text" size="100"><br>
+				</p>
+
+				<br><br>
+				</font1>
+			</td>
+		</table>
+
+		<br><br>
+
+		<table style="margin: 0 auto" width="80%" bgcolor="bfff80" cellspacing="20">
+			<td>
+				<font1>
+				<font size="4">
+				<b>11.</b> ¿Cuántos números binarios de n cifras hay? (Número binario es el que se escribe con sólo dos cifras 0 y 1 así: 0, 1, ..10, ...11, ....100, .....101, ......110, etc)
+
+				<br><br>
+
+				<b>12.</b> ¿Cómo resolvería el problema 10 con el resultado del problema 11?
+
+				<br><br>
+
+				<b>13.</b> ¿Cuántas funciones diferentes f: A -> B pueden formarse si el dominio A tiene k valores y el rango B n valores? <input type="text"><br>
+
+				Sigamos la respuesta que propone J. Rodríguez en el “Arte de Contar”: Digamos primero que f es una función de A en B y representemoslo así <img src="Imagenes/13/1.png" align="middle"> . Esta es una exageración notacional, porque
+				A y B son conjuntos, pero veremos que conviene para los resultados que siguen. Digamos ahora
+				que <img src="Imagenes/13/2.png" align="middle"> y <img src="Imagenes/13/3.png" align="middle"> . “Una de las” f es puede representar como sigue:  
+				<img src="Imagenes/13/4.png" class="imageAlign"><br>
+
+				pareando la k-tupla de elementos de A con una selección particular (que determina la f) de elementos de B. Decimos ahora que:
+				<p align="center"><i> f es una k-permutación o permutación(n,k) de los n elementos de B. </i></p>
+
+				<b>Proposición para probar: </b>
+				<p align="center"><img src="Imagenes/13/5.png" align="middle"><br></p>
+				<u>Demostración</u>: Sea <img src="Imagenes/13/6.png" align="middle"> (noten que esta no es ninguna de las anteriores, sino una nueva construcción, de nuevo exagerada, para referirnos al producto cartesiano múltiple del conjunto B consigo mismo), tal que:<br><br>
+				<img src="Imagenes/13/7.png" class="imageAlign"><br>
+
+				La función auxiliar <b>φ</b>: <img src="Imagenes/13/8.png" align="middle"> definida así:<br>
+				<img src="Imagenes/13/9.png" class="imageAlign"><br>
+				es biyectiva y, por tanto, en virtud del principio de igualdad, conseguir <img src="Imagenes/13/10.png" align="middle"> es igual que conseguir a <img src="Imagenes/13/11.png" align="middle">.<br><br>
+
+				Para encontrar todas esas k-tuplas (o k-uplas) <img src="Imagenes/13/12.png" align="middle"> formadas por elementos de B, basta con observar que existen n posibilidades de colocar un elemento de A en la primera componente, n en la segunda y así sucesivamente. De manera que se tiene:<br><br>
+				<img src="Imagenes/13/13.png" class="imageAlign"><br>
+
+				En conclusión (con la aplicación repetida del principio de igualdad):<br><br>
+				<table style="margin: 0 auto;">
+					<td>
+						Existen <b> n^k </b>:<br>
+						13.1.- Funciones de A en B.<br>
+						13.2.- permutaciones-k con repetición de los n elementos de B.<br>
+						13.3.- k-tuplas formadas con elementos de B.<br>
+						13.4.- Maneras de arreglar k objetos en n cajas.<br>
+						13.5.- Palabras de longitud k formadas a partir de un alfabeto con los n símbolos en B.<br>
+					</td>
+				</table>
+
+				<br><br>
+
+				<b>14.</b> Se llama permutación-m sin repetición o variación de n objetos distintos a cualquier selección ordenada de m objetos elegidos entre aquellos n.
+				Se puede indicar P(n,m) o <img src="Imagenes/13/15.png" align="middle"><br>
+
+				Por ejemplo si tenemos los 5 elementos {A, B, C, D, E} y tomamos las permutaciones-3 resultan:<br><br>
+
+				<table style="margin: 0 auto">
+						<tr>
+							<td>ABC</td>
+							<td>ACB</td>
+							<td>BAC</td>
+							<td>BCA</td>
+							<td>CAB</td>
+							<td>CBA</td>
+						</tr>
+
+						<tr>
+							<td>ABD</td>
+							<td>ADB</td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+						</tr>
+
+						<tr>
+							<td>ABE</td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+						</tr>
+
+						<tr>
+							<td>BCD</td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+						</tr>
+
+						<tr>
+							<td>BCE</td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+						</tr>
+
+						<tr>
+							<td>CDE</td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+							<td><input type="text" size="2"></td>
+						</tr>
+				</table>
+
+
+				(completar la lista en el orden sugerido)
+				<br><br>
+
+				En general el primer elemento puede elegirse en n formas diferentes (en el ejemplo son:<input type="text" size="7">).
+				El segundo puede elegirse en <input type="text" size="7"> formas. Así que con m=2 podemos obtener
+				<input type="text" size="7">formas diferentes y quedan aún <input type="text" size="7"> elementos. El tercero puede elegirse pues
+				de <input type="text" size="7"> formas. Así que podemos formar <input type="text" size="7"> grupos de 3 elementos.<br><br>
+
+				Si elegimos m términos tendríamos:
+				<img src="Imagenes/13/15.png" align="middle"> = P(n,m) = <input type="text" size="20"><br>
+
+				b) Por convención se define P(n,0) = 1 fórmula que no tiene ningún significado combinatorio.<br>
+
+				c) Demostrar por inducción la fórmula P(n,m) (inducción sobre m).<br>
+
+				d) Hacer un árbol para demostrar la fórmula anterior. Concretarse al ejemplo: {A,B,C,D,E} n=5 m=3.<br>
+
+				e) Las permutaciones-n de n elementos se llaman simplemente permutaciones P(n,n)= P(n)= <input type="text" size="20"><br>
+
+				f) La fórmula de P(n,m) puede escribirse : P(n,m) = n!/(n-m)! <br><br>
+
+				<u>Demostración</u>:
+				<p align="center">
+				<input type="text" size="100"><br>
+				<input type="text" size="100"><br>
+				<input type="text" size="100"><br>
+				<input type="text" size="100"><br>
+				</p>
+
+				<br><br>
+
+				<b>15.</b> Para muchos problemas de combinatoria es útil obtener <b>fórmulas de recurrencia</b> que permiten calcular números combinatorios en función de números análogos de orden inferior.<br><br>
+
+				Consideramos como ejemplo nuevamente el cálculo de las P(n,m) (permutaciones de n elementos
+				tomados de a m cada vez).<br><br>
+
+				Tomemos un elemento particular (digamos la letra A en el conjunto S = {A,E,I,O,U}).<br><br>
+
+				Consideremos formadas las P(n,m) permutaciones. Cada permutación contiene o no cada elemento. Las que no lo contienen son en total: P(<input type="text" size="10">).<br><br>
+
+				En las que lo contienen tal elemento puede estar en las posiciones 1, 2, ... , m mientras los demás forman una permutación de <input type="text" size="7"> elementos tomados de a <input type="text" size="7"> . Así que las que lo contienen son en total <input type="text" size="7">. P(<input type="text" size="7">)<br><br>
+				Resulta entonces:
+				P(n,m)= <input type="text" size="10"><br><br>
+
+				Esta es una fórmula de recurrencia que expresa P(n,m) en función de la misma función P para
+				valores menores de los argumentos.<br>
+
+				Con esta fórmula pueden calcularse “por recurrencia” los valores de P(n,m) a partir de valores
+				iniciales. Se pone P(n,0)=1, y P(n,m)=0 si n'<'m.<br>
+
+				Completar el cálculo según el cuadro siguiente (Vea, según la fórmula de recurrencia, como se
+				calcula el valor de cada cuadro en función de las superior<br>
+				<img src="Imagenes/cuadroNxM.png" class="imageAlign">
+
+				<br><br>
+
+				<b>16-</b> En particular las permutaciones de n elementos tomados de a n es P(n, n)
+				P(n,n)= <input type="text" size="7"> + n . <input type="text" size="7">
+				o sea P(n) = n.<br>
+				Esta fórmula de recurrencia define el “factorial” de n. Así que, como ya se vio,
+				P(n)= <input type="text" size="7"><br><br>
+				Por ejemplo:<br>
+				¿De cuántas maneras distintas podemos ordenar 10 libros en el estante de una biblioteca?<br>
+				P(<input type="text" size="7">) = <input type="text" size="10">
+
+				<br><br>
+
+				<b>17-</b> Se presenta a veces el problema de calcular permutaciones de n elementos tomados de a n, pero
+				algunos objetos son indistinguibles. Por ejemplo, en el caso de los 10 libros puede haber 3 copias de
+				un cierto libro, 2 de otro, 4 de otro y 1 de otro. Hay sólo cuatro clases de libros diferentes y por lo
+				tanto muchas de las permutaciones que antes consideramos diferentes son ahora idénticas.<br><br>
+
+				Consideremos en general n elementos de los cuales hay m1 iguales entre sí, m2 iguales entre sí, ...
+				mr iguales entre sí,
+
+				<p align="center">(claro está que es: m1 + m2 + ... + mr = _________)</p>
+
+				Para ver cuántas permutaciones distinguibles hay, consideremos que P sea este número.<br><br>
+
+				Si los m1 elementos iguales entre sí se transforman en diferentes cada una de las P originaría
+				<input type="text" size="7"> permutaciones y el número total de permutaciones (supuestos los m1 elementos
+				distintos) sería P.<input type="text" size="7">.<br><br>
+
+				Si ahora los m2 iguales se volvieran diferentes cada una de las últimas permutaciones originaría
+				<input type="text" size="7"> y tendríamos en total P * m1! * <input type="text" size="7">. permutaciones.<br><br>
+
+				Por último si todas llegaran a ser diferentes el número total de permutaciones sería:
+				<p align="center"> P * m1! * m2! * ... </p>
+
+				Pero este número total es el número de permutaciones de <input type="text" size="7"> objetos diferentes
+				tomados todos los n. Vale pues <input type="text" size="7">.<br><br>
+
+				Así que resulta:<br><br>
+
+				P = P(n, m1, m2, ... mr)= <input type="text" size="20"><br><br>
+
+				Por ejemplo: si en los 10 libros del ejemplo 16 hay 4 iguales, 3 iguales, 2 iguales y uno único el
+				número de permutaciones distinguibles entre ellos es
+				P = <input type="text" size="20">
+
+				<br><br>
+
+
+				<b>18.</b> <b>Combinaciones:</b> Se llama combinación de tamaño m de n elementos diferentes a cualquier conjunto de m elementos que se tomen de los n originales.<br><br>
+
+				Dos de los conjuntos se consideran diferentes si difieren en qué elementos tienen. Si difieren sólo en el orden se los considera iguales.<br><br>
+
+				El número de combinaciones de m elementos tomados de n se indica C(n,m).<br>
+				<br>
+				Ejemplo:
+				<br>
+				Construir todas las combinaciones de tres vocales: N= {A, E, I, O, U}
+				<table style="margin: 0 auto">
+						<tr>
+							<td>AEI</td>
+							<td>AEO</td>
+							<td><input type="text" size="2"></td>
+						</tr>
+						<tr>
+							<td>AIO</td>
+							<td><input type="text" size="2"></td>
+						</tr>
+						<tr>
+							<td>EIO</td>
+						</tr>
+				</table>
+
+				En total hay C(5,3)= <input type="text" size="15"> combinaciones.<br><br>
+				
+				¿Cuál es la diferencia con las permutaciones-m de n objetos?
+				
+				<br><br>
+
+				<b>19.</b> La fórmula de las combinaciones se obtiene fácilmente por un razonamiento análogo al de 16.
+				Si en las combinaciones de tamaño m permutamos todos los objetos cada una origina <input type="text" size="5"> permutaciones. Así que:<br>
+				<p align="center"> P(n,m)= C(n,m) * <input type="text" size="7"><br></p>
+				De donde<br>
+				<p align="center"> C(n,m) = P(n,m)/P(m,m)= <input type="text" size="15"></p>
+
+				
+			</font1>
+			</td>
+		</table>
+
+		<br><br>
+
+		<table style="margin: 0 auto" width="80%" bgcolor="bfff80" cellspacing="20">
+			<td>
+				<font1>
+				<font size="4">
+				<b>20.</b> Los números C(n,m) o bien <img src="Imagenes/13/16.png" align="middle"> o bien <img src="Imagenes/13/17.png" align="middle"> se llaman números combinatorios y tienen una gran importancia en Estadística. Se escriben:<br>
+				<img src="Imagenes/13/18.png" class="imageAlign"><br>
+
+				Se define C(n,0)=1 aunque esto no tiene un significado combinatorio.<br><br>
+				Demostrar la notable propiedad de simetría:
+				<img src="Imagenes/13/19.png" class="imageAlign"><br>
+
+				<b>_______________</b><br>
+				1 Por si acaso, esta es una representación independiente del editor <math>\left( \begin{array}{c} n \\ m \end{array}\right)</math><br>
+				<b>_______________</b>
+				<br><br>
+
+				<b>21-</b> Se puede obtener una fórmula de recurrencia para las C(n,m). El razonamiento es análogo al visto en 15.
+
+				<br><br>
+
+				<b>22-</b> Con la fórmula de recurrencia se obtiene la siguiente tabla de los C(n,m) (teniendo en cuenta que C(1,0)=1 y C(n n)= 1)<br><br>
+				<img src="Imagenes/cuadro(nxm).png" class="imageAlign"><br>
+				Esta construcción se llama Rectángulo de Tartaglia o Triángulo de Pascal. En realidad era conocido antes de esos por el poeta y algebrista iraní Omar Khayam (año 1100 dc).
+
+				<br><br>
+
+				<b>23-</b> Además de las reglas de suma y producto y las fórmulas de recurrencia hay otro poderoso artefacto para resolver problemas de combinatoria. Son las <b>funciones</b> generatrices.<br><br>
+				Se llaman así ciertas funciones que se expresan como una suma de términos polinómicos cuyos coeficientes son los valores del problema combinatorio que interesa.<br><br>
+				Tales funciones generatrices facilitan la obtención de relaciones importantes entre tales números combinatorios.
+
+				<br><br>
+
+				<b>24-</b> El ejemplo más común de función generatriz es la potencia n-ésima de un binomio. Sea el producto de n binomios: <img src="Imagenes/13/20.png"><br><br>
+
+				Para calcularlo, según la ley distributiva, debemos multiplicar cada término de uno de los binomios por todos los términos de los otros. Un término cualquiera así obtenido sería por ejemplo:
+				<p align="center"><b> a b a a b b a b a a a ... ba </b></p>
+
+				donde hemos tomado el a del primer binomio, el b del segundo, el a del tercero, el a del cuarto etc,
+				habiendo <input type="text" size="7"> factores en total.<br><br>
+
+				Todos los términos que así se obtienen serán diferentes pero muchos sólo difieren en el orden de los factores, así que por su valor deben considerarse <input type="text" size="10">.<br><br>
+
+				Tomemos un término con r factores b. Tendrá <input type="text" size="7"> factores a. Así que su forma será:
+				a<input type="text" size="7"> * b<input type="text" size="7"><br><br>
+
+				¿Cuántos de estos factores habrá?<br><br>
+
+				Vemos que hay exactamente tantos como las diferentes maneras en que podemos tomar r factores b de los <input type="text" size="7"> binomios diferentes. Es decir, su número será <img src="Imagenes/13/21.png" align="middle">. Por lo tanto si en el desarrollo de <img src="Imagenes/13/22.png" align="middle"> se agrupan los términos <img src="Imagenes/13/23.png" align="middle"> y se suman, se obtiene <input type="text" size="10"><br><br>
+
+				Por eso la potencia puede expresarse:<br>
+				<img src="Imagenes/13/24.png" class="imageAlign"><br>
+
+				Consideremos el caso a=1 b=x:<br>
+				<img src="Imagenes/13/25.png" class="imageAlign"><br>
+
+				Esta función <img src="Imagenes/13/26.png" align="middle">, se llama función generadora de los números combinatorios <img src="Imagenes/13/27.png" align="middle">
+
+				<br><br>
+
+				<b>25-</b> Demostrar que <img src="Imagenes/13/27.png" align="middle">
+
+				<br><br>
+
+				<b>26-</b> Demostrar que <img src="Imagenes/13/28.png" align="middle">
+
+				<br><br>
+
+				<b>27-</b> Partiendo de la identidad <img src="Imagenes/13/29.png" align="middle"> demostrar que
+				<img src="Imagenes/13/30.png" align="middle"> y escribirla para m+h=7, r=3.<br><br>
+
+				Esta es la llamada convolución Chu-Vandermonde. En “Concrete Mathematics” de Graham et al se le da una interpretación combinatoria (que no sustituye la demostración que se pide): “Del lado izquierdo de la ecuación se cuenta el número de maneras de escoger r personas entre m mujeres y n hombres, digamos. Entonces, del lado derecho, cada término de la suma es el número de maneras de escoger k de las mujeres y n-k de los hombres. Al sumar sobre todos los k se cuenta cada posibilidad exactamente una vez”.
+
+				<br><br><br>
+
+			</td>
+		</table>
+
+		<br>
+		<b><font1><p align="center">Fin del documento sobre Combinatoria. Licencia pendiente.</p></font1><b>
+
+</body>
+</html>

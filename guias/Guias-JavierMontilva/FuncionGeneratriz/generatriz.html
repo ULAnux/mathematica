@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Funcion Generatriz </title>
+
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<meta charset="UTF-8">
+	<link rel="icon" href="Imagenes/fg .ico" type="image/x-icon">
+
+
+</head>
+
+<body>
+	<table style="margin: 0 auto;" width="80%">
+		<td>
+			<p align="center"><b><font size="7"><titleStyle> Funcion Generatriz </titleStyle></font></b>
+			<br>
+			<b><font size="6"><titleStyle> Introducción </titleStyle></font></b></p>
+		</td>
+	</table>
+
+	<hr style="background-color: #990000;" size="10" noshade="noshade">
+
+	<br>
+
+	<table style="margin: 0 auto;" width="80%">
+		<td>
+			<p align="center"><font1>Una función generadora o función generatriz es una serie formal de potencias cuyos coeficientes codifican información sobre una sucesión An (A sub n) cuyo índice corre sobre los enteros no negativos.</font1></p>
+		</td>
+	</table>
+
+
+	<br><br>
+
+	
+	<table bgcolor="#990000" style="margin: 0 auto;" width="80%" cellspacing="20">
+		<td>
+			<font2>
+			El procedimiento general para contar permutaciones o combinaciones está basado en el concepto de
+			función generatriz: una función polinómica cuyos coeficientes son los valores que buscamos al
+			contar. Para combinaciones, la observación básica es que el valor:
+			<br><img src="Imagenes/(nr).png" class="imageAlign" > <br>
+			representa los coeficientes de la expansión binomial:
+
+			<br><img src="Imagenes/(1+x)^n.png" class="imageAlign"> <br>
+
+			La interpretación del lado izquierdo de esta fórmula dice que estamos manipulando n objetos (x es
+			el exponente), cada uno de los cuales puede ser seleccionado una vez (el 1 en el término x;
+			x=x^1 ) o ninguna vez (el 0 en el término 1; 1= x^0 ).
+			La interpretación del lado derecho de la fórmula dice que el coeficiente que acompañe al término
+			x^r es el número de formas en que puedo escoger r objetos a partir de n (es decir, n tomados de r
+			en r).
+			</font2>
+		</td>
+	</table>
+
+	<br><br>	
+
+	<table bgcolor="#990000" style="margin: 0 auto;" width="80%" height="50%" cellspacing="20">
+		<td>
+			<font2>
+			<p align="center"><font size="4"><b> Ejemplo </b></font></p>
+			¿De cuántas maneras podemos seleccionar 8 bolitas de color a partir de un montón con 2
+			rojas, 3 azules, 4 amarillas y 5 negras (es decir 14 en total), sujetas a la restricción de que el número
+			de negras sea impar?
+
+			<br><br>
+
+			<table style="margin: 0 auto;" >	
+				<td>
+					<font2>
+					<ul>
+						<li>Para las rojas:</li>
+						<li>Para las azules:</li>
+						<li>Para las amarillas:</li>
+						<li>Para las negras:</li>
+					</ul>
+					</font2>
+				</td>
+				<td>
+					<font2>
+					<ul style="list-style-type: none";>
+						<li>(1+x+x^2)</li>
+						<li>(1+x+x^2+x^3)</li>
+						<li>(1+x+x^2+x^3+x^4)</li>
+						<li>(x+x^3+x^5)</li>
+					</ul>
+					</font2>
+				</td>
+			</table>
+
+			<p align="center">La respuesta está en el coeficiente de x^8 en la expansión del producto de esos polinomios.</p>
+		
+			</font2>
+		</td>
+	</table>
+
+	<br><br>
+
+	<table bgcolor="#990000" style="margin: 0 auto;" width="80%" cellspacing="20">
+		<td>
+			<font2>
+			<s1><p align="center"><b> "Una función generadora es una cuerda de tender en la que colgamos una sucesión de números para mostrarla." </b></p>
+			<p align="right"><b> Herbert Wilf</b></p></s1>
+			</font2>
+		</td>
+	</table>
+	</font2>
+</body>
+</html>

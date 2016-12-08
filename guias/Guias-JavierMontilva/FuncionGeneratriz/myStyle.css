@@ -1,0 +1,24 @@
+titleStyle
+{
+	color:#800000; 
+	font-family: Purisa
+}
+
+font1
+{
+	color:black; 
+	font-family: Purisa
+}
+
+font2
+{
+	color:white; 
+	font-family: Purisa
+}
+
+
+.imageAlign
+{
+	display: block;
+	margin: 0 auto;
+}

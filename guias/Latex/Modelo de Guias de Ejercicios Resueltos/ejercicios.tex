@@ -1,0 +1,79 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+
+\newcommand{\class}{Matemáticas Discretas}
+\newcommand{\guia}{Guía de Ejercicios Resueltos}
+\newcommand{\tema}{Conjuntos}
+\newcommand{\ULA}{ULA}
+\newcommand{\universidad}{Universidad de Los Andes, Venezuela}
+\newcommand{\facultad}{Facultad de Ingeniería}
+\newcommand{\escuela}{Escuela de Sistemas}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\tema\ - Pág. \thepage\ de \numpages}{\ULA}
+
+\begin{document}
+
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\universidad}\\
+\textbf{\facultad}\\
+\textbf{\escuela}\\
+\textbf{\class}
+
+\end{tabular*}\\
+
+\center{\textbf{\guia} \textbf{\tema}}
+\rule[2ex]{\textwidth}{1pt}
+\renewcommand{\baselinestretch}{1}
+\begin{enumerate}
+		\item Demostrar que $(A \cap B) \cup C = (A \cup C) \cap (B \cup C)$ \textit{(Propiedad Distributiva)}\\
+			\vspace{2mm}
+		Para demostrar esta igualdad debemos probar primero que,
+		$$(A \cap B) \cup C \subseteq (A \cup C) \cap (B \cup C)$$
+		Por simbología tenemos,
+		$$\forall x [x \in (A \cap B) \cup C \rightarrow x \in (A \cup C) \cap (B \cup C)] $$
+		Por logíca tenemos que $ p \rightarrow q $, donde $p$ es: $x \in (A \cap B) \cup C$ y $q$ sera: $x \in (A \cup C) \cap (B \cup C)$, de modo que es necesario demostrar esta proposición.\\\vspace{2mm}
+		Entonces, por definición de la unión entre dos conjuntos se tiene que,
+		\begin{center}
+			$ x \in (A \cap B)$ ó $x \in C$
+		\end{center}
+		Mostraremos que, 
+		$$x \in (A \cup C) \cap (B \cup C)$$
+		Ahora bien,\\
+		\vspace{2mm}
+		1) Tenemos que $x \in C$, entonces $x \in (A \cup C)$ y $x \in (B \cup C)$. Por unión $x \in A$ ó $x \in C$ y $x \in B$ ó $x \in C$ ambas son verdaderas porqué estamos suponiendo que $x \in C$, por lo tanto $x \in (A \cup C) \cap (B \cup C)$\\\vspace{2mm}
+		2) Tenemos $x \in (A \cap B)$, entonces $x \in A$ y $x \in B$. Tomando estas afirmaciones se tiene que $x \in (A \cup B)$ por unión $x \in A$ ó $x \in C$ por las afirmaciones esto es cierto y también tenemos $x \in (A \cup C) \Rightarrow x \in B$ ó $x \in C$. Por las afirmaciones esto también es cierto porqué $x \in B$, por lo tanto $x \in (A \cup C) \cap (B \cup C)$ es verdadera.\\\vspace{2mm}
+		Ahora falta demostrar,
+		$$ (A \cup C) \cap (B \cup C) \subset (A \cap B) \cup C$$
+		Procedemos igual,
+		$$\forall x [x \in (A \cup B) \cap (B \cup C) \rightarrow x \in (A \cap B) \cup C)] $$
+		Tenemos que $x \in (A \cup C)$ y $x \in (B \cup C)$, ahora consideremos 2 casos $x \in C$ ó $x \notin C$\\\vspace{2mm}
+		Mostremos que,
+		$$x \in (A \cap B) \cup C$$
+		1) Supongamos que $x \in C$. Entonces $x \in (A \cap B)\cup C$ es verdadera\\\vspace{2mm}
+		2) Supongamos que $x \notin C$. Entonces $x \in (A \cup C)$ necesariamente se tiene que $x \in A$. De igual manera, ya que $x \in (B \cup C)$, entoces $x \in B$ con esto mostramos que $x \in (A \cap B)$ y por lo tanto $x \in (A \cap B) \cup C$.
+		\vspace{4mm}
+		\item Demostrar que $A \subset B \leftrightarrow B' \subset A'$ \\\vspace{2mm}
+		Para demoestrar esto debemos probar que,\\
+		\begin{center}
+			$A \subset B \rightarrow B' \subset A'$ y $B' \subset A' \rightarrow A \subset B$
+		\end{center}
+		Tenemos que, por lógica una proposición condicional es lógicamente igual a su contrarecíproca, quiere decir $p \rightarrow q \Leftrightarrow \neg q \rightarrow \neg p$ \\\vspace{2mm}
+		Por esto tenemos que,\\\vspace{2mm}
+		1) Si $B' \not\subset A' \rightarrow A \not\subset B$\\\vspace{2mm}
+		Ahora procedemos a demostrar 1), supongamos que $A$ y $B$ son conjuntos tales que $B' \subset A'$ y mostremos que $A \not\subset B$, como por hipótesis $B' \not\subset A'$. Entonces, existe un elemento $x$ que pertenece a $B'$ pero no a $A'$. Es decir, existe un $x \in B'$ y $x \notin A'$. En otras palabras, existe $x$ tal que $x \notin B$ y $x \in A$, esto precisamente dice que $A \not\subset B$ y así damos por demoestrado $B' \not\subset A' \rightarrow A \not\subset B$.\\\vspace{2mm}
+		2) \begin{center} 
+			$B' \subset A' \rightarrow  A \subset B$, aplicando lo anterior tenemos\\\vspace{2mm}
+			$A \not\subset B \rightarrow  B' \not\subset A'$
+			\end{center} 
+			Tenemos como hipótesis que existe un $x \in A$ pero $x \notin B$, esto queire decir que $x \notin A'$ y $x \in B'$, esto es precisamente que $B' \not\subset A'$, por la hipótesis que $x \in B'$, hemos demostrado $A \not\subset B \rightarrow  B' \not\subset A'$.
+\end{enumerate}
+
+\end{document}

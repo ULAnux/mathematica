@@ -1,0 +1,122 @@
+# LEEME para instalar y configurar el juego ULAnux/Mathematica
+
+Realizado por:
+--AUTORES: 2016 Lizandro Zerpa y Dimitris Mandamadiotis, Jacinto Dávila
+--Universidad de los Andes, Merida, Venezuela
+--Este programa es software libre con la licencia AGPL (Ver LICENSE)
+
+## Para mayor informacion acerca de la instalacion, visitar:
+
+   http://www.desarrolloweb.com/articulos/instalar-node-js.html
+   http://www.mongodbspain.com/es/2014/08/30/install-mongodb-on-ubuntu-14-04/
+   http://pengines.swi-prolog.org/docs/getting_started.html
+
+## Para documentacion acerca del uso de Node JS
+
+   https://new.nodejs.org/
+
+##  Instalacion de las Dependencias del Gestor en LINUX
+
+Se debe tener instalado GIT. 
+
+### Instalar Node JS
+
+En la terminal:
+
+   sudo apt-get install curl
+
+en ubuntu (https://github.com/nodejs/node/wiki/Installing-Node.js-via-package-manager):
+
+   curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+
+y luego 
+
+   sudo apt-get install --yes nodejs
+
+### Instalar MongoDB
+
+En la Terminal:
+
+   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+   echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+   sudo apt-get update
+   sudo apt-get install mongodb-org
+   sudo mkdir -p /data/db
+   sudo chown -R YOURUSERNAME /data
+
+Esto supone que YOURUSERNAME será quien lance la appl web. 
+
+Para comprobar la versión instalada
+
+   mongo --version
+
+### Instalar Modulos para Node JS
+
+Se debe tener instalado Node JS.
+
+En la carpeta del juego "mathematica", abrir una terminal y ejecutar:
+
+   cd node-server
+   npm install
+
+Si npm falla, trate con 
+
+   npm -g install npm@latest
+
+
+Luego se debe esperar a que el gestor de packetes de node descargue todos los modulos y los instale.
+
+### Instalar Pengines
+
+En una carpeta donde se almacenan repositorios de GIT, ejecutar:
+
+    git clone https://github.com/SWI-Prolog/pengines.git
+
+
+## Para ejecutar la aplicacion 
+
+### Iniciar Pengines
+
+Se debe tener instalado una versión de SWI-PROLOG igual o superior a la 7.1.5 -En la carpeta donde fue instalado Pengines, abrir terminal:
+	
+    cd pengines
+    swipl run.pl
+
+Eso inicia Prolog y carga el servidor de pengines. Ver la documentación de Swi-Prolog. 
+
+### Iniciar Mongodb 
+
+Abrir en terminal:
+
+    mongod
+
+
+### ADMINISTRADOR: Configurar Correo para envio de Notificaciones a Usuarios
+
+RECOMENDACION: Crear un correo "Gmail" exclusivo para esta labor
+
+Luego de poseer una cuenta "Gmail" configurar los siguientes parametros de seguridad:
+en "Mi cuenta"-->"Inicio de sesion y seguridad"-->"Aplicaciones y sitios conectados a tu cuenta"
+
+Activar "Permitir el acceso de aplicaciones menos seguras:" (Mientras no se posean derechos TSL
+autorizadas se debe mantener activa esta opcion)
+
+### Para la Configuracion del correo en el servidor 
+
+Dentro de la carpeta de Mathematica modificar el archivo
+
+    node-server/config/passwordRecoveryAccount.js 
+
+y llenar los datos respectivos
+
+email: "CORREO@GMAIL.COM"
+pass: "CONTRASEÑA"
+
+### Correr el Servidor Node 
+
+En la carpeta del juego "mathematica", abrir terminal:
+
+    cd node-server
+    node server.js
+
+

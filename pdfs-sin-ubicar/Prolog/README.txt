@@ -1,4 +1,4 @@
-/*****************************************************************************************/
+/**********************************************************************************************************/
 
 Aprovechando este espacio brindado para aportar con el conocimiento acerca de la matemática
 y la programación logica y considerando, la poca información acerca del lenguaje de progra-
@@ -6,7 +6,7 @@ mación prolog contenida en el repositorio. Me he dado a la tarea de compartir p
 ros cursos de Matemáticas Discretas este material de libre acceso en la web que es, de entre
 todos los que utilice, los que mas destacan.
 
-/*****************************************************************************************/
+/**********************************************************************************************************/
 
 Créditos:
 

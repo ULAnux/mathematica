@@ -1,0 +1,354 @@
+THERAININSPAINSTAYSMAINLYONTHEPLANE 
+ZXRQNLEAWAGHZFRDNVCZRKDUXMPHRHGUWZL 
+x...x..x.x..x..xx...x.x
+
+TS Menu
+         zzl     zzg                    zzi
+      Z ----- I ------ A  --------- A ------ S
+ zzz  |                | zzd        |        |   zzn
+      |                |        zat |        |
+      T ----- D -----  N            R -------
+         zzo     zay
+
+
+ZXRQNLEAWAGHZFRDNVCZRKDUXMPHRHGUWZL (AAA)
+THERAININSPAINSTAYSMAINLYONTHEPLANE
+x...x..x.x..x.xxx...x.x
+
+
+Diagonal Board, no shortcuts:-
+AAA AB CD IJ NN RR SS TT ZZ 
+258528355 chars in 913 seconds
+
+Turing Shortcut:-
+AAA AB CD IJ NN RR SS TT ZZ 
+9938575 chars in 34 seconds
+
+Carlson Shortcut:-
+AAA AB CD IJ NN RR SS TT ZZ 
+1608085 chars in 6 seconds
+
+Carlson shortcut with full run:-
+Testing 1 2 3
+OMF AK BI DL ET NW QZ RR SV 
+Testing 1 2 4
+VAD AP DJ ES FI KN LT RZ 
+Testing 1 2 5
+OHZ AE DP II JR LS MN OZ QT 
+Testing 1 3 2
+MSF AS DD EZ HT IQ MR NU 
+Testing 1 3 4
+JBD AQ BS DU HZ IW JT LN RY 
+YNM AB DO GZ HR IY LN MT SU 
+Testing 1 3 5
+HWG AX DW GS II KN LZ PT RU 
+Testing 1 4 2
+EPK AX BR CI DE GS MZ NY TU 
+NDX AV DN IU JT MR SS ZZ 
+AQI AX BT DD EN IJ QZ RR SU 
+Testing 1 4 3
+MTG AU CR DJ ES GN IV LT YZ 
+Testing 1 4 5
+Testing 1 5 2
+BLV AU BR DG HI JS KZ NV TY 
+GUN AU DQ HS IO JZ NN RR TT 
+Testing 1 5 3
+Testing 1 5 4
+Testing 2 1 3
+MEU AA BR DU GT IK LS MZ NY 
+Testing 2 1 4
+Testing 2 1 5
+FWA AU DD ET GS IX JZ KN MR 
+Testing 2 3 1
+CMF AE BS DL GN IK JT MZ RY 
+Testing 2 3 4
+OAL AX BT DK EI HN LZ MS RY 
+Testing 2 3 5
+QSK AP CD GZ II JR LT NN QS 
+RPS AX CI DL GS KT NO PR YZ 
+Testing 2 4 1
+VCQ AL CN DD FS IO QZ RR TW 
+Testing 2 4 3
+Testing 2 4 5
+CPJ AK BZ DP IW LN MT RR SS 
+Testing 2 5 1
+Testing 2 5 3
+JON AW DZ EI NY OT RU SX 
+Testing 2 5 4
+Testing 3 1 2
+Testing 3 1 4
+Testing 3 1 5
+PXB AC DD FT GS IY JR KZ NQ 
+UFO AW BD FT GR II KN PZ SU 
+Testing 3 2 1
+AAA AB CD IJ NN RR SS TT ZZ 
+Testing 3 2 4
+EOZ AY BN CR DP IU KS TV XZ 
+Testing 3 2 5
+SWO AB DD ET FN IV OS PR XZ 
+Testing 3 4 1
+SLQ AM DV HS IQ LZ NU PT RR 
+Testing 3 4 2
+Testing 3 4 5
+Testing 3 5 1
+JVF AU BN DW ET FS GR IL ZZ 
+RQQ AH CR DM GI JN SX TW UZ 
+Testing 3 5 2
+JFR AO DU EN FS HI LZ PR TW 
+YEK AU CZ DO EN IK JR LS TV 
+Testing 3 5 4
+LPH AL DK EZ IN QR SY TW 
+Testing 4 1 2
+TGH AQ BZ DE GN HS IX MT RU 
+Testing 4 1 3
+DKK AY CZ DL EI NU PT RW SV 
+Testing 4 1 5
+JGG AE CN DV HT IK LR SY UZ 
+ZZH AM CD FT GN IQ RV SW YZ 
+Testing 4 2 1
+BQD AH DZ FR IW JS LT NX 
+Testing 4 2 3
+Testing 4 2 5
+Testing 4 3 1
+Testing 4 3 2
+JGP AJ CR DP HT IK NX QZ SY 
+Testing 4 3 5
+Testing 4 5 1
+XDL AO DG ET IY MN QS RW ZZ 
+Testing 4 5 2
+Testing 4 5 3
+AAI AU DP EZ GT IK JS LN RW 
+Testing 5 1 2
+Testing 5 1 3
+WSF AC DH EN GI KS MT PZ RW 
+Testing 5 1 4
+HHY AL BZ DX EI FN KR QT SV 
+Testing 5 2 1
+ELB AA DP HS IV JR KZ MT NO 
+JRV AC DQ EN GZ IK JT RR SS 
+THK AH BI CN DV FT GR SX WZ 
+Testing 5 2 3
+HIM AU BI CD GR HS JZ KT NN 
+IHZ AW DJ GN IK MT PS RR UZ 
+Testing 5 2 4
+AZE AO DY HT IV MN RU SW XZ 
+Testing 5 3 1
+KPL AG DE FR IX LZ NN QT SU 
+OBB AC BT DH GI JN PR QZ SV 
+Testing 5 3 2
+EJC AE DG IT NU PR SW VZ 
+Testing 5 3 4
+KQD AE DP IO KR LT NN SW XZ 
+Testing 5 4 1
+QHD AJ CS DF IM LN RX TT WZ 
+Testing 5 4 2
+Testing 5 4 3
+MYH AP BS CD HR IY LT NN UZ 
+96399748 chars in 393 seconds
+55 stops
+
+OMF AK BI DL ET NW QZ RR SV 
+THERAININSPAINSTAYSMAINLYONTHEPLANE
+ZTMSNSYAJAHFZSRDNVJVRADXJXJZUJFYKXN (123 OMF)
+ZXRQNLEAWAGHZFRDNVCZRKDUXMPHRHGUWZL (321 AAA)
+x...x..x.x..x.xxx...x.x
+
+Testing 1 2 3
+OMF AK BI DL ET NW QZ RR SV 
+Testing 1 2 4
+VAD AP DJ ES FI KN LT RZ 
+Testing 1 2 5
+OHZ AE DP II JR LS MN OZ QT 
+Testing 1 3 2
+MSF AS DD EZ HT IQ MR NU 
+Testing 1 3 4
+JBD AQ BS DU HZ IW JT LN RY 
+YNM AB DO GZ HR IY LN MT SU 
+Testing 1 3 5
+HWG AX DW GS II KN LZ PT RU 
+Testing 1 4 2
+EPK AX BR CI DE GS MZ NY TU 
+NDX AV DN IU JT MR SS ZZ 
+AQI AX BT DD EN IJ QZ RR SU 
+Testing 1 4 3
+MTG AU CR DJ ES GN IV LT YZ 
+Testing 1 4 5
+Testing 1 5 2
+BLV AU BR DG HI JS KZ NV TY 
+GUN AU DQ HS IO JZ NN RR TT 
+Testing 1 5 3
+Testing 1 5 4
+Testing 2 1 3
+MEU AA BR DU GT IK LS MZ NY 
+Testing 2 1 4
+Testing 2 1 5
+FWA AU DD ET GS IX JZ KN MR 
+Testing 2 3 1
+CMF AE BS DL GN IK JT MZ RY 
+Testing 2 3 4
+OAL AX BT DK EI HN LZ MS RY 
+Testing 2 3 5
+QSK AP CD GZ II JR LT NN QS 
+RPS AX CI DL GS KT NO PR YZ 
+Testing 2 4 1
+VCQ AL CN DD FS IO QZ RR TW 
+Testing 2 4 3
+Testing 2 4 5
+CPJ AK BZ DP IW LN MT RR SS 
+Testing 2 5 1
+Testing 2 5 3
+JON AW DZ EI NY OT RU SX 
+Testing 2 5 4
+Testing 3 1 2
+Testing 3 1 4
+Testing 3 1 5
+PXB AC DD FT GS IY JR KZ NQ 
+UFO AW BD FT GR II KN PZ SU 
+Testing 3 2 1
+AAA AB CD IJ NN RR SS TT ZZ 
+Testing 3 2 4
+EOZ AY BN CR DP IU KS TV XZ 
+Testing 3 2 5
+SWO AB DD ET FN IV OS PR XZ 
+Testing 3 4 1
+SLQ AM DV HS IQ LZ NU PT RR 
+Testing 3 4 2
+Testing 3 4 5
+Testing 3 5 1
+JVF AU BN DW ET FS GR IL ZZ 
+RQQ AH CR DM GI JN SX TW UZ 
+Testing 3 5 2
+JFR AO DU EN FS HI LZ PR TW 
+YEK AU CZ DO EN IK JR LS TV 
+Testing 3 5 4
+LPH AL DK EZ IN QR SY TW 
+Testing 4 1 2
+TGH AQ BZ DE GN HS IX MT RU 
+Testing 4 1 3
+DKK AY CZ DL EI NU PT RW SV 
+Testing 4 1 5
+JGG AE CN DV HT IK LR SY UZ 
+ZZH AM CD FT GN IQ RV SW YZ 
+Testing 4 2 1
+BQD AH DZ FR IW JS LT NX 
+Testing 4 2 3
+Testing 4 2 5
+Testing 4 3 1
+Testing 4 3 2
+JGP AJ CR DP HT IK NX QZ SY 
+Testing 4 3 5
+Testing 4 5 1
+XDL AO DG ET IY MN QS RW ZZ 
+Testing 4 5 2
+Testing 4 5 3
+AAI AU DP EZ GT IK JS LN RW 
+Testing 5 1 2
+Testing 5 1 3
+WSF AC DH EN GI KS MT PZ RW 
+Testing 5 1 4
+HHY AL BZ DX EI FN KR QT SV 
+Testing 5 2 1
+ELB AA DP HS IV JR KZ MT NO 
+JRV AC DQ EN GZ IK JT RR SS 
+THK AH BI CN DV FT GR SX WZ 
+Testing 5 2 3
+HIM AU BI CD GR HS JZ KT NN 
+IHZ AW DJ GN IK MT PS RR UZ 
+Testing 5 2 4
+AZE AO DY HT IV MN RU SW XZ 
+Testing 5 3 1
+KPL AG DE FR IX LZ NN QT SU 
+OBB AC BT DH GI JN PR QZ SV 
+Testing 5 3 2
+EJC AE DG IT NU PR SW VZ 
+Testing 5 3 4
+KQD AE DP IO KR LT NN SW XZ 
+Testing 5 4 1
+QHD AJ CS DF IM LN RX TT WZ 
+Testing 5 4 2
+Testing 5 4 3
+MYH AP BS CD HR IY LT NN UZ 
+596695340 chars in 2104 seconds
+55 stops
+
+
+AC Menu
+         zzl     zzg                    zzi
+      Z ----- I ------ A  --------- A ------ S
+ zzz  |                | zzd        |        |   zzn
+      |                |        zat |        |
+      T ----- D -----  N --- E ---- R -------
+         zzo     zay
+
+ZIZL  IAZG  ANZD  NDAY  DTZO  TZZZ      ASZI  SRZN  RAAT
+
+ZXRQNLEAWAGHZFRDNVCZRKDUXMPHRHGUWZL (AAA)
+THERAININSPAINSTAYSMAINLYONTHEPLANE
+x.x.x.xx.x..x.xxx...x.x
+
+Carlson Shortcut:-
+
+C:\source\enigma_cxx\RELEASE>enigma_cxx THERAININSPAINSTAYSMAINLYONTHEPLANE ZXRQNLEAWAGHZFRDNVCZRKDUXMPHRHGUWZL x.x.x.xx.x..x.xxx...x.x 
+Testing 1 2 3
+Testing 1 2 4
+Testing 1 2 5
+Testing 1 3 2
+Testing 1 3 4
+Testing 1 3 5
+Testing 1 4 2
+Testing 1 4 3
+Testing 1 4 5
+Testing 1 5 2
+Testing 1 5 3
+Testing 1 5 4
+Testing 2 1 3
+Testing 2 1 4
+Testing 2 1 5
+Testing 2 3 1
+Testing 2 3 4
+Testing 2 3 5
+Testing 2 4 1
+Testing 2 4 3
+Testing 2 4 5
+Testing 2 5 1
+Testing 2 5 3
+Testing 2 5 4
+Testing 3 1 2
+Testing 3 1 4
+Testing 3 1 5
+Testing 3 2 1
+AAA AB CD EF IJ NN RR SS TT ZZ 
+Testing 3 2 4
+Testing 3 2 5
+Testing 3 4 1
+Testing 3 4 2
+Testing 3 4 5
+Testing 3 5 1
+Testing 3 5 2
+Testing 3 5 4
+Testing 4 1 2
+Testing 4 1 3
+Testing 4 1 5
+Testing 4 2 1
+Testing 4 2 3
+Testing 4 2 5
+Testing 4 3 1
+Testing 4 3 2
+Testing 4 3 5
+Testing 4 5 1
+Testing 4 5 2
+Testing 4 5 3
+Testing 5 1 2
+Testing 5 1 3
+Testing 5 1 4
+Testing 5 2 1
+Testing 5 2 3
+Testing 5 2 4
+Testing 5 3 1
+Testing 5 3 2
+Testing 5 3 4
+Testing 5 4 1
+Testing 5 4 2
+Testing 5 4 3
+107027861 chars in 460 seconds
+

@@ -1,0 +1,265 @@
+ enigma_cxx
+
+ Timestamp is 3447f3a7 (Fri Oct 17 23:24:23 1997)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00002336H .text                   CODE
+ 0001:00002340 000000f2H .text$x                 CODE
+ 0002:00000000 0000005cH .rdata                  DATA
+ 0002:00000060 00000044H .rdata$r                DATA
+ 0002:000000a8 00000148H .xdata$x                DATA
+ 0002:000001f0 00000000H .edata                  DATA
+ 0003:00000000 00000004H .CRT$XCA                DATA
+ 0003:00000004 00000020H .CRT$XCU                DATA
+ 0003:00000024 00000004H .CRT$XCZ                DATA
+ 0003:00000028 00000004H .CRT$XIA                DATA
+ 0003:0000002c 00000004H .CRT$XIZ                DATA
+ 0003:00000030 0000020cH .data                   DATA
+ 0003:00000240 00000334H .bss                    DATA
+ 0004:00000000 00000028H .idata$2                DATA
+ 0004:00000028 00000014H .idata$3                DATA
+ 0004:0000003c 00000090H .idata$4                DATA
+ 0004:000000cc 00000090H .idata$5                DATA
+ 0004:0000015c 000003aaH .idata$6                DATA
+
+  Address         Publics by Value              Rva+Base   Lib:Object
+
+ 0001:00000020       ?addMapping@FastConflictSteckerRegister@@QAE_NDD@Z 00401020 f main.obj
+ 0001:000002b0       ?makeMapping@SteckerRegister@@IAE_NHH@Z 004012b0 f main.obj
+ 0001:000002f0       ?activateDiagonal@SteckerRegister@@IAE_NHH@Z 004012f0 f main.obj
+ 0001:00000340       ?otherEnd@MenuWire@@QAEPAVLetterTerminal@@PBVMenuNode@@D@Z 00401340 f main.obj
+ 0001:00000350       ?otherEnd@MenuWire@@QAEPAVMenuNode@@PBVLetterTerminal@@D@Z 00401350 f main.obj
+ 0001:00000360       ?activate@MenuNode@@QBE_ND@Z 00401360 f main.obj
+ 0001:000003e0       ?activateFromLocal@LetterTerminal@@QBE_ND@Z 004013e0 f main.obj
+ 0001:00000430       ?activateFromRemote@LetterTerminal@@QBE_ND@Z 00401430 f main.obj
+ 0001:00000490       ?activateFrom@BombeLetter@@QAE_NPBVLetterTerminal@@D@Z 00401490 f main.obj
+ 0001:00000540       ?findNoSteckerConflicts@@YAXAAVEnigma@@PBD11@Z 00401540 f main.obj
+ 0001:00000ad0       ??0MenuWire@@QAE@DPAVLetterTerminal@@PAVMenuNode@@@Z 00401ad0 f main.obj
+ 0001:00000cc0       ?size@?$vector@PAVMenuWire@@V?$allocator@PAVMenuWire@@@std@@@std@@QBEIXZ 00401cc0 f main.obj
+ 0001:00000ce0       ?_Destroy@?$vector@PAVMenuWire@@V?$allocator@PAVMenuWire@@@std@@@std@@IAEXPAPAVMenuWire@@0@Z 00401ce0 f main.obj
+ 0001:00000cf0       ?_Ucopy@?$vector@PAVMenuWire@@V?$allocator@PAVMenuWire@@@std@@@std@@IAEPAPAVMenuWire@@PBQAV3@0PAPAV3@@Z 00401cf0 f main.obj
+ 0001:00000d20       ?_Ufill@?$vector@PAVMenuWire@@V?$allocator@PAVMenuWire@@@std@@@std@@IAEXPAPAVMenuWire@@IABQAV3@@Z 00401d20 f main.obj
+ 0001:00000d50       ??0BombeLetter@@QAE@XZ     00401d50 f main.obj
+ 0001:00000e40       ??1BombeLetter@@QAE@XZ     00401e40 f main.obj
+ 0001:00000ed0       ??1LetterTerminal@@QAE@XZ  00401ed0 f main.obj
+ 0001:00000f00       ?solveWheelOrder@@YAXAAVEnigma@@PBD11@Z 00401f00 f main.obj
+ 0001:00001040       ?cryptTest@@YAXXZ          00402040 f main.obj
+ 0001:000011e0       _main                      004021e0 f main.obj
+ 0001:00001480       ?insert@?$vector@PAVMenuNode@@V?$allocator@PAVMenuNode@@@std@@@std@@QAEXPAPAVMenuNode@@IABQAV3@@Z 00402480 f main.obj
+ 0001:00001480       ?insert@?$vector@PAVMenuWire@@V?$allocator@PAVMenuWire@@@std@@@std@@QAEXPAPAVMenuWire@@IABQAV3@@Z 00402480 f main.obj
+ 0001:000016b0       ?_Construct@std@@YAXPAPAVMenuWire@@ABQAV2@@Z 004026b0 f main.obj
+ 0001:000016b0       ?_Construct@std@@YAXPAPAVBombeLetter@@ABQAV2@@Z 004026b0 f main.obj
+ 0001:00001750       ??0MovingRotor@@QAE@H@Z    00402750 f rotor.obj
+ 0001:00001770       ?number@MovingRotor@@QBEHXZ 00402770 f rotor.obj
+ 0001:00001780       ?indicatedLetter@MovingRotor@@QAEXD@Z 00402780 f rotor.obj
+ 0001:00001790       ?indicatedLetter@MovingRotor@@QBEDXZ 00402790 f rotor.obj
+ 0001:000017a0       ?translate@MovingRotor@@UAEHH@Z 004027a0 f rotor.obj
+ 0001:00001810       ?increment@MovingRotor@@UAEXXZ 00402810 f rotor.obj
+ 0001:00001830       ?atNotch@MovingRotor@@QBE_NXZ 00402830 f rotor.obj
+ 0001:00001850       ?nextRotor@MovingRotor@@QAEXPAVRotor@@@Z 00402850 f rotor.obj
+ 0001:00001860       ?prevRotor@MovingRotor@@QAEXPAVRotor@@@Z 00402860 f rotor.obj
+ 0001:00001870       ?loadWiring@MovingRotor@@QAEXPAD@Z 00402870 f rotor.obj
+ 0001:000018c0       ?ringSetting@MovingRotor@@QAEXH@Z 004028c0 f rotor.obj
+ 0001:000018d0       ?ringSetting@MovingRotor@@QBEHXZ 004028d0 f rotor.obj
+ 0001:000018e0       ?translate@Reflector@@UAEHH@Z 004028e0 f rotor.obj
+ 0001:000018f0       ?loadWiring@Reflector@@QAEXPAD@Z 004028f0 f rotor.obj
+ 0001:00001980       ??0Stecker@@QAE@XZ         00402980 f rotor.obj
+ 0001:00001990       ?clear@Stecker@@QAEXXZ     00402990 f rotor.obj
+ 0001:000019a0       ?translate@Stecker@@QAEHH@Z 004029a0 f rotor.obj
+ 0001:000019b0       ??0Scrambler@@QAE@XZ       004029b0 f rotor.obj
+ 0001:000019d0       ?increment@Rotor@@UAEXXZ   004029d0 f rotor.obj
+ 0001:000019e0       ?translate@EntryWheel@@UAEHH@Z 004029e0 f rotor.obj
+ 0001:000019f0       ?setupAs@Scrambler@@QAEXABV1@@Z 004029f0 f rotor.obj
+ 0001:00001a60       ??1Scrambler@@QAE@XZ       00402a60 f rotor.obj
+ 0001:00001a80       ?setup@Scrambler@@AAEXXZ   00402a80 f rotor.obj
+ 0001:00001b80       ?fitRotor@Scrambler@@QAEXH@Z 00402b80 f rotor.obj
+ 0001:00001bf0       ?removeRotors@Scrambler@@QAEXXZ 00402bf0 f rotor.obj
+ 0001:00001c00       ?setIndicator@Scrambler@@QAEXPBD@Z 00402c00 f rotor.obj
+ 0001:00001c30       ?getIndicator@Scrambler@@QBEPBDXZ 00402c30 f rotor.obj
+ 0001:00001c60       ?translate@Scrambler@@QAEDD@Z 00402c60 f rotor.obj
+ 0001:00001c80       ?translateInt@Scrambler@@QAEHH@Z 00402c80 f rotor.obj
+ 0001:00001ca0       ?increment@Scrambler@@QAEXXZ 00402ca0 f rotor.obj
+ 0001:00001d10       ?rotor@Scrambler@@QBEPAVMovingRotor@@H@Z 00402d10 f rotor.obj
+ 0001:00001d20       ?rotorInSlot@Scrambler@@QBEPAVMovingRotor@@H@Z 00402d20 f rotor.obj
+ 0001:00001d30       ??0Enigma@@QAE@XZ          00402d30 f rotor.obj
+ 0001:00001d80       ??1Enigma@@QAE@XZ          00402d80 f rotor.obj
+ 0001:00001d90       ?fitRotor@Enigma@@QAEXH@Z  00402d90 f rotor.obj
+ 0001:00001da0       ?removeRotors@Enigma@@QAEXXZ 00402da0 f rotor.obj
+ 0001:00001db0       ?setIndicator@Enigma@@QAEXPBD@Z 00402db0 f rotor.obj
+ 0001:00001dc0       ?translate@Enigma@@QAEDD@Z 00402dc0 f rotor.obj
+ 0001:00001de0       ?translatePeek@Enigma@@QAEDD@Z 00402de0 f rotor.obj
+ 0001:00001e20       ?clearStecker@Enigma@@QAEXXZ 00402e20 f rotor.obj
+ 0001:00001e30       ?rotor@Enigma@@QBEPAVMovingRotor@@H@Z 00402e30 f rotor.obj
+ 0001:00001e40       ?rotorInSlot@Enigma@@QBEPAVMovingRotor@@H@Z 00402e40 f rotor.obj
+ 0001:00001ed0       ??3@YAXPAX@Z               00402ed0 f msvcprt:delop_s.obj
+ 0001:00001ee0       ??6std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z 00402ee0 f msvcprt:MSVCP50.dll
+ 0001:00001ee6       ??6std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z 00402ee6 f msvcprt:MSVCP50.dll
+ 0001:00001ef0       __onexit                   00402ef0 f MSVCRT:atonexit.obj
+ 0001:00001f20       _atexit                    00402f20 f MSVCRT:atonexit.obj
+ 0001:00001f40       ??2@YAPAXI@Z               00402f40 f MSVCRT:MSVCRT.dll
+ 0001:00001f50       ??_M@YGXPAXIHP6EX0@Z@Z     00402f50 f MSVCRT:ehvecdtr.obj
+ 0001:00002000       ?__ArrayUnwind@@YGXPAXIHP6EX0@Z@Z 00403000 f MSVCRT:ehvecdtr.obj
+ 0001:00002090       ??_L@YGXPAXIHP6EX0@Z1@Z    00403090 f MSVCRT:ehvecctr.obj
+ 0001:00002130       ___CxxFrameHandler         00403130 f MSVCRT:MSVCRT.dll
+ 0001:00002140       ??_Gtype_info@@UAEPAXI@Z   00403140 f MSVCRT:ti_inst.obj
+ 0001:00002140       ??_Etype_info@@UAEPAXI@Z   00403140 f MSVCRT:ti_inst.obj
+ 0001:00002160       __CxxThrowException@8      00403160 f MSVCRT:MSVCRT.dll
+ 0001:00002170       _mainCRTStartup            00403170 f MSVCRT:crtexe.obj
+ 0001:000022c0       _free                      004032c0 f MSVCRT:MSVCRT.dll
+ 0001:000022c6       ___dllonexit               004032c6 f MSVCRT:MSVCRT.dll
+ 0001:000022cc       __except_handler3          004032cc f MSVCRT:MSVCRT.dll
+ 0001:000022d2       ?terminate@@YAXXZ          004032d2 f MSVCRT:MSVCRT.dll
+ 0001:000022d8       ??1type_info@@UAE@XZ       004032d8 f MSVCRT:MSVCRT.dll
+ 0001:000022de       __XcptFilter               004032de f MSVCRT:MSVCRT.dll
+ 0001:000022e4       __initterm                 004032e4 f MSVCRT:MSVCRT.dll
+ 0001:000022f0       __setdefaultprecision      004032f0 f MSVCRT:fp8.obj
+ 0001:00002310       __matherr                  00403310 f MSVCRT:merr.obj
+ 0001:00002320       __setargv                  00403320 f MSVCRT:dllargv.obj
+ 0001:00002330       __controlfp                00403330 f MSVCRT:MSVCRT.dll
+ 0002:00000000       ??_7MovingRotor@@6B@       00404000   rotor.obj
+ 0002:00000008       ??_7EntryWheel@@6B@        00404008   rotor.obj
+ 0002:00000010       ??_7Reflector@@6B@         00404010   rotor.obj
+ 0002:0000004c       ??_7type_info@@6B@         0040404c   MSVCRT:ti_inst.obj
+ 0002:00000060       ??_R1A@?0A@A@type_info@@8  00404060   MSVCRT:ti_inst.obj
+ 0002:00000078       ??_R2type_info@@8          00404078   MSVCRT:ti_inst.obj
+ 0002:00000080       ??_R3type_info@@8          00404080   MSVCRT:ti_inst.obj
+ 0002:00000090       ??_R4type_info@@6B@        00404090   MSVCRT:ti_inst.obj
+ 0002:00000168       __CT??_R0?AVBadWiring@@@81 00404168   rotor.obj
+ 0002:00000188       __CTA1?AVBadWiring@@       00404188   rotor.obj
+ 0002:00000190       __TI1?AVBadWiring@@        00404190   rotor.obj
+ 0003:00000000       ___xc_a                    00405000   MSVCRT:cinitexe.obj
+ 0003:00000024       ___xc_z                    00405024   MSVCRT:cinitexe.obj
+ 0003:00000028       ___xi_a                    00405028   MSVCRT:cinitexe.obj
+ 0003:0000002c       ___xi_z                    0040502c   MSVCRT:cinitexe.obj
+ 0003:00000030       ??_C@_01FCOA@?5?$AA@       00405030   main.obj
+ 0003:00000034       ??_C@_0CP@HHD@WARNING?3?5too?5many?5letters?5in?5men@ 00405034   main.obj
+ 0003:00000064       ??_C@_03GEOE@AAA?$AA@      00405064   main.obj
+ 0003:00000068       ??_C@_08PLMC@Testing?5?$AA@ 00405068   main.obj
+ 0003:00000074       ??_C@_08OEEM@Cypher?3?5?$AA@ 00405074   main.obj
+ 0003:00000080       ??_C@_08OBJ@Plain?3?5?5?$AA@ 00405080   main.obj
+ 0003:0000008c       ??_C@_0L@LJKB@?5?5?5?5?5?5?5?5?5?5?$AA@ 0040508c   main.obj
+ 0003:00000098       ??_C@_0L@KGIO@AAAAAAAAAA?$AA@ 00405098   main.obj
+ 0003:000000a4       ??_C@_0L@HBHM@?5chars?5in?5?$AA@ 004050a4   main.obj
+ 0003:000000b0       ??_C@_08LLG@?5seconds?$AA@ 004050b0   main.obj
+ 0003:000000bc       ??_C@_0M@PELN@OLFNULLNULL?$AA@ 004050bc   main.obj
+ 0003:000000c8       ??_C@_0M@DLHL@UUYEXEVGIFE?$AA@ 004050c8   main.obj
+ 0003:000000d4       ??_C@_0CE@LBBC@THERAININSPAINSTAYSMAINLYONTHEPL@ 004050d4   main.obj
+ 0003:000000f8       ??_C@_0CE@GPDN@ZXRQNLEAWAGHZFRDNVCZRKDUXMPHRHGU@ 004050f8   main.obj
+ 0003:0000011c       ??_C@_0BI@FHAC@x?4?4?4x?4?4x?4x?4?4x?4xxx?4?4?4x?4x?$AA@ 0040511c   main.obj
+ 0003:00000134       ??_C@_06GHL@tstest?$AA@    00405134   main.obj
+ 0003:0000013c       ??_C@_09HFKK@crypttest?$AA@ 0040513c   main.obj
+ 0003:00000148       ??_C@_0N@BFNG@XXXXXXXXXXXX?$AA@ 00405148   main.obj
+ 0003:00000158       ??_R0?AVBadWiring@@@8      00405158   rotor.obj
+ 0003:00000170       ??_C@_0BL@DDAH@YRUHQSLDPXNGOKMIEBFZCWVJAT?$AA@ 00405170   rotor.obj
+ 0003:0000018c       ??_C@_0BL@IOIP@VZBRGITYUPSDNHLXAWMJQOFECK?$AA@ 0040518c   rotor.obj
+ 0003:000001a8       ??_C@_0BL@CBFJ@ESOVPZJAYQUIRHXLNFTGKDCMWB?$AA@ 004051a8   rotor.obj
+ 0003:000001c4       ??_C@_0BL@BLMA@BDFHJLCPRTXVZNYEIWGAKMUSQO?$AA@ 004051c4   rotor.obj
+ 0003:000001e0       ??_C@_0BL@MPAB@AJDKSIRUXBLHWTMCQGZNPYFVOE?$AA@ 004051e0   rotor.obj
+ 0003:000001fc       ??_C@_0BL@KLDJ@EKMFLGDQVZNTOWYHXUSPAIBRCJ?$AA@ 004051fc   rotor.obj
+ 0003:00000220       ??_R0?AVtype_info@@@8      00405220   MSVCRT:ti_inst.obj
+ 0003:00000238       ___defaultmatherr          00405238   MSVCRT:merr.obj
+ 0003:00000240       ?m_allWires@MenuWire@@0V?$vector@PAVMenuWire@@V?$allocator@PAVMenuWire@@@std@@@std@@A 00405240   main.obj
+ 0003:00000250       ?steckerRegister@@3VFastConflictSteckerRegister@@A 00405250   main.obj
+ 0003:00000258       ?m_allNodes@MenuNode@@0V?$vector@PAVMenuNode@@V?$allocator@PAVMenuNode@@@std@@@std@@A 00405258   main.obj
+ 0003:00000270       ?m_allLetters@BombeLetter@@0V?$list@PAVBombeLetter@@V?$allocator@PAVBombeLetter@@@std@@@std@@A 00405270   main.obj
+ 0003:00000280       ?m_map@SteckerRegister@@1PAY0BL@DA 00405280   main.obj
+ 0003:0000054c       ?nChars@@3HA               0040554c   main.obj
+ 0003:00000558       __dowildcard               00405558   MSVCRT:wildcard.obj
+ 0003:0000055c       __newmode                  0040555c   MSVCRT:_newmode.obj
+ 0003:00000560       __commode                  00405560   MSVCRT:xncommod.obj
+ 0003:00000564       __fmode                    00405564   MSVCRT:xtxtmode.obj
+ 0003:00000568       __adjust_fdiv              00405568   <common>
+ 0003:0000056c       ___onexitend               0040556c   <common>
+ 0003:00000570       ___onexitbegin             00405570   <common>
+ 0004:00000000       __IMPORT_DESCRIPTOR_MSVCP50 00406000   msvcprt:MSVCP50.dll
+ 0004:00000014       __IMPORT_DESCRIPTOR_MSVCRT 00406014   MSVCRT:MSVCRT.dll
+ 0004:00000028       __NULL_IMPORT_DESCRIPTOR   00406028   msvcprt:MSVCP50.dll
+ 0004:000000cc       __imp_??0_Winit@std@@QAE@XZ 004060cc   msvcprt:MSVCP50.dll
+ 0004:000000d0       __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A 004060d0   msvcprt:MSVCP50.dll
+ 0004:000000d4       __imp_?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z 004060d4   msvcprt:MSVCP50.dll
+ 0004:000000d8       __imp_??6std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z 004060d8   msvcprt:MSVCP50.dll
+ 0004:000000dc       __imp_?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A 004060dc   msvcprt:MSVCP50.dll
+ 0004:000000e0       __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z 004060e0   msvcprt:MSVCP50.dll
+ 0004:000000e4       __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@N@Z 004060e4   msvcprt:MSVCP50.dll
+ 0004:000000e8       __imp_??0Init@ios_base@std@@QAE@XZ 004060e8   msvcprt:MSVCP50.dll
+ 0004:000000ec       __imp_??1Init@ios_base@std@@QAE@XZ 004060ec   msvcprt:MSVCP50.dll
+ 0004:000000f0       __imp_??6std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z 004060f0   msvcprt:MSVCP50.dll
+ 0004:000000f4       __imp_??1_Winit@std@@QAE@XZ 004060f4   msvcprt:MSVCP50.dll
+ 0004:000000f8       \177MSVCP50_NULL_THUNK_DATA 004060f8   msvcprt:MSVCP50.dll
+ 0004:000000fc       __imp____CxxFrameHandler   004060fc   MSVCRT:MSVCRT.dll
+ 0004:00000100       __imp__difftime            00406100   MSVCRT:MSVCRT.dll
+ 0004:00000104       __imp__time                00406104   MSVCRT:MSVCRT.dll
+ 0004:00000108       __imp___CxxThrowException@8 00406108   MSVCRT:MSVCRT.dll
+ 0004:0000010c       __imp__free                0040610c   MSVCRT:MSVCRT.dll
+ 0004:00000110       __imp_??2@YAPAXI@Z         00406110   MSVCRT:MSVCRT.dll
+ 0004:00000114       __imp____dllonexit         00406114   MSVCRT:MSVCRT.dll
+ 0004:00000118       __imp___onexit             00406118   MSVCRT:MSVCRT.dll
+ 0004:0000011c       __imp___except_handler3    0040611c   MSVCRT:MSVCRT.dll
+ 0004:00000120       __imp_?terminate@@YAXXZ    00406120   MSVCRT:MSVCRT.dll
+ 0004:00000124       __imp_??1type_info@@UAE@XZ 00406124   MSVCRT:MSVCRT.dll
+ 0004:00000128       __imp___exit               00406128   MSVCRT:MSVCRT.dll
+ 0004:0000012c       __imp___XcptFilter         0040612c   MSVCRT:MSVCRT.dll
+ 0004:00000130       __imp__exit                00406130   MSVCRT:MSVCRT.dll
+ 0004:00000134       __imp____p___initenv       00406134   MSVCRT:MSVCRT.dll
+ 0004:00000138       __imp____getmainargs       00406138   MSVCRT:MSVCRT.dll
+ 0004:0000013c       __imp___initterm           0040613c   MSVCRT:MSVCRT.dll
+ 0004:00000140       __imp____setusermatherr    00406140   MSVCRT:MSVCRT.dll
+ 0004:00000144       __imp___adjust_fdiv        00406144   MSVCRT:MSVCRT.dll
+ 0004:00000148       __imp____p__commode        00406148   MSVCRT:MSVCRT.dll
+ 0004:0000014c       __imp____p__fmode          0040614c   MSVCRT:MSVCRT.dll
+ 0004:00000150       __imp____set_app_type      00406150   MSVCRT:MSVCRT.dll
+ 0004:00000154       __imp___controlfp          00406154   MSVCRT:MSVCRT.dll
+ 0004:00000158       \177MSVCRT_NULL_THUNK_DATA 00406158   MSVCRT:MSVCRT.dll
+
+ entry point at        0001:00002170
+
+ Static symbols
+
+ 0001:00001e50       _$E25                      00402e50 f rotor.obj
+ 0001:00001e60       _$E22                      00402e60 f rotor.obj
+ 0001:00001e70       _$E24                      00402e70 f rotor.obj
+ 0001:00001e80       _$E23                      00402e80 f rotor.obj
+ 0001:00001e90       _$E31                      00402e90 f rotor.obj
+ 0001:00001ea0       _$E28                      00402ea0 f rotor.obj
+ 0001:00001eb0       _$E30                      00402eb0 f rotor.obj
+ 0001:00001ec0       _$E29                      00402ec0 f rotor.obj
+ 0001:00000000       _$E35                      00401000 f main.obj
+ 0001:00000010       _$E34                      00401010 f main.obj
+ 0001:000000d0       _$E42                      004010d0 f main.obj
+ 0001:000000e0       _$E38                      004010e0 f main.obj
+ 0001:00000100       _$E41                      00401100 f main.obj
+ 0001:00000110       _$E39                      00401110 f main.obj
+ 0001:00000150       _$E49                      00401150 f main.obj
+ 0001:00000160       _$E45                      00401160 f main.obj
+ 0001:00000180       _$E48                      00401180 f main.obj
+ 0001:00000190       _$E46                      00401190 f main.obj
+ 0001:000001d0       _$E56                      004011d0 f main.obj
+ 0001:000001e0       _$E52                      004011e0 f main.obj
+ 0001:00000210       _$E55                      00401210 f main.obj
+ 0001:00000220       _$E53                      00401220 f main.obj
+ 0001:000016d0       _$E25                      004026d0 f main.obj
+ 0001:000016e0       _$E22                      004026e0 f main.obj
+ 0001:000016f0       _$E24                      004026f0 f main.obj
+ 0001:00001700       _$E23                      00402700 f main.obj
+ 0001:00001710       _$E31                      00402710 f main.obj
+ 0001:00001720       _$E28                      00402720 f main.obj
+ 0001:00001730       _$E30                      00402730 f main.obj
+ 0001:00001740       _$E29                      00402740 f main.obj
+ 0001:00002070       ?ArrayUnwindFilter@@YAHPAU_EXCEPTION_POINTERS@@@Z 00403070 f MSVCRT:ehvecdtr.obj
+
+FIXUPS: 256f 162 5 20 1b 5 20 7a0 425 fffffeeb 1c f 3b 1f 20 fffffeb9 d
+FIXUPS: 3117 fffffec4 6a 3a fffffe99 e fffff17c d 7 d 7 e 6c 1e 9 23 9
+FIXUPS: 21b8 120f a ffffee33 12 3f 52 4b 4a b b 56 b b 19 50 11 21 f8e
+FIXUPS: 33f1 fffff0fe fffff700 31 1f 34 103 5b 32 1584 e e a ffffeaab 1e
+FIXUPS: 1e9d 1d 23 55 8 8 8 1d 11 11 33 11 11 2a 5a 16 b b d fffff63b 37
+FIXUPS: 172d 37 34 17 4f 68 23 9 14 9 40 9 9 5a 9 9 56 57 96 18a4 d e c
+FIXUPS: 1b06 76 17 1c 10 f 9 fffff57a 5 30 2c 1f 5 17 29 4d 2a 89 7c 7
+FIXUPS: 1405 7 31 21 41 53 20 5c 7 b 7 b 7 b 7 32 5c 6f d 15b5 41 36 6d
+FIXUPS: 2d61 6c3 a fffff953 15 b 15 e c 26 8 8 21 f 10 b 5 20 1b 5 20 ffffe14b
+FIXUPS: 1089 b 3d 5 30 2c 176b 8c 3f 1c 41 31 11 7 8 13 7 9 7 d 8 19 3c
+FIXUPS: 2ac8 20 d d d d 3f 8aa c fffff790 12 d 1d 3c 24
+
+ 592 bytes saved through ICF
+

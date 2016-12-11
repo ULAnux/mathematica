@@ -71,7 +71,63 @@ fs.readdir('./prolog', (err,files) => {
 			fileContent.forEach( line => {
 				//Filtrado de un Pr o Rp completa
 				if ((line[0]=='p' && line[1]=='r' && line[2]=='(') || (line[0]=='r' && line[1]=='p' && line[2]=='(')){
-					//Filtrado de pregunta
+					//guardar tipo, si es pr o rp
+					let tipo = '';
+					tipo +=line[0]; tipo +=line[1];
+					//Filtrado de puntaje de pr
+					let puntaje = '';
+					for(i = 0; i <= line.length; i++ ) {
+						if((line[i] > 0 && line[i]< 10) && (line[i+1] > -1  && line[i+1]< 10) && (line[i+2] > -1  && line[i+2]< 10) && line[i+3]==='/') {
+							puntaje += line[i];
+							puntaje += line[i+1];
+							puntaje += line[i+2];
+							puntaje += line[i+3];
+							puntaje += line[i+4];
+							puntaje += line[i+5];
+							puntaje += line[i+6];
+							puntaje += 'ç';
+						}
+						if((line[i] > 0 && line[i]< 10) && (line[i+1] > -1  && line[i+1]< 10) && line[i+2]==='/') {
+							puntaje += line[i];
+							puntaje += line[i+1];
+							puntaje += line[i+2];
+							puntaje += line[i+3];
+							puntaje += line[i+4];
+							puntaje += 'ç';
+						}
+						if((line[i] > -1 && line[i]< 10) && line[i+1]==='/') {
+							puntaje += line[i];
+							puntaje += line[i+1];
+							puntaje += line[i+2];
+							puntaje += line[i+3];
+							puntaje += 'ç';
+						}
+					}
+					var puntaje_parte= puntaje.split("ç");
+
+					//Filtrado de id de pr
+					let id_pr = '';
+					let parentesis = false;
+					line.split('').forEach(char => {
+						if (parentesis){
+							if(char === ',') {
+								id_pr += 'ç';
+								parentesis =false;
+								return;
+							}
+							else {
+								id_pr += char;
+							}
+						}
+						else {
+							if(char === '('){
+								parentesis = true;
+							}
+						}
+					});
+					var id_parte= id_pr.split("ç");
+					
+					//Filtrado de pregunta, respuesta y autor
 					let pregunta = '';
 					let corchete = false;
 					var count_abierto = 0;
@@ -105,16 +161,18 @@ fs.readdir('./prolog', (err,files) => {
 						}
 					});
 					var parte= pregunta.split("ç");
-
 					//Insertar en Base de datos con modelo pr.js 
 					Pr.find({pr_rp: line}, (err, docs) => {
 						if(err) throw err;
 						if(docs.length === 0 && line.length <= 1400){
 							let prNueva = new Pr();
 							prNueva.file = file;
+							prNueva.id = id_parte[0];
+							prNueva.tipo = tipo;
 							prNueva.pr_rp = line;
 							prNueva.pregunta = parte[0];
 							prNueva.respuesta = parte[1];
+							prNueva.puntaje = puntaje_parte[0];
 							prNueva.autor = parte[2];
 							prNueva.save(err => {
 								if(err) throw err;
@@ -127,3 +185,10 @@ fs.readdir('./prolog', (err,files) => {
 		}
 	});
 })
+/*Pr.find({ $text: { $search: "\"" + "color" + "\"" } },
+        function (err, docs) {
+        	let perro=docs[0].pregunta;
+        	console.log(perro);
+
+
+ })*/

@@ -1,5 +1,5 @@
 
 module.exports = {
-  email: "user@gmail.com",
-  pass: "12345"
+  email: "enderpl0000@gmail.com",
+  pass: "Pl25153102"
 };

@@ -12,9 +12,12 @@ var bcrypt   = require('bcrypt-nodejs');
 var prSchema = mongoose.Schema({
     
     file        : String,
+    id         	: String,
+    tipo       	: String,
     pr_rp       : String,
     pregunta    : { type: String, index: true },
     respuesta   : String,
+    puntaje		: String,
     autor       : String
 
 });

@@ -1,4 +1,4 @@
-<!doctype html>
+i<!doctype html>
 <!-- views/profile.ejs -->
 <html>
 <head>
@@ -17,9 +17,10 @@
     <nav class="color-barra padding-largo">
         <ul class="no_lista">
            <li class="col-md-3 incline-block"><h1 class="indie blanco grande">Mathematicas</h1></li>
-             <a href="/profile"><li class="col-md-2 incline-block"><h3 class="blanco peque bree">Inicio</h3></li></a>
+             <a href="/profile"><li class="col-md-1 incline-block"><h3 class="blanco peque bree">Inicio</h3></li></a>
             <a href="/lecciones"><li class="col-md-2 incline-block"><h3 class="blanco peque bree">Lecciones</h3></li></a>
             <a href="http://jacinto-davila.blogspot.com/2014/09/bitacora-01-md-u2014-matematicas.html"><li class="col-md-2 incline-block"><h3 class="blanco peque bree">Contacto</h3></li></a>
+            <a href="/IntAyudaPitagoras" method="reset"><li class="col-md-2 incline-block"><h3 class="blanco peque bree">¡Ayuda a Pitagoras!</h3></li></a>
             <a href="/logout"><li class="col-md-2 incline-block"><h3 class="blanco peque bree">Salir</h3></li></a>
           </ul>
     </nav>
@@ -46,16 +47,20 @@
                     <button type="submit" class="btn btn-default btn-sm" style="margin-top: 1em;">Preguntar</button>
 
                 </div>
-                <%if(question != 'Nothing'){%>
-                  <div class="panel-body"><b>Pregunta 1:</b> <%= question%> <b>Respuesta 1:</b> <%= answer%></div>
-                  <div class="panel-body"><b>Pregunta 2:</b> <%= question1%> <b>Respuesta 2:</b> <%= answer1%></div>
-                  <div class="panel-body"><b>Pregunta 3:</b> <%= question2%> <b>Respuesta 3:</b> <%= answer2%></div>
-                <%}%>
+                <div><h6>NOTA IMPORTANTE: Realizar la pregunta con variable "X"</h6></div>
             </form>
 
         </div>
 
         <div class="col-sm-4">
+            <div class="panel panel-info">
+                <div class="panel-heading"><h6><strong>Pregunta que parseo Pengines</strong></h6></div>
+                    <%if(answerObject != 'undefined'){%>
+                        <div class="panel-body"><%= question%></div>
+                    <%}else{%>
+                        <div class="panel-body"><%= question%></div>
+                    <%}%>
+            </div>
              <div class="panel panel-info">
                 <div class="panel-heading"><h6><strong>Objeto parseado de Pengines</strong></h6></div>
                     <%if(answerObject != 'undefined'){%>

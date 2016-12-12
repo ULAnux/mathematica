@@ -1,0 +1,5 @@
+pr("How to declare a global variable in a .js file ? ","Just define your variables in global.js outside a function scope , To make sure that this works you have to include/link to global.js before you try to access any variables defined in that file").%
+pr("How to declare a global variable in a .js file ? ","You can then access it within any function").%
+pr("How to create Global variables in Javascript across multiple files ? ","You need to declare the variable before you include the helpers.js file. Simply create a script tag above the include for helpers.js and define it there.").%
+pr("How to create Global variables in Javascript across multiple files ? ","The variable can be declared in the .js file and simply referenced in the HTML file").%
+pr("How to create Global variables in Javascript across multiple files ? ","ou should be using "local storage" rather than global variables. If you are concerned that local storage may not be supported in very old browsers, consider using an existing plug-in which checks the availability of local storage and uses other methods if it isn't available.").%

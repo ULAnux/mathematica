@@ -53,6 +53,14 @@ i<!doctype html>
         </div>
 
         <div class="col-sm-4">
+            <div class="panel panel-info">
+                <div class="panel-heading"><h6><strong>Pregunta que parseo Pengines</strong></h6></div>
+                    <%if(answerObject != 'undefined'){%>
+                        <div class="panel-body"><%= question%></div>
+                    <%}else{%>
+                        <div class="panel-body"><%= question%></div>
+                    <%}%>
+            </div>
              <div class="panel panel-info">
                 <div class="panel-heading"><h6><strong>Objeto parseado de Pengines</strong></h6></div>
                     <%if(answerObject != 'undefined'){%>

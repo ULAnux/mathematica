@@ -1,0 +1,10 @@
+Primero se debe descargar el archivo PREGUNTAS_MATHEMATICA.aia 
+
+Se accede al sitio de appinventor http://appinventor.mit.edu/explore/ y la "opción create apps!" 
+
+En la pestaña superior izquierda "projects" seleccionar la opción "import project (.aia) from my computer"
+se selecciona el archivo PREGUNTAS_MATHEMATICA.aia ahi se cargara el proyecto 
+
+Al dirigirse a la opción screen2 en la parte de diseñador se encuentra la distribución de los botones
+y en la sección de "Blocks" Se encuentran los bloques comentados explicando su función al seleccionar el simbolo (?) 
+en la esquina superior izquierda de estos.

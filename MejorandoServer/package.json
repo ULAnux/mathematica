@@ -1,0 +1,32 @@
+{
+  "name": "ulanix-demo",
+  "version": "1.0.0",
+  "description": "Simple node authentication demo using passport.js",
+  "main": "server.js",
+  "author": "Dimitrio Mandamadiotis",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "async": "^1.5.2",
+    "bcrypt-nodejs": "latest",
+    "body-parser": "~1.0.0",
+    "bootstrap": "^3.3.6",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.0.0",
+    "crypto": "0.0.3",
+    "ejs": "~0.8.5",
+    "express": "~4.0.0",
+    "express-flash": "0.0.2",
+    "express-session": "~1.0.0",
+    "https": "^1.0.0",
+    "method-override": "~1.0.0",
+    "mongoose": "~3.8.1",
+    "morgan": "~1.0.0",
+    "nodemailer": "^2.3.2",
+    "passport": "~0.1.17",
+    "passport-facebook": "~1.0.2",
+    "passport-google-oauth": "~0.1.5",
+    "passport-local": "~0.1.6",
+    "passport-twitter": "~1.0.2",
+    "pengines": "^1.0.2"
+  }
+}

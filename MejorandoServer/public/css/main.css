@@ -1,0 +1,164 @@
+.indie{
+	font-family: 'Indie Flower', cursive;
+}
+
+.bree{
+	font-family: 'Bree Serif', serif;
+}
+
+.blanco{
+	color: #F3FFD8;
+
+}
+.naranja{
+	color: #69200E;
+}
+
+.verde{
+	color: #33AA8F;
+}
+.gris{
+	color: #587D60;
+}
+
+.no_lista{
+	margin: 0px;
+	padding: opx;
+}
+
+.margin{
+	margin-right: -20px;
+}
+.margen-imag{
+	margin-left: 10px;
+	margin-right: 15px;
+}
+
+
+.no_lista li{
+	list-style-type: none;
+}
+.grande{
+	font-size: 3em;
+}
+.peque{
+	font-size: 1.5em;
+}
+.letra{
+	font-size: 1.3em;
+}
+
+.color-barra{
+	background-color: #33AA8F;
+}
+
+.padding-largo{
+	padding: 5px 10px;
+}
+
+.incline-block{
+	float: none;
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.quitar-float{
+	float: none;
+}
+
+#div{
+margin-left: 300px;
+}
+
+.reversible{
+    -webkit-transform-style : preserve-3d;
+    transform-style : preserve-3d;
+    -webkit-transition : -webkit-transform 3s ease;
+    -webkit-transition : transform 3s ease;
+    transition : transform 3s ease;
+    margin: 50px;
+    width : 20px;
+    height : 20px;
+}
+
+.reversible:hover{
+    -webkit-transform : rotateX(180deg);
+    transform : rotateX(180deg);
+}
+
+.reversible div{
+    position : absolute;
+    top : 30px;
+    width : 500px;
+    height : 30px;
+    -webkit-backface-visibility : hidden;
+    backface-visibility : hidden;
+    border:2px solid #000000;
+}
+
+.reversible div span{
+    font-size: 18px;
+    display:block;
+    text-align:center;
+    color:#FFF;
+}
+
+
+#atras{
+    background : #69200E;
+    -webkit-transform : rotateX( 180deg );
+    transform : rotateX( 180deg );
+}
+
+#adelante{
+    background : #33AA8F;
+}
+
+.reversiblelargo{
+    -webkit-transform-style : preserve-3d;
+    transform-style : preserve-3d;
+    -webkit-transition : -webkit-transform 3s ease;
+    -webkit-transition : transform 3s ease;
+    transition : transform 3s ease;
+    margin: 50px;
+    width : 20px;
+    height : 20px;
+}
+
+.reversiblelargo:hover{
+    -webkit-transform : rotateX(180deg);
+    transform : rotateX(180deg);
+}
+
+.reversiblelargo div{
+    position : absolute;
+    top : 30px;
+    width : 800px;
+    height : 50px;
+    -webkit-backface-visibility : hidden;
+    backface-visibility : hidden;
+    border:2px solid #000000;
+}
+
+.reversiblelargo div span{
+    font-size: 18px;
+    display:block;
+    text-align:center;
+    color:#FFF;
+}
+
+.well {
+  background-color: #33aa8f;
+  color: #fff;
+}
+
+
+.panel-info {
+  border-color: #33aa8f
+}
+
+.panel-info>.panel-heading {
+  border-color: #33aa9f;
+  color: #fff;
+  background-color: #33aa8f
+}

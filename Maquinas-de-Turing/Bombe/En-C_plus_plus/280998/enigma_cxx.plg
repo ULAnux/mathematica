@@ -1,0 +1,16 @@
+--------------------Configuration: enigma_cxx - Win32 Release--------------------
+Begining build with project "C:\source\enigma_cxx\enigma_cxx.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_CONSOLE" /D "NOMINMAX" /D "_AFXDLL" /D "_MBCS" /Fp".\Release/enigma_cxx.pch" /YX /Fo".\Release/" /Fd".\Release/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x809 /d "NDEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o".\Release/enigma_cxx.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:console /incremental:no /pdb:".\Release/enigma_cxx.pdb" /machine:I386 /out:".\Release/enigma_cxx.exe" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+
+
+
+enigma_cxx.exe - 0 error(s), 0 warning(s)

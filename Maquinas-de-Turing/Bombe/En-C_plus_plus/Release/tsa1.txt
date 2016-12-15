@@ -1,0 +1,82 @@
+
+C:\source\enigma_cxx\RELEASE>enigma_cxx ZPZXSOYELUWWCLFJB BENNULLNULLXUHRYY x.xxxxxxxxxx....x 
+C++ Turing Bombe Model
+Copyright (C) 1997 Andy Carlson
+Testing 1 2 3
+BMY AL BH CO DX EP FZ GS KN MW UU YY -- NO
+Testing 1 2 4
+GCG BB ET IX JL KN OZ PW QU SS YY -- NO (MWTO)
+Testing 1 2 5
+Testing 1 3 2
+Testing 1 3 4
+MMT BJ DZ EM FN IX KS LQ OV TW UY 
+Testing 1 3 5
+Testing 1 4 2
+Testing 1 4 3
+Testing 1 4 5
+Testing 1 5 2
+Testing 1 5 3
+Testing 1 5 4
+Testing 2 1 3
+Testing 2 1 4
+Testing 2 1 5
+Testing 2 3 1
+MZF AU BF ER GS HX LN OY TZ WW 
+Testing 2 3 4
+Testing 2 3 5
+VAR BJ ET GZ HX KW LL NP OO RY SS UU 
+Testing 2 4 1
+KFW BJ CW EI FL HZ KS NQ OT RX UU YY 
+Testing 2 4 3
+Testing 2 4 5
+Testing 2 5 1
+FXT AX BB CU DY EP FW JO KL MS NV TZ 
+Testing 2 5 3
+Testing 2 5 4
+Testing 3 1 2
+Testing 3 1 4
+Testing 3 1 5
+Testing 3 2 1
+Testing 3 2 4
+ZMH AZ BV EK FN GS IO LU PW QY TX 
+Testing 3 2 5
+Testing 3 4 1
+Testing 3 4 2
+Testing 3 4 5
+Testing 3 5 1
+Testing 3 5 2
+RYK BF CY DO ER HZ JX KS LT MW NN QU 
+Testing 3 5 4
+Testing 4 1 2
+FST BF EL IS JW KN MX OR QY TZ UV 
+Testing 4 1 3
+SUU BG CY EO FW LL NR SU TX ZZ 
+Testing 4 1 5
+Testing 4 2 1
+UYT BF DU EQ GX HW IO KY LT NR SS VZ 
+Testing 4 2 3
+Testing 4 2 5
+Testing 4 3 1
+Testing 4 3 2
+Testing 4 3 5
+Testing 4 5 1
+QSM BT EE FL GZ HY JW KU MO NX QS 
+Testing 4 5 2
+Testing 4 5 3
+Testing 5 1 2
+Testing 5 1 3
+Testing 5 1 4
+XGG AY BD CO EV GU HX IW JN LP MS QZ 
+Testing 5 2 1
+Testing 5 2 3
+HOI BB CL DE GO IN KW QU RS TY XZ 
+Testing 5 2 4
+JZD AZ BC DO ER FN GX HS JY LL MU TW 
+TPD AZ BD CE GX HW JY LT NN OR QS UV 
+Testing 5 3 1
+Testing 5 3 2
+Testing 5 3 4
+Testing 5 4 1
+Testing 5 4 2
+Testing 5 4 3
+107046178 chars in 355 seconds

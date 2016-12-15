@@ -1,0 +1,4 @@
+
+C:\source\enigma_cxx\RELEASE>enigma_cxx bptest HFEKP UEEKR EYRTN YHSAO FBRTI BHRTQ HTSAT THSAS UERTR EXRTJ 
+TIME: 83897585 chars in 348 seconds
+TIME: 83897585 chars in 348 seconds

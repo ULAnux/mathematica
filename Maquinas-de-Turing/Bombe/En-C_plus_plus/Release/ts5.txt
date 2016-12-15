@@ -1,0 +1,127 @@
+
+C:\source\enigma_cxx\RELEASE>enigma_cxx IMOCMIGFXOUWCX LNXVIERXELFXEI xxxxxx-xxx-xxx 
+C++ Turing Bombe Model
+Copyright (C) 1997 Andy Carlson
+Testing 1 2 3
+Testing 1 2 4
+Testing 1 2 5
+NPF AL CX EE FG II JM NV OP QW 
+Testing 1 3 2
+Testing 1 3 4
+Testing 1 3 5
+Testing 1 4 2
+Testing 1 4 3
+Testing 1 4 5
+Testing 1 5 2
+Testing 1 5 3
+Testing 1 5 4
+Testing 2 1 3
+TPM AC BF EW GI HV LT MP NR OZ XX 
+Testing 2 1 4
+Testing 2 1 5
+Testing 2 3 1
+IJU AC BE FV HW IS LY MP NR OU TX 
+Testing 2 3 4
+Testing 2 3 5
+Testing 2 4 1
+SNJ AV BO CS EQ FG IJ KM LZ NX WY 
+Testing 2 4 3
+Testing 2 4 5
+Testing 2 5 1
+Testing 2 5 3
+Testing 2 5 4
+Testing 3 1 2
+Testing 3 1 4
+Testing 3 1 5
+Testing 3 2 1
+Testing 3 2 4
+HEV AI BX CZ EE FP GV KW LT MR NN OQ 
+Testing 3 2 5
+ZZF CT EE FR GW HX IP KO LL MV NQ 
+Testing 3 4 1
+Testing 3 4 2
+Testing 3 4 5
+Testing 3 5 1
+YZN BM CC EG FQ HL IS KV NZ OP RX TW 
+Testing 3 5 2
+Testing 3 5 4
+Testing 4 1 2
+Testing 4 1 3
+Testing 4 1 5
+RRP BE CY DL FT GI JW MX NU OR VV 
+Testing 4 2 1
+Testing 4 2 3
+Testing 4 2 5
+JNR AN BW CD EG FP IR KV LY MZ OQ UX 
+Testing 4 3 1
+Testing 4 3 2
+Testing 4 3 5
+Testing 4 5 1
+Testing 4 5 2
+IRI AM CD ES FF HI LR NU OO PW QX VZ 
+Testing 4 5 3
+Testing 5 1 2
+BFX AW BV CQ DM EH FR IU KL NP OY XX 
+Testing 5 1 3
+Testing 5 1 4
+Testing 5 2 1
+Testing 5 2 3
+Testing 5 2 4
+Testing 5 3 1
+Testing 5 3 2
+Testing 5 3 4
+CZR AI BW CR DN EY FH GL JX MT OO UV 
+Testing 5 4 1
+WBE AM BF CN EG HX IS LZ OR PW QV 
+Testing 5 4 2
+Testing 5 4 3
+104135890 chars in 334 seconds
+
+C:\source\enigma_cxx\RELEASE>xxx
+
+C:\source\enigma_cxx\RELEASE>enigma_cxx MICEPCAZIMOCMI LESQLOSSLNXVIE xxx--xxxxxxxxx  
+C++ Turing Bombe Model
+Copyright (C) 1997 Andy Carlson
+Testing 1 2 3
+AGM EP FL IK MU NQ 
+ARG EI HN LQ MU 
+CUH EF IR LP MM NY 
+DZO EQ IK JN LW MY 
+EHA EQ FL IK MP NT 
+FJF BL EW IQ MT NP 
+FWD EM FI GN JL 
+GFL EW GN IK LT MP 
+KQX EE HI JN KM LL 
+LAM EG FM IQ LW NP 
+LLI DE HM IR LT NQ 
+LOX BE GI HL KN MP 
+NGJ EP IM JN LL 
+NVK DI EP HN LY MT 
+ONI BN ET II KM LW 
+QZX EE IY KM LU NR 
+RKL EU HL IY JM NQ 
+SIP ER FN II JL MW 
+THR DL EW HM IY NP 
+WCG DL EG HI MU NW 
+WCJ ER HL IY MW NT 
+XHU EE GM IY KL NW 
+XIO EP IQ LT MM NN 
+YAC BM EH IR LP NW 
+ZPT DM EG HN IU LL 
+Testing 1 2 4
+AOS EM IP JN LU 
+ATU DN EH IP LW MQ 
+DTH EQ GL IK MW NT 
+DXN EW IM JN LP 
+DYB BI EE KN LP MT 
+FFA EE FL GM IY NU 
+FKV EQ II JN LL MU 
+GBF AG CF ET IX JL KN MV OZ SS 
+IPF ER GM IK LT NQ 
+IPK BM EF IR KL NW 
+IZG BI DL EF JN MR 
+LUE DI EU HN LT MY 
+MIO EQ IK JL MT NP 
+MLY BN EY IQ LL MM 
+NEI EH IK JM LU NY 
+Terminate batch job (Y/N)? 

@@ -1,0 +1,86 @@
+XEOXOFXVBAALGZHJKXKNFG...EJTEBYVJVEBSSXFFZCOBHFBQFYVXJAPHXAVPPYGTCZXHSVVRXUPBTYI
+AUFKLAVRUNGRAUMADRIAXE...VIERXZWOFUENFBISEINSVIERXVIERNULLXUHR
+          x-x                      x-----------x
+      xx---------x                     x------x
+                                     x--x
+                                      x-x---x----x
+x-x-xxxx---x                 x--------x x---x--x-x--x
+         x---------x                         xx--xxx----xx
++++++++++++++-------------+++++++++++++-------------+++++++++++++-------------+++++++++++++-------------
+
+STOP: 324 YJN BD EG FL HR IK MS OV QZ XX YY 
+XFFZCOBHFBQFYVXJAPHXAVPP
+BISEINSVIERXVIERNULLXUHR
+xxxx--xxxx-xxxx
+DSSXWUFUYHYJJOS (???!)
+
+STOP: 532 JHB BW DH EG FM IK JX LS VY ZZ 
+XFFZCOBHFBQFYVXJAPHXAVPP
+BISEINSVIERXVIERNULLXUHR
+xxxx--xxxx-xxxx
+LSNCJHXFUNGTOCP (??!)
+
+STOP: 143 SSM BC EK FO GV HJ IR LW MY ST UZ XX 
+
+STOP: 254 KZO BX CL EJ FF GZ HO IR MS UV YY 
+FZCOBHFBQFYVXJAPHX 
+SEINSVIERXVIERNULL 
+xx..xxxx.xxxx...xx 
+DODDTIECXVIELZALL (kap,1,2,2)
+
+STOP: 315 GZK AF BG EE HU II JL MX NS OY PZ VV 
+FZCOBHFBQFYVXJAPHX 
+SEINSVIERXVIERNULL 
+xx..xxxx.xxxx...xx 
+TUOFMXVAOUDASPS
+
+STOP: 321 SEA BC EJ FH II KX LP NV QZ SS UY 
+FZCOBHFBQFYVXJAPHX 
+SEINSVIERXVIERNULL 
+xx..xxxx.xxxx...xx 
+NLJKCGK (sfb,1,2,2)
+
+STOP: 354 CFF BB CE DF GL HH IU KX MZ QY RS TV 
+FZCOBHFBQFYVXJAPHX 
+SEINSVIERXVIERNULL 
+xx..xxxx.xxxx...xx 
+QOVVE
+
+STOP: 413 TQT AI BK CE FX GS HH JY LP MZ VW 
+FZCOBHFBQFYVXJAPHX 
+SEINSVIERXVIERNULL 
+xx..xxxx.xxxx...xx 
+PXZNFQHRZ (TRU,1,2,2)
+
+STOP: 421 HBF AE BJ CS DV FT HP II KY LL NX RZ 
+STOP: 453 XTI AS BQ DH ET FO IR JX KV LL NY WZ 
+STOP: 512 OOP AX BU EE FN HR IK LQ MY SV TZ 
+
+STOP: 513 RBT AY BB EF GX HH IK LU MZ PS RV 
+FZCOBHFBQFYVXJAPHX 
+SEINSVIERXVIERNULL 
+xx..xxxx.xxxx...xx 
+UXTLYRLSCQKGIFQMTO (RBW,1,1,4)
+
+STOP: 531 JAB AS BT CI EE FM HZ KY LU NX RV 
+
+
+13 length loop found ending at : B->E at 48
+8 length loop found ending at : F->I at 47
+4 length loop found ending at : F->S at 41
+12 length loop found ending at : F->X at 50
+3 length loop found ending at : G->A at 13
+12 length loop found ending at : L->R at 12
+11 length loop found ending at : N->A at 20
+10 length loop found ending at : X->B at 39
+13 length loop found ending at : X->E at 53
+13 length loop found ending at : X->L at 58
+12 length loop found ending at : X->R at 18
+
+XEOXOFXVBAALGZHJKXKNFG...EJTEBYVJVEBSSXFFZCOBHFBQFYVXJAPHXAVPPYGTCZXHSVVRXUPBTYI
+
+ZBVVHBMSSNRUKPHUUFDUUWLMYWFJQNBANPPJMSLNSKVCRJQAJHLKSYAYIDYIIOKRTRDGENCPNRJCBYVX
+QZCIWHKPVVFTF...
+
+AUFKLAVRUNGRAUMADRIAXE...VIERXZWOFUENFBISEINSVIERXVIERNULLXUHR
+

@@ -1,0 +1,144 @@
+<!--
+  @file index.html
+  @brief Archivo principal del programa
+
+  @author Reinoza, José
+  @version: 1.0
+  @date: 02/Diciembre/2016
+-->
+
+<!DOCTYPE html>
+<html> 
+ <head>
+    <title>M&aacutequinas de Turing</title>
+
+	<style>
+	h1 {
+		color: white;
+	}
+
+</style>
+ 
+</head> 
+ <body background="images/abc.jpg">
+    <p align="center"> 
+	<img src="images/banner.png" width="400px" height="70px">
+    </p>
+
+    <p align="center"> 
+      <canvas id="mycanvas"></canvas> 
+    </p>
+ </body>
+ 
+ <script src="Processing/processing-1.4.8.js"></script> 
+ 
+ <script>
+    var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(400, 400); 
+        frameRate(30);
+        
+            /**Programa**/
+
+			/*Fondo de la interfáz*/
+		//-----------------------------------------------------------------------------------------------
+		strokeWeight(16);
+		stroke(171, 91, 0);
+		fill(74, 87, 97);
+		rect(0, 0, 400, 400, 0);
+		//-----------------------------------------------------------------------------------------------
+
+		/*Cinta*/
+		//-----------------------------------------------------------------------------------------------
+
+		
+
+		//Encima de los cuadros que salen de la interfáz debe ir el fondo
+        strokeWeight(2);
+		var xCinta = 0; //Número de cuadro de la cinta
+		var xRanuras = -52;
+		var yRanuras = 70;
+
+	    stroke(230, 123, 0);
+		fill(252, 244, 0);
+		arc(xRanuras + 80, yRanuras +  270, 25, 25, 1, 180);
+		arc(xRanuras + 425, yRanuras +  270, 25, 25, 1, 180);
+		arc(xRanuras + 80, yRanuras +  221, 25, 25, 180, 360);
+		arc(xRanuras + 425, yRanuras +  221, 25, 25, 180, 360);
+
+        //Imprime las letras sobre la cinta
+        
+        var word;
+        var X = 10;
+        
+        var keyPressed = function() {
+            word = key;
+            textSize(40);
+            fill(0, 0, 0);
+            // Display current key
+            text(word, X+=50, 330);
+            //Tal vez se pueda agregar directamente desde aquí la tecla presionada al elemento cuadrado
+        };
+
+        //Dibuja la cinta
+
+		stroke(201, 197, 114);		
+
+		for(var i = 0; i <= 10; i++){
+		    fill(250, 242, 168);
+		    rect(i*50, 290, 50, 50, 0);
+		}
+		
+		//Front Interface
+
+		noStroke();
+		fill(171, 91, 0);
+		rect(xRanuras + 38, 287, 30, 58, 0);
+		rect(xRanuras + 437, 287, 30, 58, 0);
+		fill(70, 89, 105);
+		rect(xRanuras + 60, 287, 8, 58, 0);
+		rect(xRanuras + 437, 287, 8, 58, 0);
+		stroke(230, 123, 0);
+		fill(252, 244, 0);
+		rect(xRanuras + 69, yRanuras + 220, 8, 50);
+		rect(xRanuras + 425, yRanuras +  220, 12, 50);
+		noStroke();
+		fill(209, 209, 128);
+		rect(xRanuras + 81, yRanuras +  220, 4, 50);
+		rect(xRanuras + 422, yRanuras +  220, 4, 50);
+		fill(43, 43, 39);
+		rect(xRanuras + 78, yRanuras +  220, 4, 50);
+		rect(xRanuras + 425, yRanuras +  220, 4, 50);
+		stroke(176, 209, 174);
+
+
+		//-----------------------------------------------------------------------------------------------
+
+
+		/*Pantalla*/
+		//-----------------------------------------------------------------------------------------------
+		strokeWeight(3);
+		stroke(44, 61, 43);
+		strokeWeight(5);
+		stroke(201, 238, 247);
+		fill(244, 250, 252);
+		rect(50, 125, 300, 100, 15);
+
+		//-----------------------------------------------------------------------------------------------
+
+		/*Validador*/
+		//-----------------------------------------------------------------------------------------------
+		strokeWeight(3);
+		stroke(48, 199, 63);
+		fill(0, 255, 21);
+		ellipse(310, 80, 50, 50);
+
+		//-----------------------------------------------------------------------------------------------
+
+    }};
+
+    var canvas = document.getElementById("mycanvas"); 
+    var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
+
+</html>

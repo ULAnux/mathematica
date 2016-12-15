@@ -1,0 +1,5 @@
+reverse wheel order
+reverse translation (same as reversing wheel order)
+different crib (avoid turnover)
+increment left/right rotor
+other reflector

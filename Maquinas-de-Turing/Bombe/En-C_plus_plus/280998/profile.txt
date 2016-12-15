@@ -1,0 +1,117 @@
+Profile: Function timing, sorted by time
+Date:    Fri Oct 17 22:56:12 1997
+
+
+Program Statistics
+------------------
+    Command line at 1997 Oct 17 22:45: "C:\source\enigma_cxx\Release\enigma_cxx" tstest
+    Total time: 50992.129 millisecond
+    Time outside of functions: 28.845 millisecond
+    Call depth: 52
+    Total functions: 103
+    Total hits: 26359506
+    Function coverage: 87.4%
+    Overhead Calculated 6
+    Overhead Average 6
+
+Module Statistics for enigma_cxx.exe
+------------------------------------
+    Time in module: 50963.284 millisecond
+    Percent of time in module: 100.0%
+    Functions in module: 103
+    Hits in module: 26359506
+    Module function coverage: 87.4%
+
+        Func          Func+Child           Hit
+        Time   %         Time      %      Count  Function
+---------------------------------------------------------
+   10649.389  20.9    11651.554  22.9  4824255 MovingRotor::translate(int) (rotor.obj)
+    6030.180  11.8    50957.156 100.0        1 findNoSteckerConflicts(class Enigma &,char const *,char const *,char const *) (main.obj)
+    5028.119   9.9    40896.516  80.2  2745830 MenuNode::activate(char) (main.obj)
+    4804.734   9.4    23058.628  45.2  2047485 FastConflictSteckerRegister::addMapping(char,char) (main.obj)
+    4233.468   8.3    37091.662  72.8  1608085 BombeLetter::activateFrom(class LetterTerminal const *,char) (main.obj)
+    4168.507   8.2    24374.395  47.8  2426737 LetterTerminal::activateFromLocal(char) (main.obj)
+    3006.866   5.9    17781.504  34.9  1556857 SteckerRegister::activateDiagonal(int,int) (main.obj)
+    2942.141   5.8    14593.695  28.6  1608085 Scrambler::translateInt(int) (rotor.obj)
+    2693.279   5.3    17286.974  33.9  1608085 Scrambler::translate(char) (rotor.obj)
+    2102.047   4.1     2102.047   4.1  1540104 SteckerRegister::makeMapping(int,int) (main.obj)
+    2080.811   4.1    38767.942  76.1  1608085 LetterTerminal::activateFromRemote(char) (main.obj)
+    1002.165   2.0     1002.165   2.0  1608085 Reflector::translate(int) (rotor.obj)
+     690.121   1.4      690.121   1.4  1608085 MenuWire::otherEnd(class MenuNode const *,char) (main.obj)
+     529.112   1.0      529.112   1.0   817711 MenuWire::otherEnd(class LetterTerminal const *,char) (main.obj)
+     517.354   1.0      923.479   1.8   169119 Scrambler::increment(void) (rotor.obj)
+     300.501   0.6      300.501   0.6   337978 MovingRotor::atNotch(void) (rotor.obj)
+     105.623   0.2      105.623   0.2   176141 MovingRotor::increment(void) (rotor.obj)
+      39.572   0.1       62.110   0.1    16911 Scrambler::getIndicator(void) (rotor.obj)
+      22.537   0.0       22.537   0.0    50733 MovingRotor::indicatedLetter(void) (rotor.obj)
+       6.604   0.0        6.604   0.0       22 std::operator<<(class std::basic_ostream<char,struct std::char_traits<char>> &,char const *) (msvcp50.dll)
+       5.638   0.0        5.638   0.0       32 std::operator<<(class std::basic_ostream<char,struct std::char_traits<char>> &,char) (msvcp50.dll)
+       2.947   0.0    50963.109 100.0        1 _main (main.obj)
+       0.222   0.0        0.222   0.0       65 MovingRotor::loadWiring(char *) (rotor.obj)
+       0.208   0.0        0.208   0.0      155 operator delete(void *) (delop_s.obj)
+       0.160   0.0        0.494   0.0       13 Scrambler::setup(void) (rotor.obj)
+       0.131   0.0        0.243   0.0       20 MenuWire::MenuWire(char,class LetterTerminal *,class MenuNode *) (main.obj)
+       0.088   0.0        0.293   0.0       10 Scrambler::setupAs(class Scrambler const &) (rotor.obj)
+       0.077   0.0        0.096   0.0       46 std::vector<class MenuNode *,class std::allocator<class MenuNode *>>::insert(class MenuNode * *,unsigned int,class MenuNode * const &) (main.obj)
+       0.077   0.0        0.096   0.0       46 std::vector<class MenuWire *,class std::allocator<class MenuWire *>>::insert(class MenuWire * *,unsigned int,class MenuWire * const &) (main.obj)
+       0.075   0.0        0.102   0.0       33 Scrambler::fitRotor(int) (rotor.obj)
+       0.064   0.0        0.064   0.0       13 Reflector::loadWiring(char *) (rotor.obj)
+       0.062   0.0        0.537   0.0       12 BombeLetter::BombeLetter(void) (main.obj)
+       0.049   0.0        0.049   0.0       65 MovingRotor::MovingRotor(int) (rotor.obj)
+       0.038   0.0        0.196   0.0       12 BombeLetter::~BombeLetter(void) (main.obj)
+       0.034   0.0        0.124   0.0       13 Scrambler::~Scrambler(void) (rotor.obj)
+       0.028   0.0        0.041   0.0       11 Scrambler::setIndicator(char const *) (rotor.obj)
+       0.026   0.0        0.033   0.0        1 _$E25 (main.obj)
+       0.022   0.0        0.022   0.0       33 MovingRotor::nextRotor(class Rotor *) (rotor.obj)
+       0.020   0.0        0.020   0.0       20 std::vector<class MenuWire *,class std::allocator<class MenuWire *>>::_Ufill(class MenuWire * *,unsigned int,class MenuWire * const &) (main.obj)
+       0.019   0.0        0.019   0.0       28 std::_Construct(class BombeLetter * *,class BombeLetter * const &) (main.obj)
+       0.019   0.0        0.019   0.0       28 std::_Construct(class MenuWire * *,class MenuWire * const &) (main.obj)
+       0.015   0.0        0.015   0.0       50 MovingRotor::ringSetting(void) (rotor.obj)
+       0.015   0.0        0.510   0.0       13 Scrambler::Scrambler(void) (rotor.obj)
+       0.013   0.0        0.013   0.0       33 MovingRotor::indicatedLetter(char) (rotor.obj)
+       0.011   0.0        0.011   0.0      100 Scrambler::rotor(int) (rotor.obj)
+       0.011   0.0        0.011   0.0       19 std::vector<class MenuWire *,class std::allocator<class MenuWire *>>::size(void) (main.obj)
+       0.007   0.0        0.007   0.0       53 MovingRotor::ringSetting(int) (rotor.obj)
+       0.007   0.0        0.007   0.0        1 _$E22 (main.obj)
+       0.005   0.0        0.005   0.0       33 MovingRotor::prevRotor(class Rotor *) (rotor.obj)
+       0.004   0.0        0.013   0.0        3 Enigma::fitRotor(int) (rotor.obj)
+       0.003   0.0        0.006   0.0        3 Enigma::rotorInSlot(int) (rotor.obj)
+       0.003   0.0        0.015   0.0        1 Enigma::~Enigma(void) (rotor.obj)
+       0.003   0.0        0.003   0.0       33 Scrambler::rotorInSlot(int) (rotor.obj)
+       0.003   0.0        0.003   0.0        1 _$E28 (main.obj)
+       0.003   0.0        0.003   0.0        1 _$E29 (rotor.obj)
+       0.003   0.0        0.004   0.0        1 _$E42 (main.obj)
+       0.003   0.0        0.003   0.0        1 _$E52 (main.obj)
+       0.003   0.0        0.005   0.0        1 _$E53 (main.obj)
+       0.003   0.0        0.003   0.0        1 Enigma::clearStecker(void) (rotor.obj)
+       0.003   0.0        0.003   0.0        1 _$E23 (rotor.obj)
+       0.003   0.0        0.004   0.0        1 _$E25 (rotor.obj)
+       0.003   0.0        0.004   0.0        1 _$E31 (rotor.obj)
+       0.003   0.0        0.006   0.0        1 _$E31 (main.obj)
+       0.003   0.0        0.006   0.0        1 _$E56 (main.obj)
+       0.003   0.0        0.003   0.0       20 std::vector<class MenuWire *,class std::allocator<class MenuWire *>>::_Ucopy(class MenuWire * const *,class MenuWire * const *,class MenuWire * *) (main.obj)
+       0.002   0.0        0.046   0.0        1 Enigma::Enigma(void) (rotor.obj)
+       0.002   0.0        0.007   0.0        1 Enigma::setIndicator(char const *) (rotor.obj)
+       0.002   0.0        0.002   0.0       30 MovingRotor::number(void) (rotor.obj)
+       0.002   0.0        0.002   0.0        1 _$E22 (rotor.obj)
+       0.002   0.0        0.002   0.0        1 _$E28 (rotor.obj)
+       0.002   0.0        0.002   0.0        1 _$E29 (main.obj)
+       0.002   0.0        0.002   0.0        1 _$E45 (main.obj)
+       0.002   0.0        0.003   0.0        1 _$E49 (main.obj)
+       0.001   0.0        0.001   0.0       10 Scrambler::removeRotors(void) (rotor.obj)
+       0.001   0.0        0.001   0.0        1 Stecker::Stecker(void) (rotor.obj)
+       0.001   0.0        0.001   0.0        1 _$E23 (main.obj)
+       0.001   0.0        0.001   0.0        1 _$E38 (main.obj)
+       0.001   0.0        0.003   0.0        1 _$E39 (main.obj)
+       0.001   0.0        0.003   0.0        1 _$E46 (main.obj)
+       0.000   0.0        0.000   0.0        2 Stecker::clear(void) (rotor.obj)
+       0.000   0.0        0.000   0.0        1 _$E24 (main.obj)
+       0.000   0.0        0.000   0.0        1 _$E24 (rotor.obj)
+       0.000   0.0        0.000   0.0        1 _$E30 (main.obj)
+       0.000   0.0        0.000   0.0        1 _$E30 (rotor.obj)
+       0.000   0.0        0.000   0.0        1 _$E34 (main.obj)
+       0.000   0.0        0.000   0.0        1 _$E35 (main.obj)
+       0.000   0.0        0.000   0.0        1 _$E41 (main.obj)
+       0.000   0.0        0.000   0.0        1 _$E48 (main.obj)
+       0.000   0.0        0.000   0.0        1 _$E55 (main.obj)
+       0.000   0.0        0.000   0.0       19 std::vector<class MenuWire *,class std::allocator<class MenuWire *>>::_Destroy(class MenuWire * *,class MenuWire * *) (main.obj)

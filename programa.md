@@ -44,43 +44,43 @@ Tema 6. Tautologías y contradicciones.
 Tema 7. Equivalencias lógicas y su utilización.
 Tema 8. Implicaciones y derivaciones Lógicas.
 
-### Unidad II: Relaciones y funciones
+### Unidad II: [Relaciones](https://es.wikipedia.org/wiki/Relaci%C3%B3n) y [Funciones](https://es.wikipedia.org/wiki/Funci%C3%B3n_(matem%C3%A1tica))
 Tema 1. Definiciones básicas: relación, función, suprayectividad,
 funciones especiales.
 Tema 2. Propiedades de las relaciones.
 Tema 3. Ordenes parciales.
 Tema 4. Relaciones de equivalencia.
 
-### Unidad III: Conteo
-Tema 1. Permutaciones, combinaciones, distribuciones.
+### Unidad III: [Conteo](https://es.wikipedia.org/wiki/Contar)
+Tema 1. [Permutaciones, combinaciones, distribuciones](https://es.wikipedia.org/wiki/Combinatoria).
 Tema 2. El principio del palomar
 Tema 3. Manipulación de factoriales y coeficientes binomiales.
 Tema 4. Manipulación de sumas.
 Tema 5. Números especiales: de Strirling, de Euler, Armónicos, de Bernoulli, de
 Fibonacci.
 
-### Unidad IV: Anillos y aritmética modular
+### Unidad IV: [Anillos](https://es.wikipedia.org/wiki/%C3%81lgebra_abstracta#Teor%C3%ADa_temprana_de_los_anillos) y [Aritmética modular](https://es.wikipedia.org/wiki/Aritm%C3%A9tica_modular)
 Tema 1. Definiciones y ejemplos.
 Tema 2. Propiedades de los anillos y subestructuras.
 Tema 3. Enteros módulo n.
 Tema 4. Homomorfismos e isomorfismos de anillos.
 
-### Unidad V: Funciones generadoras
-Tema 1. Introducción.
+### Unidad V: [Funciones generadoras](https://es.wikipedia.org/wiki/Funci%C3%B3n_generatriz)
+Tema 1. [Introducción](https://es.wikipedia.org/wiki/Ejemplos_de_funciones_generadoras).
 Tema 2. Técnicas de cálculo.
 Tema 3. Particiones de enteros.
 Tema 4 Funciones generadoras exponenciales.
 Tema 5. El operador sumatoria.
 Tema 6. Transformada Z.
 
-### Unidad VI: Recurrencias
+### Unidad VI: [Recurrencias](https://es.wikipedia.org/wiki/Relaci%C3%B3n_de_recurrencia)
 Tema 1. Recurrencia lineal de primer orden.
 Tema 2. Recurrencia homogénea lineal de segundo orden.
 Tema 3. Recurrencia no homogénea.
 Tema 4. Método de solución con funciones generadoras.
 Tema 5. Métodos alternativos de resolución.
 
-### Unidad VII: Grupos, teoría de la codificación y métodos de enumeración de Polya
+### Unidad VII: [Grupos](https://es.wikipedia.org/wiki/Grupo_(matem%C3%A1tica)), [teoría de la codificación](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_c%C3%B3digos) y métodos de enumeración de [Polya](https://es.wikipedia.org/wiki/George_P%C3%B3lya)
 Tema 1. Introducción.
 Tema 2. Homomorfismos, isomorfismos y grupos cíclicos.
 Tema 3. Clases laterales y teorema de Lagrange.
@@ -90,7 +90,7 @@ Tema 6. Matrices generadoras.
 Tema 7. Códigos de grupo.Tema 8. Matrices de Hamming.
 Tema 9. Conteo y equivalencia: teorema de Burnside.
 Tema 10. Índice de ciclo.
-Tema 11. Método de enumeración de Polya
+Tema 11. [Método de enumeración de Polya](https://www.emis.de/proceedings/Chicho2001/Emilio-Merche.pdf)
 
 ### Unidad VIII: Campos finitos y diseños combinatorios
 Tema 1. Anillos Polinomiales

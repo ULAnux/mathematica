@@ -32,7 +32,7 @@ matemático, el concepto de algoritmo, la teoría de grafos, árboles, álgebra 
 análisis combinatorio y teoría de autómatas.
 
 ## CONTENIDO PROGRAMÁTICO
-### Unidad I: Lógica y Álgebra Booleana
+### Unidad I: [Lógica](https://es.wikipedia.org/wiki/L%C3%B3gica_matem%C3%A1tica) y [Álgebra](https://es.wikipedia.org/wiki/%C3%81lgebra) [Booleana](https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole)
 Tema 1. Proposiciones, tablas de verdad, equivalencias proposicionales.
 Tema 2. Predicados y cuantificadores.
 Tema 3. Funciones y expresiones booleanas. Definición abstracta de álgebra
@@ -40,7 +40,8 @@ Booleana.
 Tema 4. Representación de funciones Booleanas. Completitud funcional de los
 operadores booleanos.
 Tema 5. Compuertas lógicas.
-Tema 6. Tautologías y contradicciones.Tema 7. Equivalencias lógicas y su utilización.
+Tema 6. Tautologías y contradicciones.
+Tema 7. Equivalencias lógicas y su utilización.
 Tema 8. Implicaciones y derivaciones Lógicas.
 
 ### Unidad II: Relaciones y funciones

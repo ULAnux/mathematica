@@ -1,6 +1,6 @@
 # UNIVERSIDAD DE LOS ANDES (M E R I D A - V E N E Z U E L A)
 ## Escuela de Ingeniería de Sistemas
-### PROGRAMA DEL CURSO: Matemáticas Discretas
+### PROGRAMA DEL CURSO: [Matemáticas Discretas](https://es.wikipedia.org/wiki/Matem%C3%A1tica_discreta)
 TIPO: Obligatoria
 PRELACIÓN: Cálculo 40
 CÓDIGO: ISFMDI

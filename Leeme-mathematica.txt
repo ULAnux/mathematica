@@ -1,24 +1,128 @@
-Jesus Eduardo Nuñez Garcia
-V-21182155
+https://github.com
 
-git --help
-Consulta las opciones para git.
+http://git-scm.com/download/linux
 
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-Entra a tu cuenta de github por tu nombre de usuario o correo.
+On your computer, open your command line application.
 
-git clone https://github.com/TU-USUARIO/TU-REPOSITORIO
-Puedo clonar un proyecto de un usuario. Es decir, creo una carpeta
-con el nombre del repositorio y de ahi estara los archivos que
-estan en el repositorio.
+$ apt-get install git
+
+https://help.github.com/articles/set-up-git/#platform-all
+
+$ git config --global user.name "YOUR NAME"
+
+$ git config --global user.email "YOUR EMAIL ADDRESS"
+
+Para clonar el projecto: 
+
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+Con Mathematica debe ser:
+
+git clone https://github.com/ULAnux/mathematica
+Cloning into 'mathematica'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+
+Otro ejemplo: 
+
+$ git clone https://github.com/jacintodavila/resumidor
+git clone https://github.com/jacintodavila/resumidor
+Cloning into 'resumidor'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/
+
+cd <dir-repositorio> 
+
+$ git add .
+
+$ git commit -m "Primer commit to github"
+
+$ git push origin master
+
+Por ejemplo
+
+$ git push origin master
+Username for 'https://github.com': jacintodavila
+Password for 'https://jacintodavila@github.com': 
+Counting objects: 12, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 39.12 KiB | 0 bytes/s, done.
+Total 11 (delta 0), reused 0 (delta 0)
+To https://github.com/jacintodavila/resumidor
+   ce2a4f5..9bae28a  master -> master
+jacinto@Markov:~/Desktop/resumidor$
+
+Con Mathematica 
+
+cd mathematica
+
+$ git add .
+
+$ git commit -m "comentario del commit"
+
+ git commit -m "Primer commit"
+[master c47a0b3] Primer commit
+ 38 files changed, 12094 insertions(+)
+ create mode 100644 0000.pl
+ create mode 100644 0001.pl
+ create mode 100644 0002.pl
+ create mode 100644 0003.pl
+ create mode 100644 0004.pl
+ create mode 100644 0005.pl
+ create mode 100644 0006.pl
+ create mode 100644 0007.pl
+ create mode 100644 0008.pl
+ create mode 100644 0009.pl
+ create mode 100644 0010.pl
+ create mode 100644 0011.pl
+ create mode 100644 0012.pl
+ create mode 100644 0013.pl
+ create mode 100644 0014.pl
+ create mode 100644 0015.pl
+ create mode 100644 0016.pl
+ create mode 100644 0017.pl
+ create mode 100644 0018.pl
+ create mode 100644 0019.pl
+ create mode 100644 0020.pl
+ create mode 100644 0021.pl
+ create mode 100644 0022.pl
+ create mode 100644 0023.pl
+ create mode 100644 0024.pl
+ create mode 100644 0026.pl
+ create mode 100644 0027.pl
+ create mode 100644 bootstrap.css
+ create mode 100644 buscador.pl
+ create mode 100644 conjuntos.pl
+ create mode 100644 indice.pl
+ create mode 100644 leeme-mathematica.txt
+ create mode 100644 leeme-mathematica.txt~
+ create mode 100644 lexer.pl
+ create mode 100644 logica.pl
+ create mode 100644 main.css
+ create mode 100644 mathematica.pl
+ create mode 100644 servicio.pl
 
 $ git status
-Ver tus recientes actividades.
-Ejemplo:
-En la rama master
-Su rama está actualizada con «origin/master».
-nothing to commit, working directory clean
+
+$ git reset HEAD leeme-mathematica.txt~
+
+$ git status
+
+$ git push origin master
+
+
+
+
 
 
 

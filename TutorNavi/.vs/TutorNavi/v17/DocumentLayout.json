@@ -1,0 +1,477 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|c:\\users\\victo\\onedrive\\escritorio\\uni manu\\tutornavi\\tutornavi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|c:\\users\\victo\\onedrive\\escritorio\\uni manu\\tutornavi\\tutornavi\\dise\u00F1os\\incorrectas\\malanoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\incorrectas\\malanoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|c:\\users\\victo\\onedrive\\escritorio\\uni manu\\tutornavi\\tutornavi\\dise\u00F1os\\incorrectas\\mal1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\incorrectas\\mal1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\correctas\\felicitacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\correctas\\felicitacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|c:\\users\\victo\\onedrive\\escritorio\\uni manu\\tutornavi\\tutornavi\\dise\u00F1os\\correctas\\bien1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\correctas\\bien1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\correctas\\felicitacion1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\correctas\\felicitacion1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\correctas\\felicitacion1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\correctas\\felicitacion1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\correctas\\felicitacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\correctas\\felicitacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\menus\\formmenu3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\menus\\formmenu3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\menus\\formmenu2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\menus\\formmenu2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\menus\\formmenu2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\menus\\formmenu2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\menus\\formmenu2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\menus\\formmenu2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\menus\\formmenu1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\menus\\formmenu1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\intronavi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\intronavi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\correctas\\felicitacion1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\correctas\\felicitacion1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion40.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion40.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion39.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion39.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion38.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion38.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion37.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion37.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion36.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion36.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion35.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion35.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion34.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion34.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion33.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion33.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion31.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion31.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion30.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion30.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\tutornavi\\dise\u00F1os\\principal\\leccion29.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCC29C0C-B00B-49E2-A39A-F00BCB597A4F}|TutorNavi\\TutorNavi.csproj|solutionrelative:tutornavi\\dise\u00F1os\\principal\\leccion29.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 144,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 28,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MalaNoticia.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Incorrectas\\MalaNoticia.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Incorrectas\\MalaNoticia.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Incorrectas\\MalaNoticia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Incorrectas\\MalaNoticia.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T09:12:03.42Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mal1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Incorrectas\\Mal1.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Incorrectas\\Mal1.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Incorrectas\\Mal1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Incorrectas\\Mal1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T09:11:25.697Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bien1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\Bien1.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Correctas\\Bien1.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\Bien1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Correctas\\Bien1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T09:08:05.583Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Form1.Designer.cs",
+              "RelativeToolTip": "TutorNavi\\Form1.Designer.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAAAIoDAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T08:41:52.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormMenu3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu3.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu3.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T08:34:21.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormMenu2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.Designer.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.Designer.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.Designer.cs",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.Designer.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAEAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T08:33:33.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormMenu2.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.cs",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAUwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T08:33:19.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormMenu2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T08:29:38.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormMenu1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu1.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu1.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Menus\\FormMenu1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Menus\\FormMenu1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T08:23:09.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IntroNavi.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\IntroNavi.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\IntroNavi.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\IntroNavi.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\IntroNavi.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T08:10:55.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FelicitacionFinal.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\FelicitacionFinal.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Correctas\\FelicitacionFinal.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\FelicitacionFinal.cs",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Correctas\\FelicitacionFinal.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAArwBoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T06:28:54.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FelicitacionFinal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\FelicitacionFinal.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Correctas\\FelicitacionFinal.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\FelicitacionFinal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Correctas\\FelicitacionFinal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T05:44:39.314Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Felicitacion1.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.cs",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAkwBYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T05:38:40.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Felicitacion1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.Designer.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.Designer.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.Designer.cs",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.Designer.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T05:38:26.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Felicitacion1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Correctas\\Felicitacion1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T06:05:16.389Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Leccion40.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion40.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion40.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion40.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion40.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:30:51.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Leccion39.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion39.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion39.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion39.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion39.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:30:06.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Leccion38.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion38.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion38.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion38.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion38.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:29:40.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Leccion37.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion37.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion37.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion37.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion37.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:29:07.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Leccion36.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion36.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion36.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion36.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion36.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:28:25.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Leccion35.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion35.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion35.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion35.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion35.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:27:29.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Leccion34.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion34.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion34.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion34.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion34.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:21:58.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Leccion33.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion33.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion33.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion33.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion33.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:20:40.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Leccion32.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion32.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion32.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion32.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion32.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:19:45.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Leccion31.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion31.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion31.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion31.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion31.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:19:06.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Leccion30.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion30.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion30.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion30.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion30.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:17:20.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Form1.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Form1.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Form1.cs",
+              "RelativeToolTip": "TutorNavi\\Form1.cs",
+              "ViewState": "AQIAAAwLAAAAAAAAAADwvzELAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T02:43:54.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Form1.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Form1.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T02:43:24.366Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Leccion29.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion29.cs",
+              "RelativeDocumentMoniker": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion29.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Escritorio\\Uni Manu\\TutorNavi\\TutorNavi\\Dise\u00F1os\\Principal\\Leccion29.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TutorNavi\\Dise\u00F1os\\Principal\\Leccion29.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T02:43:01.451Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Principio del palomar | leccion 1</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <header id="titulo">
+      <h1>Principio del palomar</h1>
+      <h2>leccion 1</h2>
+    </header>
+    <section class="container-video">
+      <article class="video-leccion">
+        <iframe src="https://www.youtube.com/embed/XlV07weNdtI"> </iframe>
+        <p>
+          Al terminar de ver el video conteste las siguientes preguntas para
+          avanzar a la siguiente leccion
+        </p>
+      </article>
+    </section>
+    <section class="container-preguntas">
+      <form>
+        <h3 class="enunciado">1) ¿Que nos dice el principio del palomar?</h3>
+        <p>
+          <input type="radio" name="leccion1_pregunta_1" id="op_0" />Tener un palomar
+          vacio<br /><br />
+          <input type="radio" name="leccion1_pregunta_1" id="op_1" />Tener varias palomas
+          en un palomar<br /><br />
+          <input type="radio" name="leccion1_pregunta_1" id="op_2" />Tener al menos un
+          palomar que contenga varias palomas<br /><br />
+          <!-- correcta -->
+          <input type="radio" name="leccion1_pregunta_1" id="op_3" />Tener todas las
+          palomas en un solo palomar<br /><br />
+        </p>
+        <input
+          class="comprobar_respuesta"
+          type="button"
+          onclick="verificar_l1_p1()"
+          value="Comprobar respuesta"
+        />
+      </form>
+      <a id="boton_siguiente_leccion1" href="leccion2.html" hidden id="boton_siguiente">Siguiente leccion</a
+      ><!-- Boton para avanzar a la siguiente pregunta -->
+    </section>
+    <footer>
+      <section>
+        <a href="#titulo">Ir al comienzo</a>
+        <a href="index.html">Inicio</a>
+      </section>
+      <p>Autor Gabriel Perez</p>
+    </footer>
+  </body>
+  <script src="scripts/main.js"></script>
+</html>

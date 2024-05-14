@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Principio del palomar | leccion 2</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header id="titulo">
+        <h1>Principio del palomar</h1>
+        <h2>leccion 2</h2>
+    </header>
+    <section class="container-video">
+        <article class="video-leccion">
+            <iframe src="https://www.youtube.com/embed/eg9RRnNC4Ec">
+            </iframe>
+            <p>Al terminar de ver el video conteste las siguientes preguntas para avanzar a la siguiente leccion</p>
+        </article>
+    </section>
+    <section class="container-preguntas">
+        <form id="form_leccion2_pregunta1">
+            <h2 class="enunciado">Hay dos personas en Venezuela que tienen exactamente el mismo numero de pelos en la cabeza. ¿Por qué?</h2>
+
+            <h3 class="enunciado">En este caso debemos interpretar el enunciado con el vocabulario correcto. nos hacemos la siguiente pregunta. ¿Quienes serian las palomas?</h3>
+            <p>
+                <input type="radio" name="leccion2_pregunta1">Los ciudadanos de Venezuela (suponiendo que hay 25 millones)<br><br> <!-- correcta -->
+                <input type="radio" name="leccion2_pregunta1">No se puede determinar<br><br>
+                <input type="radio" name="leccion2_pregunta1">La poblacion de palomas en venezuela<br>
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l2_p1()" value="Comprobar respuesta">
+        </form>
+        <form id="form_leccion2_pregunta2" hidden>
+            <h3 class="enunciado">Quienes serian los palomares (nidos)?</h3>
+            <p>
+                <input type="radio" name="leccion2_pregunta2">El numero de plumas que hay en una paloma<br><br> 
+                <input type="radio" name="leccion2_pregunta2">La poblacion de Venezuela<br><br>
+                <input type="radio" name="leccion2_pregunta2">El numero de pelos en la cabeza de una persona (Suponiendo que una persona tiene alrededor de 150.000 pelos en la cabeza)<br> <!-- correcta -->
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l2_p2()" value="Comprobar respuesta">
+        </form>
+        <form id="form_leccion2_pregunta3" hidden>
+            <h3 class="enunciado">¿Cual seria la regla de correspondencia? seleccione la correcta</h3>
+            <p>
+                <div>
+                    <input type="radio" name="leccion2_pregunta3">
+                    <img src="img/leccion2_correspondencia_func_1.png" width="500px" height="100px">
+                    <br>Se hace corresponder el numero de pelos con el numero de personas 
+                </div>
+                <div>
+                    <input type="radio" name="leccion2_pregunta3">
+                    <img src="img/leccion2_correspondencia_func_3.png" width="500px" height="100px">
+                    <br>Se hace corresponder el numero de personas con el numero de pelos de estas 
+                </div><!-- correcta -->
+                <div>
+                    <input type="radio" name="leccion2_pregunta3">
+                    <img src="img/leccion2_correspondencia_func_2.png" width="500px" height="100px">
+                    <br>Se hace corresponder la poblacion de palomas con su numero de plumas 
+                </div>
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l2_p3()" value="Comprobar respuesta">
+        </form>
+        <form id="form_leccion2_pregunta4" hidden>
+            <h3 class="enunciado">¿Segun lo anterior y aplicando el principio del palomar escoja cual seria el razonamiento correcto?</h3>
+            <p>
+                <input type="radio" name="leccion2_pregunta4">El principio del palomar no se puede aplicar<br><br> 
+                <input type="radio" name="leccion2_pregunta4">Segun el principio del palomar hay mas de 2 personas con el mismo numero de pelos en la cabeza<br><br>
+                <input type="radio" name="leccion2_pregunta4">Como el número de personas es mayor que el número de pelos que una persona puede tener en la cabeza, entonces podemos afirmar que hay hay al menos dos personas con el mismo numero de pelos<br><!-- correcta --> 
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l2_p4()" value="Comprobar respuesta">
+        </form>
+        <a id="boton_siguiente_leccion2" href="leccion3.html" hidden>Siguiente leccion</a><!-- Boton para avanzar a la siguiente pregunta -->
+    </section>
+    <footer>
+        <section>
+            <a href="#titulo">Ir al comienzo</a>
+            <a href="index.html">Inicio</a>
+        </section>
+        <p>Autor Gabriel Perez</p>
+    </footer>   
+</body>
+<script src="scripts/main.js"></script>
+</html>

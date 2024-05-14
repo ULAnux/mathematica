@@ -1,0 +1,132 @@
+[
+    {
+        "actividad":"2",
+        "nivel1A":["Si tengo [3-4-5-6]","Cuántas","Se puede"],
+        "nivel2A":["[1-2-3]elemento(s) \nse repiten","y los elementos \nno se repiten"],
+        "nivel3A":["¿Cuántas formas diferentes y únicas de ordenar hay?","¿Cuántos recorridos formarán los elementos?", "¿Cuál es la posibilidad que el primer orden sea el esperado?"],
+        "nivel2B":["palabras diferentes \n de 5 letras donde "," formas hay de organizar \n la palabra “CASA”"],
+        "nivel3B":["se pueden formar con esas letras?"," si cada palabra tiene 7 letras y no se repiten las letras se originan? "],
+        "nivel2C":["combinar","repetir "],
+        "nivel3C":["¿Cuántas formas diferentes y únicas de ordenar hay?","¿Cuántos recorridos formarán los elementos?", "¿Cuál es la posibilidad que el primer orden sea el esperado?"],
+        "resultados": {
+          "111":"  Dado que hay {n} elementos y {r} de ellos se repiten, podemos denotar los elementos como A, A y B. Para saber cuantas formas diferentes y únicas de ordenar hay podemos usar esta formula: \n {PERM}",
+          "112":"  Si tenemos {n} elementos donde {r} se repiten, queremos encontrar todo los recorrido en total que forman esos elementos en el caso de ser rutas. La fórmula seria: {n} - {r} es el número total de elementos distintos elementos tomados de {n} es el número de elementos tomados a la vez : ( {n} - {r} ) elevado a {n} = {variacion}",
+          "113":"  Cuando tienes {n} elementos y {r} de ellos se repiten. Para calcular la probabilidad de que el primer orden sea el esperado, necesitas primero determinar cuántos ordenes únicos existen para esos elementos. La formula es  {n} ! / {r} ! El resultado es la primera posición, es decir 1 / total de ordenes únicos = {resper}",
+          "121":"  Cuando tenemos {n} elementos y ninguno de ellos se repite, ocupamos todas las posibilidades para la primera posición, luego para la siguiente ocupamos todas menos las posibilidades que ya elegimos en las posiciones previas. Esto es la factoría de un número, en este caso el resultado sería el factorial de {n} = {factorial} ",
+          "122":"  Si tenemos {n} elementos, queremos encontrar todo los recorrido en total que forman esos elementos en el caso de ser rutas. La fórmula seria: {n}  es el número total de elementos distintos elementos tomados de {n} es el número de elementos tomados a la vez : ( {n} ) elevado a {n} = {varian}",
+          "123":"  Cuando tienes {n} elementos y no se repiten. Para calcular la probabilidad de que el primer orden sea el esperado, necesitas primero determinar cuántos ordenes únicos existen para esos elementos. La formula es  {n} ! El resultado es la primera posición, es decir 1 / total de ordenes únicos = {noresper}",
+           "21":"  En este caso, si estás eligiendo 5 letras de un conjunto de 26 y no puedes repetir ninguna letra, Entonces es la formula 27! / 5!( 27 -5 )! = se puedes formar 80,730 palabras diferentes de 5 letras si no puedes usar cada letra más de una vez y no importa el orden de las letras.",
+           "22":"  Para resolver este ejercicio necesitamos asignar 1 de las 4 letras a la primera posición y asi con las demas posicion, lo que nos lleva que el total es 4 x 3 x 2 x 1 = 12 ",
+           "31":"  Ejercicio: Tienes una bolsa con 4 tipos diferentes de frutas: manzanas, naranjas, plátanos y uvas. Si puedes repetir los tipos de frutas, ¿cuántas formas diferentes puedes hacer si eliges 3 frutas? \n Resultado: son 4 tipos de frutas tomados de 3 en 3, permitiendo la repetición de tipos de frutas, es: ( 4 + (3 - 1) | 3 ) = 6! /3!3! = 20",
+           "32":"  Ejercicio: Tienes una caja con 5 colores diferentes de crayones: rojo, azul, verde, amarillo y negro. Si puedes repetir los colores, ¿cuántas formas diferentes puedes hacer si eliges 3 crayones? \n Resultado: el número de combinaciones diferentes de 5 colores de crayones tomados de 3 en 3, permitiendo la repetición de colores, es: (5 +(3 -1) | 3) = 7! / 3!4! = 35 "
+        }
+    },
+    {
+        "actividad": "1",
+        "palabras": ["en","asignación","de","combinaciones","de","recursos","las","pueden","problemas","ayudar","a","las","que","formas","determinar","diferentes","en","proyectos","los","ser","recursos","pueden","asignados","a","tareas","o"],
+        "fraseCompleta":"en problemas de asignación de recursos, las combinaciones pueden ayudar a determinar las diferentes formas en que los recursos pueden ser asignados a tareas o proyectos.",
+        "frasesCorrectras":[
+            "en problemas de asignación de recursos las combinaciones pueden ayudar a determinar las diferentes formas en que los recursos pueden ser asignados a tareas o proyectos",
+            "las combinaciones pueden ayudar a determinar las diferentes formas en que los recursos pueden ser asignados a tareas o proyectos en problemas de asignación de recursos",
+            "en problemas de asignación de recursos determinar las diferentes formas en que los recursos pueden ser asignados a tareas o proyectos puede ser facilitado por las combinaciones",
+            "las combinaciones pueden facilitar la determinación de las diferentes formas en que los recursos pueden ser asignados a tareas o proyectos en problemas de asignación de recursos",
+            "la asignación de recursos a tareas o proyectos en problemas de asignación de recursos puede ser determinada por las diferentes formas en que los recursos pueden ser asignados, facilitada por las combinaciones"
+        ]
+    },
+    {
+        "actividad": "1",
+        "palabras": ["las","combinaciones","se","utilizan","en","la","logística","para","calcular","el","número","de","formas","en","que","los","elementos","pueden","ser","agrupados","o","empaquetados","para","su","envío"],
+        "fraseCompleta":"las combinaciones se utilizan en la logística para calcular el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío.",
+        "frasesCorrectras":[
+            "las combinaciones se utilizan en la logística para calcular el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío",
+            "en la logística las combinaciones se utilizan para calcular el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío",
+            "para calcular el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío las combinaciones son utilizadas en la logística",
+            "las combinaciones en la logística calculan el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío",
+            "Los elementos pueden ser agrupados o empaquetados para su envío en la logística utilizando las combinaciones para calcular el número de formas posibles"
+        ]
+    },
+    {
+        "actividad": "1",
+        "palabras": ["las","combinaciones","se","utilizan","en","la","logística","para","calcular","el","número","de","formas","en","que","los","elementos","pueden","ser","agrupados","o","empaquetados","para","su","envío"],
+        "fraseCompleta":"las combinaciones se utilizan en la logística para calcular el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío.",
+        "frasesCorrectras":[
+            "las combinaciones se utilizan en la logística para calcular el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío",
+            "en la logística las combinaciones se utilizan para calcular el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío",
+            "para calcular el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío las combinaciones son utilizadas en la logística",
+            "las combinaciones en la logística calculan el número de formas en que los elementos pueden ser agrupados o empaquetados para su envío",
+            "Los elementos pueden ser agrupados o empaquetados para su envío en la logística utilizando las combinaciones para calcular el número de formas posibles"
+        ]
+    },
+    {
+        "actividad": "1",
+        "palabras": ["en","la","planificación","de","eventos","las","combinaciones","pueden","ayudar","a","determinar","las","diferentes","formas","en","que","se","pueden","organizar","actividades","o","elementos"],
+        "fraseCompleta":"en la planificación de eventos, las combinaciones pueden ayudar a determinar las diferentes formas en que se pueden organizar actividades o elementos.",
+        "frasesCorrectras":[
+            "en la planificación de eventos, las combinaciones pueden ayudar a determinar las diferentes formas en que se pueden organizar actividades o elementos",
+            "las combinaciones pueden ayudar en la planificación de eventos a determinar las diferentes formas en que se pueden organizar actividades o elementos",
+            "en la planificación de eventos, determinar las diferentes formas en que se pueden organizar actividades o elementos puede ser facilitado por las combinaciones",
+            "las combinaciones en la planificación de eventos pueden facilitar la determinación de las diferentes formas en que se pueden organizar actividades o elementos",
+            "determinar las diferentes formas en que se pueden organizar actividades o elementos en la planificación de eventos puede ser asistido por las combinaciones"
+        ]
+    },
+    {
+        "actividad": "1",
+        "palabras": ["en","problemas","de","distribución","de","objetos","las","combinaciones","ayudan","a","determinar","el","número","de","formas","en","que","los","objetos","pueden","ser","distribuidos","en","contenedores"],
+        "fraseCompleta":"en problemas de distribución de objetos, las combinaciones ayudan a determinar el número de formas en que los objetos pueden ser distribuidos en contenedores.",
+        "frasesCorrectras":[
+            "en problemas de distribución de objetos las combinaciones ayudan a determinar el número de formas en que los objetos pueden ser distribuidos en contenedores",
+            "las combinaciones ayudan en problemas de distribución de objetos a determinar el número de formas en que los objetos pueden ser distribuidos en contenedores",
+            "en problemas de distribución de objetos determinar el número de formas en que los objetos pueden ser distribuidos en contenedores puede ser facilitado por las combinaciones",
+            "las combinaciones en problemas de distribución de objetos pueden facilitar la determinación del número de formas en que los objetos pueden ser distribuidos en contenedores",
+            "determinar el número de formas en que los objetos pueden ser distribuidos en contenedores en problemas de distribución de objetos puede ser asistido por las combinaciones"
+        ]
+    },
+    {
+        "actividad": "1",
+        "palabras": ["en","problemas","de","distribución","de","objetos","las","combinaciones","ayudan","a","determinar","el","número","de","formas","en","que","los","objetos","pueden","ser","distribuidos","en","contenedores"],
+        "fraseCompleta":"en problemas de distribución de objetos, las combinaciones ayudan a determinar el número de formas en que los objetos pueden ser distribuidos en contenedores.",
+        "frasesCorrectras":[
+            "en problemas de distribución de objetos las combinaciones ayudan a determinar el número de formas en que los objetos pueden ser distribuidos en contenedores",
+            "las combinaciones ayudan en problemas de distribución de objetos a determinar el número de formas en que los objetos pueden ser distribuidos en contenedores",
+            "en problemas de distribución de objetos determinar el número de formas en que los objetos pueden ser distribuidos en contenedores puede ser facilitado por las combinaciones",
+            "las combinaciones en problemas de distribución de objetos pueden facilitar la determinación del número de formas en que los objetos pueden ser distribuidos en contenedores",
+            "determinar el número de formas en que los objetos pueden ser distribuidos en contenedores en problemas de distribución de objetos puede ser asistido por las combinaciones"
+        ]
+    },
+    {
+        "actividad": "1",
+        "palabras": ["los","en","seleccionados","las","combinaciones","el","orden","de","importa","elementos","no"],
+        "fraseCompleta":"en las combinaciones, el orden de los elementos seleccionados no importa.",
+        "frasesCorrectras":[
+            "en las combinaciones el orden de los elementos seleccionados no importa",
+            "el orden de los elementos seleccionados no importa en las combinaciones",
+            "en las combinaciones no importa el orden de los elementos seleccionados",
+            "no importa el orden de los elementos seleccionados en las combinaciones",
+            "el orden de los elementos seleccionados en las combinaciones no es relevante"
+        ]
+    },
+    {
+        "actividad": "1",
+        "palabras": ["número","al","equipos","formar","o grupos","las","combinaciones","determinar","se","importar","utilizan","para","el","total","de","combinaciones","de","personas","sin","el","orden"],
+        "fraseCompleta":"al formar equipos o grupos, las combinaciones se utilizan para determinar el número total de combinaciones de personas sin importar el orden.",
+        "frasesCorrectras":[
+            "al formar equipos o grupos las combinaciones se utilizan para determinar el número total de combinaciones de personas sin importar el orden",
+            "las combinaciones se utilizan al formar equipos o grupos para determinar el número total de combinaciones de personas sin importar el orden",
+            "al formar equipos o grupos determinar el número total de combinaciones de personas sin importar el orden puede ser facilitado por las combinaciones",
+            "las combinaciones al formar equipos o grupos pueden facilitar la determinación del número total de combinaciones de personas sin importar el orden",
+            "determinar el número total de combinaciones de personas sin importar el orden al formar equipos o grupos puede ser asistido por las combinaciones"
+        ]
+    },
+    {
+        "actividad": "1",
+        "palabras": ["número","al","equipos","formar","o grupos","las","combinaciones","determinar","se","importar","utilizan","para","el","total","de","combinaciones","de","personas","sin","el","orden"],
+        "fraseCompleta":"al formar equipos o grupos, las combinaciones se utilizan para determinar el número total de combinaciones de personas sin importar el orden.",
+        "frasesCorrectras":[
+            "al formar equipos o grupos las combinaciones se utilizan para determinar el número total de combinaciones de personas sin importar el orden",
+            "las combinaciones se utilizan al formar equipos o grupos para determinar el número total de combinaciones de personas sin importar el orden",
+            "al formar equipos o grupos determinar el número total de combinaciones de personas sin importar el orden puede ser facilitado por las combinaciones",
+            "las combinaciones al formar equipos o grupos pueden facilitar la determinación del número total de combinaciones de personas sin importar el orden",
+            "determinar el número total de combinaciones de personas sin importar el orden al formar equipos o grupos puede ser asistido por las combinaciones"
+        ]
+    }
+]

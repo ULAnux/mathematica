@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Particiones de Enteros</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #CDE8E5;
+    }
+    .math {
+      display: block;
+      margin: 20px auto;
+      width: 60%;
+
+      background-color: #EEF7FF;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    #section2{
+      display: none;
+    }
+    #section3{
+      display: none;
+    }
+    .math-content {
+      font-family: 'KaTeX', serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    p {
+      font-family: 'KaTeX', serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .secction_ej1{
+      display: none;
+      background-color: #def0f2;
+      border-radius: 20px;
+      padding: 5px;
+    }
+  .ejemplo1{
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    background-color: #def0f2;
+  }
+  .ejemplo1 > h5{
+    margin: 15px auto;
+    font-size: 20px;
+    width: 25px;
+    padding: 15px;
+    border: black 2px solid;
+    background-color: #4D869C;
+    color: #EEF7FF;
+    border-radius: 100px;
+  }
+  .ejemplo1_span{
+    margin: 20px;
+    margin-top: 50px;
+    display: flex;
+  }
+  .ejemplo1_span > span{
+    font-size: 16px;
+    margin: 5px;
+    background-color: #7AB2B2;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    width: 33%;
+  }
+  #spanHover{
+    display: none;
+    color: gray;
+    font-size: 13px;
+    position: relative;
+    bottom: 3px;
+  }
+  .E1Input{
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+  }
+  .button{
+    cursor: pointer;
+  }
+  #E1Button{
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(57, 57, 255);
+    color: white;
+    padding: 5px;
+  }
+  .E2Img{
+    display: block;
+    width: 25%;
+    height: 100px;
+  }
+  .square {
+    height: 20px;
+    width: 20px;
+    background-color: #4D869C;
+    border: 2px solid black
+  }
+  .EjSquare{
+    height: 130px;
+    padding: 10px;
+    width: 25%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .EjSquare > p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .E2Square {
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .EcuancionRh{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 5%;
+  }
+  .EcuancionRh > p{
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 5%;
+  }
+  .mike {
+    margin: 4%;
+    position: fixed; /* Posiciona la imagen de forma fija */
+    bottom: 0; /* Ubica la imagen en la parte inferior */
+    left: 0; /* Ubica la imagen en la parte derecha */
+  }
+
+
+
+  .card{
+   width: 100px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   } 
+.globo{
+   border-radius: 25px;
+      padding: 12px;
+      background: #eef7ff;
+      color: black;
+   padding: 10px;
+   position: relative;
+   width: 200px;
+   margin: 0 auto;
+   font-family: sans-serif;
+   z-index: 1;
+   }
+.globo::after {
+   content: '';
+   position: absolute;
+   bottom: 0; 
+   left: 80px;
+   background: transparent;
+   width: 0px; height: 0px;
+   border-bottom: 40px solid #eef7ff8e;
+   border-right: 40px solid transparent;
+   border-left: 40px solid transparent;
+   transform: rotate(90deg);
+   z-index: -1;
+   }
+.imagen {
+   width: 141px;
+} 
+
+.calculadora {
+    margin: 4%;
+    position: fixed; /* Posiciona la imagen de forma fija */
+    bottom: 0; /* Ubica la imagen en la parte inferior */
+    right: 0; /* Ubica la imagen en la parte derecha */
+  }
+  .cerrarbutton{
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px;
+  }
+#boton-abrir-popup{
+  border: none;
+}
+  </style>
+</head>
+<body>
+  <div class="calculadora" id="calculadoraButtonId" style="background: none; border: none; display: none;">
+    <button class="button" style="background: none;" id="boton-abrir-popup"><img src="img/calculadora.png" width="141px" alt="Calculadora"></button>
+  </div>
+  <div class="mike button">
+    <div class="card">
+      <div class="globo">
+        <p id="text1">Bienvenido, soy Mike y te ayudaré a entender las <b>Particiones de Enteros </b><span class="button" id="Ejemplo1_button" style="color: blue;">Ver Ejemplo</span></p>
+        <p id="text2" style="display: none;">Vamos a ver el primer ejemplo</p>
+        <p id="text3" style="display: none;">Esta Fácil ¿verdad? ahora veamos las propiedades y su notacion <span class="button" id="continue" style="color: blue;">Continuar...</span></p>
+        <p id="text4" style="display: none;">Vamos a hacer el siguiente ejercicio para practicar y desbloquar mas contendio</p>
+        <p id="text5" style="display: none;">Recuerda hacerlo de mayor a menor, si necesitas ayuda aqui estoy <span class="button" id="help1" style="color: blue;"><i class='bx bx-help-circle'></i></span></p>
+        <p id="text6" style="display: none;">Puedes fijarte en el ejemplo, y recuerda las propiedades vistas </span></p>
+        <p id="Error1" style="display: none;">Oh, la respuesta es incorrecta. ¡Intenta de nuevo!</p>
+        <p id="text7" style="display: none;">Felicidades!!! Lo hiciste muy bien. Has desbloquado mas contenido<i class='bx bx-medal'></i> sigue scrolleando</p>
+        <p id="text8" style="display: none;">Las Particiones de Enteros poseen una amplia gama de aplicaciones en diversos campos, desde las matemáticas puras hasta la informática y la física. <span class="button" id="continue2" style="color: blue;">Continuar...</span></p>
+        <p id="text9" style="display: none;">Tenemos dos maneras de ver las particiones de enteros de manera visual, en ambos casos representamos el numero <b>4</b><span class="button" id="Ejercicio2" style="color: blue;"> Ejercicio...</span></p>
+        <p id="text10" style="display: none;">Ya visto estos ejemplos, vamos a hacer otro ejercicio</p>
+        <p id="text11" style="display: none;">Animo tu puedes, aqui estare si necesitas ayuda <span class="button" id="help2" style="color: blue;"><i class='bx bx-help-circle'></i></span></p>
+        <p id="text12" style="display: none;">Un consejo es que cuentes las celdas y asi llegaras al numero n</p>
+        <p id="Error2" style="display: none;">La respuesta es incorrecta, ten mas cuidado. ¡Intenta de nuevo!</p>
+        <p id="text13" style="display: none;">Wow, vas muy bien!!!. Has desbloquado mas contenido<i class='bx bx-medal'></i></p>
+        <p id="text14" style="display: none;">Ahora si se coloca un poquito mas rudo, pero yo se que tu puedes.</p>
+        <p id="text15" style="display: none;">Te recomiendo este video para que termines este curso entendiendolo todo</p>
+      </div>
+      <div >
+       <img class="imagen" src="img/Robot.png" alt="">
+      </div> 
+    </div> 
+    
+
+  </div>
+  <style>
+    #popup1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrar el popup */
+  background-color: #e6f4f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  display: none; /* Oculto por defecto */
+  width: 50%;
+  min-height: 350px;
+  text-align: center;
+  border-radius: 10px;
+}
+.oculto{
+  display: none;
+}
+  </style>
+  
+  <div id="popup1">
+    <h4>Particiones del numero n <input type="number" name="" id="popupNumber" min="0" max="8" value="0"></h4>
+    
+    <p id="p0">las propiedades nos dicen que P(0) = 1</p>
+    <p id="p1" style="display: none;">1</p>
+    <p id="p2" style="display: none;">1 + 1</p>
+    <p id="p3" style="display: none;">2 + 1, 1 + 1 + 1</p>
+    <p id="p4" style="display: none;">3 + 1, 2 + 2, 2 + 1 + 1, 1 + 1 + 1 + 1</p>
+    <p id="p5" style="display: none;">4 + 1, 3 + 2, 3 + 1 + 1, 2 + 2 + 1, 2 + 1 + 1 + 1, 1 + 1 + 1 + 1 + 1</p>
+    <p id="p6" style="display: none;">5 + 1, 4 + 2, 4 + 1 + 1, 3 + 3, 3 + 2 + 1, 3 + 1 + 1 + 1, 2 + 2 + 2, 2 + 2 + 1 + 1, 2 + 1 + 1 + 1 + 1, 1 + 1 + 1 + 1 + 1 + 1</p>
+    <p id="p7" style="display: none;">6 + 1, 5 + 2, 5 + 1 + 1, 4 + 3, 4 + 2 + 1, 4 + 1 + 1 + 1, 3 + 3 + 1, 3 + 2 + 1 + 1, 3 + 1 + 1 + 1 + 1, 2 + 2 + 2 + 1, 2 + 2 + 1 + 1 + 1, 2 + 1 + 1 + 1 + 1 + 1, 1 + 1 + 1 + 1 + 1 + 1 + 1 </p>
+    <p id="p8" style="display: none;">7 + 1, 6 + 2, 6 + 1 + 1, 5 + 3, 5 + 2 + 1, 5 + 1 + 1 + 1, 4 + 4, 4 + 3 + 1, 4 + 2 + 2, 4 + 2 + 1 + 1, 4 + 1 + 1 + 1 + 1, 3 + 3 + 2, 3 + 3 + 1 + 1, 3 + 2 + 2 + 1, 3 + 2 + 1 + 1 + 1, 3 + 1 + 1 + 1 + 1 + 1, 2 + 2 + 2 + 2, 2 + 2 + 2 + 1 + 1, 2 + 2 + 1 + 1 + 1 + 1, 2 + 1 + 1 + 1 + 1 + 1 + 1, 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1, </p>
+    
+    <p>Como te das cuenta el numero de particiones P(n) crece exponencialmente, Por ejemplo, para n = 10, ya hay más de 42 particiones!</p>
+    <button class="button cerrarbutton" id="cerrarPopup">Cerrar</button>
+  </div>
+
+
+  <script>
+    const popup = document.getElementById('popup1');
+    const botonAbrir = document.getElementById('boton-abrir-popup'); // Selecciona el botón para abrir
+    const botonCerrar = document.getElementById('cerrarPopup');
+
+    botonAbrir.addEventListener('click', function() {
+      popup.style.display='block'; // Remueve la clase para mostrar
+    });
+
+    botonCerrar.addEventListener('click', function() {
+      popup.style.display='none'; // Agrega la clase para ocultar
+    });
+
+    const inputNumero = document.getElementById('popupNumber');
+
+    inputNumero.addEventListener('change', function() {
+      const valor = this.value;
+      console.log(valor);
+      switch(valor){
+        case '0':
+        ocutarP();
+        document.getElementById('p0').style.display = 'block';
+          break;
+        case '1':
+          ocutarP();
+        document.getElementById('p1').style.display = 'block';
+          break;
+        case '2':
+          ocutarP();
+        document.getElementById('p2').style.display = 'block';
+          break;
+          case '3':
+            ocutarP();
+        document.getElementById('p3').style.display = 'block';
+          break;
+        case '4':
+          ocutarP();
+        document.getElementById('p4').style.display = 'block';
+          break;
+          case '5':
+            ocutarP();
+        document.getElementById('p5').style.display = 'block';
+          break;
+        case '6':
+          ocutarP();
+        document.getElementById('p6').style.display = 'block';
+          break;
+          case '7':
+            ocutarP();
+        document.getElementById('p7').style.display = 'block';
+          break;
+        case '8':
+          ocutarP();
+        document.getElementById('p8').style.display = 'block';
+          break;
+
+
+        default:
+        ocutarP();
+          break;
+      }
+      
+
+    });
+    function ocutarP(){
+      document.getElementById('p0').style.display = 'none';
+      document.getElementById('p1').style.display = 'none';
+      document.getElementById('p2').style.display = 'none';
+      document.getElementById('p3').style.display = 'none';
+      document.getElementById('p4').style.display = 'none';
+      document.getElementById('p5').style.display = 'none';
+      document.getElementById('p6').style.display = 'none';
+      document.getElementById('p7').style.display = 'none';
+      document.getElementById('p8').style.display = 'none';
+    }
+  </script>
+  <div class="math" id="section1">
+    
+    <h1>Particiones de Enteros</h1>
+    <p class="math-content">Te has preguntado ¿Cómo se pueden dividir un número entero en partes más pequeñas? de manera que la suma de las partes sea igual al número original.
+    La respuesta a esta pregunta es utilizando <b>Particiones de Numeros Enteros</b></p>
+    <div id="Definicion">
+      <p>Una partición de un número entero positivo n es una forma de descomponerlo como suma de números enteros positivos. Dos sumas se consideran iguales si solo difieren en el orden de los sumandos. El número de particiones de un número entero n se denota por <b>P(n)</b>.</p>
+      <p>Podemos definir que una partición (Ordenada) de un entero positivo n es una n-tupla <span style="color:#00b8ff; background-color: white;">α=(a,…,an)</span> de números naturales que cumplen que 
+        <span style="color:#00b8ff; background-color: white;">a1 ≥ a2 ≥ … ≥ an ≥ 0 y n = a1 + a2 + … + an.</span> Es una forma de descomponer el número n que tenemos en sumas de números enteros más pequeños</p>   
+      
+      <div class="secction_ej1" id="SectionEjemplo1"><h3>Ejemplo:</h3><p> El número 5 tiene 6 particiones distintas</p>
+        <div class="ejemplo1">
+          <h5>5</h5>
+          <div class="ejemplo1_span"> 
+            <span>4+1</span>
+            <span>3+2</span>
+            <span>3+1+1</span>
+            <span>2+2+1</span>
+            <span>2+1+1+1</span>
+            <span>1+1+1+1+1</span>
+          </div>
+        </div>
+      </div>
+      <div class="Prop-Not" id="Prop-Not" style="display: none;">
+        <p>Las particiones de enteros tienen 3 propiedades y una notacion:</p>
+        <h3>Propiedades:</h3>
+        <ul>
+          <li>p(0)=1 (la única partición del 0 es el conjunto vacío {0}). </li>
+          <li>p(n) crece rápidamente con n. Por ejemplo, p(5)=7, p(10)=185, y p(20)=1395. </li>
+          <li>Existen fórmulas y algoritmos para calcular p(n), pero no hay una fórmula simple que funcione para todos los valores de n.</li>
+        </ul>
+        <h3>Notacion:</h3>
+        <ul>
+          <li>Se suele representar una partición de n como una lista ordenada de sus elementos, con los elementos decrecientes. Por ejemplo, la partición {4,2,1} del 7 se escribe como (4, 2, 1). </li>
+          <li>El número de particiones de un número entero n se denota como p(n).</li>
+        </ul>
+      </div>
+
+      <div class="EX1" id="SectionEjercicio1" style="display: none;"> 
+        <h3>Ejercicio 1:</h3>
+        <p>Coloque las particiones en orden del número 4.</p>
+        <div class="ejemplo1">
+          <h5>4</h5>
+          <form id="form1">
+          <div style="text-align: center; padding: 20px;">
+            <input class="E1Input" type="text" id="E1R1" placeholder="3+1" required>
+            <input class="E1Input" type="text" id="E1R2" required>
+            <input class="E1Input" type="text" id="E1R3" required>
+            <input class="E1Input" type="text" id="E1R4" required>
+          </div>
+          <button id="E1Button" class="button" onclick="verificarE1()">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+  <div class="math" id="section2">
+    <div id="DivAplicaciones">
+      <h3>Apliaciones</h3>
+      <p>Las aplicaciones y usos de las particiones de enteros son muy variadas, pasadon por areas de la matematica, la computacion y la fisica, tocando temas como 
+        la teoria de cuerdas, algoritmos y criptografía...<span id="VerMas" class="button" style="color: rgb(100, 100, 255);">Ver Mas</span></p>
+      <ol id="AplicacionesList" style="display: none;">
+        <li><h4>Fundamentos Matemáticos:</h4>
+          <ul>
+            <li><h4>Combinatoria:</h4><p>Las particiones de enteros se utilizan para contar objetos matemáticos como conjuntos, permutaciones y árboles.</p></li>
+            <li><h4>Teoria de Numeros:</h4><p>Las particiones de enteros desempeñan un papel crucial en la teoría de números, proporcionando herramientas para estudiar propiedades de los enteros positivos, como la función de partición y las identidades de Euler.</p></li>
+            <li><h4>Análisis:</h4><p>Las particiones de enteros se utilizan en el estudio de series infinitas y funciones especiales.</p></li>
+          </ul>
+        </li>
+        <li><h4>Aplicaciones en Computacion</h4>
+          <ul>
+            <li><h4>Algoritmos:</h4><p>Las particiones de enteros se utilizan en el diseño de algoritmos eficientes para problemas de optimización, como el empaquetado de objetos y la búsqueda de rutas</p></li>
+            <li><h4>Criptografia</h4><p>En criptografía, las particiones intervienen en la construcción de funciones hash y esquemas de firma digital.</p></li>
+          </ul>
+        </li>
+        <li><h4>Fisica:</h4>
+          <ul>
+            <li><h4>Mecánica Estadistica:</h4><p>Las particiones se emplean en mecánica estadística para modelar sistemas físicos con muchos grados de libertad, como fluidos y materiales.</p></li>
+            <li><h4>Teoría de Cuerdas:</h4><p>En teoría de cuerdas, las particiones juegan un papel importante en la descripción de las vibraciones de las cuerdas microscópicas que se postulan como componentes básicos del universo.</p></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <div id="DivDiagramas" style="display: none;">
+    <h3>Diagramas</h3>
+    <ul> 
+      <li><h4>Esquemas de Ferrer:</h4> <p>Es un esquema representado por bolas o puntos, donde cada punto representa una unidad y se ordenan acumulando, por ejemplo:</p></li>
+      <div style="padding: 10px; border-radius: 10px; margin-right: 5%; background-color: white; text-align: center;">
+        <img src="img/DiagramaImg.jpg" alt="img esquemas de young">
+      </div>
+      <li><h4>Esquemas de Young:</h4> <p>Es muy similar al esquema anterior, pero se representa con cajas o cuadrados, (muy parecido a las piezas del tetris), por ejemplo:</p></li>
+      <div style="padding: 10px; border-radius: 10px; margin-right: 5%; background-color: white; text-align: center; display: flex;">       
+        <div class='EjSquare'>
+          <div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          </div>
+          <p>1+1+1+1</p>
+        </div>
+        <div class='EjSquare'>
+          <div>
+          <div style="display: flex;">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          </div>
+          <div class="square"></div>
+        </div>
+          <p>3+1</p>
+        </div>
+        <div class='EjSquare'>
+          <div>
+          <div style="display: flex;">
+          <div class="square"></div>
+          <div class="square"></div>
+          </div>
+          <div style="display: flex;">
+          <div class="square"></div>      
+          <div class="square"></div>
+          </div>
+          </div> 
+          <p>2+2</p>
+        </div>
+        <div class='EjSquare'>
+          <div>
+          <div style="display: flex;">
+          <div class="square"></div>
+          <div class="square"></div>
+          </div>
+          <div class="square"></div>  
+          <div class="square"></div>
+        </div>
+          <p>2+1+1</p>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div id="DivEjercicios2" style="display: none;">
+  <h3>Ejercicio 2:</h3>
+  <p> Que diagrama es la representacion del numero 5</p>
+    <form id="form2">
+      <div class="ejemplo1" style="border-radius: 10px; padding: 10px;">
+        <div style="display: flex;">
+        <div class="E2Img">
+          <div class='E2Square'>
+            <div>
+            <div style="display: flex;">
+              <div class="square"></div>
+              <div class="square"></div>
+              
+            </div>
+            <div style="display: flex;">
+              <div class="square"></div>
+              <div class="square"></div>
+            </div>
+          </div>
+
+          </div>
+          <div class="E2Radio"><input type="radio" name="RadioRespuesta" value="1"></div>
+      </div>
+      <div class="E2Img">
+        <div class='E2Square'>
+          <div>
+          <div style="display: flex;">
+          <div class="square"></div>
+          <div class="square"></div>
+          </div>
+          <div class="square"></div>
+        </div>
+        </div>
+          <div class="E2Radio"><input type="radio" name="RadioRespuesta" value="2"></div>
+      </div>
+      <div class="E2Img">
+        <div class='E2Square'>
+          <div>
+          <div style="display: flex;">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
+          <div class="square"></div>
+          <div class="square"></div>
+        </div>
+        </div>
+          <div class="E2Radio"><input type="radio" name="RadioRespuesta" value="3"></div>
+      </div>
+      <div class="E2Img">
+        <div class='E2Square'>
+          <div>
+          <div style="display: flex;">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
+          <div style="display: flex;">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
+        </div>
+        </div>
+          <div class="E2Radio"><input type="radio" name="RadioRespuesta" value="4"></div>
+      </div>
+      </div>
+        <button id="E1Button" class="button" onclick="verificarE2()">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <div class="math" id="section3">
+    <div>
+      <h3>Expresiones Matematicas</h3>
+      <ul>
+        <li><h4>Funcion Generatiz:</h4>
+          <p>Euler demostró que:</p>
+          <div class="EcuancionRh">
+            <img src="img/Eq5.png" width="300px" alt="Ecuacion5">
+            <p>desarrolando la serie de potencia tenemos</p>
+            <img src="img/Eq6.png" width="300px" alt="Ecuacion6">
+            <p>Por lo tanto</p>
+            <img src="img/Eq7.png" width="300px" alt="Ecuacion7">
+          </div>
+        </li>
+        <li><h4>Aproximación Asintoticas de Hardy y Ramanujan</h4></li>
+        <p>Fue obtenida por Godfrey Harold Hardy y Srinivasa Ramanujan en el año 1918, el teorema dice que la función de partición P(n) satisface la relación asintótica cuando n es lo suficientemente grande.</p>
+          <div class="EcuancionRh">
+            <img src="img/Eq1.png" alt="Ecuacion1">
+            <p>Teniendo en cuenta de que n tiende a infinito.</p>
+          </div>
+        <p>El numero P(10²&#8304;) tiene mas de 10&#185;&#8304; digitos</p>
+
+        <li><h4>Formula directa con sumatoria de Radamaher</h4></li>
+          <div class="EcuancionRh">
+            <p>Destacando que n ≥ 1 la function particion es representada por la siguiente serie convergente</p>
+            <img src="img/Eq2.png" width="300px" alt="Ecuacion2">       
+            <p>Donde</p>
+            <img src="img/Eq3.png" width="300px" alt="Ecuacion3">
+            <p>y</p>
+            <img src="img/Eq4.png" width="300px" alt="Ecuacion4">
+          </div>
+      </ul>
+    </div>
+
+
+  </div>
+</div>
+  
+
+</body>
+
+
+
+
+
+
+
+<script>
+  document.getElementById("Ejemplo1_button").addEventListener('click', function(event) {
+    document.getElementById("SectionEjemplo1").style.display = 'block';
+    ocultartext();
+    document.getElementById("text2").style.display = 'block';
+    
+    function Prop_Not_Wait() {
+      document.getElementById("Prop-Not").style.display = 'block';
+      ocultartext();
+      document.getElementById("text3").style.display = 'block';
+    }
+    setTimeout(Prop_Not_Wait, 5000);
+    
+  });
+  document.getElementById("continue").addEventListener('click', function(event) {
+    ocultartext();
+    document.getElementById("text4").style.display = 'block';
+    document.getElementById("SectionEjercicio1").style.display = 'block';
+    function Text5() {
+      ocultartext();
+      document.getElementById("text5").style.display = 'block';
+    }
+    setTimeout(Text5, 5000);
+
+  });
+
+  const divObjetivo = document.getElementById('SectionEjemplo1');
+  const help1 = document.getElementById('help1');
+  help1.addEventListener('click', function() {
+    window.scrollTo({
+      top: divObjetivo.offsetTop,
+      behavior: 'smooth'
+    });
+    ocultartext();
+    document.getElementById("text6").style.display = 'block';
+  });
+
+
+  document.getElementById("continue2").addEventListener('click', function(event) {
+    ocultartext();
+    document.getElementById("text9").style.display = 'block';
+    document.getElementById("DivDiagramas").style.display = 'block';
+  });
+  
+  document.getElementById("Ejercicio2").addEventListener('click', function(event) {
+    ocultartext();
+    document.getElementById("text10").style.display = 'block';
+    document.getElementById("DivEjercicios2").style.display = 'block';
+    function Text11() {
+      ocultartext();
+      document.getElementById("text11").style.display = 'block';
+    }
+    setTimeout(Text11, 5000);
+  });
+
+  document.getElementById("help2").addEventListener('click', function(event) {
+    ocultartext();
+    document.getElementById("text12").style.display = 'block';
+  });
+
+  
+
+
+
+
+
+
+  document.getElementById("Ejemplo1_button").addEventListener('click', function(event) {
+    document.getElementById("SectionEjemplo1").style.display = 'block';
+  });
+  document.getElementById("VerMas").addEventListener('click', function(event) {
+    document.getElementById("AplicacionesList").style.display = 'block';
+  });
+  
+ var key1 = 0; 
+  function verificarE1(){
+    var respuesta1 = document.getElementById("E1R1").value;
+    var respuesta2 = document.getElementById("E1R2").value;
+    var respuesta3 = document.getElementById("E1R3").value;
+    var respuesta4 = document.getElementById("E1R4").value;
+    var correcta1 = "3+1";
+    var correcta2 = "2+2";
+    var correcta3 = "2+1+1";
+    var correcta4 = "1+1+1+1";
+    if( key1 == 0){
+      if (respuesta1 === correcta1 && respuesta2 === correcta2 && respuesta3 === correcta3 && respuesta4 === correcta4 ) {
+        key1 = 1;
+        document.getElementById("E1R1").style.borderColor= '#00fc54';
+        document.getElementById("E1R2").style.borderColor= '#00fc54';
+        document.getElementById("E1R3").style.borderColor= '#00fc54';
+        document.getElementById("E1R4").style.borderColor= '#00fc54';
+        ocultartext();
+        document.getElementById("text7").style.display = 'block';
+        document.getElementById("section2").style.display = 'block';
+        document.getElementById("calculadoraButtonId").style.display = 'block';
+        function Text8() {
+          ocultartext();
+        document.getElementById("text8").style.display = 'block';
+        }
+        setTimeout(Text8, 5000);
+      } else {    
+        ocultartext();
+        document.getElementById("Error1").style.display = 'block';
+
+        function Error1Wait() {
+          ocultartext();
+        document.getElementById("text5").style.display = 'block';
+        }setTimeout(Error1Wait, 3000);
+
+        if(respuesta1 != correcta1){
+          document.getElementById("E1R1").style.borderColor= 'red';
+        }
+        else{
+          document.getElementById("E1R1").style.borderColor= '#00fc54';
+        }
+
+        if(respuesta2 != correcta2){
+          document.getElementById("E1R2").style.borderColor= 'red';
+          
+        }else{
+          document.getElementById("E1R2").style.borderColor= '#00fc54';
+        }
+
+        if(respuesta3 != correcta3){
+          document.getElementById("E1R3").style.borderColor= 'red';
+        }else{
+          document.getElementById("E1R3").style.borderColor= '#00fc54';
+        }
+
+        if(respuesta4 != correcta4){
+          document.getElementById("E1R4").style.borderColor= 'red';
+        }else{
+          document.getElementById("E1R4").style.borderColor= '#00fc54';
+        }
+      }
+    }
+  }
+
+function verificarE2(){
+  var respuestaSeleccionada = document.querySelector('input[name="RadioRespuesta"]:checked').value;
+  var respuestaCorrecta = '3';
+  if(key1 == 1){
+    if(respuestaCorrecta === respuestaSeleccionada){
+        key1=2;
+        ocultartext();
+        document.getElementById("text13").style.display = 'block';
+        document.getElementById("section3").style.display = 'block';
+        function Text8() {
+          ocultartext();
+          document.getElementById("text14").style.display = 'block';
+          }
+          setTimeout(Text8, 5000);
+    }else{
+      ocultartext();
+      document.getElementById("Error2").style.display = 'block';
+      function Error2Wait() {
+        ocultartext();
+      document.getElementById("text12").style.display = 'block';
+      }setTimeout(Error2Wait, 3000);
+    };
+  }
+}
+
+
+const formulario1 = document.getElementById("form1");
+const formulario2 = document.getElementById("form2");
+const input = document.getElementById("miInput");
+
+formulario1.addEventListener("submit", (event) => {
+  event.preventDefault();
+})
+formulario2.addEventListener("submit", (event) => {
+  event.preventDefault();
+})
+
+
+function ocultartext(){
+  document.getElementById("text1").style.display = 'none';
+  document.getElementById("text2").style.display = 'none';
+  document.getElementById("text3").style.display = 'none';
+  document.getElementById("text4").style.display = 'none';
+  document.getElementById("text5").style.display = 'none';
+  document.getElementById("text6").style.display = 'none';
+  document.getElementById("text7").style.display = 'none';
+  document.getElementById("text8").style.display = 'none';
+  document.getElementById("text9").style.display = 'none';
+  document.getElementById("text10").style.display = 'none';
+  document.getElementById("text11").style.display = 'none';
+  document.getElementById("text12").style.display = 'none';
+  document.getElementById("text13").style.display = 'none';
+  document.getElementById("text14").style.display = 'none';
+  document.getElementById("text15").style.display = 'none';
+  document.getElementById("Error1").style.display = 'none';
+  document.getElementById("Error2").style.display = 'none';
+}
+
+</script>
+</html>

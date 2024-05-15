@@ -1,0 +1,168 @@
+[
+    {
+        "actividad":"2",
+        "nivel1A":["Si tengo [3-4-5-6]","Cuántas","Se puede"],
+        "nivel2A":["[1-2-3]elemento(s) \nse repiten","y los elementos \nno se repiten"],
+        "nivel3A":["¿Cuántas formas diferentes y únicas de ordenar hay?","¿Cuántos recorridos formarán los elementos?", "¿Cuál es la posibilidad que el primer orden sea el esperado?"],
+        "nivel2B":["palabras diferentes \n de 5 letras donde "," formas hay de organizar \n la palabra “CASA”"],
+        "nivel3B":["se pueden formar con esas letras?"," si cada palabra tiene 7 letras y no se repiten las letras se originan? "],
+        "nivel2C":["combinar","repetir "],
+        "nivel3C":["¿Cuántas formas diferentes y únicas de ordenar hay?","¿Cuántos recorridos formarán los elementos?", "¿Cuál es la posibilidad que el primer orden sea el esperado?"],
+        "resultados": {
+          "111":"  Dado que hay {n} elementos y {r} de ellos se repiten, podemos denotar los elementos como A, A y B. Para saber cuantas formas diferentes y únicas de ordenar hay podemos usar esta formula: \n {PERM}",
+          "112":"  Si tenemos {n} elementos donde {r} se repiten, queremos encontrar todo los recorrido en total que forman esos elementos en el caso de ser rutas. La fórmula seria: {n} - {r} es el número total de elementos distintos elementos tomados de {n} es el número de elementos tomados a la vez : ( {n} - {r} ) elevado a {n} = {variacion}",
+          "113":"  Cuando tienes {n} elementos y {r} de ellos se repiten. Para calcular la probabilidad de que el primer orden sea el esperado, necesitas primero determinar cuántos ordenes únicos existen para esos elementos. La formula es  {n} ! / {r} ! El resultado es la primera posición, es decir 1 / total de ordenes únicos = {resper}",
+          "121":"  Cuando tenemos {n} elementos y ninguno de ellos se repite, ocupamos todas las posibilidades para la primera posición, luego para la siguiente ocupamos todas menos las posibilidades que ya elegimos en las posiciones previas. Esto es la factoría de un número, en este caso el resultado sería el factorial de {n} = {factorial} ",
+          "122":"  Si tenemos {n} elementos, queremos encontrar todo los recorrido en total que forman esos elementos en el caso de ser rutas. La fórmula seria: {n}  es el número total de elementos distintos elementos tomados de {n} es el número de elementos tomados a la vez : ( {n} ) elevado a {n} = {varian}",
+          "123":"  Cuando tienes {n} elementos y no se repiten. Para calcular la probabilidad de que el primer orden sea el esperado, necesitas primero determinar cuántos ordenes únicos existen para esos elementos. La formula es  {n} ! El resultado es la primera posición, es decir 1 / total de ordenes únicos = {noresper}",
+           "21":"  en este caso, si estás eligiendo 5 letras de un conjunto de 26 y no puedes repetir ninguna letra, entonces es la formula 27! / 5!( 27 -5 )! = se puedes formar 80,730 palabras diferentes de 5 letras si no puedes usar cada letra más de una vez y no importa el orden de las letras.",
+           "22":"  Para resolver este ejercicio necesitamos asignar 1 de las 4 letras a la primera posición y asi con las demas posicion, lo que nos lleva que el total es 4 x 3 x 2 x 1 = 12 ",
+           "31":"  Ejercicio: Tienes una bolsa con 4 tipos diferentes de frutas: manzanas, naranjas, plátanos y uvas. Si puedes repetir los tipos de frutas, ¿cuántas formas diferentes puedes hacer si eliges 3 frutas? \n Resultado: son 4 tipos de frutas tomados de 3 en 3, permitiendo la repetición de tipos de frutas, es: ( 4 + (3 - 1) | 3 ) = 6! /3!3! = 20",
+           "32":"  Ejercicio: Tienes una caja con 5 colores diferentes de crayones: rojo, azul, verde, amarillo y negro. Si puedes repetir los colores, ¿cuántas formas diferentes puedes hacer si eliges 3 crayones? \n Resultado: el número de combinaciones diferentes de 5 colores de crayones tomados de 3 en 3, permitiendo la repetición de colores, es: (5 +(3 -1) | 3) = 7! / 3!4! = 35 "
+        }
+    },
+    {
+        "actividad":"1",
+        "palabras": ["de los","variaciones","combinaciones","el orden","sí", "en las","elementos","a diferencia de las","importa"],
+        "fraseCompleta":"en las variaciones a diferencia de las combinaciones el orden de los elementos sí importa",
+        "frasesCorrectras":[
+            "en las variaciones el orden de los elementos sí importa a diferencia de las combinaciones",
+            "a diferencia de las combinaciones en las variaciones el orden de los elementos sí importa",
+            "el orden de los elementos sí importa en las variaciones a diferencia de las combinaciones",
+            "en las variaciones sí importa el orden de los elementos a diferencia de las combinaciones"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["se distinguen","de","variaciones","con","principales","repetición","y","sin","dos tipos","repetición"],
+        "fraseCompleta":"se distinguen dos tipos principales de variaciones: con repetición y sin repetición.",
+        "frasesCorrectras":[
+            "se distinguen dos tipos principales de variaciones con repetición y sin repetición",
+            "dos tipos principales de variaciones se distinguen con repetición y sin repetición",
+            "de variaciones se distinguen dos tipos principales con repetición y sin repetición",
+            "con repetición y sin repetición se distinguen dos tipos principales de variaciones",
+            "se distinguen dos tipos principales de variaciones con repetición y sin repetición"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["se distinguen","de","variaciones","con","principales","repetición","y","sin","dos tipos","repetición"],
+        "fraseCompleta":"se distinguen dos tipos principales de variaciones: con repetición y sin repetición.",
+        "frasesCorrectras":[
+            "se distinguen dos tipos principales de variaciones con repetición y sin repetición",
+            "dos tipos principales de variaciones se distinguen con repetición y sin repetición",
+            "de variaciones se distinguen dos tipos principales con repetición y sin repetición",
+            "con repetición y sin repetición se distinguen dos tipos principales de variaciones",
+            "se distinguen dos tipos principales de variaciones con repetición y sin repetición"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["en las","más de una","variaciones","con","aparecer","repetición","tupla","un mismo","elemento","puede","vez","en una"],
+        "fraseCompleta":"en las variaciones con repetición un mismo elemento puede aparecer más de una vez en una tupla.",
+        "frasesCorrectras":[
+            "en las variaciones con repetición un mismo elemento puede aparecer más de una vez en una tupla",
+            "en las variaciones con repetición un mismo elemento puede aparecer más de una vez en una tupla",
+            "un mismo elemento puede aparecer más de una vez en una tupla en las variaciones con repetición",
+            "en las variaciones con repetición puede aparecer más de una vez un mismo elemento en una tupla",
+            "en las variaciones con repetición un mismo elemento en una tupla puede aparecer más de una vez"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["en las","variaciones","sin","repetición","los","elementos","no","se","repiten","dentro de una","tupla"],
+        "fraseCompleta":"en las variaciones sin repetición, los elementos no se repiten dentro de una tupla.",
+        "frasesCorrectras":[
+            "en las variaciones sin repetición los elementos no se repiten dentro de una tupla",
+            "en las variaciones sin repetición los elementos no se repiten dentro de una tupla",
+            "los elementos no se repiten dentro de una tupla en las variaciones sin repetición",
+            "en las variaciones sin repetición dentro de una tupla los elementos no se repiten",
+            "dentro de una tupla en las variaciones sin repetición los elementos no se repiten"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["en las","variaciones","sin","repetición","los","elementos","no","se","repiten","dentro de una","tupla"],
+        "fraseCompleta":"en las variaciones sin repetición, los elementos no se repiten dentro de una tupla.",
+        "frasesCorrectras":[
+            "en las variaciones sin repetición los elementos no se repiten dentro de una tupla",
+            "en las variaciones sin repetición los elementos no se repiten dentro de una tupla",
+            "los elementos no se repiten dentro de una tupla en las variaciones sin repetición",
+            "en las variaciones sin repetición dentro de una tupla los elementos no se repiten",
+            "dentro de una tupla en las variaciones sin repetición los elementos no se repiten"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["en","el","orden","única","importa","y","cada","disposición","variaciones","cuenta","diferente","como","una","variación"],
+        "fraseCompleta":"en variaciones, el orden importa y cada disposición única cuenta como una variación diferente.",
+        "frasesCorrectras":[
+            "en variaciones, el orden importa y cada disposición única cuenta como una variación diferente",
+            "el orden importa en variaciones y cada disposición única cuenta como una variación diferente",
+            "en variaciones cada disposición única cuenta como una variación diferente donde el orden importa",
+            "el orden importa y cada disposición única cuenta como una variación diferente en variaciones",
+            "cada disposición única cuenta como una variación diferente en variaciones donde el orden importa"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["las","variaciones","sin","repetición","aseguran","que","cada","elemento","aparezca","solo","una","vez","en","una","disposición"],
+        "fraseCompleta":"las variaciones sin repetición aseguran que cada elemento aparezca solo una vez en una disposición.",
+        "frasesCorrectras":[
+            "las variaciones sin repetición aseguran que cada elemento aparezca solo una vez en una disposición",
+            "en una disposición las variaciones sin repetición aseguran que cada elemento aparezca solo una vez",
+            "las variaciones aseguran que cada elemento aparezca solo una vez en una disposición sin repetición",
+            "cada elemento aparece solo una vez en una disposición en las variaciones sin repetición",
+            "en una disposición cada elemento aparece solo una vez en las variaciones sin repetición"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["las","variaciones","sin","repetición","aseguran","que","cada","elemento","aparezca","solo","una","vez","en","una","disposición"],
+        "fraseCompleta":"las variaciones sin repetición aseguran que cada elemento aparezca solo una vez en una disposición.",
+        "frasesCorrectras":[
+            "las variaciones sin repetición aseguran que cada elemento aparezca solo una vez en una disposición",
+            "en una disposición las variaciones sin repetición aseguran que cada elemento aparezca solo una vez",
+            "las variaciones aseguran que cada elemento aparezca solo una vez en una disposición sin repetición",
+            "cada elemento aparece solo una vez en una disposición en las variaciones sin repetición",
+            "en una disposición cada elemento aparece solo una vez en las variaciones sin repetición"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["las","variaciones","con","repetición","permiten","que","los","elementos","se","repitan","en","un","arreglo","lo","que","aumenta","el","número","total","de","combinaciones","posibles"],
+        "fraseCompleta":"las variaciones con repetición permiten que los elementos se repitan en un arreglo, lo que aumenta el número total de combinaciones posibles.",
+        "frasesCorrectras":[
+            "las variaciones con repetición permiten que los elementos se repitan en un arreglo, lo que aumenta el número total de combinaciones posibles",
+            "en un arreglo las variaciones con repetición permiten que los elementos se repitan aumentando así el número total de combinaciones posibles",
+            "las variaciones con repetición aumentan el número total de combinaciones posibles al permitir que los elementos se repitan en un arreglo",
+            "al permitir que los elementos se repitan en un arreglo las variaciones con repetición aumentan el número total de combinaciones posibles",
+            "las variaciones con repetición permiten que los elementos se repitan en un arreglo lo que incrementa el número total de combinaciones posibles"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["las","variaciones","sin","repetición","son","útiles","para","calcular","el","número","de","arreglos","distintos","que","pueden","formarse","sin","permitir","que","ningún","elemento","se","repita","en","el","arreglo"],
+        "fraseCompleta":"las variaciones sin repetición son útiles para calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita en el arreglo.",
+        "frasesCorrectras":[
+            "las variaciones sin repetición son útiles para calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita en el arreglo",
+            "en el arreglo, las variaciones sin repetición son útiles para calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita",
+            "las variaciones sin repetición permiten calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita en el arreglo",
+            "al calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita, las variaciones sin repetición son útiles",
+            "las variaciones sin repetición son útiles para formar arreglos distintos sin permitir que ningún elemento se repita en el arreglo"
+        ]
+    },
+    {
+        "actividad":"1",
+        "palabras": ["las","repetición","útiles","variaciones","sin","son","número","para","calcular","el","de","arreglos","formarse","distintos","que","pueden","sin","permitir","que","elemento","ningún","se","repita","en","el","arreglo"],
+        "fraseCompleta":"las variaciones sin repetición son útiles para calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita en el arreglo.",
+        "frasesCorrectras":[
+            "las variaciones sin repetición son útiles para calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita en el arreglo",
+            "en el arreglo, las variaciones sin repetición son útiles para calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita",
+            "las variaciones sin repetición permiten calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita en el arreglo",
+            "al calcular el número de arreglos distintos que pueden formarse sin permitir que ningún elemento se repita, las variaciones sin repetición son útiles",
+            "las variaciones sin repetición son útiles para formar arreglos distintos sin permitir que ningún elemento se repita en el arreglo"
+        ]
+    }
+
+]

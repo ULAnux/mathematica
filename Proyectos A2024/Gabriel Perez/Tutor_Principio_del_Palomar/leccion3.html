@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Principio del palomar | leccion 3</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header id="titulo">
+        <h1>Principio del palomar</h1>
+        <h2>leccion 3</h2>
+    </header>
+    <section class="container-video">
+        <article class="video-leccion">
+            <iframe src="https://www.youtube.com/embed/6v_jrkG0W2w">
+            </iframe>
+            <p>Al terminar de ver el video conteste las siguientes preguntas para avanzar a la siguiente leccion</p>
+        </article>
+    </section>
+    <section class="container-preguntas">
+        <form id="form_leccion3_pregunta1">
+            <h2 class="enunciado">Dados 2019 números enteros distintos cualesquiera. Probar que siempre podemos encontrar dos de ellos cuya diferencia sea divisible por 2018</h2>
+            <h3 class="enunciado">Primero traducimos el enunciado determinando quienes seran las palomas</h3>
+            <p>
+                <input type="radio" name="leccion3_pregunta1">Los restos que se obtienen al dividir cada una de las diferencias por 2018. Es decir los numeros 0, 1, 2, ..., 2017 esto es 2018<br><br>
+                <input type="radio" name="leccion3_pregunta1">Los números enteros<br><br> 
+                <input type="radio" name="leccion3_pregunta1">Los 2019 números enteros seleccionados al azar<br><br><!-- correcta -->
+                <input type="radio" name="leccion3_pregunta1">No se puede determinar<br>
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l3_p1()" value="Comprobar respuesta">
+        </form>
+        <form id="form_leccion3_pregunta2" hidden>
+            <h3 class="enunciado">¿Quienes seran los nidos o palomares en este caso?</h3>
+            <p>
+                <input type="radio" name="leccion3_pregunta2">Los restos que se obtienen al dividir cualquier entero entre 2018<br><br> 
+                <input type="radio" name="leccion3_pregunta2">Los restos que se obtienen al dividir entre 2018 cada una de las diferencias. Es decir los numeros 0, 1, 2, ..., 2017 esto es 2018<br><br><!-- correcta -->
+                <input type="radio" name="leccion3_pregunta2">Los 2019 números enteros<br>
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l3_p2()" value="Comprobar respuesta">
+        </form>
+        <form id="form_leccion3_pregunta3" hidden>
+            <h3 class="enunciado">Debemos determinar una correspondencia para aplicar el principio. Es decir, que elementos se van a organizar y en cuales casillas. <br>¿Escoja la correspondencia correcta?</h3>
+            <p>
+                <div>
+                    <input type="radio" name="leccion3_pregunta3">
+                    <img src="img/leccion3_correspondencia_func_1.png" width="500px" height="100px">
+                    <br>Se hace corresponder los 2019 numeros con los 2018 restos 
+                </div>
+                <div>
+                    <input type="radio" name="leccion3_pregunta3">
+                    <img src="img/leccion3_correspondencia_func_2.png" width="500px" height="100px">
+                    <br>Se hace corresponder los 2018 restos con los 2019 números 
+                </div>
+                <div>
+                    <input type="radio" name="leccion3_pregunta3">
+                    <img src="img/leccion3_correspondencia_func_3.png" width="500px" height="100px">
+                    <br>Se hace corresponder los 2019 numeros con otros 2019 numeros 
+                </div>
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l3_p3()" value="Comprobar respuesta">
+        </form>
+        <form id="form_leccion3_pregunta4" hidden>
+            <h2 class="enunciado">Por lo anterior ya se puede inferir aplicando el principio. <br>Conteste cual es el razonamiento correcto</h2>
+            <p>
+                <input type="radio" name="leccion3_pregunta4">Debido a que el número de palomares es mayor que el numero de palomas se cumple el principio y por tanto, siempre podremos encontrar diferencias que son divisibles por 2018<br><br>
+                <input type="radio" name="leccion3_pregunta4">Por el principio del palomar cualquier diferencia entre dos numeros siempre sera divisible por 2018<br><br>
+                <input type="radio" name="leccion3_pregunta4">Debido a que el numero de palomas (2019) es mayor que el numero de nidos (2018) se cumple el principio y por tanto, siempre podremos encontrar diferencias que son divisibles por 2018<br> <!-- correcta -->
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l3_p4()" value="Comprobar respuesta">
+        </form>
+        <a id="boton_siguiente_leccion3" href="leccion4.html" hidden >Siguiente leccion</a><!-- Boton para avanzar a la siguiente pregunta -->
+        
+    </section>
+    <footer>
+        <section>
+            <a href="#titulo">Ir al comienzo</a>
+            <a href="index.html">Inicio</a>
+        </section>
+        <p>Autor Gabriel Perez</p>
+    </footer>   
+</body>
+<script src="scripts/main.js"></script>
+</html>

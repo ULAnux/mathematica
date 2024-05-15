@@ -1,0 +1,157 @@
+html {
+  margin: 0;
+  font-family: "Comic Neue", cursive, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url("img/fondoDelMar.jpg");
+}
+
+header {
+  background-color: #1c2329;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container {
+  width: 65vw;
+  margin: 0 auto;
+}
+
+.leccion {
+  transition: box-shadow 0.3s ease;
+  background-color: #e6d5bf;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.leccion img {
+  width: 65vw;
+  height: auto;
+}
+
+.leccion a {
+  text-decoration: none;
+  color: black;
+}
+
+.leccion h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+.leccion p {
+  text-align: left;
+  font-size: 1rem;
+  margin: 2rem;
+}
+
+section .leccion:hover {
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  margin: 0;
+  background-color: #222;
+  padding: 2rem;
+  color: #fff;
+}
+
+footer section {
+  float: right;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 0.6rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}
+
+footer a:hover {
+  color: cornflowerblue;
+}
+
+/*Codigo css de las lecciones */
+
+.container-video {
+  width: 80vw;
+  height: auto;
+  margin: 1em auto;
+}
+.video-leccion p {
+  color: #fff;
+  text-align: center;
+  border-bottom: solid black 2px;
+}
+.video-leccion iframe {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.container-preguntas {
+  background-color: #e6d5bf;
+  margin: 1rem 50px;
+  padding-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.container-preguntas a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #222;
+  border-radius: 5px;
+  float: right;
+  margin-right: 1rem;
+  padding: 5px;
+}
+
+.container-preguntas a:hover {
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.enunciado {
+  background-color: rgb(25, 24, 24);
+  font-weight: bold;
+  color: #fff;
+  font-size: 22px;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+input[type="radio"] {
+  width: 25px;
+  height: 25px;
+}
+
+.comprobar_respuesta {
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}

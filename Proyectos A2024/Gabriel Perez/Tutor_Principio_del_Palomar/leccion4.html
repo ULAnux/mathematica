@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Principio del palomar | leccion 4</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+    <header id="titulo">
+        <h1>Principio del palomar</h1>
+        <h2>leccion 4</h2>
+    </header>
+    <section class="container-video">
+        <article class="video-leccion">
+            <iframe src="https://www.youtube.com/embed/pcQ0Ogbohkw">
+            </iframe>
+            <p>Al terminar de ver el video conteste las siguientes preguntas para avanzar a la siguiente leccion</p>
+        </article>
+    </section>
+    <section class="container-preguntas">
+        <form id="form_leccion4_pregunta1">
+            <h2 class="enunciado">Si elegimos 100 números naturales al azar, siempre habra 2 de ellos cuya diferencia sea multiplo de 99</h2>
+            <h3 class="enunciado">Tomando en cuenta que todo número natural m se puede escribir como m = 99(n) + r, con n siendo un número natural y r<99 tambien natural<br><br>¿Quienes serian las palomas?</h3>
+            <p>
+                <input type="radio" name="leccion4_pregunta1">Los números que son multiplos de 99<br><br>
+                <input type="radio" name="leccion4_pregunta1">lo 99 primeros números naturales<br><br>
+                <input type="radio" name="leccion4_pregunta1">Los 100 números naturales cualesquiera escogidos de entre todos los naturales<br><br><!-- correcta -->
+                <input type="radio" name="leccion4_pregunta1">Tener todas las palomas en un solo palomar<br>
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l4_p1()" value="Comprobar respuesta">
+        </form>
+        <form id="form_leccion4_pregunta2" hidden>
+            <h3 class="enunciado">¿Quienes serian los palomares (nidos)?</h3>
+            <p>
+                <input type="radio" name="leccion4_pregunta2">Los 100 numeros naturales cualesquiera<br><br>
+                <input type="radio" name="leccion4_pregunta2">Imposible determinar<br> 
+                <input type="radio" name="leccion4_pregunta2">los 99 posibles restos (desde el 0 a 98)<br><br><!-- correcta -->
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l4_p2()" value="Comprobar respuesta">
+        </form>
+        <form id="form_leccion4_pregunta3" hidden>
+            <h3 class="enunciado">Aplicando el principio escoja el razonamiento correcto</h3>
+            <p>
+                <input type="radio" name="leccion4_pregunta3">Por el principio del palomar de los 100 números tendremos dos con el mismo resto esto es a = 99(p) +r y b = 99(q)+r <br><br><!-- correcta -->
+                <input type="radio" name="leccion4_pregunta3">Por el principio del palomar de los 100 numeros tendremos un numero que es multiplo de 99<br><br>
+                <input type="radio" name="leccion4_pregunta3">Imposible determinar<br> 
+            </p>
+            <input class="comprobar_respuesta" type="button" onclick="verificar_l4_p3()" value="Comprobar respuesta">
+        </form>
+        <a id="boton_fin_curso" href="index.html" hidden>Fin del curso volver al inicio</a>
+    </section>
+    <footer>
+        <section>
+            <a href="#titulo">Ir al comienzo</a>
+            <a href="index.html">Inicio</a>
+        </section>
+        <p>Autor Gabriel Perez</p>
+    </footer>   
+</body>
+<script src="scripts/main.js"></script>
+</html>

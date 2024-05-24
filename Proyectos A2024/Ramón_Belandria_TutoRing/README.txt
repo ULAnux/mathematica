@@ -1,0 +1,1 @@
+Para compilar, solo hace falta abrir el archivo en un terminal e introducir el comando make
